@@ -12703,7 +12703,9 @@ A cinematic fantasy scene of a fierce female use image for face reference warrio
 
 ***
 
-## <a id="section-templates"></a>🧩 工业级提示词模板与防坑指南（建议收藏）
+<a id="section-templates"></a>
+
+## 🧩 工业级提示词模板与防坑指南（建议收藏）
 
 > 大家好，我是你们的无情逆向机器。为了让大家能直接“开箱即用”，我把那 329 个案例扒了个底朝天，硬生生提炼出了这 13 套**工业级提示词模板**。
 > 说实话，整理这些规则差点给我干废了，但跑通之后真的很香！每一套模板都自带“防坑指南”，直接复制填空，再也不用玄学抽卡了。
@@ -13192,7 +13194,9 @@ A cinematic fantasy scene of a fierce female use image for face reference warrio
 
 本项目在整理与研究过程中，参考并使用了 [YouMind](https://youmind.com/) 与 [OpenNana](https://opennana.com/) 的公开提示词库内容，仅用于学习、归纳与方法论研究。相关内容版权归原作者或原平台所有，如有侵权或不当使用请联系处理，我们将第一时间修正或下线。
 
-## <a id="section-disclaimer"></a>声明 (Disclaimer)
+<a id="section-disclaimer"></a>
+
+## 声明 (Disclaimer)
 
 本项目仅整理公开可访问的社区提示词与示例图片，默认用于学习与研究，不主张对第三方原创内容的任何所有权。
 
