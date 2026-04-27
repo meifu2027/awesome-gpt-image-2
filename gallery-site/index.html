@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GPT-Image-2 Prompt Gallery — 工业级提示词引擎与模板库，收录 351+ 精选案例">
+  <meta name="theme-color" content="#08080c">
+  <title>GPT-Image-2 Prompt Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼</text></svg>">
+</head>
+<body>
+
+  <!-- Grain texture overlay -->
+  <svg class="grain-overlay" aria-hidden="true">
+    <filter id="grain-filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#grain-filter)"/>
+  </svg>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Open-Source Collection</p>
+      <h1 class="hero__title">GPT-Image-2<br><span class="hero__title--light">Prompt Gallery</span></h1>
+      <p class="hero__subtitle">Prompt as Code — 工业级提示词引擎与模板库</p>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-number" id="stat-cases">351</span>
+          <span class="hero__stat-label">Cases</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-number" id="stat-categories">13</span>
+          <span class="hero__stat-label">Categories</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__border"></div>
+  </header>
+
+  <!-- Filter nav -->
+  <nav class="filter-bar">
+    <div class="filter-bar__inner">
+      <div class="filter-bar__tabs" id="category-tabs">
+        <!-- JS renders category tabs here -->
+      </div>
+      <div class="filter-bar__search">
+        <svg class="filter-bar__search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" id="search-input" class="filter-bar__search-input" placeholder="搜索提示词、标题或分类…" autocomplete="off">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gallery -->
+  <main class="gallery-section">
+    <div class="gallery" id="gallery">
+      <!-- JS renders cards here -->
+    </div>
+    <div class="gallery__empty" id="gallery-empty" hidden>
+      <p class="gallery__empty-icon">∅</p>
+      <p class="gallery__empty-text">没有找到匹配的案例</p>
+      <p class="gallery__empty-hint">尝试调整筛选条件或搜索关键词</p>
+    </div>
+    <div class="gallery__loader" id="gallery-loader" hidden>
+      <span class="gallery__loader-dot"></span>
+      <span class="gallery__loader-dot"></span>
+      <span class="gallery__loader-dot"></span>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" id="modal-backdrop"></div>
+    <div class="modal__container" role="dialog" aria-modal="true">
+      <button class="modal__close" id="modal-close" aria-label="关闭">&times;</button>
+      <div class="modal__body">
+        <div class="modal__image-wrap">
+          <img class="modal__image" id="modal-image" src="" alt="">
+        </div>
+        <div class="modal__info">
+          <h2 class="modal__title" id="modal-title"></h2>
+          <div class="modal__meta">
+            <span class="modal__category-badge" id="modal-category"></span>
+            <span class="modal__source" id="modal-source"></span>
+          </div>
+          <div class="modal__prompt-section">
+            <div class="modal__prompt-header">
+              <span class="modal__prompt-label">Prompt</span>
+              <button class="modal__copy-btn" id="modal-copy">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+                </svg>
+                <span id="copy-text">复制</span>
+              </button>
+            </div>
+            <pre class="modal__prompt-code"><code id="modal-prompt"></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <span class="footer__brand">GPT-Image-2 Gallery</span>
+        <span class="footer__sep">·</span>
+        <a href="https://github.com/jamez-eh/awesome-gpt-image-2" class="footer__link" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="footer__right">
+        <span class="footer__note">Built with care, no frameworks.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
