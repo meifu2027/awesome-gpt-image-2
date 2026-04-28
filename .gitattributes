@@ -1,0 +1,4 @@
+# gallery-site/data.js 是从 docs/gallery-part-*.md 派生的产物，
+# 上游仓库对它的任何修改都应被忽略，由本地 scripts/parse-gallery.js 重新生成。
+# 配合 GitHub Actions 中 `git config merge.ours.driver true` 使用。
+gallery-site/data.js merge=ours

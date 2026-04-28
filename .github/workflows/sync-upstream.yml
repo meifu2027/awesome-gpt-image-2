@@ -1,0 +1,158 @@
+name: Sync upstream & rebase gallery-feature
+
+# 触发：每 6 小时一次（UTC 0/6/12/18 → 北京时间 8/14/20/2），并允许手动触发
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}
+
+# 默认 GITHUB_TOKEN 需要写权限（push）和 issues 权限（rebase 冲突时开 Issue）
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+env:
+  UPSTREAM_URL: https://github.com/freestylefly/awesome-gpt-image-2.git
+  UPSTREAM_BRANCH: main
+  FORK_BRANCH: main
+  FEATURE_BRANCH: gallery-feature
+  MIN_CASES: '300'   # data.js 案例数下限，低于此值视为生成失败
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork (full history)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.FEATURE_BRANCH }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git identity & merge driver
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # 注册 .gitattributes 中声明的 "merge=ours" 驱动
+          git config merge.ours.driver true
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream "$UPSTREAM_URL" || git remote set-url upstream "$UPSTREAM_URL"
+          git remote -v
+
+      - name: Fetch all refs
+        run: |
+          git fetch upstream "$UPSTREAM_BRANCH"
+          git fetch origin   "$FORK_BRANCH" "$FEATURE_BRANCH"
+
+      - name: Detect upstream changes
+        id: diff
+        run: |
+          LOCAL=$(git rev-parse "origin/$FORK_BRANCH")
+          REMOTE=$(git rev-parse "upstream/$UPSTREAM_BRANCH")
+          echo "local=$LOCAL"   >> "$GITHUB_OUTPUT"
+          echo "remote=$REMOTE" >> "$GITHUB_OUTPUT"
+          if [ "$LOCAL" = "$REMOTE" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "✅ Up-to-date with upstream ($REMOTE)"
+          else
+            echo "changed=true"  >> "$GITHUB_OUTPUT"
+            echo "🔄 Upstream ahead: $LOCAL → $REMOTE"
+          fi
+
+      - name: Mirror fork main from upstream
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git checkout -B "$FORK_BRANCH" "upstream/$UPSTREAM_BRANCH"
+          git push origin "$FORK_BRANCH" --force-with-lease
+
+      - name: Rebase feature branch onto main
+        if: steps.diff.outputs.changed == 'true'
+        id: rebase
+        continue-on-error: true
+        run: |
+          git checkout -B "$FEATURE_BRANCH" "origin/$FEATURE_BRANCH"
+          git rebase "$FORK_BRANCH"
+
+      - name: Open issue on rebase conflict
+        if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const remote = '${{ steps.diff.outputs.remote }}';
+            const date   = new Date().toISOString().slice(0, 10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo:  context.repo.repo,
+              title: `⚠️ Auto-rebase conflict: gallery-feature onto main (${date})`,
+              labels: ['automation', 'conflict'],
+              body: [
+                `上游 \`freestylefly/awesome-gpt-image-2\` 已更新到 \`${remote}\`，`,
+                '但自动 rebase \`gallery-feature\` 出现冲突，需要人工介入。',
+                '',
+                '## 本地解决步骤',
+                '```bash',
+                'git fetch upstream && git fetch origin',
+                'git checkout gallery-feature',
+                'git rebase upstream/main',
+                '# 解决冲突后：',
+                'node scripts/parse-gallery.js',
+                'git add -A && git rebase --continue',
+                'git push origin gallery-feature --force-with-lease',
+                '```',
+                '',
+                `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              ].join('\n'),
+            });
+
+      - name: Abort if rebase failed
+        if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'failure'
+        run: |
+          echo "❌ Rebase failed, issue opened. Aborting."
+          exit 1
+
+      - name: Regenerate gallery-site/data.js
+        if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'success'
+        run: |
+          node scripts/parse-gallery.js
+          if git diff --quiet gallery-site/data.js; then
+            echo "ℹ️  data.js unchanged"
+          else
+            git add gallery-site/data.js
+            git commit -m "chore(gallery): regenerate data.js from upstream docs
+
+            Sync upstream main → ${{ steps.diff.outputs.remote }}
+            [skip ci]"
+            echo "✅ data.js committed"
+          fi
+
+      - name: Sanity check data.js
+        if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'success'
+        run: |
+          COUNT=$(grep -c '^\s*id:' gallery-site/data.js || true)
+          echo "Cases in data.js: $COUNT (min required: $MIN_CASES)"
+          if [ "$COUNT" -lt "$MIN_CASES" ]; then
+            echo "❌ data.js looks broken (cases=$COUNT)"
+            exit 1
+          fi
+
+      - name: Push rebased feature branch
+        if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'success'
+        run: |
+          git push origin "$FEATURE_BRANCH" --force-with-lease
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Sync upstream summary"
+            echo "- changed: ${{ steps.diff.outputs.changed }}"
+            echo "- local  : ${{ steps.diff.outputs.local }}"
+            echo "- remote : ${{ steps.diff.outputs.remote }}"
+            echo "- rebase : ${{ steps.rebase.outcome }}"
+          } >> "$GITHUB_STEP_SUMMARY"
