@@ -31,7 +31,12 @@ jobs:
           ref: ${{ env.MAIN_BRANCH }}
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
-
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          
       - name: Configure git identity & merge driver
         run: |
           git config user.name  "github-actions[bot]"
@@ -73,7 +78,7 @@ jobs:
         run: |
           git checkout -B "$MAIN_BRANCH" "origin/$MAIN_BRANCH"
           git rebase "upstream/$UPSTREAM_BRANCH"
-
+          
       - name: Open issue on rebase conflict
         if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'failure'
         uses: actions/github-script@v7
