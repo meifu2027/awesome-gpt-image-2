@@ -1,4 +1,4 @@
-name: Sync upstream & rebase gallery-feature
+name: Sync upstream into main
 
 # 触发：每 6 小时一次（UTC 0/6/12/18 → 北京时间 8/14/20/2），并允许手动触发
 on:
@@ -18,18 +18,17 @@ concurrency:
 env:
   UPSTREAM_URL: https://github.com/freestylefly/awesome-gpt-image-2.git
   UPSTREAM_BRANCH: main
-  FORK_BRANCH: main
-  FEATURE_BRANCH: gallery-feature
+  MAIN_BRANCH: main
   MIN_CASES: '300'   # data.js 案例数下限，低于此值视为生成失败
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout fork (full history)
+      - name: Checkout main (full history)
         uses: actions/checkout@v4
         with:
-          ref: ${{ env.FEATURE_BRANCH }}
+          ref: ${{ env.MAIN_BRANCH }}
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -48,36 +47,32 @@ jobs:
       - name: Fetch all refs
         run: |
           git fetch upstream "$UPSTREAM_BRANCH"
-          git fetch origin   "$FORK_BRANCH" "$FEATURE_BRANCH"
+          git fetch origin   "$MAIN_BRANCH"
 
       - name: Detect upstream changes
         id: diff
         run: |
-          LOCAL=$(git rev-parse "origin/$FORK_BRANCH")
+          # merge-base：若 upstream HEAD 已经是 main 祖先，则无新提交
+          BASE=$(git merge-base "origin/$MAIN_BRANCH" "upstream/$UPSTREAM_BRANCH")
           REMOTE=$(git rev-parse "upstream/$UPSTREAM_BRANCH")
+          LOCAL=$(git rev-parse "origin/$MAIN_BRANCH")
           echo "local=$LOCAL"   >> "$GITHUB_OUTPUT"
           echo "remote=$REMOTE" >> "$GITHUB_OUTPUT"
-          if [ "$LOCAL" = "$REMOTE" ]; then
+          if [ "$BASE" = "$REMOTE" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "✅ Up-to-date with upstream ($REMOTE)"
+            echo "✅ main 已包含 upstream/$UPSTREAM_BRANCH ($REMOTE) 的全部提交"
           else
             echo "changed=true"  >> "$GITHUB_OUTPUT"
-            echo "🔄 Upstream ahead: $LOCAL → $REMOTE"
+            echo "🔄 Upstream ahead: main=$LOCAL, upstream=$REMOTE"
           fi
 
-      - name: Mirror fork main from upstream
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          git checkout -B "$FORK_BRANCH" "upstream/$UPSTREAM_BRANCH"
-          git push origin "$FORK_BRANCH" --force-with-lease
-
-      - name: Rebase feature branch onto main
+      - name: Rebase main onto upstream
         if: steps.diff.outputs.changed == 'true'
         id: rebase
         continue-on-error: true
         run: |
-          git checkout -B "$FEATURE_BRANCH" "origin/$FEATURE_BRANCH"
-          git rebase "$FORK_BRANCH"
+          git checkout -B "$MAIN_BRANCH" "origin/$MAIN_BRANCH"
+          git rebase "upstream/$UPSTREAM_BRANCH"
 
       - name: Open issue on rebase conflict
         if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'failure'
@@ -89,21 +84,21 @@ jobs:
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo:  context.repo.repo,
-              title: `⚠️ Auto-rebase conflict: gallery-feature onto main (${date})`,
+              title: `⚠️ Auto-rebase conflict: main onto upstream/main (${date})`,
               labels: ['automation', 'conflict'],
               body: [
                 `上游 \`freestylefly/awesome-gpt-image-2\` 已更新到 \`${remote}\`，`,
-                '但自动 rebase \`gallery-feature\` 出现冲突，需要人工介入。',
+                '但自动 rebase \`main\` 出现冲突，需要人工介入。',
                 '',
                 '## 本地解决步骤',
                 '```bash',
                 'git fetch upstream && git fetch origin',
-                'git checkout gallery-feature',
+                'git checkout main',
                 'git rebase upstream/main',
                 '# 解决冲突后：',
-                'node scripts/parse-gallery.js',
+                'node gallery-site/scripts/parse-gallery.js',
                 'git add -A && git rebase --continue',
-                'git push origin gallery-feature --force-with-lease',
+                'git push origin main --force-with-lease',
                 '```',
                 '',
                 `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
@@ -119,7 +114,7 @@ jobs:
       - name: Regenerate gallery-site/data.js
         if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'success'
         run: |
-          node scripts/parse-gallery.js
+          node gallery-site/scripts/parse-gallery.js
           if git diff --quiet gallery-site/data.js; then
             echo "ℹ️  data.js unchanged"
           else
@@ -141,10 +136,10 @@ jobs:
             exit 1
           fi
 
-      - name: Push rebased feature branch
+      - name: Push rebased main
         if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'success'
         run: |
-          git push origin "$FEATURE_BRANCH" --force-with-lease
+          git push origin "$MAIN_BRANCH" --force-with-lease
 
       - name: Summary
         if: always()

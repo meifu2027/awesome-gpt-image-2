@@ -1,11 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.resolve(__dirname, '..');
+const ROOT = path.resolve(__dirname, '..', '..');
 const DOCS_DIR = path.join(ROOT, 'docs');
 // 自动匹配 docs/gallery-part-<number>.md，按序号升序处理，支持未来新增 part
 const PART_PATTERN = /^gallery-part-(\d+)\.md$/;
-const OUT_DIR = path.join(ROOT, 'gallery-site');
+const OUT_DIR = path.resolve(__dirname, '..');
 const OUT_FILE = path.join(OUT_DIR, 'data.js');
 
 function findPartFiles() {
