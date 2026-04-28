@@ -2,10 +2,22 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const PART1 = path.join(ROOT, 'docs/gallery-part-1.md');
-const PART2 = path.join(ROOT, 'docs/gallery-part-2.md');
+const DOCS_DIR = path.join(ROOT, 'docs');
+// 自动匹配 docs/gallery-part-<number>.md，按序号升序处理，支持未来新增 part
+const PART_PATTERN = /^gallery-part-(\d+)\.md$/;
 const OUT_DIR = path.join(ROOT, 'gallery-site');
 const OUT_FILE = path.join(OUT_DIR, 'data.js');
+
+function findPartFiles() {
+  if (!fs.existsSync(DOCS_DIR)) return [];
+  return fs.readdirSync(DOCS_DIR)
+    .map((name) => {
+      const m = name.match(PART_PATTERN);
+      return m ? { name, num: parseInt(m[1], 10), fullPath: path.join(DOCS_DIR, name) } : null;
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.num - b.num);
+}
 
 const IMAGE_BASE = 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/';
 
@@ -106,12 +118,18 @@ function generateDataJS(cases) {
 }
 
 // Main
-const content1 = fs.readFileSync(PART1, 'utf-8');
-const content2 = fs.readFileSync(PART2, 'utf-8');
+const partFiles = findPartFiles();
+if (partFiles.length === 0) {
+  console.error('❌ 未在 docs/ 目录找到任何 gallery-part-*.md 文件');
+  process.exit(1);
+}
 
-const cases1 = parseCases(content1);
-const cases2 = parseCases(content2);
-const allCases = [...cases1, ...cases2].sort((a, b) => a.id - b.id);
+const partResults = partFiles.map((f) => {
+  const content = fs.readFileSync(f.fullPath, 'utf-8');
+  return { name: f.name, num: f.num, cases: parseCases(content) };
+});
+
+const allCases = partResults.flatMap((r) => r.cases).sort((a, b) => a.id - b.id);
 
 // Ensure output directory exists
 if (!fs.existsSync(OUT_DIR)) {
@@ -125,8 +143,10 @@ fs.writeFileSync(OUT_FILE, dataJS, 'utf-8');
 // Print statistics
 console.log(`\n✅ 解析完成！`);
 console.log(`📊 总案例数: ${allCases.length}`);
-console.log(`   - Part 1: ${cases1.length} 条`);
-console.log(`   - Part 2: ${cases2.length} 条`);
+console.log(`📄 匹配到 ${partResults.length} 个 part 文件：`);
+for (const r of partResults) {
+  console.log(`   - ${r.name}: ${r.cases.length} 条`);
+}
 console.log(`\n📁 输出文件: ${OUT_FILE}`);
 console.log(`\n📂 分类统计:`);
 

@@ -15,6 +15,7 @@
     visibleCount: 30,
     increment: 20,
     isLoading: false,
+    pendingImages: 0,
   };
 
   /* ---------- DOM refs ---------- */
@@ -23,6 +24,7 @@
     gallery:      $('#gallery'),
     empty:        $('#gallery-empty'),
     loader:       $('#gallery-loader'),
+    sentinel:     $('#gallery-sentinel'),
     tabs:         $('#category-tabs'),
     searchInput:  $('#search-input'),
     statCases:    $('#stat-cases'),
@@ -131,8 +133,10 @@
     dom.gallery.innerHTML = '';
     dom.gallery.appendChild(fragment);
 
-    // Show loader if there are more items
-    dom.loader.hidden = state.visibleCount >= state.filteredItems.length;
+    // Reset pending image counter for the new batch; updateLoaderVisibility
+    // will be called as each image finishes loading.
+    state.pendingImages = 0;
+    updateLoaderVisibility();
 
     // Setup lazy loading for newly added images
     requestAnimationFrame(() => setupLazyLoad());
@@ -170,7 +174,10 @@
   /* ---------- Lazy Load ---------- */
   function setupLazyLoad() {
     const images = dom.gallery.querySelectorAll('img[data-src]:not(.loaded)');
-    if (!images.length) return;
+    if (!images.length) {
+      updateLoaderVisibility();
+      return;
+    }
 
     const observer = new IntersectionObserver(
       (entries, obs) => {
@@ -180,11 +187,16 @@
           const src = img.dataset.src;
           if (!src) return;
 
+          state.pendingImages += 1;
+          updateLoaderVisibility();
+
           img.src = src;
           img.onload = () => {
             img.classList.add('loaded');
             const shimmer = img.previousElementSibling;
             if (shimmer) shimmer.classList.add('hidden');
+            state.pendingImages = Math.max(0, state.pendingImages - 1);
+            updateLoaderVisibility();
           };
           img.onerror = () => {
             // Hide shimmer on error too; show placeholder
@@ -193,6 +205,8 @@
             img.style.minHeight = '80px';
             img.style.background = 'var(--bg-tertiary)';
             img.classList.add('loaded');
+            state.pendingImages = Math.max(0, state.pendingImages - 1);
+            updateLoaderVisibility();
           };
 
           obs.unobserve(img);
@@ -204,9 +218,18 @@
     images.forEach((img) => observer.observe(img));
   }
 
+  /* ---------- Loader visibility ---------- */
+  // Show the pulsing loader only when images are actively loading AND there
+  // are more items to append. Once all currently visible images finish
+  // loading, hide it — infinite-scroll is driven by a separate sentinel.
+  function updateLoaderVisibility() {
+    const hasMore = state.visibleCount < state.filteredItems.length;
+    dom.loader.hidden = !(hasMore && state.pendingImages > 0);
+  }
+
   /* ---------- Infinite Scroll ---------- */
   function setupInfiniteScroll() {
-    const sentinel = dom.loader;
+    const sentinel = dom.sentinel;
     const observer = new IntersectionObserver(
       (entries) => {
         if (!entries[0].isIntersecting) return;
@@ -231,7 +254,7 @@
     }
     dom.gallery.appendChild(fragment);
 
-    dom.loader.hidden = end >= state.filteredItems.length;
+    updateLoaderVisibility();
     state.isLoading = false;
 
     requestAnimationFrame(() => setupLazyLoad());
