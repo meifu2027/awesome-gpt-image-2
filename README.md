@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/canghe/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/canghe/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/canghe/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/canghe/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/canghe/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-351-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/canghe/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-352-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/canghe/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
 </p>
 
@@ -27,7 +27,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 
 - [完整案例总览](docs/gallery.md)
 - [案例画廊 Part 1：例 1-165](docs/gallery-part-1.md)
-- [案例画廊 Part 2：例 166-351](docs/gallery-part-2.md)
+- [案例画廊 Part 2：例 166-352](docs/gallery-part-2.md)
 - [工业级提示词模板与防坑指南](docs/templates.md#section-templates)
 - [MIT License](LICENSE)
 - [完整声明页](docs/disclaimer.md#section-disclaimer)
@@ -36,7 +36,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 
 - UI与界面：68
 - 图表与信息可视化：50
-- 海报与排版：65
+- 海报与排版：66
 - 商品与电商：17
 - 品牌与标志：16
 - 建筑与空间：25
@@ -126,6 +126,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 - [例 349：运动时尚三联 Campaign](docs/gallery-part-2.md#case-349)
 - [例 350：足球球员数据涂鸦海报](docs/gallery-part-2.md#case-350)
 - [例 351：健身品牌力量 Campaign](docs/gallery-part-2.md#case-351)
+- [例 352：西楚霸王国风暗黑海报](docs/gallery-part-2.md#case-352)
 
 #### 代表案例 1：月下美女直播画面
 
