@@ -2814,5 +2814,53 @@ window.GALLERY_DATA = [
     source: '[@dotey](https://x.com/dotey/status/2048793351290327381) / [Credit @xiaoxiaodong01](https://x.com/xiaoxiaodong01/status/2048443572119330853)',
     prompt: 'Create ONE finished premium conceptual typography poster for the exact title:\n\n“[INPUT_TEXT]”\n\nSingle poster only. No moodboard, grid, presentation board, mockup, captions, prompt text, process sheet, or sample labels.\n\nThe title “[INPUT_TEXT]” must be the dominant visual structure of the poster: huge, readable, powerful, and spelled exactly. Do not translate, shorten, replace, or misspell it. Do not add other large readable text. Optional micro catalog text is allowed only if it stays subtle and secondary.\n\nSilently interpret the title’s meaning, mood, cultural aura, symbolic associations, psychological tension, and visual rhythm. Turn that interpretation into one strong visual metaphor.\n\nTypography is the hero. Design custom-looking letterforms whose weight, width, contrast, spacing, rhythm, distortion, negative space, edge quality, and ink texture express the temperament of the title. The type should feel intentionally designed, not like a default font.\n\nIf “[INPUT_TEXT]” refers to a widely known person, make a large editorial portrait or full / half-body figure a major visual presence, occupying roughly 40–70% of the composition. The figure should feel recognizable through aura, posture, styling, era, expression, lighting, and symbolic atmosphere, but should not copy a specific existing photograph, official poster, campaign image, logo, slogan, or copyrighted composition. The portrait must interact with the typography: overlapping the letters, emerging from them, being framed by them, casting shadows on them, breaking through them, or being partially hidden behind them.\n\nFor all other titles, use a human figure, landscape, object, or atmospheric setting only when it strengthens the meaning. It must interact with the typography and deepen the concept, not decorate it.\n\nUse a rich but restrained 4–6 color system matched to the theme: dominant background color, primary typography color, figure / landscape tone, emotional accent color, muted support color, and subtle paper / ink texture tone. Avoid flat black-white-red defaults unless conceptually necessary.\n\nComposition style: high-end editorial poster, museum-quality graphic design, dramatic scale, strong hierarchy, few elements, intelligent whitespace, bold flat color areas, sharp cropping, silkscreen / lithograph / risograph grain, paper fibers, subtle ink imperfections, refined visual tension.\n\nThe final image should feel like a complete visual sentence: the title, the figure or setting, the color, and the typography explain each other.\n\nAvoid generic word art, glossy 3D lettering, random icons, stock-photo realism, cluttered collage, excessive grunge, tourist clichés, official logos, copied slogans, copied campaign aesthetics, unrelated text, and misspelled typography.\n\n-----\n\nINPUT_TEXT：Phoenix Rebirth',
     category: '海报与排版'
+  },
+  {
+    id: 356,
+    title: '过度思考超现实街头 Campaign',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case356.jpg',
+    source: '[@AIwithAliya](https://x.com/AIwithAliya/status/2049044716642316758)',
+    prompt: 'Ultra-realistic conceptual portrait of a young woman with long wavy hair and soft defined features, wearing rose-tinted rectangular sunglasses, an oversized ivory cropped t-shirt, fitted light-wash denim jeans, and clean white sneakers. She is sitting casually with a confident yet relaxed posture.\n\nThe twist: she is seated on a large, hyper-realistic version of her own detached head placed on the ground. The head is scaled up, lying sideways, with the same facial features and sunglasses, creating a surreal self-reflection concept.\n\nComposition: centered, full-body shot, neutral studio background with soft blush and cream tones, minimal aesthetic. Clean negative space.\n\nTypography integrated into the background:\n\nHandwritten-style text at the top: "OVERTHINKING"\n\nBelow it, smaller text: "TRAPPED IN MY OWN HEART" with "HEART" crossed out\n\nLarge, rough, scribbled text in deep pink: "MIND"\n\nLighting: soft diffused studio lighting, subtle shadows, high detail, fashion editorial quality.\n\nStyle: blend of surrealism and modern luxury streetwear campaign, pastel feminine aesthetic, minimal yet expressive, high-resolution, 8k, sharp focus, natural skin texture.\n\nMood: introspective, emotional weight, identity, self-awareness, quiet confidence.',
+    category: '其他应用场景'
+  },
+  {
+    id: 357,
+    title: '鱼眼镜面复古咖啡馆人像',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case357.jpg',
+    source: '[@harboriis](https://x.com/harboriis/status/2049044698900361241)',
+    prompt: 'A fish-eye lens close-up of [your photo as reference] sipping from a teal/turquoise coffee mug, leaning forward intimately toward camera. Shot through or near a round mirror. Retro café interior with glossy teal subway tiles, vintage appliances, pendant lights. Black t-shirt, yellow-tinted round glasses. Warm moody tones.',
+    category: '其他应用场景'
+  },
+  {
+    id: 358,
+    title: '草莓能量饮料商业广告',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case358.jpg',
+    source: '[@SPEEDAI07](https://x.com/SPEEDAI07/status/2049043627163435040)',
+    prompt: 'A hyper-realistic commercial advertisement blending energy drink and sports branding. A dynamic athletic woman mid-air jump, wearing modern sportswear (light translucent jacket, orange shorts, white sneakers), surrounded by explosive splashes of red strawberry liquid and flying ice cubes. A cold metallic energy drink can (strawberry flavor) bursting with droplets sits in the foreground, covered in condensation. Fresh strawberries scattered on a glossy reflective surface.\n\nBright cinematic lighting with dramatic highlights and motion effects. Vibrant orange gradient background with bold glowing typography behind the subject. Ultra-detailed, high contrast, sharp focus, commercial product photography style, 8K resolution, advertising poster aesthetic, energetic, powerful, refreshing mood.',
+    category: '其他应用场景'
+  },
+  {
+    id: 359,
+    title: '水墨双重曝光人物海报',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case359.jpg',
+    source: '[@Goodmanprotocol](https://x.com/Goodmanprotocol/status/2049002279051895243)',
+    prompt: 'A cinematic character promotional poster of [SUBJECT], vertical composition (9:16), designed with a refined East-Asian ink aesthetic and high-end visual storytelling.\n\nSTRUCTURE:\nTop-heavy hierarchical layout. The upper half features a large, highly recognizable silhouette of [SUBJECT]\'s head / face / mask / upper body, forming a bold, iconic primary shape. The silhouette should be instantly identifiable.\n\nThe middle-lower section contains the full-body version of [SUBJECT] as a secondary subject, standing in a stable pose or subtle action stance, forming the visual core.\n\nCOMPOSITION STYLE:\nInside the large silhouette and around the character, use double exposure and collage storytelling. Integrate multiple elements:\n- key scenes related to [SUBJECT]\n- symbolic imagery and environment\n- small narrative figures and interactions\n- supporting visual motifs\n\nBlend everything seamlessly using clouds, mist, ink diffusion, and negative space.\n\nVISUAL FLOW:\nCreate a continuous flowing visual path from top to bottom, connecting:\n- upper silhouette\n- inner collage elements\n- full-body subject\n\nEnsure smooth eye guidance and compositional cohesion.\n\nSIDE ELEMENTS:\nAdd balanced supporting elements on left and right sides to create tension, depth, and spatial variation.\n\nSTYLE & ATMOSPHERE:\n- Large areas of negative space\n- Ink-wash diffusion edges, soft fading, subtle fragmentation\n- Eastern aesthetic: balance of emptiness and detail\n- Calm, premium, restrained, cinematic tone\n\nQUALITY:\nUltra-detailed, high resolution, layered depth, soft lighting, atmospheric perspective, cohesive series-style design.\n\nOUTPUT:\n9:16 aspect ratio, poster-ready composition.',
+    category: '海报与排版'
+  },
+  {
+    id: 360,
+    title: '长发造型分析信息图',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case360.jpg',
+    source: '[@Gemalpha_88](https://x.com/Gemalpha_88/status/2048918707343401034)',
+    prompt: 'Create a professional "HAIRSTYLE ANALYSIS" infographic with a different male model (the same face) having long, thick hair (6-10 inches), slightly wavy texture.\n\nStyle should be clean, modern, premium grooming guide (similar layout but not identical).\n\nTOP TITLE:\n"HAIRSTYLE ANALYSIS - Long Hair Edition"\n\nLEFT PANEL (Key Features with icons):\nFace Shape: Oval\nHair Type: Thick\nTexture: Wavy\nLength: Long\n\nBEST OPTIONS (Top row with green indicators):\nLayered Flow Cut (Adds movement & volume)\nModern Curtain Hair (Stylish & balanced)\nTextured Long Waves (Natural & full)\nLoose Slick Back (Controlled but not flat)\n\nLESS FLATTERING (Bottom row with red indicators):\nFlat Straight Long Hair (No volume)\nOverly Oily Slick Back (Too heavy)\nUneven Long Layers (Messy shape)\nExcessively Frizzy Look (Uncontrolled)\n\nBEST HAIR LENGTH SECTION:\nIdeal: 6-10 inches with layers\nAvoid: Too flat or too heavy bottom\n\nBEST HAIR COLORS:\nDark Brown\nNatural Black\nWarm Brown\nAsh Brown\n\nDESIGN STYLE:\nClean grid infographic\nWhite/beige background\nSoft shadows\nPremium magazine look\nRealistic face and hair detail\nConsistent spacing and typography\nHigh resolution, 4K',
+    category: '图表与信息可视化'
+  },
+  {
+    id: 361,
+    title: '手机爆炸拆解图',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case361.jpg',
+    source: '[@Ankit_patel211](https://x.com/Ankit_patel211/status/2048834306379075759)',
+    prompt: 'Create a 3D Insane detailed exploded assembly drawing of [subject or object]',
+    category: '其他应用场景'
   }
 ];
