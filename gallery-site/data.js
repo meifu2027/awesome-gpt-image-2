@@ -2966,5 +2966,37 @@ window.GALLERY_DATA = [
     source: '[@berryxia](https://x.com/berryxia/status/2050226420681757102)',
     prompt: '彩色潦草小狗线条风格绘制该图，童趣和doodle加入其中，务必使用毫无章法的绘制手法，凌乱和草率即可。',
     category: '其他应用场景'
+  },
+  {
+    id: 375,
+    title: '古希腊三哲时间轴城市图',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case375.jpg',
+    source: '[@ToroJushiAi](https://x.com/ToroJushiAi/status/2050713034503409874)',
+    prompt: '二千五百年前，柏拉图，苏格拉底， 亚力士多德，坐在雅典街头聊天，聊出了世界文明史的源头。\n\n背景可以加上他们聊天内容，按时间轴的走向，重叠在古希腊雅典的城市风光中。',
+    category: '建筑与空间'
+  },
+  {
+    id: 376,
+    title: '泼洒抹茶街头手机照片',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case376.jpg',
+    source: '[@Shinning1010](https://x.com/Shinning1010/status/2050693240253214894) / [提示词回复](https://x.com/Shinning1010/status/2050693246247207087)',
+    prompt: 'A realistic vertical smartphone photo of a spilled green iced drink on outdoor stone pavement, a transparent disposable plastic cup lying on its side inside the green puddle, clear plastic lid nearby, scattered ice cubes floating in the drink, small foam bubbles on the surface, green liquid naturally spreading across rough square floor tiles, strong midday sunlight, harsh realistic shadows, a dark human shadow silhouette cast across the ground and partially over the spill, accidental street moment, urban documentary photography, handheld phone camera perspective, slightly top-down angle, natural colors, realistic pavement texture, raw unedited photo look, high detail, authentic everyday scene, 9:16 vertical composition\n\nNegative Prompt:\ncartoon, illustration, anime, CGI, 3D render, fantasy style, studio lighting, overly perfect composition, overly clean floor, fake liquid, unrealistic reflections, plastic-looking liquid, oversaturated green, blurry, low resolution, distorted cup, melted plastic, extra cups, duplicated objects, readable brand logo, messy text, watermark, poster design, dramatic artificial lighting, excessive sharpening, over-processed, unrealistic shadow, floating ice, deformed perspective',
+    category: '摄影与写实'
+  },
+  {
+    id: 377,
+    title: '樱花咖啡户外人像',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case377.jpg',
+    source: '[@xRahultripathi](https://x.com/xRahultripathi/status/2050677614168391716)',
+    prompt: 'Edit the provided image while preserving the same face identity, shape, and facial features without altering age, ethnicity, or structure. Maintain a calm, relaxed expression with the subject not looking at the camera.\n\nSubject: young woman (18–23) with soft feminine beauty, smooth glowing skin, natural texture.\nPose (strict): seated on a wooden chair, body angled sideways (45–70°), legs crossed naturally, upper body slightly leaning forward, head turned away from camera, gaze to the side. She holds a drink cup with a straw using both hands.\nFraming: full-body vertical (9:16), head to shoes visible, centered but slightly offset for natural composition.\nOutfit: light pink varsity jacket with white stripes, soft pink inner top, modest knee-length pleated skirt, white sneakers.\nAccessories: beige newsboy cap, sunglasses (on face or cap), pink shoulder bag, small earrings.\nHair: neat low bun with soft loose strands.\nEnvironment: outdoor flower shop street scene with pastel flowers (pink, soft tones), decorative plants, floral storefront.\nLighting: bright natural daylight, soft glossy skin highlights, balanced exposure, soft shadows.\nCamera: low/frog angle (slightly below, looking up), 50mm lens, shallow depth of field.\nColor grading: warm pastel palette (pink, cream), clean bright lifestyle aesthetic.\nQuality: ultra-photorealistic, 8K detail, DSLR realism, natural skin texture.\nNegative: front-facing, eye contact, close-up, cropped body, mini/short skirt, indoor scene, dark lighting, anime, cartoon, CGI, plastic skin, distorted anatomy.\n--ar 9:16 --style raw --quality high',
+    category: '其他应用场景'
+  },
+  {
+    id: 378,
+    title: '高端 3D 收藏玩具头像',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case378.jpg',
+    source: '[@Genematicai](https://x.com/Genematicai/status/2050654848216109429) / [提示词回复 1](https://x.com/Genematicai/status/2050654987135656043) / [提示词回复 2](https://x.com/Genematicai/status/2050655151120429464)',
+    prompt: 'Transform the input photo into a high-end stylized 3D collectible figure. Large head, slightly exaggerated facial features while preserving identity. Hyper-detailed skin texture with subtle pores, realistic wrinkles, and a cinematic expression.\n\nSmooth matte vinyl finish. Soft studio lighting, clean black background. Ultra-sharp focus, 8K render, photorealistic materials, Pixar-quality rendering, centered composition, full body, premium designer toy aesthetic.',
+    category: '人物与角色'
   }
 ];
