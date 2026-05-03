@@ -35,7 +35,112 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 
 ## 🗂️ 分类概览
 
-这里分成两块：先按类型进入可复用的提示词模板，再按类型浏览案例集合。
+先看案例画册，快速找到你想参考的视觉类型；再看提示词模板，把对应类型拆成可复用结构。
+
+### 🖼️ 案例分类画册
+
+<table>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <h4>🧩 UI与界面 · 68 cases</h4>
+      <a href="docs/gallery.md#cat-ui"><img src="data/images/case336.png" alt="UI与界面" width="220"></a><br>
+      <sub>App、网页、仪表盘、社媒截图与产品界面。</sub><br>
+      <a href="docs/gallery.md#cat-ui"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>📊 图表与信息可视化 · 55 cases</h4>
+      <a href="docs/gallery.md#cat-infographic"><img src="data/images/case334.png" alt="图表与信息可视化" width="220"></a><br>
+      <sub>信息图、知识图谱、技术解释与结构化图解。</sub><br>
+      <a href="docs/gallery.md#cat-infographic"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>📰 海报与排版 · 71 cases</h4>
+      <a href="docs/gallery.md#cat-poster"><img src="data/images/case355.jpg" alt="海报与排版" width="220"></a><br>
+      <sub>活动海报、封面、字体视觉和强排版画面。</sub><br>
+      <a href="docs/gallery.md#cat-poster"><strong>查看案例</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <h4>🛍️ 商品与电商 · 24 cases</h4>
+      <a href="docs/gallery.md#cat-product"><img src="data/images/case358.jpg" alt="商品与电商" width="220"></a><br>
+      <sub>商品图、详情页、包装卖点和商业广告。</sub><br>
+      <a href="docs/gallery.md#cat-product"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>🏷️ 品牌与标志 · 19 cases</h4>
+      <a href="docs/gallery.md#cat-brand"><img src="data/images/case354.jpg" alt="品牌与标志" width="220"></a><br>
+      <sub>Logo、VI、品牌触点和 Campaign 视觉系统。</sub><br>
+      <a href="docs/gallery.md#cat-brand"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>🏛️ 建筑与空间 · 25 cases</h4>
+      <a href="docs/gallery.md#cat-architecture"><img src="data/images/case370.jpg" alt="建筑与空间" width="220"></a><br>
+      <sub>建筑表现、室内空间、城市地图和空间概念。</sub><br>
+      <a href="docs/gallery.md#cat-architecture"><strong>查看案例</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <h4>📷 摄影与写实 · 34 cases</h4>
+      <a href="docs/gallery.md#cat-photo"><img src="data/images/case376.jpg" alt="摄影与写实" width="220"></a><br>
+      <sub>人像、手机纪实、胶片质感和商业摄影。</sub><br>
+      <a href="docs/gallery.md#cat-photo"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>🎨 插画与艺术 · 25 cases</h4>
+      <a href="docs/gallery.md#cat-illustration"><img src="data/images/case346.jpg" alt="插画与艺术" width="220"></a><br>
+      <sub>插画、艺术风格、材质实验和装饰画面。</sub><br>
+      <a href="docs/gallery.md#cat-illustration"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>🧍 人物与角色 · 14 cases</h4>
+      <a href="docs/gallery.md#cat-character"><img src="data/images/case378.jpg" alt="人物与角色" width="220"></a><br>
+      <sub>角色设定、动作参考、卡牌和 3D 玩具。</sub><br>
+      <a href="docs/gallery.md#cat-character"><strong>查看案例</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <h4>🎬 场景与叙事 · 7 cases</h4>
+      <a href="docs/gallery.md#cat-scene"><img src="data/images/case330.png" alt="场景与叙事" width="220"></a><br>
+      <sub>分镜、故事场景、直播画面和世界观叙事。</sub><br>
+      <a href="docs/gallery.md#cat-scene"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>🏮 历史与古风题材 · 9 cases</h4>
+      <a href="docs/gallery.md#cat-history"><img src="data/images/case338.png" alt="历史与古风题材" width="220"></a><br>
+      <sub>古风长卷、历史人物、传统题材和诗词画面。</sub><br>
+      <a href="docs/gallery.md#cat-history"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>📚 文档与出版物 · 7 cases</h4>
+      <a href="docs/gallery.md#cat-document"><img src="data/images/case222.jpg" alt="文档与出版物" width="220"></a><br>
+      <sub>白皮书、手册、百科图鉴和出版页设计。</sub><br>
+      <a href="docs/gallery.md#cat-document"><strong>查看案例</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <h4>🧪 其他应用场景 · 20 cases</h4>
+      <a href="docs/gallery.md#cat-other"><img src="data/images/case368.jpg" alt="其他应用场景" width="220"></a><br>
+      <sub>创意实验、特殊任务、混合玩法和实用场景。</sub><br>
+      <a href="docs/gallery.md#cat-other"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>🖼️ 完整画廊</h4>
+      <a href="docs/gallery.md"><img src="data/images/case1.jpg" alt="完整画廊" width="220"></a><br>
+      <sub>按分册浏览全部 378 个案例和代表案例入口。</sub><br>
+      <a href="docs/gallery.md"><strong>进入画廊</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>⭐ 最新新增</h4>
+      <a href="docs/gallery-part-2.md#case-378"><img src="data/images/case378.jpg" alt="最新新增" width="220"></a><br>
+      <sub>最近收录的 X 社区案例和新玩法。</sub><br>
+      <a href="docs/gallery-part-2.md#case-378"><strong>查看最新</strong></a>
+    </td>
+  </tr>
+</table>
 
 ### 🧩 提示词模板分类
 
@@ -81,53 +186,6 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 | 🏮 历史与古风题材 | [查看提示词](docs/templates.md#tpl-history) | 朝代、服饰、长卷叙事 |
 | 📚 文档与出版物 | [查看提示词](docs/templates.md#tpl-document) | 页面系统、目录、版面规范 |
 | 🧪 其他应用场景 | [查看提示词](docs/templates.md#tpl-other) | 混合任务、实验玩法、特殊输出 |
-
-</details>
-
-### 🖼️ 案例分类概览
-
-<details open>
-<summary><strong>案例 Page 1 / 4：设计与信息</strong></summary>
-
-| 分类 | Cases | 案例入口 | 适合参考 |
-|---|---:|---|---|
-| 🧩 UI与界面 | 68 | [查看案例](docs/gallery.md#cat-ui) | App、网页、仪表盘、截图界面 |
-| 📊 图表与信息可视化 | 55 | [查看案例](docs/gallery.md#cat-infographic) | 信息图、知识图谱、数据解释 |
-| 📰 海报与排版 | 71 | [查看案例](docs/gallery.md#cat-poster) | 活动海报、封面、字体视觉 |
-
-</details>
-
-<details>
-<summary><strong>案例 Page 2 / 4：商业与空间</strong></summary>
-
-| 分类 | Cases | 案例入口 | 适合参考 |
-|---|---:|---|---|
-| 🛍️ 商品与电商 | 24 | [查看案例](docs/gallery.md#cat-product) | 商品图、详情页、包装卖点 |
-| 🏷️ 品牌与标志 | 19 | [查看案例](docs/gallery.md#cat-brand) | Logo、VI、品牌触点系统 |
-| 🏛️ 建筑与空间 | 25 | [查看案例](docs/gallery.md#cat-architecture) | 建筑表现、室内空间、城市想象 |
-
-</details>
-
-<details>
-<summary><strong>案例 Page 3 / 4：影像与角色</strong></summary>
-
-| 分类 | Cases | 案例入口 | 适合参考 |
-|---|---:|---|---|
-| 📷 摄影与写实 | 34 | [查看案例](docs/gallery.md#cat-photo) | 写真人像、手机纪实、商业摄影 |
-| 🎨 插画与艺术 | 25 | [查看案例](docs/gallery.md#cat-illustration) | 插画、材质风格、艺术创作 |
-| 🧍 人物与角色 | 14 | [查看案例](docs/gallery.md#cat-character) | 角色设定、动作参考、3D 玩具 |
-
-</details>
-
-<details>
-<summary><strong>案例 Page 4 / 4：叙事与扩展</strong></summary>
-
-| 分类 | Cases | 案例入口 | 适合参考 |
-|---|---:|---|---|
-| 🎬 场景与叙事 | 7 | [查看案例](docs/gallery.md#cat-scene) | 分镜、故事场景、世界观画面 |
-| 🏮 历史与古风题材 | 9 | [查看案例](docs/gallery.md#cat-history) | 古风长卷、历史人物、传统视觉 |
-| 📚 文档与出版物 | 7 | [查看案例](docs/gallery.md#cat-document) | 白皮书、手册、出版页设计 |
-| 🧪 其他应用场景 | 20 | [查看案例](docs/gallery.md#cat-other) | 创意实验、混合玩法、特殊任务 |
 
 </details>
 
