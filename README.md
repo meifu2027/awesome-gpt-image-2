@@ -1,6 +1,6 @@
 <p align="center"><img src="./data/images/banner.svg" alt="GPT-Image2 Prompt System" width="800" /></p>
 
-<h3 align="center">Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，370+ 个案例逆向工程，18 套工业级模板</h3>
+<h3 align="center">Prompt as Code | GPT-Image2 Industrial Prompt Engine & Template Library, 370+ Reverse-Engineered Cases, 18 Industrial Templates</h3>
 
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
@@ -9,372 +9,359 @@
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
 </p>
 
-> 不定期更新最新的玩法，欢迎star。
-> 本项目由 [词元 API](https://ciyuan.today/) 提供赞助支持。词元 API 是一个 AI 聚合平台，可以高性价比使用 GPT Image 2。
+<p align="center">
+  <strong>English</strong> | <a href="./README.zh-CN.md">简体中文</a>
+</p>
+
+> Updated irregularly with new workflows. Stars are welcome.
+> This project is sponsored by [Ciyuan API](https://ciyuan.today/), an AI aggregation platform for cost-effective GPT Image 2 access.
 
 <a name="section-vision"></a>
 
-## ⚡️ 项目愿景
+## ⚡️ Project Vision
 
-GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不能稳定、可控、可复用地出图”。这个项目做的不是单纯收集提示词，而是把零散案例逆向整理成一套更适合 Agent 和自动化工作流调用的 Prompt-as-Code 资产。
+After GPT-Image2 became widely available, AI image generation moved from "can it make an image?" to "can it make stable, controllable, reusable images?" This project turns scattered community examples into Prompt-as-Code assets that are easier for agents and automation workflows to reuse.
 
-核心目标只有一个：把“散文式提示词”压缩成“结构化协议”。当你需要批量出图、做模板系统、接进生产流程时，这种整理方式比单纯堆案例更有价值。
+The core goal is simple: compress prose-style prompts into structured protocols. When you need batch generation, template systems, or production workflows, this structure is more valuable than a pile of isolated examples.
 
-- 🧱 原子化 Schema：把主体、光影、材质、排版等视觉要素拆成可组合组件
-- ⚙️ 工作流友好：面向 Agent、脚本和自动化系统，而不是只给人肉复制
-- 🧬 结构化控制：尽量提高版式、文案、信息层级的可控性
+- 🧱 Atomic schema: split subjects, lighting, materials, layout, and visual details into composable parts
+- ⚙️ Workflow friendly: designed for agents, scripts, and automation systems
+- 🧬 Structured control: improve controllability for layout, copy, and information hierarchy
 
-## 📖 快速入口
+## 📖 Quick Links
 
-- [完整案例总览](docs/gallery.md)
-- [案例画廊 Part 1：例 1-165](docs/gallery-part-1.md)
-- [案例画廊 Part 2：例 166-378](docs/gallery-part-2.md)
-- [工业级提示词模板与防坑指南](docs/templates.md#section-templates)
+- [Full case gallery](docs/gallery.md)
+- [Gallery Part 1: cases 1-165](docs/gallery-part-1.md)
+- [Gallery Part 2: cases 166-378](docs/gallery-part-2.md)
+- [Industrial prompt templates and pitfalls guide](docs/templates.md)
 - [MIT License](LICENSE)
-- [完整声明页](docs/disclaimer.md#section-disclaimer)
+- [Full disclaimer](docs/disclaimer.md#section-disclaimer)
 
-## 🗂️ 分类概览
+## 🗂️ Category Overview
 
-先看案例画册，快速找到你想参考的视觉类型；再看提示词模板，把对应类型拆成可复用结构。
+Start with the case album to find a visual direction, then open the prompt template categories to turn that direction into reusable structure.
 
-### 🖼️ 案例分类画册
+### 🖼️ Case Album
 
 <table>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧩 UI与界面</strong><br><sub>68 cases</sub></p>
-      <a href="docs/gallery.md#cat-ui"><img src="data/images/category-covers/ui.jpg" alt="UI与界面" width="220"></a><br>
-      <sub>App、网页、仪表盘、社媒截图与产品界面。</sub><br>
-      <a href="docs/gallery.md#cat-ui"><strong>查看案例</strong></a>
+      <p><strong>🧩 UI & Interfaces</strong><br><sub>68 cases</sub></p>
+      <a href="docs/gallery.md#cat-ui"><img src="data/images/category-covers/ui.jpg" alt="UI and interfaces" width="220"></a><br>
+      <sub>Apps, websites, dashboards, social screenshots, and product interfaces.</sub><br>
+      <a href="docs/gallery.md#cat-ui"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📊 图表与信息可视化</strong><br><sub>55 cases</sub></p>
-      <a href="docs/gallery.md#cat-infographic"><img src="data/images/category-covers/infographic.jpg" alt="图表与信息可视化" width="220"></a><br>
-      <sub>信息图、知识图谱、技术解释与结构化图解。</sub><br>
-      <a href="docs/gallery.md#cat-infographic"><strong>查看案例</strong></a>
+      <p><strong>📊 Charts & Infographics</strong><br><sub>55 cases</sub></p>
+      <a href="docs/gallery.md#cat-infographic"><img src="data/images/category-covers/infographic.jpg" alt="Charts and infographics" width="220"></a><br>
+      <sub>Infographics, knowledge maps, technical explainers, and structured diagrams.</sub><br>
+      <a href="docs/gallery.md#cat-infographic"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 海报与排版</strong><br><sub>71 cases</sub></p>
-      <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="海报与排版" width="220"></a><br>
-      <sub>活动海报、封面、字体视觉和强排版画面。</sub><br>
-      <a href="docs/gallery.md#cat-poster"><strong>查看案例</strong></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top" align="center">
-      <p><strong>🛍️ 商品与电商</strong><br><sub>24 cases</sub></p>
-      <a href="docs/gallery.md#cat-product"><img src="data/images/category-covers/product.jpg" alt="商品与电商" width="220"></a><br>
-      <sub>商品图、详情页、包装卖点和商业广告。</sub><br>
-      <a href="docs/gallery.md#cat-product"><strong>查看案例</strong></a>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <p><strong>🏷️ 品牌与标志</strong><br><sub>19 cases</sub></p>
-      <a href="docs/gallery.md#cat-brand"><img src="data/images/category-covers/brand.jpg" alt="品牌与标志" width="220"></a><br>
-      <sub>Logo、VI、品牌触点和 Campaign 视觉系统。</sub><br>
-      <a href="docs/gallery.md#cat-brand"><strong>查看案例</strong></a>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <p><strong>🏛️ 建筑与空间</strong><br><sub>25 cases</sub></p>
-      <a href="docs/gallery.md#cat-architecture"><img src="data/images/category-covers/architecture.jpg" alt="建筑与空间" width="220"></a><br>
-      <sub>建筑表现、室内空间、城市地图和空间概念。</sub><br>
-      <a href="docs/gallery.md#cat-architecture"><strong>查看案例</strong></a>
+      <p><strong>📰 Posters & Typography</strong><br><sub>71 cases</sub></p>
+      <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="Posters and typography" width="220"></a><br>
+      <sub>Event posters, covers, type-driven visuals, and strong layout compositions.</sub><br>
+      <a href="docs/gallery.md#cat-poster"><strong>View Cases</strong></a>
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 摄影与写实</strong><br><sub>34 cases</sub></p>
-      <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="摄影与写实" width="220"></a><br>
-      <sub>人像、手机纪实、胶片质感和商业摄影。</sub><br>
-      <a href="docs/gallery.md#cat-photo"><strong>查看案例</strong></a>
+      <p><strong>🛍️ Products & E-commerce</strong><br><sub>24 cases</sub></p>
+      <a href="docs/gallery.md#cat-product"><img src="data/images/category-covers/product.jpg" alt="Products and e-commerce" width="220"></a><br>
+      <sub>Product shots, detail pages, packaging, selling points, and ads.</sub><br>
+      <a href="docs/gallery.md#cat-product"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎨 插画与艺术</strong><br><sub>25 cases</sub></p>
-      <a href="docs/gallery.md#cat-illustration"><img src="data/images/category-covers/illustration.jpg" alt="插画与艺术" width="220"></a><br>
-      <sub>插画、艺术风格、材质实验和装饰画面。</sub><br>
-      <a href="docs/gallery.md#cat-illustration"><strong>查看案例</strong></a>
+      <p><strong>🏷️ Brand & Logos</strong><br><sub>19 cases</sub></p>
+      <a href="docs/gallery.md#cat-brand"><img src="data/images/category-covers/brand.jpg" alt="Brand and logos" width="220"></a><br>
+      <sub>Logos, identity systems, brand touchpoints, and campaign visuals.</sub><br>
+      <a href="docs/gallery.md#cat-brand"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 人物与角色</strong><br><sub>14 cases</sub></p>
-      <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="人物与角色" width="220"></a><br>
-      <sub>角色设定、动作参考、卡牌和 3D 玩具。</sub><br>
-      <a href="docs/gallery.md#cat-character"><strong>查看案例</strong></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="33%" valign="top" align="center">
-      <p><strong>🎬 场景与叙事</strong><br><sub>7 cases</sub></p>
-      <a href="docs/gallery.md#cat-scene"><img src="data/images/category-covers/scene.jpg" alt="场景与叙事" width="220"></a><br>
-      <sub>分镜、故事场景、直播画面和世界观叙事。</sub><br>
-      <a href="docs/gallery.md#cat-scene"><strong>查看案例</strong></a>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <p><strong>🏮 历史与古风题材</strong><br><sub>9 cases</sub></p>
-      <a href="docs/gallery.md#cat-history"><img src="data/images/category-covers/history.jpg" alt="历史与古风题材" width="220"></a><br>
-      <sub>古风长卷、历史人物、传统题材和诗词画面。</sub><br>
-      <a href="docs/gallery.md#cat-history"><strong>查看案例</strong></a>
-    </td>
-    <td width="33%" valign="top" align="center">
-      <p><strong>📚 文档与出版物</strong><br><sub>7 cases</sub></p>
-      <a href="docs/gallery.md#cat-document"><img src="data/images/category-covers/document.jpg" alt="文档与出版物" width="220"></a><br>
-      <sub>白皮书、手册、百科图鉴和出版页设计。</sub><br>
-      <a href="docs/gallery.md#cat-document"><strong>查看案例</strong></a>
+      <p><strong>🏛️ Architecture & Spaces</strong><br><sub>25 cases</sub></p>
+      <a href="docs/gallery.md#cat-architecture"><img src="data/images/category-covers/architecture.jpg" alt="Architecture and spaces" width="220"></a><br>
+      <sub>Architecture renders, interiors, city maps, and spatial concepts.</sub><br>
+      <a href="docs/gallery.md#cat-architecture"><strong>View Cases</strong></a>
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧪 其他应用场景</strong><br><sub>20 cases</sub></p>
-      <a href="docs/gallery.md#cat-other"><img src="data/images/category-covers/other.jpg" alt="其他应用场景" width="220"></a><br>
-      <sub>创意实验、特殊任务、混合玩法和实用场景。</sub><br>
-      <a href="docs/gallery.md#cat-other"><strong>查看案例</strong></a>
+      <p><strong>📷 Photography & Realism</strong><br><sub>34 cases</sub></p>
+      <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="Photography and realism" width="220"></a><br>
+      <sub>Portraits, phone photography, film texture, and commercial photography.</sub><br>
+      <a href="docs/gallery.md#cat-photo"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <h4>🖼️ 完整画廊</h4>
-      <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="完整画廊" width="220"></a><br>
-      <sub>按分册浏览全部 378 个案例和代表案例入口。</sub><br>
-      <a href="docs/gallery.md"><strong>进入画廊</strong></a>
+      <p><strong>🎨 Illustration & Art</strong><br><sub>25 cases</sub></p>
+      <a href="docs/gallery.md#cat-illustration"><img src="data/images/category-covers/illustration.jpg" alt="Illustration and art" width="220"></a><br>
+      <sub>Illustration, art styles, material experiments, and decorative images.</sub><br>
+      <a href="docs/gallery.md#cat-illustration"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <h4>⭐ 最新新增</h4>
-      <a href="docs/gallery-part-2.md#case-378"><img src="data/images/category-covers/latest.jpg" alt="最新新增" width="220"></a><br>
-      <sub>最近收录的 X 社区案例和新玩法。</sub><br>
-      <a href="docs/gallery-part-2.md#case-378"><strong>查看最新</strong></a>
+      <p><strong>🧍 Characters & People</strong><br><sub>14 cases</sub></p>
+      <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="Characters and people" width="220"></a><br>
+      <sub>Character design, pose references, cards, and 3D toys.</sub><br>
+      <a href="docs/gallery.md#cat-character"><strong>View Cases</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <p><strong>🎬 Scenes & Storytelling</strong><br><sub>7 cases</sub></p>
+      <a href="docs/gallery.md#cat-scene"><img src="data/images/category-covers/scene.jpg" alt="Scenes and storytelling" width="220"></a><br>
+      <sub>Storyboards, narrative scenes, livestream frames, and worldbuilding.</sub><br>
+      <a href="docs/gallery.md#cat-scene"><strong>View Cases</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>🏮 History & Classical Chinese Themes</strong><br><sub>9 cases</sub></p>
+      <a href="docs/gallery.md#cat-history"><img src="data/images/category-covers/history.jpg" alt="History and classical Chinese themes" width="220"></a><br>
+      <sub>Classical scrolls, historical figures, traditional themes, and poetry visuals.</sub><br>
+      <a href="docs/gallery.md#cat-history"><strong>View Cases</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>📚 Documents & Publishing</strong><br><sub>7 cases</sub></p>
+      <a href="docs/gallery.md#cat-document"><img src="data/images/category-covers/document.jpg" alt="Documents and publishing" width="220"></a><br>
+      <sub>White papers, manuals, encyclopedic plates, and publishing layouts.</sub><br>
+      <a href="docs/gallery.md#cat-document"><strong>View Cases</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <p><strong>🧪 Other Use Cases</strong><br><sub>20 cases</sub></p>
+      <a href="docs/gallery.md#cat-other"><img src="data/images/category-covers/other.jpg" alt="Other use cases" width="220"></a><br>
+      <sub>Creative experiments, special tasks, mixed workflows, and practical cases.</sub><br>
+      <a href="docs/gallery.md#cat-other"><strong>View Cases</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>🖼️ Full Gallery</h4>
+      <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="Full gallery" width="220"></a><br>
+      <sub>Browse all 378 cases by gallery part and category.</sub><br>
+      <a href="docs/gallery.md"><strong>Open Gallery</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <h4>⭐ Latest Additions</h4>
+      <a href="docs/gallery-part-2.md#case-378"><img src="data/images/category-covers/latest.jpg" alt="Latest additions" width="220"></a><br>
+      <sub>The newest X community cases and workflows collected in the repo.</sub><br>
+      <a href="docs/gallery-part-2.md#case-378"><strong>View Latest</strong></a>
     </td>
   </tr>
 </table>
 
-### 🧩 提示词模板分类
+### 🧩 Prompt Template Categories
+
+The prompt body remains in the original template document for now. This homepage only adds an English navigation layer.
 
 <details open>
-<summary><strong>模板 Page 1 / 4：设计与信息</strong></summary>
+<summary><strong>Template Page 1 / 4: Design & Information</strong></summary>
 
-| 分类 | 模板入口 | 核心能力 |
+| Category | Template Entry | Core Capability |
 |---|---|---|
-| 🧩 UI与界面 | [查看提示词](docs/templates.md#tpl-ui) | 组件、页面层级、截图质感 |
-| 📊 图表与信息可视化 | [查看提示词](docs/templates.md#tpl-infographic) | 模块、箭头、数据结构、可读性 |
-| 📰 海报与排版 | [查看提示词](docs/templates.md#tpl-poster) | 版式、标题、人物和视觉冲击 |
+| 🧩 UI & Interfaces | [View Prompts](docs/templates.md#tpl-ui) | Components, page hierarchy, screenshot texture |
+| 📊 Charts & Infographics | [View Prompts](docs/templates.md#tpl-infographic) | Modules, arrows, data structure, readability |
+| 📰 Posters & Typography | [View Prompts](docs/templates.md#tpl-poster) | Layout, headline systems, people, visual impact |
 
 </details>
 
 <details>
-<summary><strong>模板 Page 2 / 4：商业与空间</strong></summary>
+<summary><strong>Template Page 2 / 4: Commerce & Space</strong></summary>
 
-| 分类 | 模板入口 | 核心能力 |
+| Category | Template Entry | Core Capability |
 |---|---|---|
-| 🛍️ 商品与电商 | [查看提示词](docs/templates.md#tpl-product) | 产品卖点、包装、详情页结构 |
-| 🏷️ 品牌与标志 | [查看提示词](docs/templates.md#tpl-brand) | Logo、品牌身份、触点系统 |
-| 🏛️ 建筑与空间 | [查看提示词](docs/templates.md#tpl-architecture) | 透视、材质、室内外光线 |
+| 🛍️ Products & E-commerce | [View Prompts](docs/templates.md#tpl-product) | Product selling points, packaging, detail-page structure |
+| 🏷️ Brand & Logos | [View Prompts](docs/templates.md#tpl-brand) | Logos, identity, brand touchpoint systems |
+| 🏛️ Architecture & Spaces | [View Prompts](docs/templates.md#tpl-architecture) | Perspective, materials, indoor and outdoor lighting |
 
 </details>
 
 <details>
-<summary><strong>模板 Page 3 / 4：影像与角色</strong></summary>
+<summary><strong>Template Page 3 / 4: Imaging & Characters</strong></summary>
 
-| 分类 | 模板入口 | 核心能力 |
+| Category | Template Entry | Core Capability |
 |---|---|---|
-| 📷 摄影与写实 | [查看提示词](docs/templates.md#tpl-photo) | 镜头、光线、真实纹理 |
-| 🎨 插画与艺术 | [查看提示词](docs/templates.md#tpl-illustration) | 笔触、材质、艺术风格 |
-| 🧍 人物与角色 | [查看提示词](docs/templates.md#tpl-character) | 人设、动作表、角色一致性 |
+| 📷 Photography & Realism | [View Prompts](docs/templates.md#tpl-photo) | Lenses, lighting, realistic textures |
+| 🎨 Illustration & Art | [View Prompts](docs/templates.md#tpl-illustration) | Brushwork, materials, art styles |
+| 🧍 Characters & People | [View Prompts](docs/templates.md#tpl-character) | Character design, pose sheets, consistency |
 
 </details>
 
 <details>
-<summary><strong>模板 Page 4 / 4：叙事与扩展</strong></summary>
+<summary><strong>Template Page 4 / 4: Narrative & Extensions</strong></summary>
 
-| 分类 | 模板入口 | 核心能力 |
+| Category | Template Entry | Core Capability |
 |---|---|---|
-| 🎬 场景与叙事 | [查看提示词](docs/templates.md#tpl-scene) | 分镜、世界观、情绪铺陈 |
-| 🏮 历史与古风题材 | [查看提示词](docs/templates.md#tpl-history) | 朝代、服饰、长卷叙事 |
-| 📚 文档与出版物 | [查看提示词](docs/templates.md#tpl-document) | 页面系统、目录、版面规范 |
-| 🧪 其他应用场景 | [查看提示词](docs/templates.md#tpl-other) | 混合任务、实验玩法、特殊输出 |
+| 🎬 Scenes & Storytelling | [View Prompts](docs/templates.md#tpl-scene) | Storyboards, worldbuilding, emotional pacing |
+| 🏮 History & Classical Chinese Themes | [View Prompts](docs/templates.md#tpl-history) | Dynasties, clothing, scroll-style narrative |
+| 📚 Documents & Publishing | [View Prompts](docs/templates.md#tpl-document) | Page systems, tables of contents, layout rules |
+| 🧪 Other Use Cases | [View Prompts](docs/templates.md#tpl-other) | Mixed tasks, experimental workflows, special outputs |
 
 </details>
 
 <a name="section-gallery"></a>
 
-## 🖼️ 首页精选
+## 🖼️ Featured Cases
 
-### 例 1：信息图可视化设计
+### Case 1: Infographic Visualization
 
-[![城市生命系统图谱 / Urban Metabolism Atlas](data/images/case1.jpg)](docs/gallery-part-1.md#case-1)
+[![Urban Metabolism Atlas](data/images/case1.jpg)](docs/gallery-part-1.md#case-1)
 
-工程白皮书气质的信息图案例，适合看结构化信息图如何组织模块、层级和双语标签。  
-[查看完整案例](docs/gallery-part-1.md#case-1)
+An engineering-whitepaper-style infographic case for studying modular structure, information hierarchy, and bilingual labels.
+[View full case](docs/gallery-part-1.md#case-1)
 
-### 例 2：社媒界面截图
+### Case 2: Social Media Interface Screenshot
 
 [![Ailln AI](data/images/case2.jpg)](docs/gallery-part-1.md#case-2)
 
-偏“产品界面 + 社媒内容截图”的混合场景，适合看文字区域、UI 框架和内容卡片的控制方式。  
-[查看完整案例](docs/gallery-part-1.md#case-2)
+A mixed "product interface + social content screenshot" case for controlling text blocks, UI frames, and content cards.
+[View full case](docs/gallery-part-1.md#case-2)
 
-### 例 6：插画艺术创作图
+### Case 6: Illustration Art
 
-[![参考图是角色人设图，为参考图的少女绘制一副日系唯美奇幻风格插画](data/images/case6.jpg)](docs/gallery-part-1.md#case-6)
+[![Japanese fantasy illustration](data/images/case6.jpg)](docs/gallery-part-1.md#case-6)
 
-日系奇幻插画范例，适合观察氛围、色彩和大场景构图的描述方式。  
-[查看完整案例](docs/gallery-part-1.md#case-6)
+A Japanese fantasy illustration example for studying atmosphere, color, and large-scene composition.
+[View full case](docs/gallery-part-1.md#case-6)
 
-### 例 17：界面交互设计图
+### Case 17: Interaction Design Diagram
 
-[![type](data/images/case17.jpg)](docs/gallery-part-1.md#case-17)
+[![Interaction design diagram](data/images/case17.jpg)](docs/gallery-part-1.md#case-17)
 
-典型的“结构分解图 + 说明排版”场景，适合做产品示意图、海报化技术讲解图。  
-[查看完整案例](docs/gallery-part-1.md#case-17)
+A classic "structured breakdown + explanatory layout" case for product diagrams and poster-like technical explainers.
+[View full case](docs/gallery-part-1.md#case-17)
 
-### 例 166：十二黄金圣斗士卡牌合集
+### Case 166: Twelve Gold Saints Card Set
 
-[![十二黄金圣斗士卡牌合集](data/images/case166.jpg)](docs/gallery-part-2.md#case-166)
+[![Twelve Gold Saints card set](data/images/case166.jpg)](docs/gallery-part-2.md#case-166)
 
-多卡面、多元素统一风格的案例，适合参考批量生成与系列化设计。  
-[查看完整案例](docs/gallery-part-2.md#case-166)
+A multi-card, unified-style case for studying batch generation and series design.
+[View full case](docs/gallery-part-2.md#case-166)
 
-### 例 310：零食品牌技术分解图
+### Case 310: Snack Brand Technical Breakdown
 
-[![零食品牌技术分解图](data/images/case310.jpg)](docs/gallery-part-2.md#case-310)
+[![Snack brand technical breakdown](data/images/case310.jpg)](docs/gallery-part-2.md#case-310)
 
-品牌叙事、分解结构和商业化呈现结合得比较完整，适合作为“信息图 + 品牌视觉”混合参考。  
-[查看完整案例](docs/gallery-part-2.md#case-310)
+A strong hybrid of brand narrative, structural breakdown, and commercial presentation. Useful as an "infographic + brand visual" reference.
+[View full case](docs/gallery-part-2.md#case-310)
 
-### 苍何新增实测
+### Canghe Original Tests
 
 <table>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 330：月下美女直播画面</strong></p>
-      <a href="docs/gallery-part-2.md#case-330"><img src="data/images/category-covers/scene.jpg" alt="月下美女直播画面" width="220"></a><br>
-      <sub>高仿直播截图，适合参考界面氛围、弹幕和人物写实结合。</sub><br>
-      <a href="docs/gallery-part-2.md#case-330"><strong>查看案例</strong></a>
+      <p><strong>Case 330: Moonlit Livestream Scene</strong></p>
+      <a href="docs/gallery-part-2.md#case-330"><img src="data/images/category-covers/scene.jpg" alt="Moonlit livestream scene" width="220"></a><br>
+      <sub>A high-fidelity livestream screenshot reference for UI atmosphere, comments, and realistic people.</sub><br>
+      <a href="docs/gallery-part-2.md#case-330"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 334：RAG 技术详解图</strong></p>
-      <a href="docs/gallery-part-2.md#case-334"><img src="data/images/category-covers/infographic.jpg" alt="RAG 技术详解图" width="220"></a><br>
-      <sub>技术概念、流程箭头和中文说明模块的结构参考。</sub><br>
-      <a href="docs/gallery-part-2.md#case-334"><strong>查看案例</strong></a>
+      <p><strong>Case 334: RAG Technical Explainer</strong></p>
+      <a href="docs/gallery-part-2.md#case-334"><img src="data/images/category-covers/infographic.jpg" alt="RAG technical explainer" width="220"></a><br>
+      <sub>A reference for technical concepts, process arrows, and Chinese explanation modules.</sub><br>
+      <a href="docs/gallery-part-2.md#case-334"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 338：《赤壁怀古》长卷图</strong></p>
-      <a href="docs/gallery-part-2.md#case-338"><img src="data/images/category-covers/history.jpg" alt="赤壁怀古长卷图" width="220"></a><br>
-      <sub>长卷尺寸、古风叙事和整篇文字排版结合完整。</sub><br>
-      <a href="docs/gallery-part-2.md#case-338"><strong>查看案例</strong></a>
+      <p><strong>Case 338: Red Cliff Classical Scroll</strong></p>
+      <a href="docs/gallery-part-2.md#case-338"><img src="data/images/category-covers/history.jpg" alt="Red Cliff classical scroll" width="220"></a><br>
+      <sub>A complete example of scroll format, classical Chinese narrative, and full-text layout.</sub><br>
+      <a href="docs/gallery-part-2.md#case-338"><strong>View Case</strong></a>
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 331：西安手绘水彩城市地图</strong></p>
-      <a href="docs/gallery-part-2.md#case-331"><img src="data/images/case331.png" alt="西安手绘水彩城市地图" width="220"></a><br>
-      <sub>城市地图、手绘路线和地标标注的轻量参考。</sub><br>
-      <a href="docs/gallery-part-2.md#case-331"><strong>查看案例</strong></a>
+      <p><strong>Case 331: Hand-Drawn Xi'an Watercolor Map</strong></p>
+      <a href="docs/gallery-part-2.md#case-331"><img src="data/images/case331.png" alt="Hand-drawn Xi'an watercolor map" width="220"></a><br>
+      <sub>A lightweight reference for city maps, hand-drawn routes, and landmark labels.</sub><br>
+      <a href="docs/gallery-part-2.md#case-331"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 332：茶π产品宣传海报</strong></p>
-      <a href="docs/gallery-part-2.md#case-332"><img src="data/images/case332.png" alt="茶π产品宣传海报" width="220"></a><br>
-      <sub>饮品商品图、中文卖点和清爽商业海报组合。</sub><br>
-      <a href="docs/gallery-part-2.md#case-332"><strong>查看案例</strong></a>
+      <p><strong>Case 332: Tea Pi Product Poster</strong></p>
+      <a href="docs/gallery-part-2.md#case-332"><img src="data/images/case332.png" alt="Tea Pi product poster" width="220"></a><br>
+      <sub>A beverage product image combining Chinese selling points and a clean commercial poster style.</sub><br>
+      <a href="docs/gallery-part-2.md#case-332"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 339：Apple 风格自然科普海报</strong></p>
-      <a href="docs/gallery-part-2.md#case-339"><img src="data/images/case339.jpg" alt="Apple 风格自然科普海报" width="220"></a><br>
-      <sub>极简棚拍、自然主体和科普信息排版。</sub><br>
-      <a href="docs/gallery-part-2.md#case-339"><strong>查看案例</strong></a>
+      <p><strong>Case 339: Apple-Style Nature Science Poster</strong></p>
+      <a href="docs/gallery-part-2.md#case-339"><img src="data/images/case339.jpg" alt="Apple-style nature science poster" width="220"></a><br>
+      <sub>Minimal studio photography, a natural subject, and science-poster information layout.</sub><br>
+      <a href="docs/gallery-part-2.md#case-339"><strong>View Case</strong></a>
     </td>
   </tr>
 </table>
 
-### 近 24 小时 X 社区新增
+### Latest X Community Additions
+
+Only the latest 24-hour collection run is shown here. Older X imports stay in the full gallery.
 
 <table>
   <tr>
     <td width="25%" valign="top" align="center">
-      <p><strong>例 375：古希腊三哲时间轴城市图</strong></p>
-      <a href="docs/gallery-part-2.md#case-375"><img src="data/images/case375.jpg" alt="古希腊三哲时间轴城市图" width="180"></a><br>
-      <sub>历史人物、城市背景和时间轴叙事。</sub><br>
-      <a href="docs/gallery-part-2.md#case-375"><strong>查看案例</strong></a>
+      <p><strong>Case 375: Ancient Greek Philosophers Timeline City Map</strong></p>
+      <a href="docs/gallery-part-2.md#case-375"><img src="data/images/case375.jpg" alt="Ancient Greek philosophers timeline city map" width="180"></a><br>
+      <sub>Historical figures, city background, and timeline storytelling.</sub><br>
+      <a href="docs/gallery-part-2.md#case-375"><strong>View Case</strong></a>
     </td>
     <td width="25%" valign="top" align="center">
-      <p><strong>例 376：泼洒抹茶街头手机照片</strong></p>
-      <a href="docs/gallery-part-2.md#case-376"><img src="data/images/category-covers/photo.jpg" alt="泼洒抹茶街头手机照片" width="180"></a><br>
-      <sub>手机纪实、真实光影和负面约束。</sub><br>
-      <a href="docs/gallery-part-2.md#case-376"><strong>查看案例</strong></a>
+      <p><strong>Case 376: Spilled Matcha Street Phone Photo</strong></p>
+      <a href="docs/gallery-part-2.md#case-376"><img src="data/images/category-covers/photo.jpg" alt="Spilled matcha street phone photo" width="180"></a><br>
+      <sub>Phone documentary style, realistic lighting, and negative constraints.</sub><br>
+      <a href="docs/gallery-part-2.md#case-376"><strong>View Case</strong></a>
     </td>
     <td width="25%" valign="top" align="center">
-      <p><strong>例 377：樱花咖啡户外人像</strong></p>
-      <a href="docs/gallery-part-2.md#case-377"><img src="data/images/case377.jpg" alt="樱花咖啡户外人像" width="180"></a><br>
-      <sub>参考图编辑、身份保持和户外生活方式写真。</sub><br>
-      <a href="docs/gallery-part-2.md#case-377"><strong>查看案例</strong></a>
+      <p><strong>Case 377: Sakura Coffee Outdoor Portrait</strong></p>
+      <a href="docs/gallery-part-2.md#case-377"><img src="data/images/case377.jpg" alt="Sakura coffee outdoor portrait" width="180"></a><br>
+      <sub>Reference-image editing, identity preservation, and outdoor lifestyle photography.</sub><br>
+      <a href="docs/gallery-part-2.md#case-377"><strong>View Case</strong></a>
     </td>
     <td width="25%" valign="top" align="center">
-      <p><strong>例 378：高端 3D 收藏玩具头像</strong></p>
-      <a href="docs/gallery-part-2.md#case-378"><img src="data/images/category-covers/latest.jpg" alt="高端 3D 收藏玩具头像" width="180"></a><br>
-      <sub>参考图转 3D 收藏玩具，保留身份锚点。</sub><br>
-      <a href="docs/gallery-part-2.md#case-378"><strong>查看案例</strong></a>
+      <p><strong>Case 378: Premium 3D Collectible Toy Avatar</strong></p>
+      <a href="docs/gallery-part-2.md#case-378"><img src="data/images/category-covers/latest.jpg" alt="Premium 3D collectible toy avatar" width="180"></a><br>
+      <sub>Reference photo to 3D collectible toy while preserving identity anchors.</sub><br>
+      <a href="docs/gallery-part-2.md#case-378"><strong>View Case</strong></a>
     </td>
   </tr>
 </table>
-
-#### 代表案例 1：月下美女直播画面
-
-[![月下美女直播画面](data/images/case330.png)](docs/gallery-part-2.md#case-330)
-
-高仿直播截图场景，重点看界面氛围、中文弹幕和人物写实感的结合。  
-[查看完整案例](docs/gallery-part-2.md#case-330)
-
-#### 代表案例 2：RAG 技术详解图
-
-[![RAG 技术详解图](data/images/case334.png)](docs/gallery-part-2.md#case-334)
-
-适合用来参考“技术概念 + 信息图排版 + 中文说明模块”的组织方式。  
-[查看完整案例](docs/gallery-part-2.md#case-334)
-
-#### 代表案例 3：《赤壁怀古》长卷图
-
-[![赤壁怀古长卷图](data/images/case338.png)](docs/gallery-part-2.md#case-338)
-
-长卷尺寸、古风叙事和整篇文字排版结合得很完整，适合作为长文本视觉化参考。  
-[查看完整案例](docs/gallery-part-2.md#case-338)
 
 <a name="section-templates"></a>
 
-## 🧩 模板入口
+## 🧩 Template Entry
 
-完整模板已移到 [`docs/templates.md`](docs/templates.md)。如果你想按分类快速跳转，直接使用上方的 **提示词模板分类**；如果想看完整模板正文，进入 [工业级提示词模板与防坑指南](docs/templates.md#section-templates)。
+The full template library lives in [`docs/templates.md`](docs/templates.md). Use the **Prompt Template Categories** above for quick category jumps, or open [Industrial prompt templates and pitfalls guide](docs/templates.md) for the complete template text.
 
-## 🚀 怎么用这个库
+## 🚀 How To Use This Repository
 
-1. 先在精选案例里确定你要模仿的输出类型。
-2. 再去完整画廊里找相近案例，抄结构，不要只抄风格词。
-3. 最后回到模板页，把你的业务变量填进通用模板或 JSON 模板。
+1. Start from the featured cases and decide what output type you want to imitate.
+2. Open the full gallery and find nearby cases. Copy structure first, then style words.
+3. Return to the template page and fill your business variables into the general or JSON templates.
 
 <a name="section-disclaimer"></a>
 
-## 📄 声明与补充
+## 📄 Notes & Disclaimer
 
-## 致谢与来源说明
+## Acknowledgements & Sources
 
-本项目在整理与研究过程中，参考并使用了 [YouMind](https://youmind.com/) 与 [OpenNana](https://opennana.com/) 的公开提示词库内容，仅用于学习、归纳与方法论研究。相关内容版权归原作者或原平台所有，如有侵权或不当使用请联系处理，我们将第一时间修正或下线。
+During collection and research, this project references public prompt-library content from [YouMind](https://youmind.com/) and [OpenNana](https://opennana.com/) for learning, summarization, and methodology research. Copyright belongs to the original authors or platforms. If any content is infringing or inappropriate, please contact us and we will correct or remove it promptly.
 
-## 声明 (Disclaimer)
+## Disclaimer
 
-本项目仅整理公开可访问的社区提示词与示例图片，默认用于学习与研究，不主张对第三方原创内容的任何所有权。
+This project only organizes publicly accessible community prompts and example images for learning and research. It does not claim ownership of any third-party original content.
 
-本项目里的所有提示词案例和生成的图片，最初的灵感和数据来源均来自公开社区，特别是 [YouMind](https://youmind.com/) 与 [OpenNana](https://opennana.com/)。我们做这个项目，主要是想把好看的案例拆解成可复用的结构化协议，用于学习、归纳和大模型 Agent 接入的自动化测试。
+All prompt cases and generated images in this repository were initially inspired by public community sources, especially [YouMind](https://youmind.com/) and [OpenNana](https://opennana.com/). The project aims to break down strong examples into reusable structured protocols for learning, summarization, and automated testing with large-model agents.
 
-- 我们尽最大努力保留原始来源，包括作者主页、原帖链接与原仓库链接。
-- 涉及第三方内容时，遵循来源仓库声明、`CC BY 4.0` 等许可及对应平台规则。
-- 若你是原作者或权利人，认为某条内容不应展示，请在本仓库发起 Issue 并附上条目链接，我们将在核验后快速下架。
-- 本仓库不保证第三方内容可用于商业用途；商业使用前请自行取得原权利方授权。
+- We make every effort to preserve original sources, including author profiles, original post links, and source repository links.
+- For third-party content, we follow source repository statements, licenses such as `CC BY 4.0`, and the relevant platform rules.
+- If you are the original author or rights holder and believe an entry should not be displayed, please open an Issue with the entry link. We will review it and remove it quickly when appropriate.
+- This repository does not guarantee that third-party content can be used commercially. Please obtain authorization from the original rights holder before commercial use.
 
-**如果你觉得这个库帮到了你，请点亮右上角的 Star ⭐。**
+**If this library helps you, please star the repository.**
 
-## Star 趋势图
+## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=freestylefly/awesome-gpt-image-2&type=Date)](https://star-history.com/#freestylefly/awesome-gpt-image-2&Date)
 
-## 公众号
+## WeChat Official Account
 
-微信搜 **苍何** 或扫描下方二维码关注苍何的原创公众号，回复 **AI** 即可获取更多 AI 提示词学习资源。
+Search **苍何** on WeChat or scan the QR code below to follow Canghe's original WeChat official account. Reply with **AI** to get more AI prompt learning resources.
 
-![苍何微信公众号](data/images/公众号.png)
+![Canghe WeChat Official Account](data/images/公众号.png)
 
-## 📜 开源协议
+## 📜 License
 
-本项目采用 [MIT License](LICENSE) 开源。你可以在保留许可声明的前提下自由使用、修改、分发与二次开发。
+This project is open source under the [MIT License](LICENSE). You can use, modify, distribute, and build on it freely while preserving the license notice.
