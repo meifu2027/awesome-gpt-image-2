@@ -1,11 +1,11 @@
 <p align="center"><img src="./data/images/banner.svg" alt="GPT-Image2 Prompt System" width="800" /></p>
 
-<h3 align="center">Prompt as Code | GPT-Image2 Industrial Prompt Engine & Template Library, 370+ Reverse-Engineered Cases, 20+ Industrial Templates</h3>
+<h3 align="center">Prompt as Code | GPT-Image2 Industrial Prompt Engine & Template Library, 400+ Reverse-Engineered Cases, 20+ Industrial Templates</h3>
 
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-378-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-420-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
 </p>
 
@@ -32,8 +32,9 @@ The core goal is simple: compress prose-style prompts into structured protocols.
 
 - [Full case gallery](docs/gallery.md)
 - [Gallery Part 1: cases 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2: cases 166-378](docs/gallery-part-2.md)
+- [Gallery Part 2: cases 166-420](docs/gallery-part-2.md)
 - [Industrial prompt templates and pitfalls guide](docs/templates.md)
+- [Agent skill: GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
 - [Full disclaimer](docs/disclaimer.md#section-disclaimer)
 
@@ -46,19 +47,19 @@ Start with the case album to find a visual direction, then open the prompt templ
 <table>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧩 UI & Interfaces</strong><br><sub>68 cases</sub></p>
+      <p><strong>🧩 UI & Interfaces</strong><br><sub>63 cases</sub></p>
       <a href="docs/gallery.md#cat-ui"><img src="data/images/category-covers/ui.jpg" alt="UI and interfaces" width="220"></a><br>
       <sub>Apps, websites, dashboards, social screenshots, and product interfaces.</sub><br>
       <a href="docs/gallery.md#cat-ui"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📊 Charts & Infographics</strong><br><sub>55 cases</sub></p>
+      <p><strong>📊 Charts & Infographics</strong><br><sub>45 cases</sub></p>
       <a href="docs/gallery.md#cat-infographic"><img src="data/images/category-covers/infographic.jpg" alt="Charts and infographics" width="220"></a><br>
       <sub>Infographics, knowledge maps, technical explainers, and structured diagrams.</sub><br>
       <a href="docs/gallery.md#cat-infographic"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 Posters & Typography</strong><br><sub>71 cases</sub></p>
+      <p><strong>📰 Posters & Typography</strong><br><sub>69 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="Posters and typography" width="220"></a><br>
       <sub>Event posters, covers, type-driven visuals, and strong layout compositions.</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>View Cases</strong></a>
@@ -66,19 +67,19 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🛍️ Products & E-commerce</strong><br><sub>24 cases</sub></p>
+      <p><strong>🛍️ Products & E-commerce</strong><br><sub>27 cases</sub></p>
       <a href="docs/gallery.md#cat-product"><img src="data/images/category-covers/product.jpg" alt="Products and e-commerce" width="220"></a><br>
       <sub>Product shots, detail pages, packaging, selling points, and ads.</sub><br>
       <a href="docs/gallery.md#cat-product"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🏷️ Brand & Logos</strong><br><sub>19 cases</sub></p>
+      <p><strong>🏷️ Brand & Logos</strong><br><sub>20 cases</sub></p>
       <a href="docs/gallery.md#cat-brand"><img src="data/images/category-covers/brand.jpg" alt="Brand and logos" width="220"></a><br>
       <sub>Logos, identity systems, brand touchpoints, and campaign visuals.</sub><br>
       <a href="docs/gallery.md#cat-brand"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🏛️ Architecture & Spaces</strong><br><sub>25 cases</sub></p>
+      <p><strong>🏛️ Architecture & Spaces</strong><br><sub>10 cases</sub></p>
       <a href="docs/gallery.md#cat-architecture"><img src="data/images/category-covers/architecture.jpg" alt="Architecture and spaces" width="220"></a><br>
       <sub>Architecture renders, interiors, city maps, and spatial concepts.</sub><br>
       <a href="docs/gallery.md#cat-architecture"><strong>View Cases</strong></a>
@@ -86,19 +87,19 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 Photography & Realism</strong><br><sub>34 cases</sub></p>
+      <p><strong>📷 Photography & Realism</strong><br><sub>47 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="Photography and realism" width="220"></a><br>
       <sub>Portraits, phone photography, film texture, and commercial photography.</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎨 Illustration & Art</strong><br><sub>25 cases</sub></p>
+      <p><strong>🎨 Illustration & Art</strong><br><sub>38 cases</sub></p>
       <a href="docs/gallery.md#cat-illustration"><img src="data/images/category-covers/illustration.jpg" alt="Illustration and art" width="220"></a><br>
       <sub>Illustration, art styles, material experiments, and decorative images.</sub><br>
       <a href="docs/gallery.md#cat-illustration"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 Characters & People</strong><br><sub>14 cases</sub></p>
+      <p><strong>🧍 Characters & People</strong><br><sub>20 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="Characters and people" width="220"></a><br>
       <sub>Character design, pose references, cards, and 3D toys.</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>View Cases</strong></a>
@@ -106,19 +107,19 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎬 Scenes & Storytelling</strong><br><sub>7 cases</sub></p>
+      <p><strong>🎬 Scenes & Storytelling</strong><br><sub>15 cases</sub></p>
       <a href="docs/gallery.md#cat-scene"><img src="data/images/category-covers/scene.jpg" alt="Scenes and storytelling" width="220"></a><br>
       <sub>Storyboards, narrative scenes, livestream frames, and worldbuilding.</sub><br>
       <a href="docs/gallery.md#cat-scene"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🏮 History & Classical Chinese Themes</strong><br><sub>9 cases</sub></p>
+      <p><strong>🏮 History & Classical Chinese Themes</strong><br><sub>16 cases</sub></p>
       <a href="docs/gallery.md#cat-history"><img src="data/images/category-covers/history.jpg" alt="History and classical Chinese themes" width="220"></a><br>
       <sub>Classical scrolls, historical figures, traditional themes, and poetry visuals.</sub><br>
       <a href="docs/gallery.md#cat-history"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📚 Documents & Publishing</strong><br><sub>7 cases</sub></p>
+      <p><strong>📚 Documents & Publishing</strong><br><sub>9 cases</sub></p>
       <a href="docs/gallery.md#cat-document"><img src="data/images/category-covers/document.jpg" alt="Documents and publishing" width="220"></a><br>
       <sub>White papers, manuals, encyclopedic plates, and publishing layouts.</sub><br>
       <a href="docs/gallery.md#cat-document"><strong>View Cases</strong></a>
@@ -126,7 +127,7 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧪 Other Use Cases</strong><br><sub>20 cases</sub></p>
+      <p><strong>🧪 Other Use Cases</strong><br><sub>29 cases</sub></p>
       <a href="docs/gallery.md#cat-other"><img src="data/images/category-covers/other.jpg" alt="Other use cases" width="220"></a><br>
       <sub>Creative experiments, special tasks, mixed workflows, and practical cases.</sub><br>
       <a href="docs/gallery.md#cat-other"><strong>View Cases</strong></a>
@@ -134,14 +135,14 @@ Start with the case album to find a visual direction, then open the prompt templ
     <td width="33%" valign="top" align="center">
       <h4>🖼️ Full Gallery</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="Full gallery" width="220"></a><br>
-      <sub>Browse all 378 cases by gallery part and category.</sub><br>
+      <sub>Browse all 420 cases by gallery part and category.</sub><br>
       <a href="docs/gallery.md"><strong>Open Gallery</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ Latest Additions</h4>
-      <a href="docs/gallery-part-2.md#case-378"><img src="data/images/category-covers/latest.jpg" alt="Latest additions" width="220"></a><br>
-      <sub>The newest X community cases and workflows collected in the repo.</sub><br>
-      <a href="docs/gallery-part-2.md#case-378"><strong>View Latest</strong></a>
+      <a href="docs/gallery-part-2.md#case-420"><img src="data/images/case420.jpg" alt="Latest additions" width="220"></a><br>
+      <sub>The newest community cases and workflows collected in the repo.</sub><br>
+      <a href="docs/gallery-part-2.md#case-420"><strong>View Latest</strong></a>
     </td>
   </tr>
 </table>
@@ -194,6 +195,111 @@ The prompt body remains in the original template document for now. This homepage
 | 🧪 Other Use Cases | [View Prompts](docs/templates.md#tpl-other) | Mixed tasks, experimental workflows, special outputs |
 
 </details>
+
+## 🤖 Agent Skill
+
+This repository includes an agent skill for choosing GPT-Image2 styles, templates, categories, and scene tags from the same data used by the website.
+
+Package links: [npm](https://www.npmjs.com/package/gpt-image-2-style-library) / [GitHub Packages](https://github.com/freestylefly/awesome-gpt-image-2/pkgs/npm/gpt-image-2-style-library)
+
+<p align="center">
+  <img src="agents/skills/gpt-image-2-style-library/assets/city-life-system-map.png" alt="City life system map generated with the GPT-Image2 style library skill" width="760">
+</p>
+
+<p align="center"><sub>Example output from a city-life-system-map request using the style library skill.</sub></p>
+
+### Quick Install for Agent Skills
+
+Recommended for Claude Code, Codex, Cursor, and other tools supported by [`skills`](https://www.npmjs.com/package/skills):
+
+```bash
+npx skills add freestylefly/awesome-gpt-image-2 --skill gpt-image-2-style-library --agent claude-code codex --global --yes --copy
+```
+
+Install to every supported local agent:
+
+```bash
+npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
+```
+
+### Claude Code Plugin Marketplace
+
+Run these commands inside Claude Code:
+
+```text
+/plugin marketplace add freestylefly/awesome-gpt-image-2
+/plugin install gpt-image-2-style-library@awesome-gpt-image-2
+```
+
+### npm CLI
+
+If you prefer npm, install the CLI and then sync the skill into local agent folders:
+
+```bash
+npm install -g gpt-image-2-style-library
+gpt-image-2-style-library install all
+```
+
+You can also run it without a global install:
+
+```bash
+npx gpt-image-2-style-library install all
+```
+
+Install from GitHub Packages:
+
+```bash
+npm login --scope=@freestylefly --registry=https://npm.pkg.github.com
+npm install -g @freestylefly/gpt-image-2-style-library --registry=https://npm.pkg.github.com
+gpt-image-2-style-library install all
+```
+
+`install all` writes the skill to the common local folders used by Codex and Claude Code, including `~/.codex/skills`, `~/.claude/skills`, and `~/.agents/skills`. Restart the agent session after installing.
+
+Use it with a request like:
+
+```text
+Use gpt-image-2-style-library to create an infographic prompt about Codex.
+```
+
+For local source development:
+
+```bash
+npm run generate:style-skill
+npm run install:skill
+```
+
+The skill source lives at [`agents/skills/gpt-image-2-style-library`](agents/skills/gpt-image-2-style-library/SKILL.md). Its generated reference comes from [`data/style-library.json`](data/style-library.json), so the website and Agent workflow share one style library.
+
+## 🔐 Website Auth & Generation
+
+The visual site includes login-gated case generation powered by Supabase Auth, Supabase Postgres, and a Vercel Function proxy for the GPT Image 2 API.
+
+Required Vercel environment variables:
+
+```bash
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+SUPER_ADMIN_EMAILS=2689458656@qq.com,canghe0818@gmail.com
+CIYUAN_API_KEY=
+CIYUAN_BASE_URL=https://ciyuan.today
+APP_URL=https://gpt-image2.canghe.ai
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+```
+
+Setup checklist:
+
+- Apply [`supabase/migrations/202605090001_user_credits.sql`](supabase/migrations/202605090001_user_credits.sql) to the Supabase project.
+- Apply [`supabase/migrations/20260509090000_membership_billing.sql`](supabase/migrations/20260509090000_membership_billing.sql) to add membership plans, credit packs, Stripe order records, and credit adjustment RPCs.
+- Add `https://gpt-image2.canghe.ai` and local dev URLs such as `http://127.0.0.1:5173` to Supabase Auth redirect URLs.
+- Enable Email OTP or magic links in Supabase Auth.
+- Enable the Google Provider after adding Google OAuth credentials in the Supabase Dashboard.
+- Keep `SUPABASE_SERVICE_ROLE_KEY` only in server-side environments such as Vercel Environment Variables.
+- Configure Stripe Checkout with the webhook URL `https://gpt-image2.canghe.ai/api/billing/webhook`.
+- Subscribe the Stripe webhook to `checkout.session.completed`, `invoice.payment_succeeded`, `customer.subscription.updated`, and `customer.subscription.deleted`.
+- Keep `STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET` only in server-side Vercel Environment Variables.
 
 <a name="section-gallery"></a>
 
@@ -286,35 +392,29 @@ A strong hybrid of brand narrative, structural breakdown, and commercial present
   </tr>
 </table>
 
-### Latest X Community Additions
+### Latest Community Additions
 
-Only the latest 24-hour collection run is shown here. Older X imports stay in the full gallery.
+Only the latest collection and import run is shown here. Older imports stay in the full gallery.
 
 <table>
   <tr>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 375: Ancient Greek Philosophers Timeline City Map</strong></p>
-      <a href="docs/gallery-part-2.md#case-375"><img src="data/images/case375.jpg" alt="Ancient Greek philosophers timeline city map" width="180"></a><br>
-      <sub>Historical figures, city background, and timeline storytelling.</sub><br>
-      <a href="docs/gallery-part-2.md#case-375"><strong>View Case</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 418: Mid-Century City Travel Poster</strong></p>
+      <a href="docs/gallery-part-2.md#case-418"><img src="data/images/case418.jpg" alt="Mid-century city travel poster" width="140"></a><br>
+      <sub>A strict three-color travel poster system with isometric city views, hatching, and screen-print texture.</sub><br>
+      <a href="docs/gallery-part-2.md#case-418"><strong>View Case</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 376: Spilled Matcha Street Phone Photo</strong></p>
-      <a href="docs/gallery-part-2.md#case-376"><img src="data/images/category-covers/photo.jpg" alt="Spilled matcha street phone photo" width="180"></a><br>
-      <sub>Phone documentary style, realistic lighting, and negative constraints.</sub><br>
-      <a href="docs/gallery-part-2.md#case-376"><strong>View Case</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 419: Croissant Baker Storyboard</strong></p>
+      <a href="docs/gallery-part-2.md#case-419"><img src="data/images/case419.jpg" alt="Croissant baker storyboard" width="140"></a><br>
+      <sub>An 8-shot food video storyboard with timing, icon legend, warm bakery lighting, and step-by-step production panels.</sub><br>
+      <a href="docs/gallery-part-2.md#case-419"><strong>View Case</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 377: Sakura Coffee Outdoor Portrait</strong></p>
-      <a href="docs/gallery-part-2.md#case-377"><img src="data/images/case377.jpg" alt="Sakura coffee outdoor portrait" width="180"></a><br>
-      <sub>Reference-image editing, identity preservation, and outdoor lifestyle photography.</sub><br>
-      <a href="docs/gallery-part-2.md#case-377"><strong>View Case</strong></a>
-    </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 378: Premium 3D Collectible Toy Avatar</strong></p>
-      <a href="docs/gallery-part-2.md#case-378"><img src="data/images/category-covers/latest.jpg" alt="Premium 3D collectible toy avatar" width="180"></a><br>
-      <sub>Reference photo to 3D collectible toy while preserving identity anchors.</sub><br>
-      <a href="docs/gallery-part-2.md#case-378"><strong>View Case</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 420: Red Track Summer Portrait</strong></p>
+      <a href="docs/gallery-part-2.md#case-420"><img src="data/images/case420.jpg" alt="Red track summer portrait" width="140"></a><br>
+      <sub>A bright low-angle bridge portrait with red track texture, clean blue sky, and photorealistic summer lighting.</sub><br>
+      <a href="docs/gallery-part-2.md#case-420"><strong>View Case</strong></a>
     </td>
   </tr>
 </table>

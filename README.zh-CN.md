@@ -34,6 +34,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 - [案例画廊 Part 1：例 1-165](docs/gallery-part-1.md)
 - [案例画廊 Part 2：例 166-378](docs/gallery-part-2.md)
 - [工业级提示词模板与防坑指南](docs/templates.md#section-templates)
+- [Agent Skill：GPT-Image2 风格库](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
 - [完整声明页](docs/disclaimer.md#section-disclaimer)
 
@@ -192,6 +193,104 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 | 🧪 其他应用场景 | [查看提示词](docs/templates.md#tpl-other) | 混合任务、实验玩法、特殊输出 |
 
 </details>
+
+## 🤖 Agent Skill
+
+仓库内提供了 agent skill，用同一份风格库数据为 Claude Code、Codex 等 Agent 选择 GPT-Image2 模板、分类、风格和场景标签。
+
+包地址：[npm](https://www.npmjs.com/package/gpt-image-2-style-library) / [GitHub Packages](https://github.com/freestylefly/awesome-gpt-image-2/pkgs/npm/gpt-image-2-style-library)
+
+<p align="center">
+  <img src="agents/skills/gpt-image-2-style-library/assets/city-life-system-map.png" alt="使用 GPT-Image2 风格库 skill 生成的城市生命系统图谱示例" width="760">
+</p>
+
+<p align="center"><sub>示例：用 gpt-image-2-style-library 生成“城市生命系统图谱”。</sub></p>
+
+### Agent 一键安装
+
+推荐给 Claude Code、Codex、Cursor，以及其他 [`skills`](https://www.npmjs.com/package/skills) 支持的本地 Agent：
+
+```bash
+npx skills add freestylefly/awesome-gpt-image-2 --skill gpt-image-2-style-library --agent claude-code codex --global --yes --copy
+```
+
+安装到所有支持的本地 Agent：
+
+```bash
+npx skills add freestylefly/awesome-gpt-image-2 --global --all --copy
+```
+
+### Claude Code 插件市场
+
+在 Claude Code 中运行：
+
+```text
+/plugin marketplace add freestylefly/awesome-gpt-image-2
+/plugin install gpt-image-2-style-library@awesome-gpt-image-2
+```
+
+### npm CLI
+
+如果你习惯 npm，可以先安装 CLI，再同步到本地 Agent 技能目录：
+
+```bash
+npm install -g gpt-image-2-style-library
+gpt-image-2-style-library install all
+```
+
+也可以不全局安装，直接运行：
+
+```bash
+npx gpt-image-2-style-library install all
+```
+
+从 GitHub Packages 安装：
+
+```bash
+npm login --scope=@freestylefly --registry=https://npm.pkg.github.com
+npm install -g @freestylefly/gpt-image-2-style-library --registry=https://npm.pkg.github.com
+gpt-image-2-style-library install all
+```
+
+`install all` 会写入 Codex 和 Claude Code 常用的本地技能目录，包括 `~/.codex/skills`、`~/.claude/skills`、`~/.agents/skills`。安装后重启 Agent 会话。
+
+这样调用：
+
+```text
+使用 gpt-image-2-style-library 技能，帮我生成介绍 Codex 的信息图
+```
+
+本地源码开发时使用：
+
+```bash
+npm run generate:style-skill
+npm run install:skill
+```
+
+skill 源码位于 [`agents/skills/gpt-image-2-style-library`](agents/skills/gpt-image-2-style-library/SKILL.md)。生成索引来自 [`data/style-library.json`](data/style-library.json)，网站和 Agent 工作流共用这一份风格库。
+
+## 🔐 网站登录与生成测试
+
+可视化网站已经接入登录后生成测试图能力，底层使用 Supabase Auth、Supabase Postgres，以及 Vercel Function 代理 GPT Image 2 API。
+
+Vercel 需要配置这些环境变量：
+
+```bash
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+SUPER_ADMIN_EMAILS=2689458656@qq.com
+CIYUAN_API_KEY=
+CIYUAN_BASE_URL=https://ciyuan.today
+```
+
+配置清单：
+
+- 将 [`supabase/migrations/202605090001_user_credits.sql`](supabase/migrations/202605090001_user_credits.sql) 应用到 Supabase 项目。
+- 在 Supabase Auth Redirect URLs 里加入 `https://gpt-image2.canghe.ai`，以及 `http://127.0.0.1:5173` 等本地开发地址。
+- 在 Supabase Auth 里开启邮箱 OTP 或魔法链接。
+- Google Provider 的代码入口已接好，后续在 Supabase Dashboard 填入 Google OAuth 凭据后即可使用。
+- `SUPABASE_SERVICE_ROLE_KEY` 只放在 Vercel Environment Variables 这类服务端环境里。
 
 <a name="section-gallery"></a>
 
