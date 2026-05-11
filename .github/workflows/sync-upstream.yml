@@ -85,9 +85,13 @@ jobs:
           echo "✅ Merge completed, vercel.json preserved
 
       - name: Regenerate gallery-site/data.js
-        if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'success'
+        if: steps.diff.outputs.changed == 'true'
         run: |
-          node gallery-site/scripts/parse-gallery.js
+          # Node 24 treats .js as ESM due to package.json "type": "module"
+          # Temporarily rename to .cjs to run as CommonJS
+          cp gallery-site/scripts/parse-gallery.js gallery-site/scripts/parse-gallery.cjs
+          node gallery-site/scripts/parse-gallery.cjs
+          rm gallery-site/scripts/parse-gallery.cjs
           if git diff --quiet gallery-site/data.js; then
             echo "ℹ️  data.js unchanged"
           else
@@ -100,7 +104,7 @@ jobs:
           fi
 
       - name: Sanity check data.js
-        if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'success'
+        if: steps.diff.outputs.changed == 'true'
         run: |
           COUNT=$(grep -c '^\s*id:' gallery-site/data.js || true)
           echo "Cases in data.js: $COUNT (min required: $MIN_CASES)"
@@ -109,8 +113,8 @@ jobs:
             exit 1
           fi
 
-      - name: Push rebased main
-        if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'success'
+      - name: Push merged main
+        if: steps.diff.outputs.changed == 'true'
         run: |
           git push origin "$MAIN_BRANCH" --force-with-lease
 
