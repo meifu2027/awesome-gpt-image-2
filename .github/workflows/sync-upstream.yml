@@ -71,50 +71,18 @@ jobs:
             echo "🔄 Upstream ahead: main=$LOCAL, upstream=$REMOTE"
           fi
 
-      - name: Rebase main onto upstream
+      - name: Merge upstream into main
         if: steps.diff.outputs.changed == 'true'
-        id: rebase
-        continue-on-error: true
+        id: merge
         run: |
-          git checkout -B "$MAIN_BRANCH" "origin/$MAIN_BRANCH"
-          git rebase "upstream/$UPSTREAM_BRANCH"
-          
-      - name: Open issue on rebase conflict
-        if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'failure'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const remote = '${{ steps.diff.outputs.remote }}';
-            const date   = new Date().toISOString().slice(0, 10);
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo:  context.repo.repo,
-              title: `⚠️ Auto-rebase conflict: main onto upstream/main (${date})`,
-              labels: ['automation', 'conflict'],
-              body: [
-                `上游 \`freestylefly/awesome-gpt-image-2\` 已更新到 \`${remote}\`，`,
-                '但自动 rebase \`main\` 出现冲突，需要人工介入。',
-                '',
-                '## 本地解决步骤',
-                '```bash',
-                'git fetch upstream && git fetch origin',
-                'git checkout main',
-                'git rebase upstream/main',
-                '# 解决冲突后：',
-                'node gallery-site/scripts/parse-gallery.js',
-                'git add -A && git rebase --continue',
-                'git push origin main --force-with-lease',
-                '```',
-                '',
-                `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
-              ].join('\n'),
-            });
-
-      - name: Abort if rebase failed
-        if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'failure'
-        run: |
-          echo "❌ Rebase failed, issue opened. Aborting."
-          exit 1
+          git checkout "$MAIN_BRANCH"
+          # Merge with --no-commit so we can restore vercel.json before committing
+          git merge "upstream/$UPSTREAM_BRANCH" --no-commit --no-edit || true
+          # Always keep our version of vercel.json (ours wins)
+          git checkout origin/main -- vercel.json
+          git add vercel.json
+          git commit -m "Merge upstream changes into main [skip ci]"
+          echo "✅ Merge completed, vercel.json preserved
 
       - name: Regenerate gallery-site/data.js
         if: steps.diff.outputs.changed == 'true' && steps.rebase.outcome == 'success'
