@@ -77,12 +77,17 @@ jobs:
         run: |
           git checkout "$MAIN_BRANCH"
           # Merge with --no-commit so we can restore vercel.json before committing
-          git merge "upstream/$UPSTREAM_BRANCH" --no-commit --no-edit || true
+          git merge "upstream/$UPSTREAM_BRANCH" --no-commit --no-edit || MERGE_STATUS=$?
           # Always keep our version of vercel.json (ours wins)
           git checkout origin/main -- vercel.json
           git add vercel.json
+          if [ -n "${MERGE_STATUS:-}" ] && git diff --name-only --diff-filter=U | grep -q .; then
+            echo "::error::Merge conflicts remain after preserving vercel.json"
+            git diff --name-only --diff-filter=U
+            exit 1
+          fi
           git commit -m "Merge upstream changes into main [skip ci]"
-          echo "✅ Merge completed, vercel.json preserved
+          echo "✅ Merge completed, vercel.json preserved"
 
       - name: Regenerate gallery-site/data.js
         if: steps.diff.outputs.changed == 'true'
@@ -126,5 +131,5 @@ jobs:
             echo "- changed: ${{ steps.diff.outputs.changed }}"
             echo "- local  : ${{ steps.diff.outputs.local }}"
             echo "- remote : ${{ steps.diff.outputs.remote }}"
-            echo "- rebase : ${{ steps.rebase.outcome }}"
+            echo "- merge  : ${{ steps.merge.outcome }}"
           } >> "$GITHUB_STEP_SUMMARY"
