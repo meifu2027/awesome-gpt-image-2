@@ -42,11 +42,17 @@ function normalizeReservation(data) {
 
 function profileFromReservation(profile, reservation) {
   if (!profile || !reservation) return profile;
+  const usage = profile.usage || {};
   return {
     ...profile,
     creditBalance: reservation.creditBalance,
     freeGenerationsUsed: reservation.freeGenerationsUsed,
-    freeUsed: reservation.freeGenerationsUsed >= 1
+    freeUsed: reservation.freeGenerationsUsed >= 1,
+    usage: {
+      ...usage,
+      totalGenerations: Number(usage.totalGenerations || 0) + 1,
+      totalGenerationCredits: Number(usage.totalGenerationCredits || 0) + Number(reservation.creditAmount || 0)
+    }
   };
 }
 
@@ -54,7 +60,8 @@ async function reserveGeneration(client, userId, caseId, prompt) {
   const { data, error } = await client.rpc('reserve_generation_usage', {
     p_user_id: userId,
     p_case_id: caseId,
-    p_prompt: prompt
+    p_prompt: prompt,
+    p_force_credit: false
   });
 
   if (error) {
@@ -72,29 +79,27 @@ async function reserveGeneration(client, userId, caseId, prompt) {
   return reservation;
 }
 
-async function createSuperAdminReservation(client, profile, caseId, prompt) {
-  const { data, error } = await client
-    .from('generation_reservations')
-    .insert({
-      user_id: profile.id,
-      case_id: caseId,
-      prompt,
-      used_free_generation: false,
-      credit_amount: 0,
-      usage_source: 'super_admin'
-    })
-    .select('id')
-    .single();
+async function reserveCreditGeneration(client, userId, caseId, prompt) {
+  const { data, error } = await client.rpc('reserve_generation_usage', {
+    p_user_id: userId,
+    p_case_id: caseId,
+    p_prompt: prompt,
+    p_force_credit: true
+  });
 
-  if (error) throw error;
+  if (error) {
+    const normalizedMessage = String(error.message || error.details || '').toUpperCase();
+    if (normalizedMessage.includes('CREDITS_REQUIRED')) {
+      const limitError = new Error('CREDITS_REQUIRED');
+      limitError.code = 'CREDITS_REQUIRED';
+      throw limitError;
+    }
+    throw error;
+  }
 
-  return {
-    reservationId: data.id,
-    usedFreeGeneration: false,
-    creditAmount: 0,
-    freeGenerationsUsed: Number(profile.freeGenerationsUsed || 0),
-    creditBalance: Number(profile.creditBalance || 0)
-  };
+  const reservation = normalizeReservation(data);
+  if (!reservation) throw new Error('RESERVATION_FAILED');
+  return reservation;
 }
 
 async function completeReservation(client, reservationId) {
@@ -199,7 +204,7 @@ export default async function handler(req, res) {
   let reservation;
   try {
     reservation = auth.profile.isSuperAdmin
-      ? await createSuperAdminReservation(auth.client, auth.profile, caseId, prompt)
+      ? await reserveCreditGeneration(auth.client, auth.user.id, caseId, prompt)
       : await reserveGeneration(auth.client, auth.user.id, caseId, prompt);
   } catch (error) {
     if (error?.code === 'CREDITS_REQUIRED') {

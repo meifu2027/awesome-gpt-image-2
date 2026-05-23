@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
   ArrowUpRight,
+  BarChart3,
   Bot,
   ChevronDown,
   Check,
@@ -11,28 +12,33 @@ import {
   Crown,
   Eye,
   Github,
+  Heart,
   ImageIcon,
   LoaderCircle,
   LogIn,
   LogOut,
-  Mail,
   PackageCheck,
   RefreshCw,
   ReceiptText,
   Search,
+  Settings,
   ShieldCheck,
   Sparkles,
   Terminal,
+  TrendingUp,
   UserCircle,
+  UserPlus,
   Users,
   WandSparkles,
   X
 } from 'lucide-react';
 import './styles.css';
 import { isSupabaseConfigured, supabase } from './supabaseClient';
+import wechatCommunityImage from './assets/wechat-community.jpg';
 import skillExampleImage from '../agents/skills/gpt-image-2-style-library/assets/city-life-system-map.png';
 
 const fallbackRepoUrl = 'https://github.com/freestylefly/awesome-gpt-image-2';
+const gaMeasurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
 const copy = {
   en: {
@@ -41,10 +47,12 @@ const copy = {
     navCases: 'Cases',
     navSkill: 'Skill',
     navTemplates: 'Templates',
+    navCommunity: 'Community',
+    communityQrAlt: 'WeChat community invite card for GPT-Image2',
     eyebrow: 'Live GPT-Image2 prompt gallery',
     title: 'From viral images to reusable prompts.',
     subtitle:
-      'A visual front door for the awesome-gpt-image-2 repository: copy production-ready prompts, filter by style or scene, and jump straight into the GitHub source.',
+      'A visual workspace for GPT-Image2 creation: browse real cases, copy prompts, test image generation, explore industrial templates, and join the creator community.',
     explore: 'Explore cases',
     githubProject: 'GitHub project',
     cases: 'cases',
@@ -82,6 +90,15 @@ const copy = {
     copied: 'Copied',
     copyPrompt: 'Copy Prompt',
     copyTemplatePrompt: 'Copy Template',
+    favorite: 'Favorite',
+    favorited: 'Favorited',
+    unfavorite: 'Remove Favorite',
+    myFavorites: 'My Favorites',
+    noFavorites: 'No favorites yet.',
+    signInToFavorite: 'Sign in to save favorite cases.',
+    favoriteSaved: 'Favorite saved.',
+    favoriteRemoved: 'Favorite removed.',
+    favoriteFailed: 'Favorite update failed. Please try again.',
     closePreview: 'Close preview',
     viewDetails: 'View Details',
     generateTest: 'Generate Test',
@@ -93,7 +110,7 @@ const copy = {
     savedInBrowser: 'Saved in this browser',
     resetPrompt: 'Reset Prompt',
     oneFreeGeneration: '1 free test image',
-    superAdminGeneration: 'Super admin test mode: credits are not consumed.',
+    superAdminGeneration: 'Super admin mode: every generation costs 1 credit.',
     generationCost: 'Costs 1 credit',
     freeLimitReached: 'Free generation used. Buy credits or start a membership to keep generating.',
     creditsRequired: 'Credits required. Buy credits or start a membership to keep generating.',
@@ -108,18 +125,29 @@ const copy = {
     authRequired: 'Sign in to generate a test image.',
     signIn: 'Sign in',
     signInTitle: 'Sign in to generate test images',
-    signInSubtitle: 'Use email magic link or Google to unlock your free test image and future credits.',
-    emailAddress: 'Email address',
-    sendMagicLink: 'Send magic link',
-    magicLinkSent: 'Magic link sent. Check your inbox, then return here.',
-    authRateLimited: 'Too many login emails were sent. Please wait a bit, or use Google sign-in once it is enabled.',
+    signInSubtitle: 'Use your Google account to unlock image generation, credits, and membership features.',
+    authRateLimited: 'Too many login attempts. Please wait a bit, then try Google sign-in again.',
     googleNotConfigured: 'Google sign-in is not enabled yet.',
-    tryAgainIn: (seconds) => `Try again in ${seconds}s`,
     continueWithGoogle: 'Continue with Google',
     authNotConfigured: 'Login is not configured yet.',
     authError: 'Login failed. Please try again.',
     signOut: 'Sign out',
     account: 'Account',
+    accountSettings: 'Account settings',
+    accountTitle: 'Account settings',
+    accountSubtitle: 'Manage your public display name, membership status, and GPT-Image2 credit usage.',
+    displayName: 'Display name',
+    saveProfile: 'Save profile',
+    profileSaved: 'Profile saved.',
+    profileUpdateFailed: 'Profile update failed. Please try again.',
+    googleAvatarSource: 'Avatar is synced from your Google account.',
+    accountOverview: 'Account overview',
+    totalGenerations: 'Generated tests',
+    totalGenerationCredits: 'Credits spent',
+    generationUsage: 'Generation spending',
+    openCase: 'View case',
+    sourceCase: 'Source case',
+    noGenerationTransactions: 'No generation spending yet.',
     adminPanel: 'Admin',
     membershipCenter: 'Membership & Credits',
     superAdmin: 'Super admin',
@@ -152,12 +180,57 @@ const copy = {
     signInToGenerate: 'Sign in to generate',
     creditsAvailable: (count) => `${count} credit${count === 1 ? '' : 's'} available`,
     adminTitle: 'User admin',
-    adminSubtitle: 'Read-only user, role, credit, and free-generation overview.',
+    adminSubtitle: 'Traffic, users, memberships, credits, and generation activity in one dashboard.',
+    adminMetrics: 'Dashboard',
+    trafficMetrics: 'Traffic',
+    businessMetrics: 'Business',
+    analyticsNotConfigured: 'GA4 is not configured yet. Business metrics are still available.',
+    analyticsLoadFailed: 'GA4 data could not be loaded. Business metrics are still available.',
+    invalidDateRange: 'Choose a date range within 180 days.',
+    rangeToday: 'Today',
+    range7d: '7 days',
+    range30d: '30 days',
+    range90d: '90 days',
+    customRange: 'Custom',
+    startDate: 'Start date',
+    endDate: 'End date',
+    applyRange: 'Apply',
+    selectedRange: 'Selected range',
+    pv: 'PV',
+    uv: 'UV',
+    visits: 'Visits',
+    sessions: 'Sessions',
+    newUsers: 'New users',
+    registeredUsers: 'Registered users',
+    newRegistrations: 'New registrations',
+    newMembers: 'New members',
+    activeMemberships: 'Active members',
+    totalGenerationsMetric: 'Total generations',
+    rangeGenerations: 'Range generations',
+    succeeded: 'Succeeded',
+    failed: 'Failed',
+    pending: 'Pending',
+    creditsConsumed: 'Credits consumed',
+    creditsInCirculation: 'Credits in balances',
+    purchasedCredits: 'Purchased credits',
+    membershipCredits: 'Membership credits',
+    dailyTraffic: 'Daily traffic',
+    trafficTrend: 'Traffic trend',
+    businessTrend: 'Business trend',
+    registrations: 'Registrations',
+    topPages: 'Top pages',
+    channels: 'Channels',
+    countries: 'Countries',
+    pageViews: 'Views',
+    noAnalyticsRows: 'No analytics rows yet.',
     refresh: 'Refresh',
     users: 'Users',
     role: 'Role',
     creditBalance: 'Credits',
     freeGeneration: 'Free test',
+    spentCredits: 'Spent',
+    purchased: 'Purchased',
+    lastGeneration: 'Last generation',
     createdAt: 'Created',
     loadingUsers: 'Loading users...',
     noUsers: 'No users yet.',
@@ -178,10 +251,12 @@ const copy = {
     navCases: '案例',
     navSkill: '技能',
     navTemplates: '模板',
+    navCommunity: '交流群',
+    communityQrAlt: 'GPT-Image2 微信交流群邀请卡',
     eyebrow: '实时更新的 GPT-Image2 提示词画廊',
     title: '从爆款图片，到可复用 Prompt。',
     subtitle:
-      '这是 awesome-gpt-image-2 的可视化入口：复制可直接复用的 Prompt，按风格或场景筛选，并一键跳转到 GitHub 源项目。',
+      '一个面向 GPT-Image2 创作的可视化工作台：浏览真实案例、复制 Prompt、在线测试生图、查看工业级模板，并加入创作者交流群。',
     explore: '浏览案例',
     githubProject: 'GitHub 项目',
     cases: '个案例',
@@ -219,8 +294,17 @@ const copy = {
     copied: '已复制',
     copyPrompt: '复制 Prompt',
     copyTemplatePrompt: '复制模板',
+    favorite: '收藏',
+    favorited: '已收藏',
+    unfavorite: '取消收藏',
+    myFavorites: '我的收藏',
+    noFavorites: '暂无收藏案例。',
+    signInToFavorite: '登录后即可收藏案例。',
+    favoriteSaved: '已加入收藏。',
+    favoriteRemoved: '已取消收藏。',
+    favoriteFailed: '收藏更新失败，请稍后再试。',
     closePreview: '关闭预览',
-    viewDetails: '查看详情',
+    viewDetails: '详情',
     generateTest: '生成测试',
     generateImage: '生成图片',
     generating: '生成中...',
@@ -230,7 +314,7 @@ const copy = {
     savedInBrowser: '已保存到本浏览器',
     resetPrompt: '重置 Prompt',
     oneFreeGeneration: '免费生成 1 张测试图',
-    superAdminGeneration: '超级管理员测试模式：本次生图不消耗积分。',
+    superAdminGeneration: '超级管理员模式：每次生图消耗 1 积分。',
     generationCost: '本次消耗 1 积分',
     freeLimitReached: '免费额度已用完，可购买积分包或开通会员继续生成。',
     creditsRequired: '积分不足，可购买积分包或开通会员继续生成。',
@@ -245,18 +329,29 @@ const copy = {
     authRequired: '登录后即可生成测试图。',
     signIn: '登录',
     signInTitle: '登录后生成测试图',
-    signInSubtitle: '使用邮箱魔法链接或 Google 登录，解锁 1 张免费测试图，并为后续积分体系做准备。',
-    emailAddress: '邮箱地址',
-    sendMagicLink: '发送魔法链接',
-    magicLinkSent: '魔法链接已发送，请查收邮箱后回到这里。',
-    authRateLimited: '登录邮件发送太频繁，请稍后再试；Google 登录接通后也可以直接使用 Google 登录。',
+    signInSubtitle: '使用你的 Google 账号登录，解锁生图测试、积分和会员能力。',
+    authRateLimited: '登录尝试过于频繁，请稍后再使用 Google 登录。',
     googleNotConfigured: 'Google 登录还没有启用。',
-    tryAgainIn: (seconds) => `${seconds} 秒后重试`,
-    continueWithGoogle: '使用 Google 继续',
+    continueWithGoogle: '使用 Google 登录',
     authNotConfigured: '登录功能还没有完成配置。',
     authError: '登录失败，请稍后再试。',
     signOut: '退出登录',
     account: '账号',
+    accountSettings: '账户设置',
+    accountTitle: '账户设置',
+    accountSubtitle: '管理你的显示名称、会员状态和 GPT-Image2 积分消耗。',
+    displayName: '显示名称',
+    saveProfile: '保存资料',
+    profileSaved: '资料已保存。',
+    profileUpdateFailed: '资料保存失败，请稍后再试。',
+    googleAvatarSource: '头像会同步你的 Google 账号头像。',
+    accountOverview: '账户概览',
+    totalGenerations: '生成测试数',
+    totalGenerationCredits: '已消耗积分',
+    generationUsage: '生图消耗记录',
+    openCase: '查看案例',
+    sourceCase: '关联案例',
+    noGenerationTransactions: '暂无生图消耗记录。',
     adminPanel: '管理后台',
     membershipCenter: '会员与积分',
     superAdmin: '超级管理员',
@@ -289,12 +384,57 @@ const copy = {
     signInToGenerate: '登录后生成',
     creditsAvailable: (count) => `可用积分 ${count}`,
     adminTitle: '用户管理',
-    adminSubtitle: '只读查看用户、角色、积分余额和免费生成状态。',
+    adminSubtitle: '统一查看流量、用户、会员、积分和生图活跃情况。',
+    adminMetrics: '数据看板',
+    trafficMetrics: '流量数据',
+    businessMetrics: '业务数据',
+    analyticsNotConfigured: 'GA4 还没有配置，当前先展示业务数据。',
+    analyticsLoadFailed: 'GA4 数据暂时读取失败，当前先展示业务数据。',
+    invalidDateRange: '请选择 180 天以内的日期范围。',
+    rangeToday: '今天',
+    range7d: '近 7 天',
+    range30d: '近 30 天',
+    range90d: '近 90 天',
+    customRange: '自定义',
+    startDate: '开始日期',
+    endDate: '结束日期',
+    applyRange: '应用',
+    selectedRange: '当前区间',
+    pv: 'PV',
+    uv: 'UV',
+    visits: '访问数',
+    sessions: 'Sessions',
+    newUsers: '新访客',
+    registeredUsers: '注册用户',
+    newRegistrations: '新增注册',
+    newMembers: '新增会员',
+    activeMemberships: '活跃会员',
+    totalGenerationsMetric: '总生图量',
+    rangeGenerations: '区间生图量',
+    succeeded: '成功',
+    failed: '失败',
+    pending: '进行中',
+    creditsConsumed: '已消耗积分',
+    creditsInCirculation: '账户积分余额',
+    purchasedCredits: '购买积分',
+    membershipCredits: '会员发放积分',
+    dailyTraffic: '每日流量',
+    trafficTrend: '流量趋势',
+    businessTrend: '业务趋势',
+    registrations: '注册',
+    topPages: '热门页面',
+    channels: '来源渠道',
+    countries: '国家/地区',
+    pageViews: '浏览量',
+    noAnalyticsRows: '暂无统计数据。',
     refresh: '刷新',
     users: '用户',
     role: '角色',
     creditBalance: '积分',
     freeGeneration: '免费测试',
+    spentCredits: '消耗',
+    purchased: '购买',
+    lastGeneration: '最近生图',
     createdAt: '创建时间',
     loadingUsers: '正在加载用户...',
     noUsers: '暂无用户。',
@@ -379,6 +519,133 @@ const GENERATED_TESTS_STORAGE_KEY = 'gpt-image-2-generated-tests:v1';
 const MAX_SAVED_GENERATIONS = 12;
 const HERO_CASE_COUNT = 5;
 const HOT_STRIP_CASE_COUNT = 8;
+let bodyScrollLockCount = 0;
+let bodyScrollLockState = null;
+
+function pagePathWithHash() {
+  return `${window.location.pathname}${window.location.search}${window.location.hash}`;
+}
+
+function sendGaPageView() {
+  if (!gaMeasurementId || typeof window.gtag !== 'function') return;
+  window.gtag('event', 'page_view', {
+    page_title: document.title,
+    page_location: window.location.href,
+    page_path: pagePathWithHash()
+  });
+}
+
+function useGaPageViews() {
+  useEffect(() => {
+    if (!gaMeasurementId) return undefined;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function gtag() {
+      window.dataLayer.push(arguments);
+    };
+    window.gtag('js', new Date());
+    window.gtag('config', gaMeasurementId, { send_page_view: false });
+
+    const existingScript = document.querySelector(`script[data-ga4="${gaMeasurementId}"]`);
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaMeasurementId)}`;
+      script.dataset.ga4 = gaMeasurementId;
+      document.head.appendChild(script);
+    }
+
+    sendGaPageView();
+    window.addEventListener('hashchange', sendGaPageView);
+    window.addEventListener('popstate', sendGaPageView);
+    return () => {
+      window.removeEventListener('hashchange', sendGaPageView);
+      window.removeEventListener('popstate', sendGaPageView);
+    };
+  }, []);
+}
+
+function useBodyScrollLock(active) {
+  useEffect(() => {
+    if (!active) return undefined;
+
+    if (bodyScrollLockCount === 0) {
+      const scrollY = window.scrollY || document.documentElement.scrollTop || 0;
+      bodyScrollLockState = {
+        scrollY,
+        bodyOverflow: document.body.style.overflow,
+        bodyPosition: document.body.style.position,
+        bodyTop: document.body.style.top,
+        bodyWidth: document.body.style.width,
+        htmlOverflow: document.documentElement.style.overflow
+      };
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden';
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = '100%';
+    }
+
+    bodyScrollLockCount += 1;
+
+    return () => {
+      bodyScrollLockCount = Math.max(0, bodyScrollLockCount - 1);
+      if (bodyScrollLockCount > 0 || !bodyScrollLockState) return;
+
+      const { scrollY, bodyOverflow, bodyPosition, bodyTop, bodyWidth, htmlOverflow } = bodyScrollLockState;
+      document.documentElement.style.overflow = htmlOverflow;
+      document.body.style.overflow = bodyOverflow;
+      document.body.style.position = bodyPosition;
+      document.body.style.top = bodyTop;
+      document.body.style.width = bodyWidth;
+      bodyScrollLockState = null;
+      window.scrollTo(0, scrollY);
+    };
+  }, [active]);
+}
+
+function formatNumber(value) {
+  return new Intl.NumberFormat('en-US').format(Number(value || 0));
+}
+
+function formatShortDate(value, language) {
+  if (!value) return '-';
+  const normalized = /^\d{8}$/.test(String(value))
+    ? `${String(value).slice(0, 4)}-${String(value).slice(4, 6)}-${String(value).slice(6, 8)}T00:00:00Z`
+    : value;
+  return new Date(normalized).toLocaleDateString(language === 'zh' ? 'zh-CN' : 'en-US', {
+    month: 'short',
+    day: 'numeric'
+  });
+}
+
+function formatRangeDate(value, language) {
+  if (!value) return '-';
+  return new Date(`${value}T00:00:00`).toLocaleDateString(language === 'zh' ? 'zh-CN' : 'en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  });
+}
+
+function dateInputValue(daysAgo = 0) {
+  const date = new Date();
+  date.setDate(date.getDate() - daysAgo);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function firstNumber(...values) {
+  const value = values.find((item) => item !== undefined && item !== null);
+  return Number(value || 0);
+}
+
+function percentOf(value, max) {
+  if (!max) return 0;
+  return Math.max(4, Math.round((Number(value || 0) / max) * 100));
+}
 
 function readSavedGenerations() {
   try {
@@ -414,6 +681,16 @@ function saveGeneratedTest(caseId, entry) {
       // visible for the current dialog state when persistence is unavailable.
     }
   }
+}
+
+function normalizeFavoriteRows(favorites = []) {
+  const rows = Array.isArray(favorites) ? favorites : [];
+  return rows
+    .map((favorite) => ({
+      caseId: Number(favorite.caseId || favorite.case_id),
+      createdAt: favorite.createdAt || favorite.created_at || ''
+    }))
+    .filter((favorite) => Number.isInteger(favorite.caseId) && favorite.caseId > 0);
 }
 
 function takeDistinctCases(cases, count, excludedIds = new Set()) {
@@ -516,7 +793,9 @@ function getAuthHeaders(session) {
 function getGenerationQuotaText(profile, language) {
   const t = copy[language];
   if (!profile) return t.authRequired;
-  if (profile.isSuperAdmin) return t.superAdminGeneration;
+  if (profile.isSuperAdmin) {
+    return profile.creditBalance > 0 ? `${t.superAdminGeneration} ${t.creditsAvailable(profile.creditBalance)}` : t.creditsRequired;
+  }
   if (!profile.freeUsed) return t.oneFreeGeneration;
   if (profile.creditBalance > 0) return t.creditsAvailable(profile.creditBalance);
   return t.creditsRequired;
@@ -546,6 +825,48 @@ function transactionLabel(transaction, language) {
     adjustment: language === 'zh' ? '管理员调整' : 'Admin adjustment'
   };
   return typeMap[transaction.type] || transaction.type || '-';
+}
+
+function transactionCaseId(transaction) {
+  const rawCaseId = transaction?.caseId || transaction?.metadata?.caseId;
+  const caseId = Number(rawCaseId);
+  return Number.isFinite(caseId) && caseId > 0 ? caseId : null;
+}
+
+function TransactionItem({ transaction, language, casesById, onOpenCase }) {
+  const t = copy[language];
+  const caseId = transactionCaseId(transaction);
+  const caseItem = caseId ? casesById?.get(caseId) : null;
+  const caseLabel = caseItem
+    ? `${t.openCase} #${caseId} · ${compactText(caseItem.title, 28)}`
+    : `${t.sourceCase} #${caseId}`;
+
+  return (
+    <div className={cx('transactionItem', caseId && 'hasCase')}>
+      <div className="transactionInfo">
+        <span>{transactionLabel(transaction, language)}</span>
+        {caseId ? (
+          <button
+            className="transactionCaseLink"
+            type="button"
+            onClick={() => caseItem && onOpenCase?.(caseItem)}
+            disabled={!caseItem}
+          >
+            <ImageIcon size={14} />
+            {caseLabel}
+          </button>
+        ) : null}
+      </div>
+      <strong className={transaction.amount >= 0 ? 'positive' : 'negative'}>
+        {transaction.amount >= 0 ? '+' : ''}{transaction.amount}
+      </strong>
+      <em>
+        {transaction.createdAt
+          ? new Date(transaction.createdAt).toLocaleString(language === 'zh' ? 'zh-CN' : 'en-US')
+          : '-'}
+      </em>
+    </div>
+  );
 }
 
 function formatTemplatePrompt(item, language, styleLibrary) {
@@ -739,6 +1060,49 @@ function LanguageSwitch({ language, setLanguage }) {
   );
 }
 
+function WeChatIcon({ size = 17 }) {
+  return (
+    <svg className="wechatNavIcon" width={size} height={size} viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M9.15 4.25c-4.16 0-7.45 2.72-7.45 6.12 0 1.93 1.08 3.62 2.76 4.74l-.62 2.08a.44.44 0 0 0 .62.52l2.46-1.26c.7.18 1.45.28 2.23.28.4 0 .79-.03 1.17-.08a5.31 5.31 0 0 1-.37-1.96c0-3.2 3.18-5.78 7.1-5.78.27 0 .53.01.79.04-.75-2.7-4.26-4.7-8.69-4.7Zm-2.35 4.9a.93.93 0 1 0 0-1.86.93.93 0 0 0 0 1.86Zm4.74 0a.93.93 0 1 0 0-1.86.93.93 0 0 0 0 1.86Zm5.51 1.32c-3.24 0-5.86 2.05-5.86 4.58 0 2.54 2.62 4.59 5.86 4.59.58 0 1.13-.07 1.66-.19l1.88.96a.37.37 0 0 0 .52-.44l-.48-1.59c1.39-.85 2.27-2.04 2.27-3.33 0-2.53-2.62-4.58-5.85-4.58Zm-1.92 3.67a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm3.86 0a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
+
+function CommunityNavItem({ language }) {
+  const t = copy[language];
+  const [open, setOpen] = useState(false);
+  return (
+    <span
+      className={cx('communityNavItem', open && 'open')}
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+      onFocus={() => setOpen(true)}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false);
+      }}
+    >
+      <button
+        type="button"
+        aria-haspopup="dialog"
+        aria-expanded={open}
+        aria-label={t.navCommunity}
+        onClick={() => setOpen((current) => !current)}
+      >
+        <WeChatIcon />
+        {t.navCommunity}
+      </button>
+      <span className="communityPopover" role="dialog" aria-label={t.navCommunity}>
+        <img src={wechatCommunityImage} alt={t.communityQrAlt} loading="lazy" />
+      </span>
+    </span>
+  );
+}
+
 function authErrorMessage(error, language) {
   const t = copy[language];
   const message = String(error?.message || error || '').trim();
@@ -755,75 +1119,32 @@ function authErrorMessage(error, language) {
   return message || t.authError;
 }
 
+function GoogleIcon() {
+  return (
+    <svg className="googleIcon" viewBox="0 0 18 18" aria-hidden="true" focusable="false">
+      <path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.71v2.25h2.91c1.7-1.57 2.69-3.89 2.69-6.6z" />
+      <path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.91-2.25c-.8.54-1.83.86-3.05.86-2.35 0-4.34-1.58-5.05-3.71H.94v2.33A9 9 0 0 0 9 18z" />
+      <path fill="#FBBC05" d="M3.95 10.72A5.41 5.41 0 0 1 3.67 9c0-.6.1-1.18.28-1.72V4.95H.94A9 9 0 0 0 0 9c0 1.45.34 2.82.94 4.05l3.01-2.33z" />
+      <path fill="#EA4335" d="M9 3.57c1.32 0 2.51.45 3.44 1.35l2.58-2.58C13.46.89 11.43 0 9 0A9 9 0 0 0 .94 4.95l3.01 2.33C4.66 5.15 6.65 3.57 9 3.57z" />
+    </svg>
+  );
+}
+
 function AuthModal({ open, language, onClose }) {
   const t = copy[language];
-  const [email, setEmail] = useState('');
   const [status, setStatus] = useState('idle');
   const [message, setMessage] = useState('');
-  const [cooldownSeconds, setCooldownSeconds] = useState(0);
+  useBodyScrollLock(open);
 
   useEffect(() => {
     if (!open) return;
     setStatus('idle');
     setMessage('');
-    setCooldownSeconds(0);
   }, [open]);
-
-  useEffect(() => {
-    if (!cooldownSeconds) return undefined;
-    const timer = window.setInterval(() => {
-      setCooldownSeconds((current) => Math.max(current - 1, 0));
-    }, 1000);
-    return () => window.clearInterval(timer);
-  }, [cooldownSeconds]);
 
   if (!open) return null;
 
   const redirectTo = `${window.location.origin}${window.location.pathname}`;
-
-  async function handleEmailSubmit(event) {
-    event.preventDefault();
-    if (!isSupabaseConfigured || !supabase) {
-      setStatus('error');
-      setMessage(t.authNotConfigured);
-      return;
-    }
-
-    const normalizedEmail = email.trim();
-    if (!normalizedEmail) {
-      setStatus('error');
-      setMessage(t.emailAddress);
-      return;
-    }
-
-    if (cooldownSeconds > 0) {
-      setStatus('error');
-      setMessage(t.authRateLimited);
-      return;
-    }
-
-    setStatus('loading');
-    setMessage('');
-    const { error } = await supabase.auth.signInWithOtp({
-      email: normalizedEmail,
-      options: {
-        emailRedirectTo: redirectTo
-      }
-    });
-
-    if (error) {
-      setStatus('error');
-      if (error.status === 429 || String(error.message || '').toLowerCase().includes('rate limit')) {
-        setCooldownSeconds(60);
-      }
-      setMessage(authErrorMessage(error, language));
-      return;
-    }
-
-    setCooldownSeconds(60);
-    setStatus('sent');
-    setMessage(t.magicLinkSent);
-  }
 
   async function handleGoogleSignIn() {
     if (!isSupabaseConfigured || !supabase) {
@@ -864,24 +1185,8 @@ function AuthModal({ open, language, onClose }) {
         </div>
         <h2 id="auth-title">{t.signInTitle}</h2>
         <p>{t.signInSubtitle}</p>
-        <form className="authForm" onSubmit={handleEmailSubmit}>
-          <label>
-            <span>{t.emailAddress}</span>
-            <input
-              type="email"
-              autoComplete="email"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              placeholder="you@example.com"
-            />
-          </label>
-          <button type="submit" disabled={status === 'loading' || cooldownSeconds > 0}>
-            {status === 'loading' ? <LoaderCircle className="spinIcon" size={17} /> : <Mail size={17} />}
-            {cooldownSeconds > 0 ? t.tryAgainIn(cooldownSeconds) : t.sendMagicLink}
-          </button>
-        </form>
         <button className="googleButton" type="button" onClick={handleGoogleSignIn} disabled={status === 'loading'}>
-          <LogIn size={17} />
+          {status === 'loading' ? <LoaderCircle className="spinIcon" size={18} /> : <GoogleIcon />}
           {t.continueWithGoogle}
         </button>
         {message ? (
@@ -894,7 +1199,7 @@ function AuthModal({ open, language, onClose }) {
   );
 }
 
-function UserMenu({ language, session, profile, onSignIn, onSignOut, onAdmin, onBilling }) {
+function UserMenu({ language, session, profile, onSignIn, onSignOut, onAdmin, onBilling, onAccount, onFavorites }) {
   const t = copy[language];
   const [open, setOpen] = useState(false);
   const ref = useDropdownDismiss(open, setOpen);
@@ -910,6 +1215,8 @@ function UserMenu({ language, session, profile, onSignIn, onSignOut, onAdmin, on
 
   const email = profile?.email || session.user?.email || t.account;
   const displayName = profile?.fullName || session.user?.user_metadata?.name || email;
+  const avatarUrl = profile?.avatarUrl || session.user?.user_metadata?.avatar_url || session.user?.user_metadata?.picture || '';
+  const totalSpent = Number(profile?.usage?.totalGenerationCredits || 0);
 
   return (
     <div className="dropdownControl userMenu" ref={ref}>
@@ -922,14 +1229,14 @@ function UserMenu({ language, session, profile, onSignIn, onSignOut, onAdmin, on
         onClick={() => setOpen((current) => !current)}
       >
         <span className="avatarBadge">
-          <UserCircle size={18} />
+          {avatarUrl ? <img src={avatarUrl} alt="" /> : <UserCircle size={18} />}
         </span>
         <ChevronDown size={15} />
       </button>
       {open ? (
         <div className="dropdownMenu userDropdown" role="menu">
           <div className="userSummary">
-            <UserCircle size={32} />
+            {avatarUrl ? <img className="userSummaryAvatar" src={avatarUrl} alt="" /> : <UserCircle size={32} />}
             <div>
               <strong>{displayName}</strong>
               <span>{email}</span>
@@ -951,11 +1258,35 @@ function UserMenu({ language, session, profile, onSignIn, onSignOut, onAdmin, on
               {formatMembershipStatus(profile?.membership, language)}
             </span>
             <span className="userStat">
-              <PackageCheck size={15} />
-              {profile?.freeUsed ? t.freeUsedShort : t.freeReady}
+              <ReceiptText size={15} />
+              {t.totalGenerationCredits}: {totalSpent}
             </span>
           </div>
           <div className="dropdownDivider" />
+          <button
+            className="dropdownAction"
+            type="button"
+            role="menuitem"
+            onClick={() => {
+              setOpen(false);
+              onAccount();
+            }}
+          >
+            <Settings size={17} />
+            {t.accountSettings}
+          </button>
+          <button
+            className="dropdownAction"
+            type="button"
+            role="menuitem"
+            onClick={() => {
+              setOpen(false);
+              onFavorites();
+            }}
+          >
+            <Heart size={17} />
+            {t.myFavorites}
+          </button>
           <button
             className="dropdownAction"
             type="button"
@@ -1000,15 +1331,411 @@ function UserMenu({ language, session, profile, onSignIn, onSignOut, onAdmin, on
   );
 }
 
-function AdminPanel({ open, language, session, onClose }) {
+function AccountPanel({
+  open,
+  language,
+  session,
+  profile,
+  casesById,
+  favoriteRows,
+  initialSection,
+  onClose,
+  onBilling,
+  onProfileChange,
+  onOpenCase
+}) {
+  const t = copy[language];
+  const [fullName, setFullName] = useState('');
+  const [status, setStatus] = useState('idle');
+  const [message, setMessage] = useState('');
+  const favoritesRef = useRef(null);
+  useBodyScrollLock(open);
+
+  useEffect(() => {
+    if (!open) return;
+    setFullName(profile?.fullName || session?.user?.user_metadata?.name || '');
+    setStatus('idle');
+    setMessage('');
+  }, [open, profile?.fullName, session?.user?.user_metadata?.name]);
+
+  useEffect(() => {
+    if (!open || initialSection !== 'favorites') return;
+    const frame = window.requestAnimationFrame(() => {
+      favoritesRef.current?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [open, initialSection, favoriteRows]);
+
+  if (!open) return null;
+
+  const email = profile?.email || session?.user?.email || '';
+  const avatarUrl = profile?.avatarUrl || session?.user?.user_metadata?.avatar_url || session?.user?.user_metadata?.picture || '';
+  const usage = profile?.usage || {};
+  const recentTransactions = profile?.recentTransactions || [];
+  const generationTransactions = recentTransactions.filter((transaction) => transaction.type === 'generation');
+  const favoriteCases = normalizeFavoriteRows(favoriteRows)
+    .map((favorite) => ({
+      ...favorite,
+      caseItem: casesById?.get(favorite.caseId)
+    }))
+    .filter((favorite) => favorite.caseItem);
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const nextName = fullName.trim();
+    if (!nextName) {
+      setStatus('error');
+      setMessage(t.profileUpdateFailed);
+      return;
+    }
+
+    setStatus('loading');
+    setMessage('');
+    try {
+      const response = await fetch('/api/me', {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+          ...getAuthHeaders(session)
+        },
+        body: JSON.stringify({ fullName: nextName })
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || !payload.ok) {
+        throw new Error(payload.error || 'PROFILE_UPDATE_FAILED');
+      }
+      if (payload.user) onProfileChange(payload.user);
+      setStatus('success');
+      setMessage(t.profileSaved);
+    } catch {
+      setStatus('error');
+      setMessage(t.profileUpdateFailed);
+    }
+  }
+
+  return (
+    <div
+      className="previewOverlay accountOverlay"
+      role="presentation"
+      onMouseDown={(event) => {
+        if (event.target === event.currentTarget) onClose();
+      }}
+    >
+      <section className="accountDialog" role="dialog" aria-modal="true" aria-labelledby="account-title">
+        <button className="previewClose" type="button" onClick={onClose} aria-label={t.closePreview}>
+          <X size={20} />
+        </button>
+        <div className="accountHeader">
+          <div className="accountAvatar">
+            {avatarUrl ? <img src={avatarUrl} alt="" /> : <UserCircle size={44} />}
+          </div>
+          <div>
+            <span className="eyebrow">
+              <Settings size={16} />
+              {t.accountSettings}
+            </span>
+            <h2 id="account-title">{t.accountTitle}</h2>
+            <p>{t.accountSubtitle}</p>
+          </div>
+        </div>
+
+        <div className="accountGrid">
+          <form className="accountForm" onSubmit={handleSubmit}>
+            <label>
+              <span>{t.displayName}</span>
+              <input
+                value={fullName}
+                maxLength={80}
+                onChange={(event) => setFullName(event.target.value)}
+              />
+            </label>
+            <div className="accountEmail">
+              <span>{t.account}</span>
+              <strong>{email}</strong>
+              <em>{t.googleAvatarSource}</em>
+            </div>
+            <button type="submit" disabled={status === 'loading'}>
+              {status === 'loading' ? <LoaderCircle className="spinIcon" size={16} /> : <Check size={16} />}
+              {t.saveProfile}
+            </button>
+            {message ? (
+              <p className={cx('authMessage', status === 'error' && 'error', status === 'success' && 'sent')}>
+                {message}
+              </p>
+            ) : null}
+          </form>
+
+          <section className="accountOverview">
+            <h3>{t.accountOverview}</h3>
+            <div className="accountMetrics">
+              <div>
+                <span>{t.creditBalance}</span>
+                <strong>{profile?.creditBalance || 0}</strong>
+              </div>
+              <div>
+                <span>{t.currentPlan}</span>
+                <strong>{formatMembershipStatus(profile?.membership, language)}</strong>
+              </div>
+              <div>
+                <span>{t.totalGenerations}</span>
+                <strong>{Number(usage.totalGenerations || 0)}</strong>
+              </div>
+              <div>
+                <span>{t.totalGenerationCredits}</span>
+                <strong>{Number(usage.totalGenerationCredits || 0)}</strong>
+              </div>
+            </div>
+            <button className="portalButton accountBillingButton" type="button" onClick={onBilling}>
+              <CreditCard size={16} />
+              {t.membershipCenter}
+            </button>
+          </section>
+        </div>
+
+        <section className="transactionSection favoritesSection" ref={favoritesRef}>
+          <h3>
+            <Heart size={18} />
+            {t.myFavorites}
+          </h3>
+          {favoriteCases.length ? (
+            <div className="favoriteGrid">
+              {favoriteCases.map(({ caseId, createdAt, caseItem }) => (
+                <button
+                  className="favoriteCard"
+                  type="button"
+                  onClick={() => onOpenCase?.(caseItem)}
+                  key={caseId}
+                >
+                  <img src={caseItem.image} alt={caseItem.imageAlt} />
+                  <span>#{caseId}</span>
+                  <strong>{caseItem.title}</strong>
+                  <em>
+                    {createdAt
+                      ? new Date(createdAt).toLocaleDateString(language === 'zh' ? 'zh-CN' : 'en-US')
+                      : localizeLabel(caseItem.category, language, null)}
+                  </em>
+                </button>
+              ))}
+            </div>
+          ) : (
+            <p className="emptyTransactions">{t.noFavorites}</p>
+          )}
+        </section>
+
+        <section className="transactionSection accountTransactions">
+          <h3>
+            <ReceiptText size={18} />
+            {t.generationUsage}
+          </h3>
+          {generationTransactions.length ? (
+            <div className="transactionList">
+              {generationTransactions.map((transaction) => (
+                <TransactionItem
+                  transaction={transaction}
+                  language={language}
+                  casesById={casesById}
+                  onOpenCase={onOpenCase}
+                  key={transaction.id}
+                />
+              ))}
+            </div>
+          ) : (
+            <p className="emptyTransactions">{t.noGenerationTransactions}</p>
+          )}
+        </section>
+      </section>
+    </div>
+  );
+}
+
+function AdminMetricCard({ icon, label, value, hint }) {
+  return (
+    <div className="adminMetricCard">
+      <span className="adminMetricIcon">{icon}</span>
+      <div>
+        <span>{label}</span>
+        <strong>{formatNumber(value)}</strong>
+        {hint ? <em>{hint}</em> : null}
+      </div>
+    </div>
+  );
+}
+
+function AdminTrendChart({ rows = [], series = [], language, emptyLabel }) {
+  const chartRef = useRef(null);
+  const [hoverIndex, setHoverIndex] = useState(null);
+  const width = 720;
+  const height = 260;
+  const padding = { top: 24, right: 24, bottom: 38, left: 54 };
+  const chartWidth = width - padding.left - padding.right;
+  const chartHeight = height - padding.top - padding.bottom;
+  const maxValue = Math.max(
+    1,
+    ...rows.flatMap((row) => series.map((item) => Number(row[item.key] || 0)))
+  );
+
+  function pointFor(row, index, key) {
+    const x = padding.left + (rows.length <= 1 ? chartWidth / 2 : (index / (rows.length - 1)) * chartWidth);
+    const y = padding.top + chartHeight - (Number(row[key] || 0) / maxValue) * chartHeight;
+    return { x, y };
+  }
+
+  function linePath(points) {
+    return points.map((point, index) => `${index === 0 ? 'M' : 'L'} ${point.x.toFixed(2)} ${point.y.toFixed(2)}`).join(' ');
+  }
+
+  function areaPath(points) {
+    if (!points.length) return '';
+    const bottom = padding.top + chartHeight;
+    const lastPoint = points[points.length - 1];
+    return `${linePath(points)} L ${lastPoint.x.toFixed(2)} ${bottom} L ${points[0].x.toFixed(2)} ${bottom} Z`;
+  }
+
+  function handlePointerMove(event) {
+    if (!chartRef.current || !rows.length) return;
+    const clientX = event.touches?.[0]?.clientX ?? event.clientX;
+    const rect = chartRef.current.getBoundingClientRect();
+    const relativeX = ((clientX - rect.left) / rect.width) * width;
+    const ratio = Math.min(1, Math.max(0, (relativeX - padding.left) / chartWidth));
+    setHoverIndex(Math.round(ratio * (rows.length - 1)));
+  }
+
+  if (!rows.length) {
+    return <p className="emptyTransactions">{emptyLabel}</p>;
+  }
+
+  const gridLines = [0, 0.25, 0.5, 0.75, 1];
+  const xLabelIndexes = rows.length <= 8
+    ? rows.map((_, index) => index)
+    : [0, Math.round((rows.length - 1) / 2), rows.length - 1];
+  const activeIndex = hoverIndex ?? rows.length - 1;
+  const activeRow = rows[activeIndex];
+  const activeX = pointFor(activeRow, activeIndex, series[0]?.key).x;
+  const tooltipX = Math.min(activeX + 12, width - 178);
+
+  return (
+    <div className="adminTrendChart">
+      <div className="adminChartLegend">
+        {series.map((item) => (
+          <span key={item.key}>
+            <i style={{ background: item.color }} />
+            {item.label}
+          </span>
+        ))}
+      </div>
+      <svg
+        ref={chartRef}
+        viewBox={`0 0 ${width} ${height}`}
+        role="img"
+        aria-label={series.map((item) => item.label).join(', ')}
+        onMouseMove={handlePointerMove}
+        onMouseLeave={() => setHoverIndex(null)}
+        onTouchMove={handlePointerMove}
+        onTouchEnd={() => setHoverIndex(null)}
+      >
+        <defs>
+          {series.filter((item) => item.area).map((item) => (
+            <linearGradient id={`area-${item.key}`} key={item.key} x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stopColor={item.color} stopOpacity="0.38" />
+              <stop offset="100%" stopColor={item.color} stopOpacity="0.02" />
+            </linearGradient>
+          ))}
+        </defs>
+        {gridLines.map((line) => {
+          const y = padding.top + chartHeight * line;
+          return (
+            <g key={line}>
+              <line x1={padding.left} x2={width - padding.right} y1={y} y2={y} />
+              <text x={padding.left - 10} y={y + 4} textAnchor="end">
+                {formatNumber(Math.round(maxValue * (1 - line)))}
+              </text>
+            </g>
+          );
+        })}
+        {xLabelIndexes.map((index) => {
+          const point = pointFor(rows[index], index, series[0]?.key);
+          return (
+            <text className="adminChartDate" key={`${rows[index].date}-${index}`} x={point.x} y={height - 10} textAnchor="middle">
+              {formatShortDate(rows[index].date, language)}
+            </text>
+          );
+        })}
+        {series.map((item) => {
+          const points = rows.map((row, index) => pointFor(row, index, item.key));
+          return (
+            <g key={item.key}>
+              {item.area ? <path className="adminChartArea" d={areaPath(points)} fill={`url(#area-${item.key})`} /> : null}
+              <path
+                className="adminChartLine"
+                d={linePath(points)}
+                stroke={item.color}
+                strokeDasharray={item.dashed ? '8 7' : undefined}
+              />
+            </g>
+          );
+        })}
+        {activeRow ? (
+          <g className="adminChartActive">
+            <line x1={activeX} x2={activeX} y1={padding.top} y2={padding.top + chartHeight} />
+            {series.map((item) => {
+              const point = pointFor(activeRow, activeIndex, item.key);
+              return <circle key={item.key} cx={point.x} cy={point.y} r="4.5" fill={item.color} />;
+            })}
+            <g className="adminChartTooltip" transform={`translate(${tooltipX} 34)`}>
+              <rect width="164" height={38 + series.length * 18} rx="8" />
+              <text x="12" y="22">{formatRangeDate(activeRow.date, language)}</text>
+              {series.map((item, index) => (
+                <text key={item.key} x="12" y={44 + index * 18}>
+                  {item.label}: {formatNumber(activeRow[item.key])}
+                </text>
+              ))}
+            </g>
+          </g>
+        ) : null}
+      </svg>
+    </div>
+  );
+}
+
+function AdminRankList({ rows, type, language }) {
+  const t = copy[language];
+  if (!rows?.length) return <p className="emptyTransactions">{t.noAnalyticsRows}</p>;
+
+  return (
+    <div className="adminRankList">
+      {rows.map((row, index) => {
+        const title = row.page || row.channel || row.country || '-';
+        const mainValue = row.pageViews ?? row.sessions ?? row.activeUsers ?? 0;
+        const subValue = row.activeUsers ?? row.pageViews ?? 0;
+        return (
+          <div className="adminRankItem" key={`${type}-${title}-${index}`}>
+            <span>{index + 1}</span>
+            <div>
+              <strong title={title}>{title}</strong>
+              <em>{type === 'channels' ? t.sessions : t.uv}: {formatNumber(subValue)}</em>
+            </div>
+            <b>{formatNumber(mainValue)}</b>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function AdminPanel({ open, language, session, casesById, onClose, onOpenCase }) {
   const t = copy[language];
   const [users, setUsers] = useState([]);
+  const [metrics, setMetrics] = useState(null);
+  const [range, setRange] = useState('7d');
+  const [customStart, setCustomStart] = useState(() => dateInputValue(29));
+  const [customEnd, setCustomEnd] = useState(() => dateInputValue());
   const [status, setStatus] = useState('idle');
   const [message, setMessage] = useState('');
   const [adjustment, setAdjustment] = useState(null);
   const [adjustStatus, setAdjustStatus] = useState('idle');
+  useBodyScrollLock(open);
 
-  async function loadUsers() {
+  async function loadAdminData(nextRange = range, nextStart = customStart, nextEnd = customEnd) {
     if (!session?.access_token) {
       setStatus('error');
       setMessage(t.adminOnly);
@@ -1018,19 +1745,45 @@ function AdminPanel({ open, language, session, onClose }) {
     setStatus('loading');
     setMessage('');
     try {
-      const response = await fetch('/api/admin/users', {
-        headers: getAuthHeaders(session)
-      });
-      const payload = await response.json().catch(() => ({}));
-      if (!response.ok || !payload.ok) {
-        throw new Error(payload.error || 'SERVER_NOT_CONFIGURED');
+      const headers = getAuthHeaders(session);
+      const params = new URLSearchParams({ range: nextRange });
+      if (nextRange === 'custom') {
+        params.set('start', nextStart);
+        params.set('end', nextEnd);
       }
-      setUsers(payload.users || []);
+      const [usersResponse, metricsResponse] = await Promise.all([
+        fetch('/api/admin/users', { headers }),
+        fetch(`/api/admin/metrics?${params.toString()}`, { headers })
+      ]);
+      const usersPayload = await usersResponse.json().catch(() => ({}));
+      const metricsPayload = await metricsResponse.json().catch(() => ({}));
+      if (!usersResponse.ok || !usersPayload.ok) {
+        throw new Error(usersPayload.error || 'SERVER_NOT_CONFIGURED');
+      }
+      if (!metricsResponse.ok || !metricsPayload.ok) {
+        throw new Error(metricsPayload.error || 'SERVER_NOT_CONFIGURED');
+      }
+      setUsers(usersPayload.users || []);
+      setMetrics(metricsPayload);
       setStatus('ready');
     } catch (error) {
       setStatus('error');
-      setMessage(error.message === 'SERVER_NOT_CONFIGURED' ? t.checkoutUnavailable : generationErrorMessage(error.message, language));
+      setMessage(
+        error.message === 'SERVER_NOT_CONFIGURED'
+          ? t.checkoutUnavailable
+          : error.message === 'INVALID_DATE_RANGE'
+            ? t.invalidDateRange
+            : generationErrorMessage(error.message, language)
+      );
     }
+  }
+
+  function handleCustomApply() {
+    if (range !== 'custom') {
+      setRange('custom');
+      return;
+    }
+    loadAdminData('custom', customStart, customEnd);
   }
 
   async function handleAdjustCredits(event) {
@@ -1056,11 +1809,9 @@ function AdminPanel({ open, language, session, onClose }) {
       if (!response.ok || !payload.ok) {
         throw new Error(payload.error || 'CREDIT_ADJUSTMENT_FAILED');
       }
-      setUsers((current) => current.map((user) => (
-        user.id === payload.user.id ? { ...user, ...payload.user } : user
-      )));
       setAdjustment(null);
       setAdjustStatus('idle');
+      await loadAdminData();
     } catch (error) {
       setAdjustStatus('error');
       setMessage(generationErrorMessage(error.message, language));
@@ -1068,10 +1819,34 @@ function AdminPanel({ open, language, session, onClose }) {
   }
 
   useEffect(() => {
-    if (open) loadUsers();
-  }, [open, session?.access_token]);
+    if (open) loadAdminData(range);
+  }, [open, session?.access_token, range]);
 
   if (!open) return null;
+  const traffic = metrics?.traffic || {};
+  const business = metrics?.business || {};
+  const trafficTotals = traffic.totals || {};
+  const businessTotals = business.totals || {};
+  const businessRange = business.range || {};
+  const selectedRange = metrics?.range;
+  const selectedRangeLabel = selectedRange?.startDate && selectedRange?.endDate
+    ? `${formatRangeDate(selectedRange.startDate, language)} - ${formatRangeDate(selectedRange.endDate, language)}`
+    : '';
+  const analyticsMessage = !traffic.configured
+    ? t.analyticsNotConfigured
+    : traffic.error
+      ? t.analyticsLoadFailed
+      : '';
+  const trafficSeries = [
+    { key: 'pv', label: t.pv, color: '#42e6ff', area: true },
+    { key: 'uv', label: t.uv, color: '#c7ff65' },
+    { key: 'visits', label: t.visits, color: '#ff8f70', dashed: true }
+  ];
+  const businessSeries = [
+    { key: 'generations', label: t.rangeGenerations, color: '#42e6ff', area: true },
+    { key: 'registrations', label: t.registrations, color: '#c7ff65' },
+    { key: 'creditsConsumed', label: t.creditsConsumed, color: '#ff8f70', dashed: true }
+  ];
 
   return (
     <div
@@ -1094,7 +1869,128 @@ function AdminPanel({ open, language, session, onClose }) {
             <h2 id="admin-title">{t.adminTitle}</h2>
             <p>{t.adminSubtitle}</p>
           </div>
-          <button type="button" onClick={loadUsers} disabled={status === 'loading'}>
+          <div className="adminHeaderActions">
+            <div className="adminRangeToggle" role="group" aria-label={t.adminMetrics}>
+              {[
+                ['today', t.rangeToday],
+                ['7d', t.range7d],
+                ['30d', t.range30d],
+                ['90d', t.range90d],
+                ['custom', t.customRange]
+              ].map(([value, label]) => (
+                <button
+                  className={cx(range === value && 'active')}
+                  type="button"
+                  onClick={() => setRange(value)}
+                  key={value}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+            {range === 'custom' ? (
+              <div className="adminCustomRange">
+                <label>
+                  <span>{t.startDate}</span>
+                  <input type="date" value={customStart} onChange={(event) => setCustomStart(event.target.value)} />
+                </label>
+                <label>
+                  <span>{t.endDate}</span>
+                  <input type="date" value={customEnd} onChange={(event) => setCustomEnd(event.target.value)} />
+                </label>
+                <button type="button" onClick={handleCustomApply} disabled={status === 'loading'}>
+                  {t.applyRange}
+                </button>
+              </div>
+            ) : null}
+            <button type="button" onClick={() => loadAdminData()} disabled={status === 'loading'}>
+              {status === 'loading' ? <LoaderCircle className="spinIcon" size={17} /> : <RefreshCw size={17} />}
+              {t.refresh}
+            </button>
+          </div>
+        </div>
+
+        {metrics ? (
+          <div className="adminDashboard">
+            <section className="adminBlock">
+              <h3>
+                <TrendingUp size={18} />
+                {t.trafficMetrics}
+              </h3>
+              {analyticsMessage ? <p className="adminNotice">{analyticsMessage}</p> : null}
+              {selectedRangeLabel ? (
+                <p className="adminRangeSummary">
+                  {t.selectedRange}: <strong>{selectedRangeLabel}</strong>
+                </p>
+              ) : null}
+              <div className="adminMetricGrid">
+                <AdminMetricCard icon={<BarChart3 size={18} />} label={t.pv} value={firstNumber(trafficTotals.pv, trafficTotals.pageViews)} />
+                <AdminMetricCard icon={<Users size={18} />} label={t.uv} value={firstNumber(trafficTotals.uv, trafficTotals.activeUsers)} />
+                <AdminMetricCard icon={<ReceiptText size={18} />} label={t.visits} value={firstNumber(trafficTotals.visits, trafficTotals.sessions)} />
+                <AdminMetricCard icon={<UserPlus size={18} />} label={t.newUsers} value={trafficTotals.newUsers} />
+              </div>
+              <div className="adminChartGrid">
+                <div className="adminPanelCard chart">
+                  <h4>{t.trafficTrend}</h4>
+                  {traffic.configured && traffic.daily?.length ? (
+                    <AdminTrendChart rows={traffic.daily} series={trafficSeries} language={language} emptyLabel={t.noAnalyticsRows} />
+                  ) : (
+                    <p className="emptyTransactions">{t.noAnalyticsRows}</p>
+                  )}
+                </div>
+              </div>
+              <div className="adminTrafficGrid">
+                <div className="adminPanelCard">
+                  <h4>{t.topPages}</h4>
+                  <AdminRankList rows={traffic.topPages || []} type="pages" language={language} />
+                </div>
+                <div className="adminPanelCard">
+                  <h4>{t.channels}</h4>
+                  <AdminRankList rows={traffic.channels || []} type="channels" language={language} />
+                </div>
+                <div className="adminPanelCard">
+                  <h4>{t.countries}</h4>
+                  <AdminRankList rows={traffic.countries || []} type="countries" language={language} />
+                </div>
+              </div>
+            </section>
+
+            <section className="adminBlock">
+              <h3>
+                <ShieldCheck size={18} />
+                {t.businessMetrics}
+              </h3>
+              <div className="adminMetricGrid">
+                <AdminMetricCard icon={<Users size={18} />} label={t.registeredUsers} value={firstNumber(businessTotals.registeredUsers, business.totalUsers)} hint={`${t.newRegistrations}: ${formatNumber(firstNumber(businessRange.newRegistrations, business.rangeUsers))}`} />
+                <AdminMetricCard icon={<Crown size={18} />} label={t.activeMemberships} value={firstNumber(businessTotals.activeMembers, business.activeMemberships)} hint={`${t.newMembers}: ${formatNumber(firstNumber(businessRange.newMembers, business.rangeMemberships))}`} />
+                <AdminMetricCard icon={<ImageIcon size={18} />} label={t.totalGenerationsMetric} value={firstNumber(businessTotals.totalGenerations, business.totalGenerations)} hint={`${t.rangeGenerations}: ${formatNumber(firstNumber(businessRange.generations, business.rangeGenerations))}`} />
+                <AdminMetricCard icon={<PackageCheck size={18} />} label={t.succeeded} value={firstNumber(businessTotals.succeededGenerations, business.succeededGenerations)} hint={`${t.rangeGenerations}: ${formatNumber(firstNumber(businessRange.succeededGenerations, business.rangeSucceededGenerations))}`} />
+                <AdminMetricCard icon={<Coins size={18} />} label={t.creditsConsumed} value={firstNumber(businessTotals.totalCreditsConsumed, business.totalGenerationCredits)} hint={`${t.rangeGenerations}: ${formatNumber(firstNumber(businessRange.creditsConsumed, business.rangeGenerationCredits))}`} />
+                <AdminMetricCard icon={<X size={18} />} label={t.failed} value={firstNumber(businessTotals.failedGenerations, business.failedGenerations)} />
+                <AdminMetricCard icon={<LoaderCircle size={18} />} label={t.pending} value={firstNumber(businessTotals.pendingGenerations, business.pendingGenerations)} />
+                <AdminMetricCard icon={<Coins size={18} />} label={t.creditsInCirculation} value={firstNumber(businessTotals.totalCreditBalance, business.totalCreditBalance)} />
+                <AdminMetricCard icon={<CreditCard size={18} />} label={t.purchasedCredits} value={firstNumber(businessTotals.purchasedCredits, business.purchasedCredits)} />
+                <AdminMetricCard icon={<Crown size={18} />} label={t.membershipCredits} value={firstNumber(businessTotals.membershipCredits, business.membershipCredits)} />
+              </div>
+              <div className="adminChartGrid">
+                <div className="adminPanelCard chart">
+                  <h4>{t.businessTrend}</h4>
+                  {business.daily?.length ? (
+                    <AdminTrendChart rows={business.daily} series={businessSeries} language={language} emptyLabel={t.noAnalyticsRows} />
+                  ) : (
+                    <p className="emptyTransactions">{t.noAnalyticsRows}</p>
+                  )}
+                </div>
+              </div>
+            </section>
+          </div>
+        ) : null}
+
+        <div className="adminHeader compact">
+          <div>
+            <h3>{t.users}</h3>
+          </div>
+          <button type="button" onClick={() => loadAdminData()} disabled={status === 'loading'}>
             {status === 'loading' ? <LoaderCircle className="spinIcon" size={17} /> : <RefreshCw size={17} />}
             {t.refresh}
           </button>
@@ -1148,6 +2044,10 @@ function AdminPanel({ open, language, session, onClose }) {
                   <th>{t.creditBalance}</th>
                   <th>{t.currentPlan}</th>
                   <th>{t.freeGeneration}</th>
+                  <th>{t.totalGenerations}</th>
+                  <th>{t.spentCredits}</th>
+                  <th>{t.purchased}</th>
+                  <th>{t.lastGeneration}</th>
                   <th>{t.createdAt}</th>
                   <th>{t.adminAdjust}</th>
                 </tr>
@@ -1168,6 +2068,25 @@ function AdminPanel({ open, language, session, onClose }) {
                     <td>{user.creditBalance}</td>
                     <td>{formatMembershipStatus(user.membership, language)}</td>
                     <td>{user.freeUsed ? t.freeUsedShort : t.freeReady}</td>
+                    <td>{formatNumber(user.usage?.totalGenerations)}</td>
+                    <td>{formatNumber(user.usage?.totalGenerationCredits)}</td>
+                    <td>{formatNumber(user.usage?.purchasedCredits)}</td>
+                    <td>
+                      {user.usage?.lastGenerationCaseId ? (
+                        <button
+                          className="tableAction compactAction"
+                          type="button"
+                          onClick={() => {
+                            const caseItem = casesById?.get(user.usage.lastGenerationCaseId);
+                            if (caseItem) onOpenCase?.(caseItem);
+                          }}
+                          disabled={!casesById?.has(user.usage.lastGenerationCaseId)}
+                        >
+                          <ImageIcon size={14} />
+                          #{user.usage.lastGenerationCaseId}
+                        </button>
+                      ) : '-'}
+                    </td>
                     <td>{user.createdAt ? new Date(user.createdAt).toLocaleDateString(language === 'zh' ? 'zh-CN' : 'en-US') : '-'}</td>
                     <td>
                       <button
@@ -1201,9 +2120,11 @@ function BillingPanel({
   session,
   profile,
   notice,
+  casesById,
   onClose,
   onAuthRequired,
-  onProfileChange
+  onProfileChange,
+  onOpenCase
 }) {
   const t = copy[language];
   const [plans, setPlans] = useState([]);
@@ -1213,6 +2134,7 @@ function BillingPanel({
   const [status, setStatus] = useState('idle');
   const [message, setMessage] = useState('');
   const [busyProduct, setBusyProduct] = useState('');
+  useBodyScrollLock(open);
 
   async function loadBilling() {
     setStatus('loading');
@@ -1448,17 +2370,13 @@ function BillingPanel({
           {transactions.length ? (
             <div className="transactionList">
               {transactions.map((transaction) => (
-                <div className="transactionItem" key={transaction.id}>
-                  <span>{transactionLabel(transaction, language)}</span>
-                  <strong className={transaction.amount >= 0 ? 'positive' : 'negative'}>
-                    {transaction.amount >= 0 ? '+' : ''}{transaction.amount}
-                  </strong>
-                  <em>
-                    {transaction.createdAt
-                      ? new Date(transaction.createdAt).toLocaleString(language === 'zh' ? 'zh-CN' : 'en-US')
-                      : '-'}
-                  </em>
-                </div>
+                <TransactionItem
+                  transaction={transaction}
+                  language={language}
+                  casesById={casesById}
+                  onOpenCase={onOpenCase}
+                  key={transaction.id}
+                />
               ))}
             </div>
           ) : (
@@ -1612,7 +2530,18 @@ function TemplateSection({ language, styleLibrary, onOpenTemplate }) {
   );
 }
 
-function PromptCard({ caseItem, copied, language, onCopy, onOpen, onGenerate, styleLibrary }) {
+function PromptCard({
+  caseItem,
+  copied,
+  favorited,
+  favoriteBusy,
+  language,
+  onCopy,
+  onOpen,
+  onGenerate,
+  onToggleFavorite,
+  styleLibrary
+}) {
   const t = copy[language];
   const tags = [...new Set([...caseItem.styles, ...caseItem.scenes])].slice(0, 4);
 
@@ -1645,6 +2574,16 @@ function PromptCard({ caseItem, copied, language, onCopy, onOpen, onGenerate, st
           ))}
         </div>
         <div className="cardActions caseActions">
+          <button
+            className={cx('favoriteAction', favorited && 'active')}
+            type="button"
+            onClick={() => onToggleFavorite(caseItem)}
+            disabled={favoriteBusy}
+            aria-pressed={Boolean(favorited)}
+          >
+            {favoriteBusy ? <LoaderCircle className="spinIcon" size={17} /> : <Heart size={17} />}
+            {favorited ? t.favorited : t.favorite}
+          </button>
           <button type="button" onClick={() => onCopy(caseItem)}>
             {copied ? <Check size={17} /> : <Copy size={17} />}
             {copied ? t.copied : t.copyPrompt}
@@ -1659,6 +2598,7 @@ function PromptCard({ caseItem, copied, language, onCopy, onOpen, onGenerate, st
           </button>
           <a href={caseItem.githubUrl} target="_blank" rel="noreferrer" aria-label={t.openOnGithub}>
             <Github size={18} />
+            GitHub
           </a>
         </div>
       </div>
@@ -1673,8 +2613,11 @@ function PreviewDialog({
   copiedId,
   session,
   profile,
+  favorite,
+  favoriteBusy,
   onClose,
   onCopyText,
+  onToggleFavorite,
   onAuthRequired,
   onBillingRequired,
   onProfileChange
@@ -1687,12 +2630,10 @@ function PreviewDialog({
     image: '',
     message: ''
   });
+  useBodyScrollLock(Boolean(preview));
 
   useEffect(() => {
     if (!preview) return undefined;
-
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
 
     function handleKeyDown(event) {
       if (event.key === 'Escape') onClose();
@@ -1700,7 +2641,6 @@ function PreviewDialog({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => {
-      document.body.style.overflow = previousOverflow;
       window.removeEventListener('keydown', handleKeyDown);
     };
   }, [preview, onClose]);
@@ -1749,10 +2689,10 @@ function PreviewDialog({
   const isGenerating = generationState.status === 'generating';
   const generatedImage = !isTemplate ? generationState.image : '';
   const isSignedIn = Boolean(session?.access_token);
+  const creditBalance = Number(profile?.creditBalance || 0);
   const isOutOfCredits = isSignedIn
-    && !profile?.isSuperAdmin
-    && Boolean(profile?.freeUsed)
-    && Number(profile?.creditBalance || 0) <= 0;
+    && creditBalance <= 0
+    && (profile?.isSuperAdmin || Boolean(profile?.freeUsed));
   const generationLocked = isGenerating;
   const quotaText = isSignedIn ? getGenerationQuotaText(profile, language) : t.authRequired;
 
@@ -1872,6 +2812,18 @@ function PreviewDialog({
             </div>
           ) : null}
           <div className="previewActions">
+            {!isTemplate ? (
+              <button
+                className={cx('favoriteAction', favorite && 'active')}
+                type="button"
+                onClick={() => onToggleFavorite(item)}
+                disabled={favoriteBusy}
+                aria-pressed={Boolean(favorite)}
+              >
+                {favoriteBusy ? <LoaderCircle className="spinIcon" size={17} /> : <Heart size={17} />}
+                {favorite ? t.unfavorite : t.favorite}
+              </button>
+            ) : null}
             <button type="button" onClick={() => onCopyText(promptText, copyId)}>
               {isCopied ? <Check size={17} /> : <Copy size={17} />}
               {isCopied ? t.copied : isTemplate ? t.copyTemplatePrompt : t.copyPrompt}
@@ -1975,6 +2927,7 @@ function PreviewDialog({
 }
 
 function App() {
+  useGaPageViews();
   const [siteData, setSiteData] = useState(null);
   const [styleLibrary, setStyleLibrary] = useState(null);
   const [language, setLanguage] = useState(() => localStorage.getItem('language') || 'en');
@@ -1985,7 +2938,12 @@ function App() {
   const [preview, setPreview] = useState(null);
   const [session, setSession] = useState(null);
   const [profile, setProfile] = useState(null);
+  const [favoriteRows, setFavoriteRows] = useState([]);
+  const [favoriteBusyId, setFavoriteBusyId] = useState(null);
+  const [favoriteMessage, setFavoriteMessage] = useState('');
   const [authOpen, setAuthOpen] = useState(false);
+  const [accountOpen, setAccountOpen] = useState(false);
+  const [accountInitialSection, setAccountInitialSection] = useState('overview');
   const [adminOpen, setAdminOpen] = useState(false);
   const [billingOpen, setBillingOpen] = useState(false);
   const [billingNotice, setBillingNotice] = useState('');
@@ -2038,6 +2996,7 @@ function App() {
 
     if (!session?.access_token) {
       setProfile(null);
+      setFavoriteRows([]);
       return () => {
         cancelled = true;
       };
@@ -2055,6 +3014,49 @@ function App() {
       .catch(() => {
         if (!cancelled) setProfile(null);
       });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [session?.access_token]);
+
+  async function loadFavorites({ silent = true } = {}) {
+    if (!session?.access_token) {
+      setFavoriteRows([]);
+      return [];
+    }
+
+    try {
+      const response = await fetch('/api/favorites', {
+        headers: getAuthHeaders(session)
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok || !payload?.ok) {
+        throw new Error(payload.error || 'FAVORITES_LOAD_FAILED');
+      }
+      const favorites = normalizeFavoriteRows(payload.favorites);
+      setFavoriteRows(favorites);
+      return favorites;
+    } catch {
+      if (!silent) setTimedFavoriteMessage(t.favoriteFailed);
+      return [];
+    }
+  }
+
+  useEffect(() => {
+    let cancelled = false;
+
+    if (!session?.access_token) {
+      setFavoriteRows([]);
+      return () => {
+        cancelled = true;
+      };
+    }
+
+    loadFavorites().then((favorites) => {
+      if (cancelled) return;
+      setFavoriteRows(favorites);
+    });
 
     return () => {
       cancelled = true;
@@ -2133,17 +3135,112 @@ function App() {
   );
 
   const visibleCases = filteredCases.slice(0, 72);
+  const casesById = useMemo(() => new Map((siteData?.cases || []).map((caseItem) => [caseItem.id, caseItem])), [siteData]);
+  const favoriteCaseIds = useMemo(
+    () => new Set(normalizeFavoriteRows(favoriteRows).map((favorite) => favorite.caseId)),
+    [favoriteRows]
+  );
 
   async function handleSignOut() {
     if (supabase) await supabase.auth.signOut();
     setSession(null);
     setProfile(null);
+    setFavoriteRows([]);
+    setAccountOpen(false);
     setAdminOpen(false);
     setBillingOpen(false);
   }
 
   function handleProfileChange(nextProfile) {
     if (nextProfile) setProfile(nextProfile);
+  }
+
+  function handleOpenCaseFromAccount(caseItem) {
+    setAccountOpen(false);
+    setAccountInitialSection('overview');
+    setBillingOpen(false);
+    setPreview({ type: 'case', item: caseItem });
+  }
+
+  function handleOpenCaseFromAdmin(caseItem) {
+    setAdminOpen(false);
+    setPreview({ type: 'case', item: caseItem });
+  }
+
+  function setTimedFavoriteMessage(message) {
+    setFavoriteMessage(message);
+    window.setTimeout(() => {
+      setFavoriteMessage((current) => (current === message ? '' : current));
+    }, 2400);
+  }
+
+  async function handleToggleFavorite(caseItem) {
+    if (!caseItem?.id) return;
+    if (!session?.access_token) {
+      setAuthOpen(true);
+      setTimedFavoriteMessage(t.signInToFavorite);
+      return;
+    }
+
+    const caseId = Number(caseItem.id);
+    const isFavorite = favoriteCaseIds.has(caseId);
+    const previousRows = favoriteRows;
+    setFavoriteBusyId(caseId);
+
+    if (isFavorite) {
+      setFavoriteRows((current) => normalizeFavoriteRows(current).filter((favorite) => favorite.caseId !== caseId));
+    } else {
+      setFavoriteRows((current) => [
+        { caseId, createdAt: new Date().toISOString() },
+        ...normalizeFavoriteRows(current).filter((favorite) => favorite.caseId !== caseId)
+      ]);
+    }
+
+    try {
+      const response = await fetch(isFavorite ? `/api/favorites?caseId=${caseId}` : '/api/favorites', {
+        method: isFavorite ? 'DELETE' : 'POST',
+        headers: {
+          ...(isFavorite ? {} : { 'Content-Type': 'application/json' }),
+          ...getAuthHeaders(session)
+        },
+        body: isFavorite ? undefined : JSON.stringify({ caseId })
+      });
+      const payload = await response.json().catch(() => ({}));
+
+      if (!response.ok || !payload.ok) {
+        if (payload.error === 'AUTH_REQUIRED' || payload.loginRequired) setAuthOpen(true);
+        throw new Error(payload.error || 'FAVORITE_FAILED');
+      }
+
+      if (!isFavorite && payload.favorite) {
+        const favorite = normalizeFavoriteRows([payload.favorite])[0];
+        if (favorite) {
+          setFavoriteRows((current) => [
+            favorite,
+            ...normalizeFavoriteRows(current).filter((item) => item.caseId !== caseId)
+          ]);
+        }
+      }
+      setTimedFavoriteMessage(isFavorite ? t.favoriteRemoved : t.favoriteSaved);
+    } catch {
+      setFavoriteRows(previousRows);
+      setTimedFavoriteMessage(t.favoriteFailed);
+    } finally {
+      setFavoriteBusyId(null);
+    }
+  }
+
+  function handleOpenAccount(section = 'overview') {
+    setAccountInitialSection(section);
+    setAccountOpen(true);
+    if (section === 'favorites') {
+      loadFavorites({ silent: false });
+    }
+  }
+
+  function handleCloseAccount() {
+    setAccountOpen(false);
+    setAccountInitialSection('overview');
   }
 
   if (!siteData || !styleLibrary) {
@@ -2169,6 +3266,7 @@ function App() {
             <a href="#gallery">{t.navCases}</a>
             <a href="#templates">{t.navTemplates}</a>
             <a href="#agent-skill">{t.navSkill}</a>
+            <CommunityNavItem language={language} />
             <a href={repoUrl} target="_blank" rel="noreferrer">
               GitHub
             </a>
@@ -2180,6 +3278,8 @@ function App() {
             profile={profile}
             onSignIn={() => setAuthOpen(true)}
             onSignOut={handleSignOut}
+            onAccount={() => handleOpenAccount('overview')}
+            onFavorites={() => handleOpenAccount('favorites')}
             onAdmin={() => setAdminOpen(true)}
             onBilling={() => {
               setBillingNotice('');
@@ -2188,6 +3288,7 @@ function App() {
           />
         </div>
       </header>
+      {favoriteMessage ? <div className="toastNotice">{favoriteMessage}</div> : null}
 
       <Hero
         latestCases={heroCases}
@@ -2277,6 +3378,8 @@ function App() {
             <PromptCard
               caseItem={caseItem}
               copied={copiedId === `case-${caseItem.id}`}
+              favorited={favoriteCaseIds.has(caseItem.id)}
+              favoriteBusy={favoriteBusyId === caseItem.id}
               language={language}
               onCopy={copyPrompt}
               onOpen={(item) => setPreview({ type: 'case', item })}
@@ -2284,6 +3387,7 @@ function App() {
                 setPreview({ type: 'case', item });
                 if (!session?.access_token) setAuthOpen(true);
               }}
+              onToggleFavorite={handleToggleFavorite}
               styleLibrary={styleLibrary}
               key={caseItem.id}
             />
@@ -2311,8 +3415,11 @@ function App() {
         copiedId={copiedId}
         session={session}
         profile={profile}
+        favorite={preview?.type === 'case' ? favoriteCaseIds.has(preview.item.id) : false}
+        favoriteBusy={preview?.type === 'case' && favoriteBusyId === preview.item.id}
         onClose={() => setPreview(null)}
         onCopyText={copyText}
+        onToggleFavorite={handleToggleFavorite}
         onAuthRequired={() => setAuthOpen(true)}
         onBillingRequired={() => {
           setBillingNotice(t.creditsRequired);
@@ -2325,11 +3432,30 @@ function App() {
         language={language}
         onClose={() => setAuthOpen(false)}
       />
+      <AccountPanel
+        open={accountOpen}
+        language={language}
+        session={session}
+        profile={profile}
+        casesById={casesById}
+        favoriteRows={favoriteRows}
+        initialSection={accountInitialSection}
+        onClose={handleCloseAccount}
+        onProfileChange={handleProfileChange}
+        onOpenCase={handleOpenCaseFromAccount}
+        onBilling={() => {
+          setAccountOpen(false);
+          setBillingNotice('');
+          setBillingOpen(true);
+        }}
+      />
       <AdminPanel
         open={adminOpen}
         language={language}
         session={session}
+        casesById={casesById}
         onClose={() => setAdminOpen(false)}
+        onOpenCase={handleOpenCaseFromAdmin}
       />
       <BillingPanel
         open={billingOpen}
@@ -2337,9 +3463,11 @@ function App() {
         session={session}
         profile={profile}
         notice={billingNotice}
+        casesById={casesById}
         onClose={() => setBillingOpen(false)}
         onAuthRequired={() => setAuthOpen(true)}
         onProfileChange={handleProfileChange}
+        onOpenCase={handleOpenCaseFromAccount}
       />
     </main>
   );

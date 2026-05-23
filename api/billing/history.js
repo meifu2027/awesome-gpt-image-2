@@ -5,12 +5,14 @@ function json(res, status, payload) {
 }
 
 function formatTransaction(row) {
+  const caseId = Number(row.metadata?.caseId || 0);
   return {
     id: row.id,
     amount: Number(row.amount || 0),
     type: row.type || '',
     source: row.source || '',
     metadata: row.metadata || {},
+    caseId: Number.isFinite(caseId) && caseId > 0 ? caseId : null,
     createdAt: row.created_at || ''
   };
 }

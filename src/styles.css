@@ -115,18 +115,86 @@ button {
   gap: 10px;
 }
 
-.topbar nav a {
+.topbar nav a,
+.communityNavItem > button {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
   min-height: 34px;
+  border: 0;
   padding: 0 12px;
   border-radius: 7px;
+  background: transparent;
   color: #b7c7df;
+  font: inherit;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
-.topbar nav a:hover {
+.topbar nav a:hover,
+.communityNavItem > button:hover,
+.communityNavItem:focus-within > button {
   background: rgba(255, 255, 255, 0.08);
   color: #ffffff;
+}
+
+.communityNavItem {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.communityNavItem > button {
+  cursor: pointer;
+}
+
+.communityNavItem > button svg {
+  color: #36ef8f;
+}
+
+.communityPopover {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  z-index: 60;
+  width: min(430px, calc(100vw - 36px));
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, -6px) scale(0.98);
+  transition:
+    visibility 0.18s ease,
+    opacity 0.18s ease,
+    transform 0.18s ease;
+}
+
+.communityPopover::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 100%;
+  height: 14px;
+}
+
+.communityPopover img {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow:
+    0 26px 80px rgba(0, 0, 0, 0.55),
+    0 0 32px rgba(54, 239, 143, 0.16);
+}
+
+.communityNavItem:hover .communityPopover,
+.communityNavItem:focus-within .communityPopover,
+.communityNavItem.open .communityPopover {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0) scale(1);
 }
 
 .dropdownControl {
@@ -306,6 +374,15 @@ button {
   border-radius: 7px;
   background: rgba(103, 232, 249, 0.12);
   color: #9eeeff;
+  overflow: hidden;
+}
+
+.avatarBadge img,
+.userSummaryAvatar {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
 }
 
 .userDropdown {
@@ -322,6 +399,13 @@ button {
 
 .userSummary svg {
   color: #9eeeff;
+}
+
+.userSummaryAvatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid rgba(103, 232, 249, 0.24);
 }
 
 .userSummary strong,
@@ -1252,17 +1336,22 @@ button {
 
 .cardActions {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 42px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
   margin-top: 16px;
 }
 
 .caseActions {
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 42px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
-.caseActions button:first-child {
-  grid-column: 1 / -1;
+.caseActions > * {
+  grid-column: span 2;
+}
+
+.caseActions > :nth-child(4),
+.caseActions > :nth-child(5) {
+  grid-column: span 3;
 }
 
 .templateActions {
@@ -1276,20 +1365,35 @@ button {
   justify-content: center;
   gap: 8px;
   min-width: 0;
+  max-width: 100%;
   min-height: 42px;
+  padding: 8px 10px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.08);
   color: #ffffff;
   font-weight: 800;
+  line-height: 1.15;
   text-align: center;
-  white-space: nowrap;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .cardActions button:hover,
 .cardActions a:hover {
   border-color: rgba(120, 255, 185, 0.74);
   background: rgba(120, 255, 185, 0.14);
+}
+
+.favoriteAction.active {
+  border-color: rgba(255, 113, 161, 0.44);
+  background: rgba(255, 113, 161, 0.13);
+  color: #ffd6e4;
+}
+
+.favoriteAction.active svg {
+  fill: currentColor;
 }
 
 .cardActions button:disabled,
@@ -1305,9 +1409,11 @@ button {
   z-index: 60;
   display: grid;
   place-items: center;
+  overscroll-behavior: contain;
   padding: 24px;
   background: rgba(3, 6, 13, 0.78);
   backdrop-filter: blur(16px);
+  touch-action: none;
 }
 
 .previewDialog {
@@ -1323,6 +1429,8 @@ button {
     radial-gradient(circle at 10% 0%, rgba(66, 230, 255, 0.12), transparent 34%),
     linear-gradient(145deg, rgba(11, 17, 33, 0.98), rgba(7, 11, 22, 0.96));
   box-shadow: 0 34px 120px rgba(0, 0, 0, 0.56);
+  overscroll-behavior: contain;
+  touch-action: auto;
 }
 
 .previewClose {
@@ -1426,6 +1534,8 @@ button {
 }
 
 .previewContent {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
   overflow: auto;
   padding: 30px;
 }
@@ -1497,6 +1607,12 @@ button {
   color: #d8ffe4;
 }
 
+.previewActions .favoriteAction.active {
+  border-color: rgba(255, 113, 161, 0.44);
+  background: rgba(255, 113, 161, 0.13);
+  color: #ffd6e4;
+}
+
 .previewActions button:hover,
 .previewActions a:hover {
   border-color: rgba(103, 232, 249, 0.7);
@@ -1505,6 +1621,22 @@ button {
 
 .spinIcon {
   animation: spin 0.9s linear infinite;
+}
+
+.toastNotice {
+  position: fixed;
+  top: 86px;
+  right: max(18px, calc((100vw - 1180px) / 2));
+  z-index: 80;
+  max-width: min(360px, calc(100vw - 32px));
+  border: 1px solid rgba(120, 255, 185, 0.28);
+  border-radius: 8px;
+  padding: 11px 13px;
+  background: rgba(8, 14, 28, 0.94);
+  color: #d8ffe4;
+  font-size: 13px;
+  font-weight: 900;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.34);
 }
 
 .previewSection {
@@ -1700,6 +1832,8 @@ button {
   position: relative;
   width: min(100%, 460px);
   max-height: min(860px, 92vh);
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
   overflow: auto;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 8px;
@@ -1707,6 +1841,7 @@ button {
     radial-gradient(circle at 18% 0%, rgba(66, 230, 255, 0.15), transparent 38%),
     linear-gradient(145deg, rgba(12, 18, 36, 0.98), rgba(6, 10, 21, 0.96));
   box-shadow: 0 34px 120px rgba(0, 0, 0, 0.56);
+  touch-action: auto;
 }
 
 .authDialog {
@@ -1725,7 +1860,8 @@ button {
 }
 
 .authDialog h2,
-.adminDialog h2 {
+.adminDialog h2,
+.accountDialog h2 {
   margin: 18px 48px 10px 0;
   color: #ffffff;
   font-size: 30px;
@@ -1734,43 +1870,13 @@ button {
 }
 
 .authDialog p,
-.adminDialog p {
+.adminDialog p,
+.accountDialog p {
   margin: 0;
   color: #aebcd0;
   line-height: 1.68;
 }
 
-.authForm {
-  display: grid;
-  gap: 12px;
-  margin-top: 22px;
-}
-
-.authForm label {
-  display: grid;
-  gap: 8px;
-  color: #eaf3ff;
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.authForm input {
-  width: 100%;
-  min-height: 46px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  outline: 0;
-  padding: 0 12px;
-  background: rgba(3, 7, 15, 0.72);
-  color: #ffffff;
-}
-
-.authForm input:focus {
-  border-color: rgba(103, 232, 249, 0.72);
-  box-shadow: 0 0 0 3px rgba(103, 232, 249, 0.1);
-}
-
-.authForm button,
 .googleButton,
 .adminHeader button {
   display: inline-flex;
@@ -1788,12 +1894,30 @@ button {
 
 .googleButton {
   width: 100%;
-  margin-top: 12px;
-  border-color: rgba(255, 255, 255, 0.14);
-  background: rgba(255, 255, 255, 0.08);
+  margin-top: 24px;
+  min-height: 44px;
+  border-color: #dadce0;
+  background: #ffffff;
+  color: #1f1f1f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  box-shadow: 0 1px 2px rgba(3, 7, 15, 0.16);
 }
 
-.authForm button:disabled,
+.googleButton:hover {
+  background: #f8fafd;
+  border-color: #d2e3fc;
+  box-shadow: 0 2px 6px rgba(26, 115, 232, 0.18);
+}
+
+.googleIcon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
 .googleButton:disabled,
 .adminHeader button:disabled {
   cursor: not-allowed;
@@ -1824,13 +1948,49 @@ button {
 }
 
 .adminDialog {
-  width: min(980px, 100%);
+  width: min(1180px, 100%);
   padding: 24px;
 }
 
 .billingDialog {
   width: min(1080px, 100%);
   padding: 24px;
+}
+
+.accountDialog {
+  width: min(920px, 100%);
+  max-height: min(860px, 92vh);
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  overflow: auto;
+  padding: 24px;
+  touch-action: auto;
+}
+
+.accountHeader {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+.accountAvatar {
+  display: grid;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border: 1px solid rgba(103, 232, 249, 0.24);
+  border-radius: 8px;
+  background: rgba(103, 232, 249, 0.1);
+  color: #9eeeff;
+  place-items: center;
+}
+
+.accountAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .adminHeader {
@@ -1841,8 +2001,404 @@ button {
   margin-bottom: 18px;
 }
 
+.adminHeader.compact {
+  align-items: center;
+  margin: 18px 0 12px;
+}
+
+.adminHeader.compact h3 {
+  margin: 0;
+  color: #eaf3ff;
+  font-size: 18px;
+}
+
 .adminHeader h2 {
   margin-top: 14px;
+}
+
+.adminHeaderActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.adminRangeToggle {
+  display: inline-flex;
+  gap: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 8px;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.adminRangeToggle button {
+  min-height: 34px;
+  border: 0;
+  border-radius: 7px;
+  padding: 0 10px;
+  background: transparent;
+  color: #aebcd0;
+  box-shadow: none;
+}
+
+.adminRangeToggle button.active,
+.adminRangeToggle button:hover {
+  background: rgba(103, 232, 249, 0.14);
+  color: #ffffff;
+}
+
+.adminCustomRange {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 8px;
+  padding: 8px;
+  background: rgba(3, 7, 15, 0.38);
+}
+
+.adminCustomRange label {
+  display: grid;
+  gap: 5px;
+}
+
+.adminCustomRange span {
+  color: #93a4bc;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.adminCustomRange input {
+  width: 142px;
+  min-height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  padding: 0 9px;
+  background: rgba(3, 7, 15, 0.72);
+  color: #ffffff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.adminDashboard,
+.adminBlock {
+  display: grid;
+  gap: 14px;
+}
+
+.adminDashboard {
+  margin-bottom: 18px;
+}
+
+.adminBlock {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 8px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.adminBlock h3,
+.adminPanelCard h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: #eaf3ff;
+  letter-spacing: 0;
+}
+
+.adminBlock h3 {
+  font-size: 16px;
+}
+
+.adminPanelCard h4 {
+  font-size: 14px;
+}
+
+.adminNotice {
+  margin: 0;
+  border: 1px solid rgba(255, 198, 102, 0.22);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: rgba(255, 198, 102, 0.08);
+  color: #ffe1a8;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.adminRangeSummary {
+  margin: -2px 0 0;
+  color: #aebcd0;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.adminRangeSummary strong {
+  color: #ffffff;
+}
+
+.adminMetricGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.adminMetricCard {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 10px;
+  min-height: 94px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(3, 7, 15, 0.45);
+}
+
+.adminMetricIcon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(103, 232, 249, 0.11);
+  color: #9eeeff;
+  place-items: center;
+}
+
+.adminMetricCard div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.adminMetricCard span:not(.adminMetricIcon) {
+  color: #8eeeff;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.adminMetricCard strong {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.adminMetricCard em {
+  color: #93a4bc;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.adminChartGrid {
+  display: grid;
+  gap: 10px;
+}
+
+.adminTrafficGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.adminPanelCard {
+  display: grid;
+  gap: 12px;
+  min-height: 210px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(3, 7, 15, 0.45);
+}
+
+.adminPanelCard.chart {
+  min-height: 334px;
+}
+
+.adminTrendChart {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+
+.adminChartLegend {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.adminChartLegend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #aebcd0;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.adminChartLegend i {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+}
+
+.adminTrendChart svg {
+  width: 100%;
+  height: auto;
+  min-height: 260px;
+  overflow: visible;
+}
+
+.adminTrendChart line {
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 1;
+}
+
+.adminTrendChart text {
+  fill: #93a4bc;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.adminChartDate {
+  fill: #aebcd0;
+}
+
+.adminChartArea {
+  pointer-events: none;
+}
+
+.adminChartLine {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.adminChartActive > line {
+  stroke: rgba(255, 255, 255, 0.28);
+  stroke-dasharray: 4 6;
+}
+
+.adminChartActive circle {
+  stroke: #07101f;
+  stroke-width: 2;
+}
+
+.adminChartTooltip rect {
+  fill: rgba(3, 7, 15, 0.92);
+  stroke: rgba(255, 255, 255, 0.16);
+}
+
+.adminChartTooltip text {
+  fill: #ffffff;
+  font-size: 12px;
+}
+
+.adminMiniBars {
+  display: grid;
+  gap: 9px;
+}
+
+.adminMiniBar {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) 52px;
+  gap: 9px;
+  align-items: center;
+}
+
+.adminMiniBar span,
+.adminMiniBar strong {
+  color: #aebcd0;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.adminMiniBar strong {
+  color: #ffffff;
+  text-align: right;
+}
+
+.adminMiniBar div {
+  position: relative;
+  height: 18px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.adminMiniBar i,
+.adminMiniBar b {
+  position: absolute;
+  left: 0;
+  height: 8px;
+  border-radius: 999px;
+}
+
+.adminMiniBar i {
+  top: 2px;
+  background: linear-gradient(90deg, rgba(66, 230, 255, 0.9), rgba(120, 255, 185, 0.9));
+}
+
+.adminMiniBar b {
+  bottom: 2px;
+  background: rgba(199, 255, 101, 0.72);
+}
+
+.adminRankList {
+  display: grid;
+  gap: 8px;
+}
+
+.adminRankItem {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  min-height: 40px;
+  border-radius: 7px;
+  padding: 7px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.adminRankItem > span {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(103, 232, 249, 0.12);
+  color: #9eeeff;
+  font-size: 11px;
+  font-weight: 900;
+  place-items: center;
+}
+
+.adminRankItem div {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.adminRankItem strong {
+  overflow: hidden;
+  color: #eaf3ff;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.adminRankItem em {
+  color: #93a4bc;
+  font-size: 11px;
+  font-style: normal;
+}
+
+.adminRankItem b {
+  color: #ffffff;
+  font-size: 12px;
 }
 
 .adminTableWrap {
@@ -1962,6 +2518,7 @@ button {
 }
 
 .adminAdjustForm button,
+.accountForm button,
 .tableAction,
 .billingState button,
 .billingCard button,
@@ -1983,6 +2540,11 @@ button {
 .tableAction {
   min-height: 34px;
   color: #eaf3ff;
+}
+
+.compactAction {
+  min-height: 30px;
+  padding: 0 9px;
 }
 
 .billingHero h2 {
@@ -2008,6 +2570,8 @@ button {
 }
 
 .billingSummary div,
+.accountForm,
+.accountOverview,
 .billingCard,
 .transactionSection,
 .billingState {
@@ -2024,6 +2588,7 @@ button {
 }
 
 .billingSummary span,
+.accountMetrics span,
 .billingCard span,
 .transactionItem span {
   color: #8eeeff;
@@ -2032,17 +2597,101 @@ button {
   text-transform: uppercase;
 }
 
-.billingSummary strong {
+.billingSummary strong,
+.accountMetrics strong {
   color: #ffffff;
   font-size: 26px;
   line-height: 1.1;
 }
 
 .billingSummary em,
+.accountEmail em,
 .transactionItem em {
   color: #93a4bc;
   font-size: 12px;
   font-style: normal;
+}
+
+.accountGrid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
+  gap: 16px;
+}
+
+.accountForm,
+.accountOverview {
+  padding: 14px;
+}
+
+.accountForm {
+  display: grid;
+  gap: 12px;
+}
+
+.accountForm label,
+.accountEmail {
+  display: grid;
+  gap: 7px;
+}
+
+.accountForm label span,
+.accountEmail span {
+  color: #8eeeff;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.accountForm input {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  outline: 0;
+  padding: 0 12px;
+  background: rgba(3, 7, 15, 0.72);
+  color: #ffffff;
+  font-weight: 850;
+}
+
+.accountForm input:focus {
+  border-color: rgba(103, 232, 249, 0.72);
+  box-shadow: 0 0 0 3px rgba(103, 232, 249, 0.1);
+}
+
+.accountEmail strong {
+  color: #eaf3ff;
+  overflow-wrap: anywhere;
+}
+
+.accountOverview h3 {
+  margin: 0 0 12px;
+  color: #eaf3ff;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.accountMetrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.accountMetrics div {
+  display: grid;
+  gap: 5px;
+  min-height: 88px;
+  border-radius: 8px;
+  padding: 12px;
+  background: rgba(3, 7, 15, 0.45);
+}
+
+.accountBillingButton {
+  margin-top: 14px;
+}
+
+.accountTransactions {
+  margin-top: 16px;
 }
 
 .billingState {
@@ -2132,6 +2781,7 @@ button {
 
 .billingCard button:disabled,
 .portalButton:disabled,
+.accountForm button:disabled,
 .adminAdjustForm button:disabled {
   cursor: not-allowed;
   opacity: 0.6;
@@ -2152,15 +2802,73 @@ button {
   gap: 8px;
 }
 
+.favoriteGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.favoriteCard {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 8px;
+  padding: 8px;
+  background: rgba(3, 7, 15, 0.5);
+  color: #ffffff;
+  text-align: left;
+}
+
+.favoriteCard:hover {
+  border-color: rgba(103, 232, 249, 0.48);
+  background: rgba(103, 232, 249, 0.1);
+}
+
+.favoriteCard img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.favoriteCard span {
+  width: fit-content;
+  border-radius: 999px;
+  padding: 3px 7px;
+  background: rgba(120, 255, 185, 0.1);
+  color: #c8ffb8;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.favoriteCard strong {
+  color: #eaf3ff;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.favoriteCard em {
+  color: #93a4bc;
+  font-size: 12px;
+  font-style: normal;
+}
+
 .transactionItem {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto auto;
   gap: 10px;
   align-items: center;
-  min-height: 38px;
+  min-height: 46px;
   border-radius: 7px;
-  padding: 0 10px;
+  padding: 8px 10px;
   background: rgba(3, 7, 15, 0.5);
+}
+
+.transactionInfo {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
 }
 
 .transactionItem strong {
@@ -2173,6 +2881,31 @@ button {
 
 .transactionItem strong.negative {
   color: #ffd0d8;
+}
+
+.transactionCaseLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 28px;
+  border: 1px solid rgba(103, 232, 249, 0.26);
+  border-radius: 7px;
+  padding: 0 9px;
+  background: rgba(103, 232, 249, 0.08);
+  color: #d8fbff;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.transactionCaseLink:hover {
+  border-color: rgba(120, 255, 185, 0.5);
+  background: rgba(120, 255, 185, 0.12);
+}
+
+.transactionCaseLink:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
 }
 
 .emptyTransactions {
@@ -2297,6 +3030,31 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .accountGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .adminMetricGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .adminCustomRange {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .adminCustomRange label {
+    flex: 1 1 160px;
+  }
+
+  .adminCustomRange input {
+    width: 100%;
+  }
+
+  .adminTrafficGrid {
+    grid-template-columns: 1fr;
+  }
+
   .comparisonFigure img {
     height: min(48vh, 520px);
   }
@@ -2308,26 +3066,62 @@ button {
 
 @media (max-width: 640px) {
   .topbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 10px;
     min-height: 64px;
   }
 
   .brand {
-    max-width: 205px;
-  }
-
-  .topbar nav {
-    max-width: 100%;
-    overflow-x: auto;
-  }
-
-  .topbar nav a {
-    padding: 0 8px;
+    grid-column: 1;
+    grid-row: 1;
+    width: fit-content;
+    max-width: min(100%, 205px);
   }
 
   .topbarControls {
-    justify-content: flex-start;
+    display: contents;
+  }
+
+  .topbar nav {
+    grid-column: 1;
+    grid-row: 2;
     width: 100%;
-    gap: 6px;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .topbar nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topbar nav a,
+  .communityNavItem > button {
+    padding: 0 8px;
+  }
+
+  .communityPopover {
+    position: fixed;
+    top: 112px;
+    right: 12px;
+    left: 12px;
+    width: auto;
+    transform: translateY(-6px) scale(0.98);
+  }
+
+  .communityNavItem:hover .communityPopover,
+  .communityNavItem:focus-within .communityPopover,
+  .communityNavItem.open .communityPopover {
+    transform: translateY(0) scale(1);
+  }
+
+  .languageSwitch {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
   }
 
   .accountButton,
@@ -2338,7 +3132,10 @@ button {
 
   .accountButton,
   .userMenu {
-    margin-left: auto;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    margin-left: 0;
   }
 
   .dropdownTrigger {
@@ -2475,12 +3272,14 @@ button {
 
   .authDialog,
   .adminDialog,
+  .accountDialog,
   .billingDialog {
     max-height: calc(100vh - 20px);
   }
 
   .authDialog,
   .adminDialog,
+  .accountDialog,
   .billingDialog {
     padding: 20px 16px;
   }
@@ -2489,11 +3288,43 @@ button {
     flex-direction: column;
   }
 
+  .adminHeaderActions {
+    justify-content: stretch;
+    width: 100%;
+  }
+
+  .adminRangeToggle {
+    flex: 1 1 auto;
+  }
+
+  .adminRangeToggle button {
+    flex: 1;
+  }
+
+  .adminCustomRange {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .adminTrendChart svg {
+    min-height: 224px;
+  }
+
+  .adminMetricGrid,
+  .adminTrafficGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .accountHeader {
+    grid-template-columns: 1fr;
+  }
+
   .adminHeader button {
     width: 100%;
   }
 
   .adminAdjustForm,
+  .accountMetrics,
   .billingSummary,
   .billingSections,
   .transactionItem {

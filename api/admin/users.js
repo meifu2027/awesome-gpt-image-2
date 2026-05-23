@@ -15,6 +15,14 @@ function formatAdminUser(row) {
     freeGenerationsUsed: Number(row.free_generations_used || 0),
     freeUsed: Number(row.free_generations_used || 0) >= 1,
     membership: row.membership || null,
+    usage: {
+      totalGenerations: Number(row.total_generations || 0),
+      totalGenerationCredits: Number(row.total_generation_credits || 0),
+      purchasedCredits: Number(row.purchased_credits || 0),
+      membershipCredits: Number(row.membership_credits || 0),
+      lastGenerationAt: row.last_generation_at || '',
+      lastGenerationCaseId: Number(row.last_generation_case_id || 0) || null
+    },
     createdAt: row.created_at || ''
   };
 }
@@ -34,11 +42,9 @@ export default async function handler(req, res) {
     return json(res, 403, { ok: false, error: 'FORBIDDEN' });
   }
 
-  const { data, error } = await auth.client
-    .from('profiles')
-    .select('id,email,full_name,avatar_url,role,credit_balance,free_generations_used,created_at')
-    .order('created_at', { ascending: false })
-    .limit(100);
+  const { data, error } = await auth.client.rpc('get_admin_user_summaries', {
+    p_limit: 100
+  });
 
   if (error) {
     console.warn('Failed to list admin users', {
@@ -47,31 +53,20 @@ export default async function handler(req, res) {
     return json(res, 500, { ok: false, error: 'SERVER_NOT_CONFIGURED' });
   }
 
-  const userIds = (data || []).map((user) => user.id);
-  const membershipsByUserId = new Map();
-  if (userIds.length) {
-    const { data: memberships, error: membershipError } = await auth.client
-      .from('user_memberships')
-      .select('user_id,plan_id,status,current_period_end,cancel_at_period_end')
-      .in('user_id', userIds);
-
-    if (!membershipError) {
-      for (const membership of memberships || []) {
-        membershipsByUserId.set(membership.user_id, {
-          planId: membership.plan_id || '',
-          status: membership.status || 'inactive',
-          currentPeriodEnd: membership.current_period_end || '',
-          cancelAtPeriodEnd: Boolean(membership.cancel_at_period_end)
-        });
-      }
-    }
-  }
-
   return json(res, 200, {
     ok: true,
     users: (data || []).map((user) => formatAdminUser({
       ...user,
-      membership: membershipsByUserId.get(user.id) || null
+      membership: user.membership_id
+        ? {
+            id: user.membership_id,
+            planId: user.membership_plan_id || '',
+            status: user.membership_status || 'inactive',
+            isActive: ['trialing', 'active'].includes(user.membership_status),
+            currentPeriodEnd: user.membership_current_period_end || '',
+            cancelAtPeriodEnd: Boolean(user.membership_cancel_at_period_end)
+          }
+        : null
     }))
   });
 }
