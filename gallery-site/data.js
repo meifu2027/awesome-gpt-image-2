@@ -3670,5 +3670,29 @@ window.GALLERY_DATA = [
     source: '[@ZetoGroovin](https://x.com/ZetoGroovin/status/2058408514247410003)',
     prompt: '添付されたキャラクターシートをSTRICTなデザインリファレンスとして使用すること。 キャラクターの顔、髪型、目の形、プロポーションは絶対に変更しない。\n\n■目的： キャラクターを日本の「ちび消しゴム商品」として完全に商品化し、 実際に文房具売り場やガチャで販売されているようなリアルなパッケージ商品写真を作成する。\n\n■コンセプト： 「100円ショップや文房具店で売られている袋入りちび消しゴム商品」\n\n■消しゴム本体： （※前回と同じ仕様を完全維持） - 強いデフォルメちびキャラ - 厚みのあるブロック形状 - 完全マットなラバー素材 - 微細な粒子・粉・削れ・摩耗あり - 印刷ズレ・色ブレあり - 50個以上のランダム構成\n\n■パッケージ（超重要）： - 小さな透明ビニール袋（OPP袋） - 上部に紙ヘッダー（吊り下げ用の穴あり） - ヘッダーはややチープな印刷（軽いズレ・インクのムラ） - ビニールはシワあり、やや曇り、静電気で中身に張り付く - 一部空気が入ってふくらみあり - シール部分に軽いヨレ\n\n■グラフィックデザイン： - 日本の子供向け文房具風デザイン - ポップでカラフル（ピンク・黄色・水色ベース） - 手書き風フォントや丸文字 - 商品名ロゴ（オリジナルでOK） - 「ミニけし」「ちびけし」などの表記 - 星・ハート・キラキラ装飾\n\n■情報要素（リアル感強化）： - JANコード（バーコード） - 「対象年齢6才以上」 - 「食べられません」注意書き - 「全◯種」や「ランダム封入」 - 小さな会社名（架空） - MADE IN JAPAN or CHINA表記\n\n■構図： - パッケージがメインで画面中央 - 周囲に少しだけこぼれた消しゴム - 1〜2個は袋から出ている - 指先が1つをつまもうとしている演出 - 一部フレームアウトで自然さ\n\n■レア要素： - 蛍光カラーやグラデーションの特別個体を1つ混ぜる - 視線誘導として目立つ位置に配置\n\n■ライティング： - 明るい自然光（ややハイキー） - 柔らかい影 - 商品写真のような清潔感\n\n■カメラ： - マクロ寄り - 浅い被写界深度 - 中央シャープ\n\n■背景： - 白〜パステルのテーブル - ほんのりドットやポップ柄 - シンプルで清潔\n\n■禁止： - プラスチック感 - glossy表現 - 高級すぎる質感（安っぽさが正解） - 完璧すぎる印刷\n\n■出力： - 実在する商品にしか見えないレベル - コンビニや100均にありそうなリアリティ - SNSで「これ欲しい」と思わせる完成度',
     category: '商品与电商'
+  },
+  {
+    id: 463,
+    title: '黑色吊带袜单款图鉴展示',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case463.jpg',
+    source: '[@MrLarus](https://x.com/MrLarus/status/2058175014168396245) / [提示词回复](https://x.com/MrLarus/status/2058175145328394441)',
+    prompt: '《黑色丝袜图鉴款式单图》提示词：\n\n请基于同一套「黑色丝袜 / 吊带袜图鉴」系列风格，继续生成 8 张对应单款的独立展示图。\n\n【系列要求】\n- 这些图片必须和已完成的总览图鉴属于同一个系列\n- 整体版式、字体、色调、背景、质感、排版逻辑保持一致\n- 都是竖版、高完成度、暖白 / 浅灰白背景、轻奢女性向时尚图鉴风格\n- 每一张都像同一个品牌或同一套视觉系统下的延展页面\n\n【每张单图的共同结构】\n1. 顶部标题区\n- 英文系列标题：BLACK GARTER GUIDE\n- 中文主标题：黑色丝袜 / 吊带袜单款展示\n- 当前款式名称：__________\n- 一句简短副标题：突出该款式的核心特点\n\n2. 中部主体区\n- 以 1 位成人女性模特穿戴展示为主\n- 重点展示对应款式的关键细节：\n  - 经典蕾丝款：袜口蕾丝、优雅氛围\n  - 细网眼款：网格纹理、轻盈通透\n  - 波点款：波点图案、复古俏皮\n  - 后缝线款：背后缝线、线条感\n  - 竖条纹款：纵向条纹、修饰腿型\n  - 交叉绑带款：绑带结构、设计感\n  - 极简透肤款：透明感、基础百搭\n  - 花纹蕾丝款：花纹装饰、浪漫氛围\n- 每张图的人物长相、发型、姿势、镜头角度要不同，但都要保持高级、真实、性感、写实\n- 允许使用站姿、坐姿、交叉腿、倚靠、回眸等不同姿势\n- 画面要有立体感、阴影层次和高级编辑感\n\n3. 注释区\n- 每张图都要保留 3 到 5 条手绘式标注\n- 可以使用箭头、短线、圈注、手写风标签\n- 标注内容要围绕该款式最关键的细节，比如：\n  - 袜口结构\n  - 花纹纹理\n  - 透明度\n  - 缝线位置\n  - 绑带方式\n  - 腿部线条效果\n- 标注文字简洁、清楚、统一风格\n\n4. 底部信息区\n- 加入简短的 “Style Notes / 风格速记”\n- 用 1 到 2 句说明该款适合的场景和氛围\n- 保持简洁，不要抢主体\n\n【统一视觉要求】\n- 保持和总览图鉴完全统一的整体视觉系统\n- 背景统一为暖白、浅灰白或奶白\n- 风格统一为高级、干净、时尚图鉴感、轻奢女性视觉\n- 模特必须真实、立体、写实、自然肤质\n- 每张图都要突出产品，不要低俗，不要过度情色化\n- 每张图都应像同一系列里的不同章节，避免呈现为彼此割裂的作品\n\n【款式列表】\n1. 经典蕾丝款 / Classic Lace\n2. 细网眼款 / Fine Fishnet\n3. 波点款 / Dot Sheer\n4. 后缝线款 / Back Seam\n5. 竖条纹款 / Stripe Sheer\n6. 交叉绑带款 / Cross Strap\n7. 极简透肤款 / Minimal Sheer\n8. 花纹蕾丝袜 / Floral Lace\n\n【输出目标】\n按以上 8 个款式，分别生成 8 张独立展示图。\n要求每张都保留统一系列感，同时人物造型、发型、姿势和镜头语言明显不同，确保整套看起来完整、专业、可收藏。',
+    category: '其他应用场景'
+  },
+  {
+    id: 464,
+    title: '高雄水彩拼贴旅行海报',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case464.jpg',
+    source: '[@SimplyAnnisa](https://x.com/SimplyAnnisa/status/2058372965641662876)',
+    prompt: 'Watercolor and collage travel poster for Kaohsiung, Taiwan, vertical layout, soft pastel and warm golden hour color palette.\n\nScene: Waterfront promenade at sunset with a modern light rail tram on the right, a person walking a bicycle on the left, and people strolling along the path. In the background: Kaohsiung skyline with the 85 Sky Tower and other skyscrapers, a harbor with a ferry boat, port cranes, and the Pier-2 Art Center building with murals. Seagulls flying in the sky, trees lining the walkway, calm water reflecting the light.\n\nDesign elements:\n- Large text top left: \'KAO HSIUNG 2026\', smaller text below \'Sea Breeze Slow Light Southern City\'\n- Top right: Vertical Chinese characters, \'KAOHSIUNG TAIWAN\' in small caps below\n- Bottom left: Coordinates \'22.6273° N 120.3014° E\', \'KAOHSIUNG TAIWAN\', wave icon\n- Bottom center: Handwritten script \'Kaohsiung\'\n- Bottom right: Vertical list \'Harbor Art Light Rail People Slow Life\', vertical Chinese text\n- Overlay effects: Semi-transparent geometric shapes, watercolor splashes, and texture layers in teal and beige\n\nStyle: Modern travel poster meets watercolor painting, airy and atmospheric, blend of illustration and photo-collage, warm and tranquil mood, high detail.',
+    category: '海报与排版'
+  },
+  {
+    id: 465,
+    title: '逆光美背女性情绪写真',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case465.jpg',
+    source: '[@MrLarus](https://x.com/MrLarus/status/2058131948904599860) / [提示词回复](https://x.com/MrLarus/status/2058132915150639425)',
+    prompt: '逆光美背女性情绪写真提示词：\n\n请生成一张竖版高质感女性情绪写真，主题为「逆光美背·女性情绪写真」。\n\n核心要求：\n画面的绝对重点是“美背”，通过露背结构、肩颈线条、肩胛骨、脊柱中线、腰背曲线和逆光轮廓来呈现女性美。请避免普通女性写真或普通穿搭图的处理方式，背部必须是主视觉核心，脸只作为辅助。\n\n人物设定：\n成年女性，真实自然，气质可为温柔、清冷、慵懒、文艺、轻熟或安静。人物不要网红脸，不要塑料感，不要夸张妆容。可侧脸、回眸、低头或闭眼，但正脸不是重点。\n\n姿态要求：\n姿态必须服务于背部展示，例如背对镜头微微回头、侧身站立、侧坐、抬手整理头发、低头蜷身、斜倚窗边、半躺回眸、披衣下滑等。动作自然，不要僵硬摆拍，不要正面直视镜头。\n\n露背结构：\n必须有明确的露背设计，可为低背长裙、吊带裙、露背礼服、针织外套滑落、薄纱披肩、浴袍半披、宽松衬衫滑肩、丝质罩衫半落等。重点表现肩线、肩胛骨、背中线、腰背收束和布料与肌肤之间的高级过渡。\n\n服装与材质：\n服装选择轻柔、垂坠、带有透光感和褶皱感的材质，如薄纱、真丝、针织、棉麻、细闪纱、浴袍质地、软垂感长裙。布料要参与构图，形成半遮半露、滑落、包裹、垂挂的层次，但不能厚重。\n\n场景：\n场景为卧室、窗边、床上、白墙房间、民宿、酒店房间、木质空间或复古公寓。背景简洁克制，少量床品、窗帘、木椅、花束、地板等元素即可，不能喧宾夺主。\n\n光线要求：\n采用自然光或柔和暖光，以逆光、侧逆光、窗边光为主。重点是让光打到背部，勾出肩颈边缘、肩胛骨轮廓、腰线和发丝高光。可使用晨光、黄昏金光、柔雾散射光或冷白窗光，但背部受光状态必须成立。\n\n构图：\n竖版构图，画幅可为 9:16、3:4 或 4:5。人物是绝对主角，视觉重心放在背部、肩颈和腰背曲线上。可采用半身、七分身、近景或全身，但不要让场景抢走主体。\n\n氛围：\n整体氛围安静、柔软、私密、克制、高级，像真实摄影师拍摄的电影感情绪写真。重点避免直白性感，改用“美背 + 逆光 + 柔软布料 + 自然姿态”表达女性美。\n\n画质要求：\n真实摄影感、电影感、柔雾胶片感、细腻肤色、真实皮肤质感、浅景深、轻微颗粒感、画面通透自然。不要 AI 塑料感，不要 CG 感，不要错误手指，不要肢体畸形，不要低俗色情化表达，不要文字、水印、Logo、边框。\n\n最终效果：\n一张以“美背”为主视觉核心的高完成度女性情绪写真，通过露背结构、肩颈背部线条、柔光逆光和柔软布料来呈现克制而高级的女性美。',
+    category: '摄影与写实'
   }
 ];
