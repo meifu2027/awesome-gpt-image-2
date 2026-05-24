@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-459-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-462-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
 </p>
 
@@ -50,7 +50,7 @@ The core goal is simple: compress prose-style prompts into structured protocols.
 
 - [Full case gallery](docs/gallery.md)
 - [Gallery Part 1: cases 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2: cases 166-459](docs/gallery-part-2.md)
+- [Gallery Part 2: cases 166-462](docs/gallery-part-2.md)
 - [Industrial prompt templates and pitfalls guide](docs/templates.md)
 - [Agent skill: GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -77,7 +77,7 @@ Start with the case album to find a visual direction, then open the prompt templ
       <a href="docs/gallery.md#cat-infographic"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 Posters & Typography</strong><br><sub>71 cases</sub></p>
+      <p><strong>📰 Posters & Typography</strong><br><sub>72 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="Posters and typography" width="220"></a><br>
       <sub>Event posters, covers, type-driven visuals, and strong layout compositions.</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>View Cases</strong></a>
@@ -85,7 +85,7 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🛍️ Products & E-commerce</strong><br><sub>34 cases</sub></p>
+      <p><strong>🛍️ Products & E-commerce</strong><br><sub>35 cases</sub></p>
       <a href="docs/gallery.md#cat-product"><img src="data/images/category-covers/product.jpg" alt="Products and e-commerce" width="220"></a><br>
       <sub>Product shots, detail pages, packaging, selling points, and ads.</sub><br>
       <a href="docs/gallery.md#cat-product"><strong>View Cases</strong></a>
@@ -111,7 +111,7 @@ Start with the case album to find a visual direction, then open the prompt templ
       <a href="docs/gallery.md#cat-photo"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎨 Illustration & Art</strong><br><sub>46 cases</sub></p>
+      <p><strong>🎨 Illustration & Art</strong><br><sub>47 cases</sub></p>
       <a href="docs/gallery.md#cat-illustration"><img src="data/images/category-covers/illustration.jpg" alt="Illustration and art" width="220"></a><br>
       <sub>Illustration, art styles, material experiments, and decorative images.</sub><br>
       <a href="docs/gallery.md#cat-illustration"><strong>View Cases</strong></a>
@@ -153,14 +153,14 @@ Start with the case album to find a visual direction, then open the prompt templ
     <td width="33%" valign="top" align="center">
       <h4>🖼️ Full Gallery</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="Full gallery" width="220"></a><br>
-      <sub>Browse all 459 cases by gallery part and category.</sub><br>
+      <sub>Browse all 462 cases by gallery part and category.</sub><br>
       <a href="docs/gallery.md"><strong>Open Gallery</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ Latest Additions</h4>
-      <a href="docs/gallery-part-2.md#case-459"><img src="data/images/case459.jpg" alt="Latest additions" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-462"><img src="data/images/case462.jpg" alt="Latest additions" width="220"></a><br>
       <sub>The newest community cases and workflows collected in the repo.</sub><br>
-      <a href="docs/gallery-part-2.md#case-459"><strong>View Latest</strong></a>
+      <a href="docs/gallery-part-2.md#case-462"><strong>View Latest</strong></a>
     </td>
   </tr>
 </table>
@@ -428,22 +428,22 @@ Only the latest collection and import run is shown here. Older imports stay in t
 <table>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 457: Kinetic Dancer Light-Trail Poster</strong></p>
-      <a href="docs/gallery-part-2.md#case-457"><img src="data/images/case457.jpg" alt="Kinetic dancer light-trail poster" width="150"></a><br>
-      <sub>A function-style prompt for turning legendary dance movement sequences into luminous chronophotography portraits.</sub><br>
-      <a href="docs/gallery-part-2.md#case-457"><strong>View Case</strong></a>
+      <p><strong>Case 460: Luxury Chess Menswear Campaign</strong></p>
+      <a href="docs/gallery-part-2.md#case-460"><img src="data/images/case460.jpg" alt="Luxury chess menswear campaign" width="150"></a><br>
+      <sub>A low-angle fashion poster prompt with forced-perspective chess staging, amber interior lighting, and premium typography.</sub><br>
+      <a href="docs/gallery-part-2.md#case-460"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 458: Paris Autumn Fashion Illustration</strong></p>
-      <a href="docs/gallery-part-2.md#case-458"><img src="data/images/case458.jpg" alt="Paris autumn fashion illustration" width="150"></a><br>
-      <sub>A fashion illustration prompt with detailed garment materials, Paris street atmosphere, golden-hour light, and polished linework.</sub><br>
-      <a href="docs/gallery-part-2.md#case-458"><strong>View Case</strong></a>
+      <p><strong>Case 461: Family Travel Paper Diorama</strong></p>
+      <a href="docs/gallery-part-2.md#case-461"><img src="data/images/case461.jpg" alt="Family travel paper diorama" width="150"></a><br>
+      <sub>A kawaii travel prompt blending selfie composition, layered paper textures, miniature city scenery, and soft cinematic light.</sub><br>
+      <a href="docs/gallery-part-2.md#case-461"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 459: Milk Tea Brand KV Poster</strong></p>
-      <a href="docs/gallery-part-2.md#case-459"><img src="data/images/case459.jpg" alt="Milk tea brand KV poster" width="150"></a><br>
-      <sub>A commercial brand KV prompt covering logo cues, product hero layout, slogan generation, aspect ratios, and visual restrictions.</sub><br>
-      <a href="docs/gallery-part-2.md#case-459"><strong>View Case</strong></a>
+      <p><strong>Case 462: Retro Chibi Eraser Packaging</strong></p>
+      <a href="docs/gallery-part-2.md#case-462"><img src="data/images/case462.jpg" alt="Retro chibi eraser packaging" width="150"></a><br>
+      <sub>A product packaging prompt for tiny character erasers with OPP bag details, barcode copy, childlike stationery graphics, and tactile flaws.</sub><br>
+      <a href="docs/gallery-part-2.md#case-462"><strong>View Case</strong></a>
     </td>
   </tr>
 </table>
