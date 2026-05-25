@@ -1,10 +1,10 @@
 ## 🖼️ 魔法画廊总览
 
-完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 465。
+完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 466。
 
 - [返回 README 首页](../README.md)
 - [Part 1：例 1-165](./gallery-part-1.md)
-- [Part 2：例 166-465](./gallery-part-2.md)
+- [Part 2：例 166-466](./gallery-part-2.md)
 - [工业级提示词模板与防坑指南](./templates.md)
 - [声明、Star 趋势图与公众号](./disclaimer.md)
 
@@ -133,11 +133,12 @@
 - [例 463：黑色吊带袜单款图鉴展示](./gallery-part-2.md#case-463)
 - [例 464：高雄水彩拼贴旅行海报](./gallery-part-2.md#case-464)
 - [例 465：逆光美背女性情绪写真](./gallery-part-2.md#case-465)
+- [例 466：鱼市追猫 CCD 街拍](./gallery-part-2.md#case-466)
 
 ## 分册说明
 
 - `gallery-part-1.md`：例 1-165，覆盖信息图、界面、海报、摄影、插画等基础主流类型。
-- `gallery-part-2.md`：例 166-465，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
+- `gallery-part-2.md`：例 166-466，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
 
 ## 分类概览
 
@@ -147,7 +148,7 @@
 - 商品与电商：35
 - 品牌与标志：23
 - 建筑与空间：11
-- 摄影与写实：58
+- 摄影与写实：59
 - 插画与艺术：47
 - 人物与角色：21
 - 场景与叙事：17
@@ -442,7 +443,7 @@
 
 <a name="cat-photo"></a>
 
-### 📷 摄影与写实 · 58 cases
+### 📷 摄影与写实 · 59 cases
 
 - [例 24：漫画分镜叙事设计](./gallery-part-1.md#case-24)
 - [例 26：建筑空间场景图](./gallery-part-1.md#case-26)
@@ -502,6 +503,7 @@
 - [例 450：烛光侧室写实摄影](./gallery-part-2.md#case-450)
 - [例 451：韩国海滩日落时尚人像](./gallery-part-2.md#case-451)
 - [例 465：逆光美背女性情绪写真](./gallery-part-2.md#case-465)
+- [例 466：鱼市追猫 CCD 街拍](./gallery-part-2.md#case-466)
 
 <a name="cat-illustration"></a>
 
