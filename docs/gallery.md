@@ -1,10 +1,10 @@
 ## 🖼️ 魔法画廊总览
 
-完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 469。
+完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 476。
 
 - [返回 README 首页](../README.md)
 - [Part 1：例 1-165](./gallery-part-1.md)
-- [Part 2：例 166-469](./gallery-part-2.md)
+- [Part 2：例 166-476](./gallery-part-2.md)
 - [工业级提示词模板与防坑指南](./templates.md)
 - [声明、Star 趋势图与公众号](./disclaimer.md)
 
@@ -137,23 +137,30 @@
 - [例 467：泳装杂志九宫格广告页](./gallery-part-2.md#case-467)
 - [例 468：霓虹涂鸦展会自拍](./gallery-part-2.md#case-468)
 - [例 469：导览式科普绘本](./gallery-part-2.md#case-469)
+- [例 470：本地生活小店异形展架](./gallery-part-2.md#case-470)
+- [例 471：花簪和服动漫肖像](./gallery-part-2.md#case-471)
+- [例 472：上海地铁站台晨光](./gallery-part-2.md#case-472)
+- [例 473：ROGUE VIPER 游戏概念设定板](./gallery-part-2.md#case-473)
+- [例 474：四城极简旅行海报系列](./gallery-part-2.md#case-474)
+- [例 475：企鹅造型包装结构板](./gallery-part-2.md#case-475)
+- [例 476：早安拿铁微缩女孩](./gallery-part-2.md#case-476)
 
 ## 分册说明
 
 - `gallery-part-1.md`：例 1-165，覆盖信息图、界面、海报、摄影、插画等基础主流类型。
-- `gallery-part-2.md`：例 166-469，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
+- `gallery-part-2.md`：例 166-476，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
 
 ## 分类概览
 
 - UI与界面：73
 - 图表与信息可视化：51
-- 海报与排版：73
-- 商品与电商：35
+- 海报与排版：74
+- 商品与电商：37
 - 品牌与标志：23
 - 建筑与空间：11
-- 摄影与写实：61
-- 插画与艺术：47
-- 人物与角色：21
+- 摄影与写实：62
+- 插画与艺术：49
+- 人物与角色：22
 - 场景与叙事：17
 - 历史与古风题材：16
 - 文档与出版物：10
@@ -289,7 +296,7 @@
 
 <a name="cat-poster"></a>
 
-### 📰 海报与排版 · 73 cases
+### 📰 海报与排版 · 74 cases
 
 - [例 3：足球主题电影海报](./gallery-part-1.md#case-3)
 - [例 5：主题海报版式设计](./gallery-part-1.md#case-5)
@@ -364,9 +371,11 @@
 - [例 460：棋盘低角度奢华男装 Campaign](./gallery-part-2.md#case-460)
 - [例 464：高雄水彩拼贴旅行海报](./gallery-part-2.md#case-464)
 
+- [例 474：四城极简旅行海报系列](./gallery-part-2.md#case-474)
+
 <a name="cat-product"></a>
 
-### 🛍️ 商品与电商 · 35 cases
+### 🛍️ 商品与电商 · 37 cases
 
 - [例 17：界面交互设计图](./gallery-part-1.md#case-17)
 - [例 33：电商商品展示设计](./gallery-part-1.md#case-33)
@@ -402,6 +411,9 @@
 - [例 454：旅行美食薯片广告海报](./gallery-part-2.md#case-454)
 - [例 455：巨型舒适洞洞鞋 Campaign](./gallery-part-2.md#case-455)
 - [例 462：复古日系迷你橡皮商品包装](./gallery-part-2.md#case-462)
+- [例 470：本地生活小店异形展架](./gallery-part-2.md#case-470)
+
+- [例 475：企鹅造型包装结构板](./gallery-part-2.md#case-475)
 
 <a name="cat-brand"></a>
 
@@ -447,7 +459,7 @@
 
 <a name="cat-photo"></a>
 
-### 📷 摄影与写实 · 61 cases
+### 📷 摄影与写实 · 62 cases
 
 - [例 24：漫画分镜叙事设计](./gallery-part-1.md#case-24)
 - [例 26：建筑空间场景图](./gallery-part-1.md#case-26)
@@ -511,9 +523,11 @@
 - [例 467：泳装杂志九宫格广告页](./gallery-part-2.md#case-467)
 - [例 468：霓虹涂鸦展会自拍](./gallery-part-2.md#case-468)
 
+- [例 472：上海地铁站台晨光](./gallery-part-2.md#case-472)
+
 <a name="cat-illustration"></a>
 
-### 🎨 插画与艺术 · 47 cases
+### 🎨 插画与艺术 · 49 cases
 
 - [例 6：插画艺术创作图](./gallery-part-1.md#case-6)
 - [例 22：插画艺术风格创作](./gallery-part-1.md#case-22)
@@ -563,10 +577,12 @@
 - [例 452：极简童话手绘儿童插画](./gallery-part-2.md#case-452)
 - [例 458：巴黎秋季时装插画](./gallery-part-2.md#case-458)
 - [例 461：家庭旅行纸雕拼贴](./gallery-part-2.md#case-461)
+- [例 471：花簪和服动漫肖像](./gallery-part-2.md#case-471)
+- [例 476：早安拿铁微缩女孩](./gallery-part-2.md#case-476)
 
 <a name="cat-character"></a>
 
-### 🧍 人物与角色 · 21 cases
+### 🧍 人物与角色 · 22 cases
 
 - [例 25：综合应用场景图](./gallery-part-1.md#case-25)
 - [例 27：人物角色设定图](./gallery-part-1.md#case-27)
@@ -589,6 +605,8 @@
 - [例 398：](./gallery-part-2.md#case-398)
 - [例 416：Earth Signs 角色 Scrapbook](./gallery-part-2.md#case-416)
 - [例 439：赛博黑客角色设定表](./gallery-part-2.md#case-439)
+
+- [例 473：ROGUE VIPER 游戏概念设定板](./gallery-part-2.md#case-473)
 
 <a name="cat-scene"></a>
 

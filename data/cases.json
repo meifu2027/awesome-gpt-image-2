@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/freestylefly/awesome-gpt-image-2",
-  "totalCases": 466,
+  "totalCases": 473,
   "categories": [
     "Architecture & Spaces",
     "Brand & Logos",
@@ -50,6 +50,160 @@
     "Travel"
   ],
   "cases": [
+    {
+      "id": 476,
+      "title": "早安拿铁微缩女孩",
+      "image": "/images/case476.jpg",
+      "imageAlt": "早安拿铁微缩女孩",
+      "sourceLabel": "@Zyrellix",
+      "sourceUrl": "https://x.com/Zyrellix/status/2059443447602561444",
+      "prompt": "Create ultra-fine highly detailed 3D realistic miniature chibi-like cute girl, wearing cream colour top and jeans, resting and floating on creamy latte cup, stylized textured ceramic cup, sleeping expression, satin soft pillow tucked behind her head. The latte cream forms a text \"Good Morning\" in a cute handwriting. Soft-focus minimalist background, bright natural light, 8K UHD.",
+      "promptPreview": "Create ultra-fine highly detailed 3D realistic miniature chibi-like cute girl, wearing cream colour top and jeans, resting and floating on creamy latte cup, stylized textured ceramic cup, sleeping expression, satin soft ",
+      "category": "Illustration & Art",
+      "styles": [
+        "Realistic",
+        "3D"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-476"
+    },
+    {
+      "id": 475,
+      "title": "企鹅造型包装结构板",
+      "image": "/images/case475.jpg",
+      "imageAlt": "企鹅造型包装结构板",
+      "sourceLabel": "@iamaiistudio",
+      "sourceUrl": "https://x.com/iamaiistudio/status/2059305097897914664",
+      "prompt": "Using the attached image, create an illustration sheet of professional industrial design packaging for the package (PACKAGE TYPE). A centered heroic 3D rendering with realistic materials, soft studio lighting and commercial quality finishes. Surrounded by technical views: front, side, top, bottom, oblique perspective and flat position. Include sketches of the frame structure, crease lines, seam details, and size arrows in millimeters. Show materials and finishes (matte, glossy print, plastic, paper, glass, etc.) in handwritten annotations. Add color swatches, realistic product illustrations, and subtle shadows. Clean sketchbook background, realistic rendering + pencil sketch style, modern design design, ultra-detailed, portfolio ready.",
+      "promptPreview": "Using the attached image, create an illustration sheet of professional industrial design packaging for the package (PACKAGE TYPE). A centered heroic 3D rendering with realistic materials, soft studio lighting and commerc",
+      "category": "Products & E-commerce",
+      "styles": [
+        "Realistic",
+        "Illustration",
+        "Product"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-475"
+    },
+    {
+      "id": 474,
+      "title": "四城极简旅行海报系列",
+      "image": "/images/case474.jpg",
+      "imageAlt": "四城极简旅行海报系列",
+      "sourceLabel": "@Taaruk_",
+      "sourceUrl": "https://x.com/Taaruk_/status/2059188921096085888",
+      "prompt": "Minimalist flat travel poster illustration series of iconic destinations around the world, clean vector art style, Scandinavian color palette, soft pastel tones, calm atmospheric scenery, Hallstatt Austria lakeside village with alpine mountains and reflections, Bergen Norway colorful harbor houses with fjord background, Kyoto Japan traditional riverside town with cherry blossoms and pagoda, Santorini Greece white architecture with blue domes overlooking the sea, ultra clean composition, geometric landscape shapes, smooth gradients, elegant typography with destination names, modern tourism poster aesthetic, serene travel mood, crisp vector lines, cinematic wide-angle scenery, peaceful skies with stylized clouds, highly detailed environment art, contemporary flat illustration, premium editorial travel design, balanced composition, minimal shadows, dreamy vacation atmosphere, soft morning lighting, high-end Airbnb poster vibe, Behance trending style, 4k, ultra detailed",
+      "promptPreview": "Minimalist flat travel poster illustration series of iconic destinations around the world, clean vector art style, Scandinavian color palette, soft pastel tones, calm atmospheric scenery, Hallstatt Austria lakeside villa",
+      "category": "Posters & Typography",
+      "styles": [
+        "Poster",
+        "Illustration"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce",
+        "Story"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-474"
+    },
+    {
+      "id": 473,
+      "title": "ROGUE VIPER 游戏概念设定板",
+      "image": "/images/case473.jpg",
+      "imageAlt": "ROGUE VIPER 游戏概念设定板",
+      "sourceLabel": "@KimAkiyama81",
+      "sourceUrl": "https://x.com/KimAkiyama81/status/2059394334378566063",
+      "prompt": "**ROGUE VIPER — VIDEO GAME CONCEPT ART SHEET PROMPT**\n\n---\n\nOfficial AAA video game concept art sheet titled **'ROGUE VIPER'** for an Unreal Engine 5 third-person action-stealth game. Professional game development documentation layout on a dark charcoal #1A1A1A background with gold stencil label typography throughout. Four clearly labeled panels arranged in a 2×2 grid with a header and footer.\n\n---\n\n**SHEET HEADER** — Bold gold stencil font title text: **ROGUE VIPER** centered at top. Subtitle beneath in smaller tracking-heavy label font: **CHARACTER & ENVIRONMENT CONCEPT SHEET | UNREAL ENGINE 5 | ACTION / STEALTH — THIRD PERSON**\n\n---\n\n**PANEL 1 — TOP LEFT — Label: \"PROTAGONIST: MEI LIU / ROGUE VIPER\"**\n\nFull-body character turntable reference of a 30-year-old East Asian Chinese-American female operative. Athletic and toned, 5'8\", long straight black hair worn loose, calm neutral expression with sharp eyes. Wearing a form-fitting matte black tactical bodysuit with gold accent seams running along the shoulders, forearms, and thighs, gold cobra snake belt buckle at the waist, calf-high black tactical boots with subtle gold trim. Armed with twin suppressed 9mm pistols holstered on each hip with custom viper-scale grip texture, a serrated combat knife sheathed vertically on the right thigh, and a compact pneumatic grappling hook launcher mounted on the left forearm. Three views arranged side-by-side: front, 3/4, and back. Unreal Engine 5 physically-based rendering, photorealistic skin and fabric materials, neutral 3-point studio lighting for maximum clarity, gold and matte black color scheme throughout.\n\n---\n\n**PANEL 2 — TOP RIGHT — Label: \"ENEMY TYPE 01: OBSIDIAN PROTOCOL ENFORCER\"**\n\nThree enemy soldiers shown as character references against a dark background. These are elite private military contractors working for a shadow arms cartel called Obsidian Protocol. Their uniform: slate-gray and black modular plate carriers with deep crimson geometric hex-patch insignia on the shoulder, full-face ballistic visors with a dark red tinted lens, black tactical gloves, reinforced combat boots. Armed with compact bullpup assault rifles with red laser sights. One figure standing in neutral patrol stance, one crouched in a ready alert position, one depicted mid-aim with rifle raised. All three shown at the same scale for comparison. Same UE5 photorealistic PBR render style. Crimson and slate-gray color language to contrast Viper's gold and black.\n\n---\n\n**PANEL 3 — BOTTOM LEFT — Label: \"STEALTH ENVIRONMENT: OBSIDIAN PROTOCOL BLACK SITE — ALPINE RESEARCH FACILITY\"**\n\nWide cinematic establishing shot of a stealth mission environment. A hidden high-altitude research facility buried inside a snow-covered mountain, accessible only via an underground tram. Interior architecture is brutalist concrete and frosted glass, dimly lit with cold white fluorescent overhead strips and amber emergency lighting casting long dramatic shadows across polished concrete floors. Rows of classified server terminals and cryogenic storage units line the walls. Ventilation shafts visible in the ceiling above catwalks. A security camera sweeps a slow arc over a central corridor below. In the foreground, Rogue Viper is pressed flat against a concrete pillar in deep shadow, body low, watching two Obsidian Protocol enforcers on patrol below, one holding a flashlight. The scene communicates tension, patience, and tactical opportunity. Unreal Engine 5 Lumen global illumination, volumetric cold air haze, photorealistic ice and concrete materials, deep crushed blacks with cold white and amber lighting contrast. Cinematic wide 2.39:1 style composition within the panel.\n\n---\n\n**PANEL 4 — BOTTOM RIGHT — Label: \"ACTION SET PIECE: OBSIDIAN PROTOCOL FREIGHT DEPOT — COLLAPSED BRIDGE CANYON\"**\n\nWide cinematic action shot of a high-octane firefight environment. A sprawling open-air industrial freight depot at the edge of a sheer cliff canyon at dusk, with a collapsed suspension bridge dangling over the chasm below. Shipping containers and heavy crane equipment provide cover geometry. Rogue Viper is captured mid-movement in a dynamic gunfight pose — body low, both suppressed pistols raised and firing, muzzle flashes illuminating her face with sharp white light. Three Obsidian Protocol enforcers are positioned around her — one diving behind a container, one firing from atop a crane platform, one falling backward off the edge of the depot platform. Background: deep canyon with a river of orange reflected sunset light far below, dust and smoke rising from the firefight, a military helicopter approaching in the far distance. Warm dusk amber and cool canyon shadow blue provide dramatic color contrast. UE5 ray-traced reflections on metal container surfaces, particle systems for dust and muzzle smoke, cinematic depth of field on background elements.\n\n---\n\n**SHEET FOOTER** — Color palette chip row along the bottom of the sheet: matte black #1A1A1A, dark charcoal #2B2B2B, viper gold #D4AF37, gunmetal #3E3E3E, obsidian crimson #8B1A1A, slate gray #6B7280, cold white #E8EEF4. Label above chips: **COLOR PALETTE**. Footer text beneath: **ACTION / STEALTH — THIRD PERSON — UNREAL ENGINE 5 — © ROGUE VIPER GAME STUDIOS**\n\n---\n\n**UNIVERSAL STYLE CONSTRAINTS — APPLY TO ALL PANELS:**\nPhotorealistic only throughout the entire sheet. No anime, no cartoon, no stylized illustration, no cel shading, no comic book rendering. Unreal Engine 5 cinematic render quality with physically-based materials. Anamorphic lens character on all environment shots. Crushed blacks and desaturated mid-tones across all panels. Professional AAA game studio concept documentation format comparable to Naughty Dog, Ubisoft, or Guerrilla Games internal production art.",
+      "promptPreview": "**ROGUE VIPER — VIDEO GAME CONCEPT ART SHEET PROMPT** --- Official AAA video game concept art sheet titled **'ROGUE VIPER'** for an Unreal Engine 5 third-person action-stealth game. Professional game development document",
+      "category": "Characters & People",
+      "styles": [
+        "UI",
+        "Poster",
+        "Realistic"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce",
+        "Food"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-473"
+    },
+    {
+      "id": 472,
+      "title": "上海地铁站台晨光",
+      "image": "/images/case472.jpg",
+      "imageAlt": "上海地铁站台晨光",
+      "sourceLabel": "@ToroJushiAi",
+      "sourceUrl": "https://x.com/ToroJushiAi/status/2059452471127240959",
+      "prompt": "A candid photograph of a young woman standing on a Shanghai metro platform during the summer morning commute, authentic daily life photography, natural candid moment. Half-body framing, shot at eye level from moderate distance — the arriving train a motion-blurred streak behind her, the yellow safety line at her feet.\nEast Asian young woman in her early 20s. Almond-shaped eyes with natural double eyelids, slightly elongated eye corners — eyes directed downward, absorbed. Straight refined nose with a delicate bridge. Skin tone fair to light beige (NC10–NC20) — skin subsurface scattering visible under cool overhead station light, specular micro-highlights on cheekbones and nose ridge, fine foundation powder grain perceptible. Summer fresh look, no heavy coverage, lightly tinted lip.\nShe wears a relaxed oversized white shirt dress, collar lightly open, sleeves loosely rolled above the elbow. A structured natural tan canvas tote hangs from her shoulder, a physical novel tucked under one arm — pages open at a saved page. She stands with her weight on one hip, gaze downward at the open book, entirely absorbed, occupying her own stillness inside the morning rush. Background: white and grey tiled metro wall, overhead route signage board, arriving train motion blur to one side, other commuters blurred and distant. Two or three stray hairs displaced by the train's air displacement on arrival, natural unplanned imperfection, not geometrically symmetrical.\nCool overhead fluorescent lighting with a slight greenish cast, flat frontal illumination offset by a warm spill from the platform entrance behind. Absorbed in focus, eyes downward, unaware — a private moment inside a public space, the Shanghai morning. Subtle ISO 400 film grain in shadow areas, photographic noise texture not CG render smoothness. Aspect ratio 2:3. No watermark, no text overlay, not cartoon, not digitally painted, not illustration, not anime.",
+      "promptPreview": "A candid photograph of a young woman standing on a Shanghai metro platform during the summer morning commute, authentic daily life photography, natural candid moment. Half-body framing, shot at eye level from moderate di",
+      "category": "Photography & Realism",
+      "styles": [
+        "Poster",
+        "Realistic",
+        "Illustration"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-472"
+    },
+    {
+      "id": 471,
+      "title": "花簪和服动漫肖像",
+      "image": "/images/case471.jpg",
+      "imageAlt": "花簪和服动漫肖像",
+      "sourceLabel": "@Mind_Boticni",
+      "sourceUrl": "https://x.com/Mind_Boticni/status/2059133066694779343",
+      "prompt": "Ultra-detailed anime-style portrait of a young girl with large expressive eyes, soft blush cheeks, and delicate facial features. She wears a vibrant floral kimono with intricate colorful patterns. Large blooming flowers are placed in her hair like accessories. Smooth gradient warm background in coral and peach tones. Soft cinematic lighting, dreamy atmosphere, high-end digital illustration",
+      "promptPreview": "Ultra-detailed anime-style portrait of a young girl with large expressive eyes, soft blush cheeks, and delicate facial features. She wears a vibrant floral kimono with intricate colorful patterns. Large blooming flowers ",
+      "category": "Illustration & Art",
+      "styles": [
+        "Illustration"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce",
+        "Fashion"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-471"
+    },
+    {
+      "id": 470,
+      "title": "本地生活小店异形展架",
+      "image": "/images/case470.jpg",
+      "imageAlt": "本地生活小店异形展架",
+      "sourceLabel": "@MrLarus",
+      "sourceUrl": "https://x.com/MrLarus/status/2059248197910827364",
+      "prompt": "《餐饮异形展架/立牌物料》提示词：\n\n请生成一张高完成度的「餐饮异形展架 / 立牌」设计图，用于展示餐饮门店的新品推荐、招牌产品、套餐促销或品牌活动信息。\n\n【基础信息】\n品牌名：【品牌名】\n主标题：【主标题】\n副标题：【副标题】\n辅助短句：【短句1】｜【短句2】｜【短句3】\n主题方向：【主题方向，例如：爆辣夜市风 / 金黄浓郁风 / 清新轻食风 / 山野自然风 / 甜品下午茶风 / 快餐促销风】\n主色调：【主色调】\n辅助色：【辅助色】\n点缀色：【点缀色】\n画幅比例：【建议 3:4 竖版】\n\n【产品内容】\n主推产品：【主推产品】\n辅助产品1：【辅助产品1】\n辅助产品2：【辅助产品2】\n辅助产品3：【辅助产品3】\n辅助产品4：【辅助产品4】\n加料 / 配角产品：【加料或配角产品，例如：饮品 / 小食 / 配菜 / 酱料 / 甜品】\n\n【卖点标签】\n【卖点1】\n【卖点2】\n【卖点3】\n【卖点4】\n【卖点5】\n【卖点6】\n\n【促销信息】\n【促销信息1】\n【促销信息2】\n【促销信息3】\n\n【最重要要求】\n避免生成门店场景效果图或墙上海报展示图。请直接生成“一张完整的异形立牌成品展示图”：\n- 背景必须为纯白色\n- 画面中只保留一个完整的异形餐饮立牌主体\n- 不要餐厅环境\n- 不要商场背景\n- 不要玻璃门、桌椅、墙面、人物、地面透视场景\n- 不要任何真实空间背景\n- 立牌主体必须完整显示\n- 异形轮廓必须完整清晰\n- 底座必须完整露出\n- 整体像一张已经抠好的门店物料成品图 / 设计提案展示图 / 电商展示图\n\n【画面形式】\n这是一张“门店异形展架 / 立牌”的完整设计，避免普通矩形海报处理。\n整体应采用明显的“不规则异形裁切轮廓”，有完整外边缘，边缘可带白色或浅色描边，具有真实门店物料感。\n立牌应有明确底座，整体像可落地摆放的 KT 板 / 泡沫板 / 亚克力 / 写真喷绘展架成品。\n\n【构图结构】\n整体采用竖版、中心聚焦、信息分层清楚的结构：\n\n1. 顶部区域：\n放超大主标题，标题必须醒目、有冲击力、有餐饮 POP 招贴感。\n字体可以厚重、手写感、招贴感、潮流感，但要清晰易读。\n标题是整张图的第一视觉焦点。\n\n2. 中部核心区域：\n中间放最大主推产品，作为主视觉主体。\n主菜必须最大、最饱满、最诱人，突出食欲感。\n围绕主菜搭配 2~5 个辅助产品，形成丰富的产品组合，前后层次明确，主次分明。\n\n3. 周边信息区域：\n在主菜和辅助产品四周加入少量标签元素、推荐标、贴纸框、手写箭头、卖点说明、小标题、小气泡标签等，使其具有“餐饮门店促销物料”的视觉特征。\n但要控制层级，做到“热闹但不乱”。\n\n4. 底部促销区域：\n底部放价格信息、套餐信息、活动信息或新品尝鲜信息。\n价格数字要相对突出，易读清晰。\n如果没有特别要求，默认不要二维码。\n\n【视觉风格要求】\n整体风格应属于“餐饮转化型视觉 + 门店 POP 异形立牌”：\n- 强调食欲感\n- 强调信息可读性\n- 强调商业落地感\n- 强调门店物料感\n- 强调异形轮廓感\n\n避免极简杂志海报、电商详情页、纯平面插画海报方向。\n\n【食物表现要求】\n所有食物必须采用真实商业美食摄影质感：\n- 食物清晰真实\n- 有食材颗粒感\n- 有酱汁、汤汁、油光、热气、层次感\n- 有丰富细节，如葱花、辣椒、芝士、香草、蔬菜、水果、虾仁、肉块等\n- 主食要饱满，不能扁平\n- 看起来必须“能激发食欲”\n禁止过度插画化、卡通化、低质拼贴化。\n\n【版式与信息层级】\n整张立牌的阅读顺序应为：\n主标题 → 主推产品 → 辅助产品 → 卖点标签 → 价格 / 活动信息\n\n信息量可以较丰富，但必须有明确层级：\n- 主标题最大\n- 主菜次大\n- 辅助菜稍小\n- 卖点标签较小\n- 底部促销清晰醒目\n\n【适配范围】\n该模板需要适用于不同主题餐饮内容，例如：\n- 面 / 饭 / 粉 / 小吃\n- 火锅 / 菌汤 / 地方菜\n- 轻食 / 沙拉 / 咖啡简餐\n- 早餐 / 套餐 / 快餐\n- 茶饮 / 甜品 / 下午茶\n- 节日促销 / 新品上市 / 爆品推荐 / 双人套餐\n\n【输出要求】\n请输出一张高清、清晰、商业完成度高的异形立牌设计图，满足以下条件：\n- 白色背景\n- 完整异形轮廓\n- 完整底座\n- 只展示立牌本体\n- 不带真实场景环境\n- 不带人物\n- 不带门店背景\n- 默认不带二维码\n- 适合用于系列案例展示、设计提案、社交媒体发布、模板复用",
+      "promptPreview": "《餐饮异形展架/立牌物料》提示词： 请生成一张高完成度的「餐饮异形展架 / 立牌」设计图，用于展示餐饮门店的新品推荐、招牌产品、套餐促销或品牌活动信息。 【基础信息】 品牌名：【品牌名】 主标题：【主标题】 副标题：【副标题】 辅助短句：【短句1】｜【短句2】｜【短句3】 主题方向：【主题方向，例如：爆辣夜市风 / 金黄浓郁风 / 清新轻食风 / 山野自然风 / 甜品下午茶风 / 快餐促销风】 主色调：【主色调】 辅助色：【辅助色】 点",
+      "category": "Products & E-commerce",
+      "styles": [
+        "Poster",
+        "Realistic",
+        "Illustration"
+      ],
+      "scenes": [
+        "Commerce",
+        "Fashion",
+        "Food"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-470"
+    },
     {
       "id": 469,
       "title": "导览式科普绘本",

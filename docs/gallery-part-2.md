@@ -10199,3 +10199,285 @@ Ultra-raw candid energy, messy composition, humorous accidental masterpiece aest
 ```
 
 ***
+
+<a name="case-470"></a>
+
+### 例 470：本地生活小店异形展架
+
+![本地生活小店异形展架](../data/images/case470.jpg)
+
+**来源：** [@MrLarus](https://x.com/MrLarus/status/2059248197910827364) / [提示词回复](https://x.com/MrLarus/status/2058431837534343283)
+
+**提示词：**
+
+```text
+《餐饮异形展架/立牌物料》提示词：
+
+请生成一张高完成度的「餐饮异形展架 / 立牌」设计图，用于展示餐饮门店的新品推荐、招牌产品、套餐促销或品牌活动信息。
+
+【基础信息】
+品牌名：【品牌名】
+主标题：【主标题】
+副标题：【副标题】
+辅助短句：【短句1】｜【短句2】｜【短句3】
+主题方向：【主题方向，例如：爆辣夜市风 / 金黄浓郁风 / 清新轻食风 / 山野自然风 / 甜品下午茶风 / 快餐促销风】
+主色调：【主色调】
+辅助色：【辅助色】
+点缀色：【点缀色】
+画幅比例：【建议 3:4 竖版】
+
+【产品内容】
+主推产品：【主推产品】
+辅助产品1：【辅助产品1】
+辅助产品2：【辅助产品2】
+辅助产品3：【辅助产品3】
+辅助产品4：【辅助产品4】
+加料 / 配角产品：【加料或配角产品，例如：饮品 / 小食 / 配菜 / 酱料 / 甜品】
+
+【卖点标签】
+【卖点1】
+【卖点2】
+【卖点3】
+【卖点4】
+【卖点5】
+【卖点6】
+
+【促销信息】
+【促销信息1】
+【促销信息2】
+【促销信息3】
+
+【最重要要求】
+避免生成门店场景效果图或墙上海报展示图。请直接生成“一张完整的异形立牌成品展示图”：
+- 背景必须为纯白色
+- 画面中只保留一个完整的异形餐饮立牌主体
+- 不要餐厅环境
+- 不要商场背景
+- 不要玻璃门、桌椅、墙面、人物、地面透视场景
+- 不要任何真实空间背景
+- 立牌主体必须完整显示
+- 异形轮廓必须完整清晰
+- 底座必须完整露出
+- 整体像一张已经抠好的门店物料成品图 / 设计提案展示图 / 电商展示图
+
+【画面形式】
+这是一张“门店异形展架 / 立牌”的完整设计，避免普通矩形海报处理。
+整体应采用明显的“不规则异形裁切轮廓”，有完整外边缘，边缘可带白色或浅色描边，具有真实门店物料感。
+立牌应有明确底座，整体像可落地摆放的 KT 板 / 泡沫板 / 亚克力 / 写真喷绘展架成品。
+
+【构图结构】
+整体采用竖版、中心聚焦、信息分层清楚的结构：
+
+1. 顶部区域：
+放超大主标题，标题必须醒目、有冲击力、有餐饮 POP 招贴感。
+字体可以厚重、手写感、招贴感、潮流感，但要清晰易读。
+标题是整张图的第一视觉焦点。
+
+2. 中部核心区域：
+中间放最大主推产品，作为主视觉主体。
+主菜必须最大、最饱满、最诱人，突出食欲感。
+围绕主菜搭配 2~5 个辅助产品，形成丰富的产品组合，前后层次明确，主次分明。
+
+3. 周边信息区域：
+在主菜和辅助产品四周加入少量标签元素、推荐标、贴纸框、手写箭头、卖点说明、小标题、小气泡标签等，使其具有“餐饮门店促销物料”的视觉特征。
+但要控制层级，做到“热闹但不乱”。
+
+4. 底部促销区域：
+底部放价格信息、套餐信息、活动信息或新品尝鲜信息。
+价格数字要相对突出，易读清晰。
+如果没有特别要求，默认不要二维码。
+
+【视觉风格要求】
+整体风格应属于“餐饮转化型视觉 + 门店 POP 异形立牌”：
+- 强调食欲感
+- 强调信息可读性
+- 强调商业落地感
+- 强调门店物料感
+- 强调异形轮廓感
+
+避免极简杂志海报、电商详情页、纯平面插画海报方向。
+
+【食物表现要求】
+所有食物必须采用真实商业美食摄影质感：
+- 食物清晰真实
+- 有食材颗粒感
+- 有酱汁、汤汁、油光、热气、层次感
+- 有丰富细节，如葱花、辣椒、芝士、香草、蔬菜、水果、虾仁、肉块等
+- 主食要饱满，不能扁平
+- 看起来必须“能激发食欲”
+禁止过度插画化、卡通化、低质拼贴化。
+
+【版式与信息层级】
+整张立牌的阅读顺序应为：
+主标题 → 主推产品 → 辅助产品 → 卖点标签 → 价格 / 活动信息
+
+信息量可以较丰富，但必须有明确层级：
+- 主标题最大
+- 主菜次大
+- 辅助菜稍小
+- 卖点标签较小
+- 底部促销清晰醒目
+
+【适配范围】
+该模板需要适用于不同主题餐饮内容，例如：
+- 面 / 饭 / 粉 / 小吃
+- 火锅 / 菌汤 / 地方菜
+- 轻食 / 沙拉 / 咖啡简餐
+- 早餐 / 套餐 / 快餐
+- 茶饮 / 甜品 / 下午茶
+- 节日促销 / 新品上市 / 爆品推荐 / 双人套餐
+
+【输出要求】
+请输出一张高清、清晰、商业完成度高的异形立牌设计图，满足以下条件：
+- 白色背景
+- 完整异形轮廓
+- 完整底座
+- 只展示立牌本体
+- 不带真实场景环境
+- 不带人物
+- 不带门店背景
+- 默认不带二维码
+- 适合用于系列案例展示、设计提案、社交媒体发布、模板复用
+```
+
+***
+
+<a name="case-471"></a>
+
+### 例 471：花簪和服动漫肖像
+
+![花簪和服动漫肖像](../data/images/case471.jpg)
+
+**来源：** [@Mind_Boticni](https://x.com/Mind_Boticni/status/2059133066694779343)
+
+**提示词：**
+
+```text
+Ultra-detailed anime-style portrait of a young girl with large expressive eyes, soft blush cheeks, and delicate facial features. She wears a vibrant floral kimono with intricate colorful patterns. Large blooming flowers are placed in her hair like accessories. Smooth gradient warm background in coral and peach tones. Soft cinematic lighting, dreamy atmosphere, high-end digital illustration
+```
+
+***
+
+<a name="case-472"></a>
+
+### 例 472：上海地铁站台晨光
+
+![上海地铁站台晨光](../data/images/case472.jpg)
+
+**来源：** [@ToroJushiAi](https://x.com/ToroJushiAi/status/2059452471127240959)
+
+**提示词：**
+
+```text
+A candid photograph of a young woman standing on a Shanghai metro platform during the summer morning commute, authentic daily life photography, natural candid moment. Half-body framing, shot at eye level from moderate distance — the arriving train a motion-blurred streak behind her, the yellow safety line at her feet.
+East Asian young woman in her early 20s. Almond-shaped eyes with natural double eyelids, slightly elongated eye corners — eyes directed downward, absorbed. Straight refined nose with a delicate bridge. Skin tone fair to light beige (NC10–NC20) — skin subsurface scattering visible under cool overhead station light, specular micro-highlights on cheekbones and nose ridge, fine foundation powder grain perceptible. Summer fresh look, no heavy coverage, lightly tinted lip.
+She wears a relaxed oversized white shirt dress, collar lightly open, sleeves loosely rolled above the elbow. A structured natural tan canvas tote hangs from her shoulder, a physical novel tucked under one arm — pages open at a saved page. She stands with her weight on one hip, gaze downward at the open book, entirely absorbed, occupying her own stillness inside the morning rush. Background: white and grey tiled metro wall, overhead route signage board, arriving train motion blur to one side, other commuters blurred and distant. Two or three stray hairs displaced by the train's air displacement on arrival, natural unplanned imperfection, not geometrically symmetrical.
+Cool overhead fluorescent lighting with a slight greenish cast, flat frontal illumination offset by a warm spill from the platform entrance behind. Absorbed in focus, eyes downward, unaware — a private moment inside a public space, the Shanghai morning. Subtle ISO 400 film grain in shadow areas, photographic noise texture not CG render smoothness. Aspect ratio 2:3. No watermark, no text overlay, not cartoon, not digitally painted, not illustration, not anime.
+```
+
+***
+
+<a name="case-473"></a>
+
+### 例 473：ROGUE VIPER 游戏概念设定板
+
+![ROGUE VIPER 游戏概念设定板](../data/images/case473.jpg)
+
+**来源：** [@KimAkiyama81](https://x.com/KimAkiyama81/status/2059394334378566063)
+
+**提示词：**
+
+```text
+**ROGUE VIPER — VIDEO GAME CONCEPT ART SHEET PROMPT**
+
+---
+
+Official AAA video game concept art sheet titled **'ROGUE VIPER'** for an Unreal Engine 5 third-person action-stealth game. Professional game development documentation layout on a dark charcoal #1A1A1A background with gold stencil label typography throughout. Four clearly labeled panels arranged in a 2×2 grid with a header and footer.
+
+---
+
+**SHEET HEADER** — Bold gold stencil font title text: **ROGUE VIPER** centered at top. Subtitle beneath in smaller tracking-heavy label font: **CHARACTER & ENVIRONMENT CONCEPT SHEET | UNREAL ENGINE 5 | ACTION / STEALTH — THIRD PERSON**
+
+---
+
+**PANEL 1 — TOP LEFT — Label: "PROTAGONIST: MEI LIU / ROGUE VIPER"**
+
+Full-body character turntable reference of a 30-year-old East Asian Chinese-American female operative. Athletic and toned, 5'8", long straight black hair worn loose, calm neutral expression with sharp eyes. Wearing a form-fitting matte black tactical bodysuit with gold accent seams running along the shoulders, forearms, and thighs, gold cobra snake belt buckle at the waist, calf-high black tactical boots with subtle gold trim. Armed with twin suppressed 9mm pistols holstered on each hip with custom viper-scale grip texture, a serrated combat knife sheathed vertically on the right thigh, and a compact pneumatic grappling hook launcher mounted on the left forearm. Three views arranged side-by-side: front, 3/4, and back. Unreal Engine 5 physically-based rendering, photorealistic skin and fabric materials, neutral 3-point studio lighting for maximum clarity, gold and matte black color scheme throughout.
+
+---
+
+**PANEL 2 — TOP RIGHT — Label: "ENEMY TYPE 01: OBSIDIAN PROTOCOL ENFORCER"**
+
+Three enemy soldiers shown as character references against a dark background. These are elite private military contractors working for a shadow arms cartel called Obsidian Protocol. Their uniform: slate-gray and black modular plate carriers with deep crimson geometric hex-patch insignia on the shoulder, full-face ballistic visors with a dark red tinted lens, black tactical gloves, reinforced combat boots. Armed with compact bullpup assault rifles with red laser sights. One figure standing in neutral patrol stance, one crouched in a ready alert position, one depicted mid-aim with rifle raised. All three shown at the same scale for comparison. Same UE5 photorealistic PBR render style. Crimson and slate-gray color language to contrast Viper's gold and black.
+
+---
+
+**PANEL 3 — BOTTOM LEFT — Label: "STEALTH ENVIRONMENT: OBSIDIAN PROTOCOL BLACK SITE — ALPINE RESEARCH FACILITY"**
+
+Wide cinematic establishing shot of a stealth mission environment. A hidden high-altitude research facility buried inside a snow-covered mountain, accessible only via an underground tram. Interior architecture is brutalist concrete and frosted glass, dimly lit with cold white fluorescent overhead strips and amber emergency lighting casting long dramatic shadows across polished concrete floors. Rows of classified server terminals and cryogenic storage units line the walls. Ventilation shafts visible in the ceiling above catwalks. A security camera sweeps a slow arc over a central corridor below. In the foreground, Rogue Viper is pressed flat against a concrete pillar in deep shadow, body low, watching two Obsidian Protocol enforcers on patrol below, one holding a flashlight. The scene communicates tension, patience, and tactical opportunity. Unreal Engine 5 Lumen global illumination, volumetric cold air haze, photorealistic ice and concrete materials, deep crushed blacks with cold white and amber lighting contrast. Cinematic wide 2.39:1 style composition within the panel.
+
+---
+
+**PANEL 4 — BOTTOM RIGHT — Label: "ACTION SET PIECE: OBSIDIAN PROTOCOL FREIGHT DEPOT — COLLAPSED BRIDGE CANYON"**
+
+Wide cinematic action shot of a high-octane firefight environment. A sprawling open-air industrial freight depot at the edge of a sheer cliff canyon at dusk, with a collapsed suspension bridge dangling over the chasm below. Shipping containers and heavy crane equipment provide cover geometry. Rogue Viper is captured mid-movement in a dynamic gunfight pose — body low, both suppressed pistols raised and firing, muzzle flashes illuminating her face with sharp white light. Three Obsidian Protocol enforcers are positioned around her — one diving behind a container, one firing from atop a crane platform, one falling backward off the edge of the depot platform. Background: deep canyon with a river of orange reflected sunset light far below, dust and smoke rising from the firefight, a military helicopter approaching in the far distance. Warm dusk amber and cool canyon shadow blue provide dramatic color contrast. UE5 ray-traced reflections on metal container surfaces, particle systems for dust and muzzle smoke, cinematic depth of field on background elements.
+
+---
+
+**SHEET FOOTER** — Color palette chip row along the bottom of the sheet: matte black #1A1A1A, dark charcoal #2B2B2B, viper gold #D4AF37, gunmetal #3E3E3E, obsidian crimson #8B1A1A, slate gray #6B7280, cold white #E8EEF4. Label above chips: **COLOR PALETTE**. Footer text beneath: **ACTION / STEALTH — THIRD PERSON — UNREAL ENGINE 5 — © ROGUE VIPER GAME STUDIOS**
+
+---
+
+**UNIVERSAL STYLE CONSTRAINTS — APPLY TO ALL PANELS:**
+Photorealistic only throughout the entire sheet. No anime, no cartoon, no stylized illustration, no cel shading, no comic book rendering. Unreal Engine 5 cinematic render quality with physically-based materials. Anamorphic lens character on all environment shots. Crushed blacks and desaturated mid-tones across all panels. Professional AAA game studio concept documentation format comparable to Naughty Dog, Ubisoft, or Guerrilla Games internal production art.
+```
+
+***
+
+<a name="case-474"></a>
+
+### 例 474：四城极简旅行海报系列
+
+![四城极简旅行海报系列](../data/images/case474.jpg)
+
+**来源：** [@Taaruk_](https://x.com/Taaruk_/status/2059188921096085888)
+
+**提示词：**
+
+```text
+Minimalist flat travel poster illustration series of iconic destinations around the world, clean vector art style, Scandinavian color palette, soft pastel tones, calm atmospheric scenery, Hallstatt Austria lakeside village with alpine mountains and reflections, Bergen Norway colorful harbor houses with fjord background, Kyoto Japan traditional riverside town with cherry blossoms and pagoda, Santorini Greece white architecture with blue domes overlooking the sea, ultra clean composition, geometric landscape shapes, smooth gradients, elegant typography with destination names, modern tourism poster aesthetic, serene travel mood, crisp vector lines, cinematic wide-angle scenery, peaceful skies with stylized clouds, highly detailed environment art, contemporary flat illustration, premium editorial travel design, balanced composition, minimal shadows, dreamy vacation atmosphere, soft morning lighting, high-end Airbnb poster vibe, Behance trending style, 4k, ultra detailed
+```
+
+***
+
+<a name="case-475"></a>
+
+### 例 475：企鹅造型包装结构板
+
+![企鹅造型包装结构板](../data/images/case475.jpg)
+
+**来源：** [@iamaiistudio](https://x.com/iamaiistudio/status/2059305097897914664) / [full prompt](https://aiistudio.com/prompt/2039679180775063573)
+
+**提示词：**
+
+```text
+Using the attached image, create an illustration sheet of professional industrial design packaging for the package (PACKAGE TYPE). A centered heroic 3D rendering with realistic materials, soft studio lighting and commercial quality finishes. Surrounded by technical views: front, side, top, bottom, oblique perspective and flat position. Include sketches of the frame structure, crease lines, seam details, and size arrows in millimeters. Show materials and finishes (matte, glossy print, plastic, paper, glass, etc.) in handwritten annotations. Add color swatches, realistic product illustrations, and subtle shadows. Clean sketchbook background, realistic rendering + pencil sketch style, modern design design, ultra-detailed, portfolio ready.
+```
+
+***
+
+<a name="case-476"></a>
+
+### 例 476：早安拿铁微缩女孩
+
+![早安拿铁微缩女孩](../data/images/case476.jpg)
+
+**来源：** [@Zyrellix](https://x.com/Zyrellix/status/2059443447602561444)
+
+**提示词：**
+
+```text
+Create ultra-fine highly detailed 3D realistic miniature chibi-like cute girl, wearing cream colour top and jeans, resting and floating on creamy latte cup, stylized textured ceramic cup, sleeping expression, satin soft pillow tucked behind her head. The latte cream forms a text "Good Morning" in a cute handwriting. Soft-focus minimalist background, bright natural light, 8K UHD.
+```
+
+***

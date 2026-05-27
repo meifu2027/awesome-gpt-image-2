@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-469-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-476-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
 </p>
 
@@ -50,7 +50,7 @@ The core goal is simple: compress prose-style prompts into structured protocols.
 
 - [Full case gallery](docs/gallery.md)
 - [Gallery Part 1: cases 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2: cases 166-469](docs/gallery-part-2.md)
+- [Gallery Part 2: cases 166-476](docs/gallery-part-2.md)
 - [Industrial prompt templates and pitfalls guide](docs/templates.md)
 - [Agent skill: GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -77,7 +77,7 @@ Start with the case album to find a visual direction, then open the prompt templ
       <a href="docs/gallery.md#cat-infographic"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 Posters & Typography</strong><br><sub>73 cases</sub></p>
+      <p><strong>📰 Posters & Typography</strong><br><sub>74 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="Posters and typography" width="220"></a><br>
       <sub>Event posters, covers, type-driven visuals, and strong layout compositions.</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>View Cases</strong></a>
@@ -85,7 +85,7 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🛍️ Products & E-commerce</strong><br><sub>35 cases</sub></p>
+      <p><strong>🛍️ Products & E-commerce</strong><br><sub>37 cases</sub></p>
       <a href="docs/gallery.md#cat-product"><img src="data/images/category-covers/product.jpg" alt="Products and e-commerce" width="220"></a><br>
       <sub>Product shots, detail pages, packaging, selling points, and ads.</sub><br>
       <a href="docs/gallery.md#cat-product"><strong>View Cases</strong></a>
@@ -105,19 +105,19 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 Photography & Realism</strong><br><sub>61 cases</sub></p>
+      <p><strong>📷 Photography & Realism</strong><br><sub>62 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="Photography and realism" width="220"></a><br>
       <sub>Portraits, phone photography, film texture, and commercial photography.</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎨 Illustration & Art</strong><br><sub>47 cases</sub></p>
+      <p><strong>🎨 Illustration & Art</strong><br><sub>49 cases</sub></p>
       <a href="docs/gallery.md#cat-illustration"><img src="data/images/category-covers/illustration.jpg" alt="Illustration and art" width="220"></a><br>
       <sub>Illustration, art styles, material experiments, and decorative images.</sub><br>
       <a href="docs/gallery.md#cat-illustration"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 Characters & People</strong><br><sub>21 cases</sub></p>
+      <p><strong>🧍 Characters & People</strong><br><sub>22 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="Characters and people" width="220"></a><br>
       <sub>Character design, pose references, cards, and 3D toys.</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>View Cases</strong></a>
@@ -153,14 +153,14 @@ Start with the case album to find a visual direction, then open the prompt templ
     <td width="33%" valign="top" align="center">
       <h4>🖼️ Full Gallery</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="Full gallery" width="220"></a><br>
-      <sub>Browse all 469 cases by gallery part and category.</sub><br>
+      <sub>Browse all 476 cases by gallery part and category.</sub><br>
       <a href="docs/gallery.md"><strong>Open Gallery</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ Latest Additions</h4>
-      <a href="docs/gallery-part-2.md#case-469"><img src="data/images/case469.jpg" alt="Latest additions" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-476"><img src="data/images/case476.jpg" alt="Latest additions" width="220"></a><br>
       <sub>The newest community cases and workflows collected in the repo.</sub><br>
-      <a href="docs/gallery-part-2.md#case-469"><strong>View Latest</strong></a>
+      <a href="docs/gallery-part-2.md#case-476"><strong>View Latest</strong></a>
     </td>
   </tr>
 </table>
@@ -428,10 +428,36 @@ Only the latest collection and import run is shown here. Older imports stay in t
 <table>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 469: Guided Science Picture Book</strong></p>
-      <a href="docs/gallery-part-2.md#case-469"><img src="data/images/case469.jpg" alt="Guided science picture book" width="150"></a><br>
-      <sub>A reusable educational picture-book prompt for large scenes, route paths, cute guide IP, knowledge stops, and child-friendly infographic labels.</sub><br>
-      <a href="docs/gallery-part-2.md#case-469"><strong>View Case</strong></a>
+      <p><strong>Case 472: Shanghai Metro Platform Morning</strong></p>
+      <a href="docs/gallery-part-2.md#case-472"><img src="data/images/case472.jpg" alt="Shanghai metro platform morning" width="150"></a><br>
+      <sub>A realistic metro-platform prompt with motion blur, fluorescent light, skin texture, and a quiet public-space moment.</sub><br>
+      <a href="docs/gallery-part-2.md#case-472"><strong>View Case</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 473: ROGUE VIPER Concept Sheet</strong></p>
+      <a href="docs/gallery-part-2.md#case-473"><img src="data/images/case473.jpg" alt="ROGUE VIPER game concept sheet" width="150"></a><br>
+      <sub>A four-panel AAA game concept sheet covering protagonist, enemy, environment, and action-set-piece references.</sub><br>
+      <a href="docs/gallery-part-2.md#case-473"><strong>View Case</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 474: Minimal Travel Poster Series</strong></p>
+      <a href="docs/gallery-part-2.md#case-474"><img src="data/images/case474.jpg" alt="Minimal travel poster series" width="150"></a><br>
+      <sub>A clean flat travel poster series prompt with Scandinavian color, destination typography, and calm editorial scenery.</sub><br>
+      <a href="docs/gallery-part-2.md#case-474"><strong>View Case</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 475: Packaging Structure Board</strong></p>
+      <a href="docs/gallery-part-2.md#case-475"><img src="data/images/case475.jpg" alt="Packaging structure board" width="150"></a><br>
+      <sub>An industrial packaging sheet prompt with hero render, technical views, fold lines, material notes, and color swatches.</sub><br>
+      <a href="docs/gallery-part-2.md#case-475"><strong>View Case</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 476: Good Morning Latte Miniature</strong></p>
+      <a href="docs/gallery-part-2.md#case-476"><img src="data/images/case476.jpg" alt="Good morning latte miniature" width="150"></a><br>
+      <sub>A soft 3D miniature scene combining latte foam lettering, ceramic texture, warm light, and cozy still-life detail.</sub><br>
+      <a href="docs/gallery-part-2.md#case-476"><strong>View Case</strong></a>
     </td>
   </tr>
 </table>
