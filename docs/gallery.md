@@ -1,10 +1,10 @@
 ## 🖼️ 魔法画廊总览
 
-完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 476。
+完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 484。
 
 - [返回 README 首页](../README.md)
 - [Part 1：例 1-165](./gallery-part-1.md)
-- [Part 2：例 166-476](./gallery-part-2.md)
+- [Part 2：例 166-484](./gallery-part-2.md)
 - [工业级提示词模板与防坑指南](./templates.md)
 - [声明、Star 趋势图与公众号](./disclaimer.md)
 
@@ -148,20 +148,20 @@
 ## 分册说明
 
 - `gallery-part-1.md`：例 1-165，覆盖信息图、界面、海报、摄影、插画等基础主流类型。
-- `gallery-part-2.md`：例 166-476，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
+- `gallery-part-2.md`：例 166-484，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
 
 ## 分类概览
 
 - UI与界面：73
 - 图表与信息可视化：51
-- 海报与排版：74
+- 海报与排版：76
 - 商品与电商：37
-- 品牌与标志：23
+- 品牌与标志：24
 - 建筑与空间：11
-- 摄影与写实：62
-- 插画与艺术：49
-- 人物与角色：22
-- 场景与叙事：17
+- 摄影与写实：64
+- 插画与艺术：50
+- 人物与角色：23
+- 场景与叙事：18
 - 历史与古风题材：16
 - 文档与出版物：10
 - 其他应用场景：28
@@ -296,7 +296,7 @@
 
 <a name="cat-poster"></a>
 
-### 📰 海报与排版 · 74 cases
+### 📰 海报与排版 · 76 cases
 
 - [例 3：足球主题电影海报](./gallery-part-1.md#case-3)
 - [例 5：主题海报版式设计](./gallery-part-1.md#case-5)
@@ -373,6 +373,9 @@
 
 - [例 474：四城极简旅行海报系列](./gallery-part-2.md#case-474)
 
+- [例 481：韩系春日 scrapbook 海报](./gallery-part-2.md#case-481)
+- [例 484：霓虹涂鸦黑白人像](./gallery-part-2.md#case-484)
+
 <a name="cat-product"></a>
 
 ### 🛍️ 商品与电商 · 37 cases
@@ -417,7 +420,7 @@
 
 <a name="cat-brand"></a>
 
-### 🏷️ 品牌与标志 · 23 cases
+### 🏷️ 品牌与标志 · 24 cases
 
 - [例 130：界面交互设计图](./gallery-part-1.md#case-130)
 - [例 132：界面交互设计图](./gallery-part-1.md#case-132)
@@ -442,6 +445,8 @@
 - [例 444：迪斯科镜面 3D App 图标](./gallery-part-2.md#case-444)
 - [例 459：品牌奶茶 KV 概念海报](./gallery-part-2.md#case-459)
 
+- [例 478：夹层式品牌编辑海报](./gallery-part-2.md#case-478)
+
 <a name="cat-architecture"></a>
 
 ### 🏛️ 建筑与空间 · 11 cases
@@ -459,7 +464,7 @@
 
 <a name="cat-photo"></a>
 
-### 📷 摄影与写实 · 62 cases
+### 📷 摄影与写实 · 64 cases
 
 - [例 24：漫画分镜叙事设计](./gallery-part-1.md#case-24)
 - [例 26：建筑空间场景图](./gallery-part-1.md#case-26)
@@ -525,9 +530,12 @@
 
 - [例 472：上海地铁站台晨光](./gallery-part-2.md#case-472)
 
+- [例 482：自我凝视超现实 Campaign](./gallery-part-2.md#case-482)
+- [例 483：都市飞鸟街头肖像](./gallery-part-2.md#case-483)
+
 <a name="cat-illustration"></a>
 
-### 🎨 插画与艺术 · 49 cases
+### 🎨 插画与艺术 · 50 cases
 
 - [例 6：插画艺术创作图](./gallery-part-1.md#case-6)
 - [例 22：插画艺术风格创作](./gallery-part-1.md#case-22)
@@ -580,9 +588,11 @@
 - [例 471：花簪和服动漫肖像](./gallery-part-2.md#case-471)
 - [例 476：早安拿铁微缩女孩](./gallery-part-2.md#case-476)
 
+- [例 479：杂志纸艺拼贴重绘](./gallery-part-2.md#case-479)
+
 <a name="cat-character"></a>
 
-### 🧍 人物与角色 · 22 cases
+### 🧍 人物与角色 · 23 cases
 
 - [例 25：综合应用场景图](./gallery-part-1.md#case-25)
 - [例 27：人物角色设定图](./gallery-part-1.md#case-27)
@@ -608,9 +618,11 @@
 
 - [例 473：ROGUE VIPER 游戏概念设定板](./gallery-part-2.md#case-473)
 
+- [例 480：粉丝速写本角色页](./gallery-part-2.md#case-480)
+
 <a name="cat-scene"></a>
 
-### 🎬 场景与叙事 · 17 cases
+### 🎬 场景与叙事 · 18 cases
 
 - [例 182：千禧年日系校园喜剧场景](./gallery-part-2.md#case-182)
 - [例 208：樱花树下害羞双马尾少女](./gallery-part-2.md#case-208)
@@ -629,6 +641,8 @@
 - [例 419：可颂烘焙流程 Storyboard](./gallery-part-2.md#case-419)
 - [例 422：冬季生存惊悚 Storyboard](./gallery-part-2.md#case-422)
 - [例 448：1942 空战街机电影城](./gallery-part-2.md#case-448)
+
+- [例 477：Instagram 餐桌俯拍创意](./gallery-part-2.md#case-477)
 
 <a name="cat-history"></a>
 
