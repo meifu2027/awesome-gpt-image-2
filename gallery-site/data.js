@@ -3782,5 +3782,69 @@ window.GALLERY_DATA = [
     source: '[@Zyrellix](https://x.com/Zyrellix/status/2059443447602561444)',
     prompt: 'Create ultra-fine highly detailed 3D realistic miniature chibi-like cute girl, wearing cream colour top and jeans, resting and floating on creamy latte cup, stylized textured ceramic cup, sleeping expression, satin soft pillow tucked behind her head. The latte cream forms a text "Good Morning" in a cute handwriting. Soft-focus minimalist background, bright natural light, 8K UHD.',
     category: '其他应用场景'
+  },
+  {
+    id: 477,
+    title: 'Instagram 餐桌俯拍创意',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case477.jpg',
+    source: '[@iamaiistudio](https://x.com/iamaiistudio/status/2060210845225980366) / [full prompt](https://aiistudio.com/prompt/2045009725218226475)',
+    prompt: 'Top-down ultra-wide hyper-realistic shot of 4 real people seated at a square dining table. Pull the camera way back so a wide ring of empty floor surrounds the whole scene, giving a clean minimal composition. Scene [ATMOSPHERE + WARDROBE]: the four are styled in [OUTFIT STYLE]. Each one is doing something specific: [DESCRIBE EACH PERSON\'S ACTION].\n\nThe table itself is a physical prop built to look like an Instagram post viewed from above:\n- A solid white band runs along the TOP and BOTTOM edges only, with no white on the left or right sides.\n- Top band: a small drawn profile avatar with [LOGO DESCRIPTION], the handle "[USERNAME]", a tiny blue verified check next to it, and a "..." on the far right.\n- Bottom band: red heart, comment bubble, and share icons painted on the left, bookmark icon on the right.\n\nThe center of the table is one flat color: [EXACT COLOR + HEX CODE]. All food, drinks, props, and any hand interacting with them must stay strictly inside that central colored zone, nothing crosses the white bands or the table edge. The floor around the table is [FLOOR COLOR] to create clear visual separation. Professional studio lighting with crisp shadows, 8k, tack-sharp focus.',
+    category: '其他应用场景'
+  },
+  {
+    id: 478,
+    title: '夹层式品牌编辑海报',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case478.jpg',
+    source: '[@iamaiistudio](https://x.com/iamaiistudio/status/2060000278657839398) / [full prompt](https://aiistudio.com/prompt/2040806718523748627)',
+    prompt: '[BRAND NAME]. You are a world-class editorial designer.\n\nSTEP 1, DYNAMIC SUBJECT LOGIC:\n- Subject pick: independently study [BRAND NAME] and choose the right hero subject.\n- Sandwich layering: weave the subject through the background shapes. Parts of the car or figure must sit hidden behind geometric blocks, while other parts (wheels, limbs, props) overlap in front of those blocks to fake real 3D depth.\n\nSTEP 2, GRID & GEOMETRY:\n- Layout: a clean 2x2 grid composition.\n- Overlays: drop large bold geometric arcs and circles on top of the grid.\n- Visual balance: place one iconic product prop (a floating key fob for cars, a ball for sports, etc.) in its own quadrant to counterweight the subject.\n\nSTEP 3, SOPHISTICATED MUTED PALETTE:\n- No aggressive neon, no oversaturated colors.\n- Pull [BRAND NAME]\'s core colors and shift them into a "sophisticated muted" range. Use desaturated, earthy, dusty versions of the brand colors (dusty rose instead of hot pink, sage green instead of bright mint, slate blue instead of royal blue).\n- Finish: matte flat color blocks, zero gradients.\n\nSTEP 4, PHOTOGRAPHY & LIGHTING:\n- Subject style: high-end commercial studio photography.\n- Lighting: soft diffused studio light, gentle highlights, no harsh shadows.\n- Integration: the subject must feel physically embedded into the graphic grid.\n\nSTEP 5, MINIMALIST BRANDING:\n- Drop a clean single-color [BRAND NAME] logo dead-center on one background block. No tagline, just the iconic symbol.',
+    category: '海报与排版'
+  },
+  {
+    id: 479,
+    title: '杂志纸艺拼贴重绘',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case479.jpg',
+    source: '[@oggii_0](https://x.com/oggii_0/status/2060212097083146644)',
+    prompt: 'Transform the uploaded image into a minimalist illustration in a magazine collage style, using paper cutouts. Retain the main subject, pose, and overall concept of the original image, but reimagine it as a warm, hand-edited collage. Style: Minimalist illustration in a magazine paper collage style, with flat, layered paper shapes, soft pastel paper textures, torn paper edges, paper shadow effects, neat black doodle accents, a handmade scrapbook atmosphere, modern Korean editorial design, a simple and cute composition, and large areas of clean white space. Character: Cute, simplified Korean characters with minimalist facial features, a small, relaxed smile, soft and rounded proportions, simple and casual clothing, and silhouettes constructed from layered paper cutouts. Composition: A 3:4 aspect ratio, with the main subject positioned slightly lower and off-center, leaving a large, open space on the opposite side for a breezy, minimalist composition that avoids clutter. Objects: Add only a few suitable collage elements: paper sticky notes, small hearts, plants, a cup of coffee, a window, tape fragments, and simple doodle icons. Typography: Add an elegant, handwritten English title that fits the scene\'s atmosphere. Use short phrases such as: ["May you be like the morning sunshine, full of vitality and hope, embracing the beauty of each day.","Take a small break," or "Good day, good mood."] Atmosphere: Calm, comfortable, warm, sweet, and editorial style. Avoid: Photorealistic style, anime style, watercolor style, 3D clay style, overly detailed backgrounds, excessive collage elements, a luxury poster atmosphere, dark tones, harsh shadows, and sloppy text.',
+    category: '海报与排版'
+  },
+  {
+    id: 480,
+    title: '粉丝速写本角色页',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case480.jpg',
+    source: '[@Ciri_ai](https://x.com/Ciri_ai/status/2060211436232786357)',
+    prompt: 'Draw me as if an obsessed fan artist filled an entire sketchbook page - messy, overlapping, full-body poses, tiny chibi doodles, exaggerated expressions, and random close-ups of their hands or eyes.\nWhite background. No grid, no order. Pure chaos energy. With (any color) aesthetic clothes',
+    category: '人物与角色'
+  },
+  {
+    id: 481,
+    title: '韩系春日 scrapbook 海报',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case481.jpg',
+    source: '[@Taaruk_](https://x.com/Taaruk_/status/2060214163591614900)',
+    prompt: 'Cute Korean spring aesthetic scrapbook poster, dreamy K-fashion portrait, soft blonde girl standing in a blooming flower garden, pastel blue sky background, cream floral blouse layered under a knitted ivory sweater vest, light blue high-waisted jeans, natural smile, glowing fair skin, soft makeup, cherry blossom trees, colorful spring flowers, cozy countryside garden, bright natural sunlight, kawaii doodle overlays, hand-drawn white hearts, smiley faces, stars, sparkles, rainbows, playful handwritten typography, polaroid photo frames, masking tape stickers, scrapbook collage layout, Pinterest aesthetic, Korean magazine editorial, cottagecore fashion, dreamy spring vibes, wholesome mood, soft pastel color palette, clean composition, aesthetic social media poster, ultra detailed, photorealistic, high quality, cute and charming atmosphere, subtle bokeh, lifestyle photography, Instagram reel cover, fashion moodboard, Y2K scrapbook design, white outline around subject, flower-themed decorations, 8k masterpiece',
+    category: '海报与排版'
+  },
+  {
+    id: 482,
+    title: '自我凝视超现实 Campaign',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case482.jpg',
+    source: '[@Shorelyn_](https://x.com/Shorelyn_/status/2060207260685791267)',
+    prompt: 'Ultra-realistic conceptual portrait of a young man with curly hair and light stubble, wearing yellow-tinted rectangular sunglasses, a beige minimal t-shirt, blue jeans, and off-white sneakers. He is sitting casually with a relaxed posture.\n\nThe twist: he is seated on a large, hyper-realistic version of his own detached head placed on the ground. The head is scaled up, lying sideways, with the same facial features and sunglasses, creating a surreal self-reflection concept.\n\nComposition: centered, full-body shot, neutral studio background with soft beige tones, minimal aesthetic. Clean negative space.\n\nTypography integrated into the background:\n\n* Handwritten-style text at the top: “HEAVY”\n* Below it, smaller text: “ON MY OWN MIND” with “MIND” crossed out\n* Large, rough, scribbled text in black: “HEAD”\n\nLighting: soft diffused studio lighting, subtle shadows, high detail, fashion editorial quality.\n\nStyle: blend of surrealism and modern streetwear campaign, minimal yet expressive, high-resolution, 8k, sharp focus, natural skin texture.\n\nMood: introspective, mental weight, identity, self-awareness.',
+    category: '其他应用场景'
+  },
+  {
+    id: 483,
+    title: '都市飞鸟街头肖像',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case483.jpg',
+    source: '[@HaniaAi12](https://x.com/HaniaAi12/status/2060216757797978245)',
+    prompt: 'A stylish cinematic portrait of a confident young woman leaning casually against a textured urban concrete wall, surrounded by vibrant flying birds including blue macaws, white seagulls, and a colorful hummingbird. Black graffiti-style bird silhouettes painted on the wall create an artistic street-art vibe. She is wearing a trendy all-white outfit — oversized denim jacket, fitted graphic tee, skinny jeans, and black sneakers. Soft natural daylight, realistic shadows, ultra-detailed fashion photography, urban luxury aesthetic, sharp facial features, glossy hair, high-end editorial style, dynamic composition, photorealistic, depth of field, 8K quality.',
+    category: '其他应用场景'
+  },
+  {
+    id: 484,
+    title: '霓虹涂鸦黑白人像',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case484.jpg',
+    source: '[@harboriis](https://x.com/harboriis/status/2060208419811074350)',
+    prompt: 'High-contrast black-and-white urban portrait of a curly-haired bearded man in a black leather jacket, holding two fingers near glowing neon green eyes, with bold graffiti doodles, colorful paint splashes, abstract arrows, crown sketches, and grunge street-art textures on a concrete background, cinematic lighting, edgy graphic poster style.',
+    category: '插画与艺术'
   }
 ];
