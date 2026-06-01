@@ -5,8 +5,9 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-484-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-488-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
+  <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=flat-square" alt="Sponsor"></a>
 </p>
 
 <p align="center">
@@ -25,6 +26,10 @@
     <img src="data/images/site-preview.png" alt="GPT-Image2 Gallery 网站预览" width="900">
   </a>
 </p>
+
+## 💖 GitHub Sponsors
+
+如果这个项目帮你节省了整理案例和提示词模板的时间，欢迎通过 [GitHub Sponsors](https://github.com/sponsors/freestylefly) 支持持续采集案例、维护网站、整理工业级模板与 Agent Skill。
 
 ## 公众号与交流群
 
@@ -50,7 +55,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 
 - [完整案例总览](docs/gallery.md)
 - [案例画廊 Part 1：例 1-165](docs/gallery-part-1.md)
-- [案例画廊 Part 2：例 166-484](docs/gallery-part-2.md)
+- [案例画廊 Part 2：例 166-488](docs/gallery-part-2.md)
 - [工业级提示词模板与防坑指南](docs/templates.md#section-templates)
 - [Agent Skill：GPT-Image2 风格库](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -77,7 +82,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
       <a href="docs/gallery.md#cat-infographic"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 海报与排版</strong><br><sub>76 cases</sub></p>
+      <p><strong>📰 海报与排版</strong><br><sub>77 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="海报与排版" width="220"></a><br>
       <sub>活动海报、封面、字体视觉和强排版画面。</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>查看案例</strong></a>
@@ -85,7 +90,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🛍️ 商品与电商</strong><br><sub>37 cases</sub></p>
+      <p><strong>🛍️ 商品与电商</strong><br><sub>38 cases</sub></p>
       <a href="docs/gallery.md#cat-product"><img src="data/images/category-covers/product.jpg" alt="商品与电商" width="220"></a><br>
       <sub>商品图、详情页、包装卖点和商业广告。</sub><br>
       <a href="docs/gallery.md#cat-product"><strong>查看案例</strong></a>
@@ -105,7 +110,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 摄影与写实</strong><br><sub>64 cases</sub></p>
+      <p><strong>📷 摄影与写实</strong><br><sub>65 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="摄影与写实" width="220"></a><br>
       <sub>人像、手机纪实、胶片质感和商业摄影。</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>查看案例</strong></a>
@@ -125,7 +130,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎬 场景与叙事</strong><br><sub>18 cases</sub></p>
+      <p><strong>🎬 场景与叙事</strong><br><sub>19 cases</sub></p>
       <a href="docs/gallery.md#cat-scene"><img src="data/images/category-covers/scene.jpg" alt="场景与叙事" width="220"></a><br>
       <sub>分镜、故事场景、直播画面和世界观叙事。</sub><br>
       <a href="docs/gallery.md#cat-scene"><strong>查看案例</strong></a>
@@ -153,14 +158,14 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
     <td width="33%" valign="top" align="center">
       <h4>🖼️ 完整画廊</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="完整画廊" width="220"></a><br>
-      <sub>按分册浏览全部 484 个案例和代表案例入口。</sub><br>
+      <sub>按分册浏览全部 488 个案例和代表案例入口。</sub><br>
       <a href="docs/gallery.md"><strong>进入画廊</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ 最新新增</h4>
-      <a href="docs/gallery-part-2.md#case-484"><img src="data/images/case484.jpg" alt="最新新增" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-488"><img src="data/images/case488.jpg" alt="最新新增" width="220"></a><br>
       <sub>最近收录的 X 社区案例和新玩法。</sub><br>
-      <a href="docs/gallery-part-2.md#case-484"><strong>查看最新</strong></a>
+      <a href="docs/gallery-part-2.md#case-488"><strong>查看最新</strong></a>
     </td>
   </tr>
 </table>
@@ -424,54 +429,28 @@ GOOGLE_ANALYTICS_REFRESH_TOKEN=
 <table>
   <tr>
     <td width="25%" valign="top" align="center">
-      <p><strong>例 477：Instagram 餐桌俯拍创意</strong></p>
-      <a href="docs/gallery-part-2.md#case-477"><img src="data/images/case477.jpg" alt="Instagram 餐桌俯拍创意" width="180"></a><br>
-      <sub>把社媒 UI 结构变成真实餐桌道具，版式边界和道具约束很清楚。</sub><br>
-      <a href="docs/gallery-part-2.md#case-477"><strong>查看案例</strong></a>
+      <p><strong>例 485：时尚目录电商拼贴</strong></p>
+      <a href="docs/gallery-part-2.md#case-485"><img src="data/images/case485.jpg" alt="时尚目录电商拼贴" width="180"></a><br>
+      <sub>街头时装、多帧拼贴、奢华目录质感和购物网站式构图组合。</sub><br>
+      <a href="docs/gallery-part-2.md#case-485"><strong>查看案例</strong></a>
     </td>
     <td width="25%" valign="top" align="center">
-      <p><strong>例 478：夹层式品牌编辑海报</strong></p>
-      <a href="docs/gallery-part-2.md#case-478"><img src="data/images/case478.jpg" alt="夹层式品牌编辑海报" width="180"></a><br>
-      <sub>2x2 网格、几何遮挡、品牌色弱化和产品主体嵌入逻辑。</sub><br>
-      <a href="docs/gallery-part-2.md#case-478"><strong>查看案例</strong></a>
+      <p><strong>例 486：RCB 冠军混合媒介海报</strong></p>
+      <a href="docs/gallery-part-2.md#case-486"><img src="data/images/case486.jpg" alt="RCB 冠军混合媒介海报" width="180"></a><br>
+      <sub>体育冠军海报，把写真人像、手绘线条、水彩飞溅、奖杯反光和大字标题融合。</sub><br>
+      <a href="docs/gallery-part-2.md#case-486"><strong>查看案例</strong></a>
     </td>
     <td width="25%" valign="top" align="center">
-      <p><strong>例 479：杂志纸艺拼贴重绘</strong></p>
-      <a href="docs/gallery-part-2.md#case-479"><img src="data/images/case479.jpg" alt="杂志纸艺拼贴重绘" width="180"></a><br>
-      <sub>纸张纹理、留白、手工拼贴氛围和负面约束都比较完整。</sub><br>
-      <a href="docs/gallery-part-2.md#case-479"><strong>查看案例</strong></a>
+      <p><strong>例 487：法式药妆商业分镜封面</strong></p>
+      <a href="docs/gallery-part-2.md#case-487"><img src="data/images/case487.jpg" alt="法式药妆商业分镜封面" width="180"></a><br>
+      <sub>商业分镜提示词，包含模特一致性、产品参考、皮肤真实感和声音方向。</sub><br>
+      <a href="docs/gallery-part-2.md#case-487"><strong>查看案例</strong></a>
     </td>
     <td width="25%" valign="top" align="center">
-      <p><strong>例 480：粉丝速写本角色页</strong></p>
-      <a href="docs/gallery-part-2.md#case-480"><img src="data/images/case480.jpg" alt="粉丝速写本角色页" width="180"></a><br>
-      <sub>混乱速写本构图，适合角色姿势、Q 版小稿和表情细节参考。</sub><br>
-      <a href="docs/gallery-part-2.md#case-480"><strong>查看案例</strong></a>
-    </td>
-  </tr>
-  <tr>
-    <td width="25%" valign="top" align="center">
-      <p><strong>例 481：韩系春日 scrapbook 海报</strong></p>
-      <a href="docs/gallery-part-2.md#case-481"><img src="data/images/case481.jpg" alt="韩系春日 scrapbook 海报" width="180"></a><br>
-      <sub>春日人像、贴纸、手写字、拍立得框和社媒封面组合。</sub><br>
-      <a href="docs/gallery-part-2.md#case-481"><strong>查看案例</strong></a>
-    </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>例 482：自我凝视超现实 Campaign</strong></p>
-      <a href="docs/gallery-part-2.md#case-482"><img src="data/images/case482.jpg" alt="自我凝视超现实 Campaign" width="180"></a><br>
-      <sub>巨型自我头部道具、极简棚拍和背景文字共同建立概念。</sub><br>
-      <a href="docs/gallery-part-2.md#case-482"><strong>查看案例</strong></a>
-    </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>例 483：都市飞鸟街头肖像</strong></p>
-      <a href="docs/gallery-part-2.md#case-483"><img src="data/images/case483.jpg" alt="都市飞鸟街头肖像" width="180"></a><br>
-      <sub>街头人像、飞鸟动态、涂鸦剪影和自然日光的组合。</sub><br>
-      <a href="docs/gallery-part-2.md#case-483"><strong>查看案例</strong></a>
-    </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>例 484：霓虹涂鸦黑白人像</strong></p>
-      <a href="docs/gallery-part-2.md#case-484"><img src="data/images/case484.jpg" alt="霓虹涂鸦黑白人像" width="180"></a><br>
-      <sub>黑白主体、霓虹眼睛、彩色涂鸦和街头海报能量。</sub><br>
-      <a href="docs/gallery-part-2.md#case-484"><strong>查看案例</strong></a>
+      <p><strong>例 488：屋顶球场日落人像</strong></p>
+      <a href="docs/gallery-part-2.md#case-488"><img src="data/images/case488.jpg" alt="屋顶球场日落人像" width="180"></a><br>
+      <sub>屋顶球场、日落城市背景、棒球夹克姿态和轻松自信的人像控制。</sub><br>
+      <a href="docs/gallery-part-2.md#case-488"><strong>查看案例</strong></a>
     </td>
   </tr>
 </table>

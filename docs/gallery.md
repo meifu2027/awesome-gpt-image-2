@@ -1,10 +1,10 @@
 ## 🖼️ 魔法画廊总览
 
-完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 484。
+完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 488。
 
 - [返回 README 首页](../README.md)
 - [Part 1：例 1-165](./gallery-part-1.md)
-- [Part 2：例 166-484](./gallery-part-2.md)
+- [Part 2：例 166-488](./gallery-part-2.md)
 - [工业级提示词模板与防坑指南](./templates.md)
 - [声明、Star 趋势图与公众号](./disclaimer.md)
 
@@ -144,24 +144,28 @@
 - [例 474：四城极简旅行海报系列](./gallery-part-2.md#case-474)
 - [例 475：企鹅造型包装结构板](./gallery-part-2.md#case-475)
 - [例 476：早安拿铁微缩女孩](./gallery-part-2.md#case-476)
+- [例 485：时尚目录电商拼贴](./gallery-part-2.md#case-485)
+- [例 486：RCB 冠军混合媒介海报](./gallery-part-2.md#case-486)
+- [例 487：法式药妆商业分镜封面](./gallery-part-2.md#case-487)
+- [例 488：屋顶球场日落人像](./gallery-part-2.md#case-488)
 
 ## 分册说明
 
 - `gallery-part-1.md`：例 1-165，覆盖信息图、界面、海报、摄影、插画等基础主流类型。
-- `gallery-part-2.md`：例 166-484，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
+- `gallery-part-2.md`：例 166-488，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
 
 ## 分类概览
 
 - UI与界面：73
 - 图表与信息可视化：51
-- 海报与排版：76
-- 商品与电商：37
+- 海报与排版：77
+- 商品与电商：38
 - 品牌与标志：24
 - 建筑与空间：11
-- 摄影与写实：64
+- 摄影与写实：65
 - 插画与艺术：50
 - 人物与角色：23
-- 场景与叙事：18
+- 场景与叙事：19
 - 历史与古风题材：16
 - 文档与出版物：10
 - 其他应用场景：28
@@ -296,7 +300,7 @@
 
 <a name="cat-poster"></a>
 
-### 📰 海报与排版 · 76 cases
+### 📰 海报与排版 · 77 cases
 
 - [例 3：足球主题电影海报](./gallery-part-1.md#case-3)
 - [例 5：主题海报版式设计](./gallery-part-1.md#case-5)
@@ -375,10 +379,11 @@
 
 - [例 481：韩系春日 scrapbook 海报](./gallery-part-2.md#case-481)
 - [例 484：霓虹涂鸦黑白人像](./gallery-part-2.md#case-484)
+- [例 486：RCB 冠军混合媒介海报](./gallery-part-2.md#case-486)
 
 <a name="cat-product"></a>
 
-### 🛍️ 商品与电商 · 37 cases
+### 🛍️ 商品与电商 · 38 cases
 
 - [例 17：界面交互设计图](./gallery-part-1.md#case-17)
 - [例 33：电商商品展示设计](./gallery-part-1.md#case-33)
@@ -417,6 +422,7 @@
 - [例 470：本地生活小店异形展架](./gallery-part-2.md#case-470)
 
 - [例 475：企鹅造型包装结构板](./gallery-part-2.md#case-475)
+- [例 485：时尚目录电商拼贴](./gallery-part-2.md#case-485)
 
 <a name="cat-brand"></a>
 
@@ -464,7 +470,7 @@
 
 <a name="cat-photo"></a>
 
-### 📷 摄影与写实 · 64 cases
+### 📷 摄影与写实 · 65 cases
 
 - [例 24：漫画分镜叙事设计](./gallery-part-1.md#case-24)
 - [例 26：建筑空间场景图](./gallery-part-1.md#case-26)
@@ -532,6 +538,7 @@
 
 - [例 482：自我凝视超现实 Campaign](./gallery-part-2.md#case-482)
 - [例 483：都市飞鸟街头肖像](./gallery-part-2.md#case-483)
+- [例 488：屋顶球场日落人像](./gallery-part-2.md#case-488)
 
 <a name="cat-illustration"></a>
 
@@ -622,7 +629,7 @@
 
 <a name="cat-scene"></a>
 
-### 🎬 场景与叙事 · 18 cases
+### 🎬 场景与叙事 · 19 cases
 
 - [例 182：千禧年日系校园喜剧场景](./gallery-part-2.md#case-182)
 - [例 208：樱花树下害羞双马尾少女](./gallery-part-2.md#case-208)
@@ -643,6 +650,7 @@
 - [例 448：1942 空战街机电影城](./gallery-part-2.md#case-448)
 
 - [例 477：Instagram 餐桌俯拍创意](./gallery-part-2.md#case-477)
+- [例 487：法式药妆商业分镜封面](./gallery-part-2.md#case-487)
 
 <a name="cat-history"></a>
 
