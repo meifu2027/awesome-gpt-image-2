@@ -37,7 +37,7 @@
 
 ## ❤️ 赞助方
 
-> [想出现在这里？](https://cdn.canghecode.com/blog/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg) 可以通过 GitHub Sponsors 支持项目，也可以关注上方公众号并发送产品名与简短赞助说明。
+> [想出现在这里？](data/images/sponsors/wechat-personal.jpg) 可以通过 GitHub Sponsors 支持项目，也可以关注上方公众号并发送产品名与简短赞助说明。
 
 | 赞助方 | 说明 |
 | ------ | ---- |

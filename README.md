@@ -37,7 +37,7 @@ Search **苍何** on WeChat or scan the QR card below. To join the GPT-Image2 co
 
 ## ❤️ Sponsors
 
-> [Want to appear here?](https://cdn.canghecode.com/blog/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg) Support the project through GitHub Sponsors, or follow the WeChat official account above and send your product name plus a short sponsorship note.
+> [Want to appear here?](data/images/sponsors/wechat-personal.jpg) Support the project through GitHub Sponsors, or follow the WeChat official account above and send your product name plus a short sponsorship note.
 
 | Sponsor | Description |
 | ------- | ----------- |
