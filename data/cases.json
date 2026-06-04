@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/freestylefly/awesome-gpt-image-2",
-  "totalCases": 485,
+  "totalCases": 490,
   "categories": [
     "Architecture & Spaces",
     "Brand & Logos",
@@ -50,6 +50,118 @@
     "Travel"
   ],
   "cases": [
+    {
+      "id": 493,
+      "title": "东京旅行 13 格视频封面",
+      "image": "/images/case493.jpg",
+      "imageAlt": "东京旅行 13 格视频封面",
+      "sourceLabel": "@AIwithSynthia",
+      "sourceUrl": "https://x.com/AIwithSynthia/status/2062383568253505904",
+      "prompt": "Generate image of young female travel vlogger exploring Tokyo across multiple candid moments, extremely beautiful with long dark wavy hair, wearing stylish Japanese-inspired oversized streetwear, expressive and spontaneous personality, captured across a 13-frame grid collage (Row 1: 4 frames | Row 2: 5 frames | Row 3: 4 frames), each frame feels like a real casual phone capture with imperfect framing and natural inconsistencies.\n\nFrame Breakdown\n\nRow 1 - Frame 1 (Tokyo Tower): low angle selfie with Tokyo Tower behind her, slightly tilted horizon, sky overexposed to near white, she's mid-natural smile adjusting into frame, small lens smudge in corner, candid arrival energy.\nRow 1 - Frame 2 (Shibuya street level): walking through Shibuya crossing at night, handheld motion blur, she glances back at camera mid-step, neon reflections on wet pavement, slightly shaky framing, imperfect crop.\nRow 1 - Frame 3 (Convenience store): inside a brightly lit convenience store, she is holding onigiri close to camera, playful raised eyebrows, harsh fluorescent lighting flattening the scene, slight overexposure on whites, shelves softly blurred behind.\nRow 1 - Frame 4 (Yoyogi park): sitting on a bench under trees, looking away from camera, quiet candid moment, soft dappled daylight, slight focus miss on eyes, subtle lens smudge bottom corner.\nRow 2 - Frame 5 (Takoyaki reaction): close-up while eating single takoyaki, reacting mid-bite with laughter, slight motion blur, warm lantern light behind, face slightly out of focus due to movement.\nRow 2 - Frame 6 (Vending machine night): standing in front of glowing vending machine, blue and pink light casting uneven tones on her face, pressing button casually, high ISO grain visible.\nRow 2 - Frame 7 (Train reflection): her face reflected in train window at night, city lights streaking behind, layered reflection effect, slight ghosting on glass, she looks away from camera.\nRow 2 - Frame 8 (Torii gate): low angle shot of her walking through a torii gate, captured from slightly behind, motion blur in her movement, bright sky causing mild lens flare.\nRow 2 - Frame 9 (Digital art exhibit): inside immersive light exhibit, colored lights (blue, violet, gold) washing across her face, she looks upward in awe, slight motion blur, low-light noise visible.\nRow 3 - Frame 10 (Gundam statue): low angle wide shot, she stands small in frame while large statue towers above, slight barrel distortion from phone lens, sky slightly blown out.\nRow 3 - Frame 11 (Lantern alley): walking through narrow alley lit by warm lanterns, shot from behind, she glances back briefly, underexposed shadows, grainy night detail.\nRow 3 - Frame 12 (Rooftop skyline): selfie with Tokyo skyline behind, arm extended, wind blowing hair partially across lens, horizon slightly tilted, warm city glow overexposed in distance.\nRow 3 - Frame 13 (Nara park): crouching down in a park in Nara, she holds out a deer cracker toward a deer, the deer bows its head toward her, she bursts into genuine laughter mid-reaction, surprised and slightly leaning back, another deer nudges her from behind causing her to lose balance slightly, camera captures the moment imperfectly with slight shake and off-center framing, soft natural daylight, open park background with trees and space, unscripted chaotic energy, candid expression.\n\nYoung female travel vlogger exploring Tokyo across 13 candid moments in a grid collage, extremely beautiful with long dark wavy hair, wearing stylish Japanese streetwear, expressive and spontaneous, scenes include Tokyo Tower selfie, Shibuya crossing at night, convenience store snack moment, park bench quiet scene, takoyaki reaction, vending machine glow, train window reflection, torii gate walk, immersive light exhibit, Gundam statue low angle, lantern alley walk, rooftop skyline selfie, Harajuku street ending, each frame slightly imperfect with motion blur.",
+      "promptPreview": "Generate image of young female travel vlogger exploring Tokyo across multiple candid moments, extremely beautiful with long dark wavy hair, wearing stylish Japanese-inspired oversized streetwear, expressive and spontaneo",
+      "category": "Scenes & Storytelling",
+      "styles": [
+        "UI",
+        "Poster",
+        "Realistic"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce",
+        "Travel"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-493"
+    },
+    {
+      "id": 492,
+      "title": "黑色高定酒店套房写真",
+      "image": "/images/case492.jpg",
+      "imageAlt": "黑色高定酒店套房写真",
+      "sourceLabel": "@xRahultripathi",
+      "sourceUrl": "https://x.com/xRahultripathi/status/2062100757923733617",
+      "prompt": "Create a hyper-realistic luxury fashion portrait inspired by premium fashion-week editorials.\n\nIMPORTANT:\nGenerate ONLY ONE SINGLE VERTICAL IMAGE.\n\nSTYLE:\nLuxury fashion realism.\nProfessional couture photography.\nPremium editorial atmosphere.\n\nMAIN CONCEPT:\nA beautiful adult Asian fashion model photographed inside a luxury hotel suite.\n\nOUTFIT:\nElegant black couture mini dress.\nLuxury embroidered details.\nPremium designer fashion aesthetic.\n\nBACKGROUND:\nLuxury hotel interior.\nSoft neutral decor.\nElegant cinematic depth blur.\n\nLIGHTING:\nSoft luxury window lighting.\nProfessional fashion-editorial reflections.\nNatural skin texture.\n\nMOOD:\nBold.\nElegant.\nHigh-fashion energy.\n\nQUALITY:\nUltra realistic native 4K HDR realism.\nProfessional magazine quality.\nVertical 9:16.",
+      "promptPreview": "Create a hyper-realistic luxury fashion portrait inspired by premium fashion-week editorials. IMPORTANT: Generate ONLY ONE SINGLE VERTICAL IMAGE. STYLE: Luxury fashion realism. Professional couture photography. Premium e",
+      "category": "Photography & Realism",
+      "styles": [
+        "UI",
+        "Realistic"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce",
+        "Fashion"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-492"
+    },
+    {
+      "id": 491,
+      "title": "Y2K 高楼浴室镜面自拍",
+      "image": "/images/case491.jpg",
+      "imageAlt": "Y2K 高楼浴室镜面自拍",
+      "sourceLabel": "@jzaib4269",
+      "sourceUrl": "https://x.com/jzaib4269/status/2062184740849930384",
+      "prompt": "A moody late-night mirror selfie captured in a luxury high-rise bathroom overlooking a glowing city skyline. A young woman with long, slightly messy black hair leans forward over a marble sink, partially obscuring one eye with loose strands. The photo is taken through a smudged mirror with visible dust particles, water spots, and imperfections, creating an authentic raw aesthetic. A powerful direct camera flash explodes in the frame, producing harsh highlights, lens flare, and a nostalgic early-2000s digital camera look.\n\nThe bathroom counter is cluttered with luxury cosmetics, skincare products, jewelry, a smartphone, and everyday personal items, adding a lived-in editorial feel. Reflections of neon-lit skyscrapers and hotel windows shimmer in the background, emphasizing an urban nightlife atmosphere. Soft pale skin tones contrast against dark clothing and black hair. The composition feels intimate, candid, and effortlessly cool.\n\nStyle: Y2K flash photography, candid mirror selfie, Korean editorial aesthetic, indie sleaze, hotel bathroom scene, luxury lifestyle, cinematic nightlife, disposable camera look, grainy texture, flash burn, realistic skin texture, shallow depth of field, authentic imperfections, viral Pinterest mood, high-fashion casual energy, raw unfiltered photography.\n\nCamera: direct flash, compact digital camera, 35mm equivalent, harsh lighting, slight motion blur, visible noise, natural color grading, vertical composition, ultra-realistic, high detail.",
+      "promptPreview": "A moody late-night mirror selfie captured in a luxury high-rise bathroom overlooking a glowing city skyline. A young woman with long, slightly messy black hair leans forward over a marble sink, partially obscuring one ey",
+      "category": "Photography & Realism",
+      "styles": [
+        "UI",
+        "Realistic",
+        "Product"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce",
+        "Fashion"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-491"
+    },
+    {
+      "id": 490,
+      "title": "双重曝光时尚肖像",
+      "image": "/images/case490.jpg",
+      "imageAlt": "双重曝光时尚肖像",
+      "sourceLabel": "@Anaya_Ai12",
+      "sourceUrl": "https://x.com/Anaya_Ai12/status/2062191518975508678",
+      "prompt": "A cinematic double-exposure fashion portrait featuring a woman with the uploaded face used 100% as reference, wearing stylish metallic aviator sunglasses. The composition artfully blends a large, semi-transparent close-up profile of her face on the left with her full-body figure standing confidently on the right. She wears an open, light-grey textured corduroy shirt layered over a dark grey fitted t-shirt and dark denim jeans, posing naturally with her hands in her pockets. She has long, flowing dark hair, flawless skin, elegant feminine features, and a confident, sophisticated expression.\n\nThe background is a minimalist neutral studio setting, allowing the double-exposure composition to remain the visual focus. The color grading features a sophisticated warm desaturated sepia and charcoal palette, enhanced by a soft golden-orange light-leak flare in the upper-right corner. Professional 85mm lens photography with high-contrast yet soft cinematic lighting accentuates the fabric textures, facial details, and layered portrait effect.\n\nUltra-realistic skin texture, luxury fashion-editorial aesthetic, premium magazine-cover quality, subtle film grain, cinematic depth, elegant shadows, refined color grading, modern retro-inspired styling, masterpiece composition, ultra-sharp focus, visually striking storytelling, high-end commercial fashion campaign look.",
+      "promptPreview": "A cinematic double-exposure fashion portrait featuring a woman with the uploaded face used 100% as reference, wearing stylish metallic aviator sunglasses. The composition artfully blends a large, semi-transparent close-u",
+      "category": "Photography & Realism",
+      "styles": [
+        "Poster",
+        "Realistic"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce",
+        "Fashion"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-490"
+    },
+    {
+      "id": 489,
+      "title": "城市地图微缩旅行海报",
+      "image": "/images/case489.jpg",
+      "imageAlt": "城市地图微缩旅行海报",
+      "sourceLabel": "@SimplyAnnisa",
+      "sourceUrl": "https://x.com/SimplyAnnisa/status/2062358269172101240",
+      "prompt": "Create a highly detailed cinematic miniature tilt-shift travel scene of [CITY NAME] featuring a realistic [VEHICLE NAME] driving along a winding elevated road that emerges naturally from a printed vintage-style city map. The road should curve dramatically toward the background skyline and landmarks of [CITY NAME], while the vehicle remains the clear focal point in the foreground.\n\nBlend the real city seamlessly with the illustrated map surface so the road appears integrated into the map itself. Include recognizable local landmarks, waterways, architecture, vegetation, and atmosphere associated with [CITY NAME], but keep the composition clean and uncluttered.\n\nShow large bold typography of \"[CITY NAME]\" printed directly on the map in the foreground. Use warm golden-hour lighting, shallow depth of field, realistic textures, cinematic shadows, aerial perspective, and photorealistic detail. The overall aesthetic should feel like a premium Instagram travel poster mixed with a miniature diorama.\n\nAspect ratio 1:1.",
+      "promptPreview": "Create a highly detailed cinematic miniature tilt-shift travel scene of [CITY NAME] featuring a realistic [VEHICLE NAME] driving along a winding elevated road that emerges naturally from a printed vintage-style city map.",
+      "category": "Architecture & Spaces",
+      "styles": [
+        "Poster",
+        "Realistic"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce",
+        "Travel"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-489"
+    },
     {
       "id": 488,
       "title": "屋顶球场日落人像",

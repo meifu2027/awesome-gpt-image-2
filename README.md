@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-488-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-493-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
   <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=flat-square" alt="Sponsor"></a>
 </p>
@@ -61,7 +61,7 @@ The core goal is simple: compress prose-style prompts into structured protocols.
 
 - [Full case gallery](docs/gallery.md)
 - [Gallery Part 1: cases 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2: cases 166-488](docs/gallery-part-2.md)
+- [Gallery Part 2: cases 166-493](docs/gallery-part-2.md)
 - [Industrial prompt templates and pitfalls guide](docs/templates.md)
 - [Agent skill: GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -108,7 +108,7 @@ Start with the case album to find a visual direction, then open the prompt templ
       <a href="docs/gallery.md#cat-brand"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🏛️ Architecture & Spaces</strong><br><sub>11 cases</sub></p>
+      <p><strong>🏛️ Architecture & Spaces</strong><br><sub>12 cases</sub></p>
       <a href="docs/gallery.md#cat-architecture"><img src="data/images/category-covers/architecture.jpg" alt="Architecture and spaces" width="220"></a><br>
       <sub>Architecture renders, interiors, city maps, and spatial concepts.</sub><br>
       <a href="docs/gallery.md#cat-architecture"><strong>View Cases</strong></a>
@@ -116,7 +116,7 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 Photography & Realism</strong><br><sub>65 cases</sub></p>
+      <p><strong>📷 Photography & Realism</strong><br><sub>68 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="Photography and realism" width="220"></a><br>
       <sub>Portraits, phone photography, film texture, and commercial photography.</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>View Cases</strong></a>
@@ -136,7 +136,7 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎬 Scenes & Storytelling</strong><br><sub>19 cases</sub></p>
+      <p><strong>🎬 Scenes & Storytelling</strong><br><sub>20 cases</sub></p>
       <a href="docs/gallery.md#cat-scene"><img src="data/images/category-covers/scene.jpg" alt="Scenes and storytelling" width="220"></a><br>
       <sub>Storyboards, narrative scenes, livestream frames, and worldbuilding.</sub><br>
       <a href="docs/gallery.md#cat-scene"><strong>View Cases</strong></a>
@@ -164,14 +164,14 @@ Start with the case album to find a visual direction, then open the prompt templ
     <td width="33%" valign="top" align="center">
       <h4>🖼️ Full Gallery</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="Full gallery" width="220"></a><br>
-      <sub>Browse all 488 cases by gallery part and category.</sub><br>
+      <sub>Browse all 493 cases by gallery part and category.</sub><br>
       <a href="docs/gallery.md"><strong>Open Gallery</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ Latest Additions</h4>
-      <a href="docs/gallery-part-2.md#case-488"><img src="data/images/case488.jpg" alt="Latest additions" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-493"><img src="data/images/case493.jpg" alt="Latest additions" width="220"></a><br>
       <sub>The newest community cases and workflows collected in the repo.</sub><br>
-      <a href="docs/gallery-part-2.md#case-488"><strong>View Latest</strong></a>
+      <a href="docs/gallery-part-2.md#case-493"><strong>View Latest</strong></a>
     </td>
   </tr>
 </table>
@@ -438,29 +438,35 @@ Only the latest collection and import run is shown here. Older imports stay in t
 
 <table>
   <tr>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 485: Fashion Catalog E-commerce Collage</strong></p>
-      <a href="docs/gallery-part-2.md#case-485"><img src="data/images/case485.jpg" alt="Fashion catalog e-commerce collage" width="150"></a><br>
-      <sub>A streetwear lookbook layout with duplicated frames, luxury catalog polish, and shopping-site composition cues.</sub><br>
-      <a href="docs/gallery-part-2.md#case-485"><strong>View Case</strong></a>
+    <td width="20%" valign="top" align="center">
+      <p><strong>Case 489: Miniature City Map Travel Poster</strong></p>
+      <a href="docs/gallery-part-2.md#case-489"><img src="data/images/case489.jpg" alt="Miniature city map travel poster" width="150"></a><br>
+      <sub>A tilt-shift travel map scene where a road rises from a vintage city map into real landmarks.</sub><br>
+      <a href="docs/gallery-part-2.md#case-489"><strong>View Case</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 486: RCB Mixed-Media Championship Poster</strong></p>
-      <a href="docs/gallery-part-2.md#case-486"><img src="data/images/case486.jpg" alt="RCB mixed-media championship poster" width="150"></a><br>
-      <sub>A sports poster prompt mixing portrait photography, sketch marks, watercolor splashes, trophy reflections, and bold type.</sub><br>
-      <a href="docs/gallery-part-2.md#case-486"><strong>View Case</strong></a>
+    <td width="20%" valign="top" align="center">
+      <p><strong>Case 490: Double-Exposure Fashion Portrait</strong></p>
+      <a href="docs/gallery-part-2.md#case-490"><img src="data/images/case490.jpg" alt="Double-exposure fashion portrait" width="150"></a><br>
+      <sub>A layered studio fashion portrait combining a close-up profile, full-body figure, aviators, and sepia light leak.</sub><br>
+      <a href="docs/gallery-part-2.md#case-490"><strong>View Case</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 487: French Pharmacy Skincare Storyboard</strong></p>
-      <a href="docs/gallery-part-2.md#case-487"><img src="data/images/case487.jpg" alt="French pharmacy skincare storyboard" width="150"></a><br>
-      <sub>A commercial storyboard with model continuity, product reference rules, skin-realism constraints, and sound direction.</sub><br>
-      <a href="docs/gallery-part-2.md#case-487"><strong>View Case</strong></a>
+    <td width="20%" valign="top" align="center">
+      <p><strong>Case 491: Y2K High-Rise Bathroom Mirror Selfie</strong></p>
+      <a href="docs/gallery-part-2.md#case-491"><img src="data/images/case491.jpg" alt="Y2K high-rise bathroom mirror selfie" width="150"></a><br>
+      <sub>A raw flash mirror selfie prompt with smudged glass, skyline reflections, cluttered luxury counter, and Y2K camera texture.</sub><br>
+      <a href="docs/gallery-part-2.md#case-491"><strong>View Case</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 488: Rooftop Basketball Sunset Portrait</strong></p>
-      <a href="docs/gallery-part-2.md#case-488"><img src="data/images/case488.jpg" alt="Rooftop basketball sunset portrait" width="150"></a><br>
-      <sub>A warm rooftop portrait prompt controlling posture, varsity styling, sunset court color, and relaxed confidence.</sub><br>
-      <a href="docs/gallery-part-2.md#case-488"><strong>View Case</strong></a>
+    <td width="20%" valign="top" align="center">
+      <p><strong>Case 492: Black Couture Hotel Suite Portrait</strong></p>
+      <a href="docs/gallery-part-2.md#case-492"><img src="data/images/case492.jpg" alt="Black couture hotel suite portrait" width="150"></a><br>
+      <sub>A single vertical luxury fashion portrait with hotel-suite depth blur, couture styling, and soft window light.</sub><br>
+      <a href="docs/gallery-part-2.md#case-492"><strong>View Case</strong></a>
+    </td>
+    <td width="20%" valign="top" align="center">
+      <p><strong>Case 493: Tokyo 13-Frame Travel Collage</strong></p>
+      <a href="docs/gallery-part-2.md#case-493"><img src="data/images/case493.jpg" alt="Tokyo 13-frame travel collage" width="150"></a><br>
+      <sub>A candid Tokyo travel grid covering 13 phone-shot moments from Tower selfies to Nara deer chaos.</sub><br>
+      <a href="docs/gallery-part-2.md#case-493"><strong>View Case</strong></a>
     </td>
   </tr>
 </table>

@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-488-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-493-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
   <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=flat-square" alt="Sponsor"></a>
 </p>
@@ -61,7 +61,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 
 - [完整案例总览](docs/gallery.md)
 - [案例画廊 Part 1：例 1-165](docs/gallery-part-1.md)
-- [案例画廊 Part 2：例 166-488](docs/gallery-part-2.md)
+- [案例画廊 Part 2：例 166-493](docs/gallery-part-2.md)
 - [工业级提示词模板与防坑指南](docs/templates.md#section-templates)
 - [Agent Skill：GPT-Image2 风格库](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -108,7 +108,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
       <a href="docs/gallery.md#cat-brand"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🏛️ 建筑与空间</strong><br><sub>11 cases</sub></p>
+      <p><strong>🏛️ 建筑与空间</strong><br><sub>12 cases</sub></p>
       <a href="docs/gallery.md#cat-architecture"><img src="data/images/category-covers/architecture.jpg" alt="建筑与空间" width="220"></a><br>
       <sub>建筑表现、室内空间、城市地图和空间概念。</sub><br>
       <a href="docs/gallery.md#cat-architecture"><strong>查看案例</strong></a>
@@ -116,7 +116,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 摄影与写实</strong><br><sub>65 cases</sub></p>
+      <p><strong>📷 摄影与写实</strong><br><sub>68 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="摄影与写实" width="220"></a><br>
       <sub>人像、手机纪实、胶片质感和商业摄影。</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>查看案例</strong></a>
@@ -136,7 +136,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎬 场景与叙事</strong><br><sub>19 cases</sub></p>
+      <p><strong>🎬 场景与叙事</strong><br><sub>20 cases</sub></p>
       <a href="docs/gallery.md#cat-scene"><img src="data/images/category-covers/scene.jpg" alt="场景与叙事" width="220"></a><br>
       <sub>分镜、故事场景、直播画面和世界观叙事。</sub><br>
       <a href="docs/gallery.md#cat-scene"><strong>查看案例</strong></a>
@@ -164,14 +164,14 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
     <td width="33%" valign="top" align="center">
       <h4>🖼️ 完整画廊</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="完整画廊" width="220"></a><br>
-      <sub>按分册浏览全部 488 个案例和代表案例入口。</sub><br>
+      <sub>按分册浏览全部 493 个案例和代表案例入口。</sub><br>
       <a href="docs/gallery.md"><strong>进入画廊</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ 最新新增</h4>
-      <a href="docs/gallery-part-2.md#case-488"><img src="data/images/case488.jpg" alt="最新新增" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-493"><img src="data/images/case493.jpg" alt="最新新增" width="220"></a><br>
       <sub>最近收录的 X 社区案例和新玩法。</sub><br>
-      <a href="docs/gallery-part-2.md#case-488"><strong>查看最新</strong></a>
+      <a href="docs/gallery-part-2.md#case-493"><strong>查看最新</strong></a>
     </td>
   </tr>
 </table>
@@ -434,29 +434,35 @@ GOOGLE_ANALYTICS_REFRESH_TOKEN=
 
 <table>
   <tr>
-    <td width="25%" valign="top" align="center">
-      <p><strong>例 485：时尚目录电商拼贴</strong></p>
-      <a href="docs/gallery-part-2.md#case-485"><img src="data/images/case485.jpg" alt="时尚目录电商拼贴" width="180"></a><br>
-      <sub>街头时装、多帧拼贴、奢华目录质感和购物网站式构图组合。</sub><br>
-      <a href="docs/gallery-part-2.md#case-485"><strong>查看案例</strong></a>
+    <td width="20%" valign="top" align="center">
+      <p><strong>例 489：城市地图微缩旅行海报</strong></p>
+      <a href="docs/gallery-part-2.md#case-489"><img src="data/images/case489.jpg" alt="城市地图微缩旅行海报" width="180"></a><br>
+      <sub>地图微缩旅行场景，公路从复古城市地图中升起并连接真实地标。</sub><br>
+      <a href="docs/gallery-part-2.md#case-489"><strong>查看案例</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>例 486：RCB 冠军混合媒介海报</strong></p>
-      <a href="docs/gallery-part-2.md#case-486"><img src="data/images/case486.jpg" alt="RCB 冠军混合媒介海报" width="180"></a><br>
-      <sub>体育冠军海报，把写真人像、手绘线条、水彩飞溅、奖杯反光和大字标题融合。</sub><br>
-      <a href="docs/gallery-part-2.md#case-486"><strong>查看案例</strong></a>
+    <td width="20%" valign="top" align="center">
+      <p><strong>例 490：双重曝光时尚肖像</strong></p>
+      <a href="docs/gallery-part-2.md#case-490"><img src="data/images/case490.jpg" alt="双重曝光时尚肖像" width="180"></a><br>
+      <sub>双重曝光时尚肖像，把侧脸大特写、全身姿态、飞行员墨镜和暖色漏光合成一张棚拍封面。</sub><br>
+      <a href="docs/gallery-part-2.md#case-490"><strong>查看案例</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>例 487：法式药妆商业分镜封面</strong></p>
-      <a href="docs/gallery-part-2.md#case-487"><img src="data/images/case487.jpg" alt="法式药妆商业分镜封面" width="180"></a><br>
-      <sub>商业分镜提示词，包含模特一致性、产品参考、皮肤真实感和声音方向。</sub><br>
-      <a href="docs/gallery-part-2.md#case-487"><strong>查看案例</strong></a>
+    <td width="20%" valign="top" align="center">
+      <p><strong>例 491：Y2K 高楼浴室镜面自拍</strong></p>
+      <a href="docs/gallery-part-2.md#case-491"><img src="data/images/case491.jpg" alt="Y2K 高楼浴室镜面自拍" width="180"></a><br>
+      <sub>高楼浴室镜面自拍，脏镜面、强闪光、城市夜景和凌乱台面共同建立 Y2K 质感。</sub><br>
+      <a href="docs/gallery-part-2.md#case-491"><strong>查看案例</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>例 488：屋顶球场日落人像</strong></p>
-      <a href="docs/gallery-part-2.md#case-488"><img src="data/images/case488.jpg" alt="屋顶球场日落人像" width="180"></a><br>
-      <sub>屋顶球场、日落城市背景、棒球夹克姿态和轻松自信的人像控制。</sub><br>
-      <a href="docs/gallery-part-2.md#case-488"><strong>查看案例</strong></a>
+    <td width="20%" valign="top" align="center">
+      <p><strong>例 492：黑色高定酒店套房写真</strong></p>
+      <a href="docs/gallery-part-2.md#case-492"><img src="data/images/case492.jpg" alt="黑色高定酒店套房写真" width="180"></a><br>
+      <sub>黑色高定酒店套房写真，单张竖图，酒店景深、软窗光和高定礼服明确。</sub><br>
+      <a href="docs/gallery-part-2.md#case-492"><strong>查看案例</strong></a>
+    </td>
+    <td width="20%" valign="top" align="center">
+      <p><strong>例 493：东京旅行 13 格视频封面</strong></p>
+      <a href="docs/gallery-part-2.md#case-493"><img src="data/images/case493.jpg" alt="东京旅行 13 格视频封面" width="180"></a><br>
+      <sub>东京旅行 13 格拼贴，从东京塔、涩谷、便利店到奈良小鹿，强调手机抓拍的不完美瞬间。</sub><br>
+      <a href="docs/gallery-part-2.md#case-493"><strong>查看案例</strong></a>
     </td>
   </tr>
 </table>

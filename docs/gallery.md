@@ -1,10 +1,10 @@
 ## 🖼️ 魔法画廊总览
 
-完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 488。
+完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 493。
 
 - [返回 README 首页](../README.md)
 - [Part 1：例 1-165](./gallery-part-1.md)
-- [Part 2：例 166-488](./gallery-part-2.md)
+- [Part 2：例 166-493](./gallery-part-2.md)
 - [工业级提示词模板与防坑指南](./templates.md)
 - [声明、Star 趋势图与公众号](./disclaimer.md)
 
@@ -148,11 +148,16 @@
 - [例 486：RCB 冠军混合媒介海报](./gallery-part-2.md#case-486)
 - [例 487：法式药妆商业分镜封面](./gallery-part-2.md#case-487)
 - [例 488：屋顶球场日落人像](./gallery-part-2.md#case-488)
+- [例 489：城市地图微缩旅行海报](./gallery-part-2.md#case-489)
+- [例 490：双重曝光时尚肖像](./gallery-part-2.md#case-490)
+- [例 491：Y2K 高楼浴室镜面自拍](./gallery-part-2.md#case-491)
+- [例 492：黑色高定酒店套房写真](./gallery-part-2.md#case-492)
+- [例 493：东京旅行 13 格视频封面](./gallery-part-2.md#case-493)
 
 ## 分册说明
 
 - `gallery-part-1.md`：例 1-165，覆盖信息图、界面、海报、摄影、插画等基础主流类型。
-- `gallery-part-2.md`：例 166-488，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
+- `gallery-part-2.md`：例 166-493，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
 
 ## 分类概览
 
@@ -161,11 +166,11 @@
 - 海报与排版：77
 - 商品与电商：38
 - 品牌与标志：24
-- 建筑与空间：11
-- 摄影与写实：65
+- 建筑与空间：12
+- 摄影与写实：68
 - 插画与艺术：50
 - 人物与角色：23
-- 场景与叙事：19
+- 场景与叙事：20
 - 历史与古风题材：16
 - 文档与出版物：10
 - 其他应用场景：28
@@ -455,7 +460,7 @@
 
 <a name="cat-architecture"></a>
 
-### 🏛️ 建筑与空间 · 11 cases
+### 🏛️ 建筑与空间 · 12 cases
 
 - [例 11：一张手绘风格的城市美食地图，以台州为主题](./gallery-part-1.md#case-11)
 - [例 18：信息图可视化设计](./gallery-part-1.md#case-18)
@@ -467,10 +472,11 @@
 - [例 369：明洞旅游区域地图](./gallery-part-2.md#case-369)
 - [例 381：90 年代公寓场景参考板](./gallery-part-2.md#case-381)
 - [例 411：极简建筑地标海报](./gallery-part-2.md#case-411)
+- [例 489：城市地图微缩旅行海报](./gallery-part-2.md#case-489)
 
 <a name="cat-photo"></a>
 
-### 📷 摄影与写实 · 65 cases
+### 📷 摄影与写实 · 68 cases
 
 - [例 24：漫画分镜叙事设计](./gallery-part-1.md#case-24)
 - [例 26：建筑空间场景图](./gallery-part-1.md#case-26)
@@ -539,6 +545,9 @@
 - [例 482：自我凝视超现实 Campaign](./gallery-part-2.md#case-482)
 - [例 483：都市飞鸟街头肖像](./gallery-part-2.md#case-483)
 - [例 488：屋顶球场日落人像](./gallery-part-2.md#case-488)
+- [例 490：双重曝光时尚肖像](./gallery-part-2.md#case-490)
+- [例 491：Y2K 高楼浴室镜面自拍](./gallery-part-2.md#case-491)
+- [例 492：黑色高定酒店套房写真](./gallery-part-2.md#case-492)
 
 <a name="cat-illustration"></a>
 
@@ -629,7 +638,7 @@
 
 <a name="cat-scene"></a>
 
-### 🎬 场景与叙事 · 19 cases
+### 🎬 场景与叙事 · 20 cases
 
 - [例 182：千禧年日系校园喜剧场景](./gallery-part-2.md#case-182)
 - [例 208：樱花树下害羞双马尾少女](./gallery-part-2.md#case-208)
@@ -651,6 +660,7 @@
 
 - [例 477：Instagram 餐桌俯拍创意](./gallery-part-2.md#case-477)
 - [例 487：法式药妆商业分镜封面](./gallery-part-2.md#case-487)
+- [例 493：东京旅行 13 格视频封面](./gallery-part-2.md#case-493)
 
 <a name="cat-history"></a>
 
