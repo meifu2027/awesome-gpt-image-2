@@ -41,6 +41,7 @@
 
 | 赞助方 | 说明 |
 | ------ | ---- |
+| <a href="https://doloffer.com/friend/HuHEKQOk"><img src="data/images/sponsors/doloffer-zh.jpg" alt="DolOffer" width="240"></a> | 感谢 DolOffer 对本项目的支持！DolOffer 是一个专注于数字产品推荐与优惠分享的平台，帮助用户快速发现值得关注的工具、服务和限时福利。平台提供 YouTube Premium、Claude、ChatGPT Plus、Spotify、Apple Music 等多种热门订阅服务，价格低至官方价的 3 折甚至更低，正版稳定，售后无忧。现在通过我们的专属链接注册，并在充值时输入优惠码 `AI8888`，即可额外享受 9 折优惠。 |
 | <a href="https://pptoken.cc/"><img src="data/images/sponsors/pptoken.png" alt="PPToken" width="240"></a> | 项目赞助方。PPToken 提供 ChatGPT、Claude、Gemini 等主流 AI 模型的 API 中转和 Key 分发能力，支持低延迟、高可用、按量付费和灵活订阅。 |
 | <a href="https://ciyuan.today/"><img src="data/images/sponsors/ciyuan-api.jpg" alt="词元 API" width="240"></a> | 项目赞助方。词元 API 是一个面向开发者的 AI 聚合平台，提供稳定、低延迟的大模型 API 服务，也支持本项目持续探索 GPT Image 2 的实用工作流。 |
 | <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/GitHub%20Sponsors-freestylefly-ff69b4?style=for-the-badge" alt="GitHub Sponsors" width="240"></a> | 社区赞助入口。GitHub Sponsors 将用于持续采集案例、维护网站、整理工业级模板与 Agent Skill。 |
