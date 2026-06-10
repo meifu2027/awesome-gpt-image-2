@@ -41,6 +41,7 @@
 
 | 赞助方 | 说明 |
 | ------ | ---- |
+| <a href="https://apimart.ai/register?aff=oQgzUQ"><img src="data/images/sponsors/apimart.jpg" alt="APIMart" width="240"></a> | 🎨 一张 AI 图只要 `$0.006`？<br><br>APIMart（[apimart.ai](https://apimart.ai/register?aff=oQgzUQ)）上线 GPT-Image-2 超低价通道：`$0.006 / 张` 起，1 美元能生成 160+ 张图。<br><br>✅ 图片 + 视频生成，一套异步 API 全搞定——提交任务拿 ID，轮询或回调取结果<br>✅ 跑批万张不怕超时断连，换模型不用改代码<br>✅ 按量付费，充多少用多少，无月费<br><br>批量做电商图、封面图、短视频素材的朋友，成本和工程量一起砍到脚踝。<br><br>👉 [立即注册](https://apimart.ai/register?aff=oQgzUQ) |
 | <a href="https://doloffer.com/friend/HuHEKQOk"><img src="data/images/sponsors/doloffer.jpg" alt="DolOffer" width="240"></a> | 感谢 DolOffer 对本项目的支持！DolOffer 是一个专注于数字产品推荐与优惠分享的平台，帮助用户快速发现值得关注的工具、服务和限时福利。平台提供 YouTube Premium、Claude、ChatGPT Plus、Spotify、Apple Music 等多种热门订阅服务，价格低至官方价的 3 折甚至更低，正版稳定，售后无忧。现在通过我们的[专属链接注册](https://doloffer.com/friend/HuHEKQOk)，并在充值时输入优惠码 `AI8888`，即可额外享受 9 折优惠。 |
 | <a href="https://pptoken.cc/"><img src="data/images/sponsors/pptoken.png" alt="PPToken" width="240"></a> | 项目赞助方。PPToken 提供 ChatGPT、Claude、Gemini 等主流 AI 模型的 API 中转和 Key 分发能力，支持低延迟、高可用、按量付费和灵活订阅。 |
 | <a href="https://ciyuan.today/"><img src="data/images/sponsors/ciyuan-api.jpg" alt="词元 API" width="240"></a> | 项目赞助方。词元 API 是一个面向开发者的 AI 聚合平台，提供稳定、低延迟的大模型 API 服务，也支持本项目持续探索 GPT Image 2 的实用工作流。 |
