@@ -41,6 +41,7 @@
 
 | 赞助方 | 说明 |
 | ------ | ---- |
+| <a href="https://www.hiapi.ai/zh/register?aff=DzuH"><img src="data/images/sponsors/hiapi.jpg" alt="hiapi" width="240"></a> | 感谢 hiapi 赞助了本项目！hiapi 是聚焦 AI 图片/视频生成的 API 平台——GPT-Image-2 全系（文生图、图生图、1K–4K）加 Seedance、可灵、万相等视频模型，统一异步 API 通吃：提交任务拿 `task_id`，轮询或回调取结果，跑批不超时、换模型不改代码。生成结果转存自有 CDN 并**支持持久化存储**——图片/视频链接长期有效、随时回取，免去自行下载备份。原生 Remote MCP 与 Agent Skills，一行接入 Claude Code、Cursor。中文界面与文档、支持微信支付，按量付费无月费，新用户注册即送 $1（约 50 张图）。通过此[注册链接](https://www.hiapi.ai/zh/register?aff=DzuH&utm_source=github&utm_medium=sponsor&utm_campaign=awesome-gpt-image-2)即可开用。 |
 | <a href="https://apimart.ai/register?aff=oQgzUQ"><img src="data/images/sponsors/apimart.jpg" alt="APIMart" width="240"></a> | 感谢 APIMart 赞助了本项目！APIMart 是专注 AI 图片/视频生成的低价 API 平台，GPT-Image-2 低至 `$0.006/张`，1 美元可出图 160+ 张。图片、视频一套异步 API 通吃，提交任务拿 ID、回调取结果，跑批万张不超时、换模型不改代码。按量付费、无月费，通过此[注册链接](https://apimart.ai/register?aff=oQgzUQ)注册即可开用。 |
 | <a href="https://doloffer.com/friend/HuHEKQOk"><img src="data/images/sponsors/doloffer.jpg" alt="DolOffer" width="240"></a> | 感谢 DolOffer 对本项目的支持！DolOffer 是一个专注于数字产品推荐与优惠分享的平台，帮助用户快速发现值得关注的工具、服务和限时福利。平台提供 YouTube Premium、Claude、ChatGPT Plus、Spotify、Apple Music 等多种热门订阅服务，价格低至官方价的 3 折甚至更低，正版稳定，售后无忧。现在通过我们的[专属链接注册](https://doloffer.com/friend/HuHEKQOk)，并在充值时输入优惠码 `AI8888`，即可额外享受 9 折优惠。 |
 | <a href="https://pptoken.cc/"><img src="data/images/sponsors/pptoken.png" alt="PPToken" width="240"></a> | 项目赞助方。PPToken 提供 ChatGPT、Claude、Gemini 等主流 AI 模型的 API 中转和 Key 分发能力，支持低延迟、高可用、按量付费和灵活订阅。 |
