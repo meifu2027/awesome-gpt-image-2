@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-507-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-508-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
   <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=flat-square" alt="Sponsor"></a>
 </p>
@@ -64,7 +64,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 
 - [完整案例总览](docs/gallery.md)
 - [案例画廊 Part 1：例 1-165](docs/gallery-part-1.md)
-- [案例画廊 Part 2：例 166-507](docs/gallery-part-2.md)
+- [案例画廊 Part 2：例 166-508](docs/gallery-part-2.md)
 - [工业级提示词模板与防坑指南](docs/templates.md#section-templates)
 - [Agent Skill：GPT-Image2 风格库](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -119,7 +119,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 摄影与写实</strong><br><sub>72 cases</sub></p>
+      <p><strong>📷 摄影与写实</strong><br><sub>73 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="摄影与写实" width="220"></a><br>
       <sub>人像、手机纪实、胶片质感和商业摄影。</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>查看案例</strong></a>
@@ -167,14 +167,14 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
     <td width="33%" valign="top" align="center">
       <h4>🖼️ 完整画廊</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="完整画廊" width="220"></a><br>
-      <sub>按分册浏览全部 507 个案例和代表案例入口。</sub><br>
+      <sub>按分册浏览全部 508 个案例和代表案例入口。</sub><br>
       <a href="docs/gallery.md"><strong>进入画廊</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ 最新新增</h4>
-      <a href="docs/gallery-part-2.md#case-507"><img src="data/images/case507.jpg" alt="最新新增" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-508"><img src="data/images/case508.jpg" alt="最新新增" width="220"></a><br>
       <sub>最近收录的 X 社区案例和新玩法。</sub><br>
-      <a href="docs/gallery-part-2.md#case-507"><strong>查看最新</strong></a>
+      <a href="docs/gallery-part-2.md#case-508"><strong>查看最新</strong></a>
     </td>
   </tr>
 </table>
@@ -438,10 +438,10 @@ GOOGLE_ANALYTICS_REFRESH_TOKEN=
 <table>
   <tr>
     <td width="100%" valign="top" align="center">
-      <p><strong>例 507：暖调钩织角色玩偶</strong></p>
-      <a href="docs/gallery-part-2.md#case-507"><img src="data/images/case507.jpg" alt="暖调钩织角色玩偶" width="180"></a><br>
-      <sub>暖调 amigurumi 风格角色提示词，主体、毛线纹理、服饰撞色、小道具和舒适场景都预留了可替换槽位。</sub><br>
-      <a href="docs/gallery-part-2.md#case-507"><strong>查看案例</strong></a>
+      <p><strong>例 508：木漏日庭院俯拍猫咪人像</strong></p>
+      <a href="docs/gallery-part-2.md#case-508"><img src="data/images/case508.jpg" alt="木漏日庭院俯拍猫咪人像" width="180"></a><br>
+      <sub>高角度庭院人像提示词，把木漏日光斑、潮湿薄雾、丁达尔光束、柔和表情和猫咪互动组织成一张清透写实照片。</sub><br>
+      <a href="docs/gallery-part-2.md#case-508"><strong>查看案例</strong></a>
     </td>
   </tr>
 </table>
