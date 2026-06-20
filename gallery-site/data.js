@@ -4030,5 +4030,13 @@ window.GALLERY_DATA = [
     source: '[@azed_ai](https://x.com/azed_ai/status/2067925399947067728)',
     prompt: 'A handcrafted crochet doll of a [subject], made with soft yarn textures and intricate knitted details. Dressed in a vivid [color1] accent and a delicate [color2] garment, holding a small [prop]. Set in a cozy [setting], warm muted atmosphere, charming handmade aesthetic, nostalgic amigurumi style.',
     category: '人物与角色'
+  },
+  {
+    id: 508,
+    title: '木漏日庭院俯拍猫咪人像',
+    image: 'https://raw.githubusercontent.com/freestylefly/awesome-gpt-image-2/main/data/images/case508.jpg',
+    source: '[@ohmuyi](https://x.com/ohmuyi/status/2067930690977779942)',
+    prompt: '俯拍镜头，高角度顶机位，自上而下俯瞰一位年轻的东亚裔女性，她有着精致的东亚五官和柔顺的黑发。她蹲在花园小径上，轻轻逗弄一只毛茸茸的橘猫。头顶密密的枝叶滤过阳光，形成灵动的“木漏日”效果——跃动、圆形的光斑在她的肌肤和猫毛上流转舞动。空气中悬浮着淡淡的潮湿薄雾，捕捉住光束，营造出柔和可见的立体光柱（丁达尔效应）。当她仰头朝向镜头时，一层轻雾柔化了画面边缘，增添梦幻氛围。她的表情从略带俏皮的轻噘嘴，渐渐转为眼角堆起细纹的真挚笑容，斑驳的光线恰好勾勒出她肌肤的细腻纹理和眼中盈盈的水光。',
+    category: '其他应用场景'
   }
 ];
