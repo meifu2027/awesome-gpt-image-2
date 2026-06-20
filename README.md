@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-506-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-507-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
   <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=flat-square" alt="Sponsor"></a>
 </p>
@@ -64,7 +64,7 @@ The core goal is simple: compress prose-style prompts into structured protocols.
 
 - [Full case gallery](docs/gallery.md)
 - [Gallery Part 1: cases 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2: cases 166-506](docs/gallery-part-2.md)
+- [Gallery Part 2: cases 166-507](docs/gallery-part-2.md)
 - [Industrial prompt templates and pitfalls guide](docs/templates.md)
 - [Agent skill: GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -131,7 +131,7 @@ Start with the case album to find a visual direction, then open the prompt templ
       <a href="docs/gallery.md#cat-illustration"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 Characters & People</strong><br><sub>24 cases</sub></p>
+      <p><strong>🧍 Characters & People</strong><br><sub>25 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="Characters and people" width="220"></a><br>
       <sub>Character design, pose references, cards, and 3D toys.</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>View Cases</strong></a>
@@ -167,14 +167,14 @@ Start with the case album to find a visual direction, then open the prompt templ
     <td width="33%" valign="top" align="center">
       <h4>🖼️ Full Gallery</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="Full gallery" width="220"></a><br>
-      <sub>Browse all 506 cases by gallery part and category.</sub><br>
+      <sub>Browse all 507 cases by gallery part and category.</sub><br>
       <a href="docs/gallery.md"><strong>Open Gallery</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ Latest Additions</h4>
-      <a href="docs/gallery-part-2.md#case-506"><img src="data/images/case506.jpg" alt="Latest additions" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-507"><img src="data/images/case507.jpg" alt="Latest additions" width="220"></a><br>
       <sub>The newest community cases and workflows collected in the repo.</sub><br>
-      <a href="docs/gallery-part-2.md#case-506"><strong>View Latest</strong></a>
+      <a href="docs/gallery-part-2.md#case-507"><strong>View Latest</strong></a>
     </td>
   </tr>
 </table>
@@ -442,10 +442,10 @@ Only the latest collection and import run is shown here. Older imports stay in t
 <table>
   <tr>
     <td width="100%" valign="top" align="center">
-      <p><strong>Case 506: Cute Hairpin Portrait Poster</strong></p>
-      <a href="docs/gallery-part-2.md#case-506"><img src="data/images/case506.jpg" alt="Cute Hairpin Portrait Poster" width="150"></a><br>
-      <sub>A bright portrait poster system combining cropped celebrity photography, a cute hairpin-like mascot, airy Chinese typography, and clean color fields.</sub><br>
-      <a href="docs/gallery-part-2.md#case-506"><strong>View Case</strong></a>
+      <p><strong>Case 507: Cozy Crochet Character Doll</strong></p>
+      <a href="docs/gallery-part-2.md#case-507"><img src="data/images/case507.jpg" alt="Cozy Crochet Character Doll" width="150"></a><br>
+      <sub>A warm amigurumi-style character prompt with clear subject, yarn texture, outfit accents, prop, and cozy setting slots.</sub><br>
+      <a href="docs/gallery-part-2.md#case-507"><strong>View Case</strong></a>
     </td>
   </tr>
 </table>

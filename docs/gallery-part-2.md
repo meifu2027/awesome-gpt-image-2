@@ -11292,3 +11292,19 @@ Shot in a vertical 3:4 frame at slightly above eye level, medium close-up to thr
 ```
 
 ***
+
+<a name="case-507"></a>
+
+### 例 507：暖调钩织角色玩偶
+
+![暖调钩织角色玩偶](../data/images/case507.jpg)
+
+**来源：** [@azed_ai](https://x.com/azed_ai/status/2067925399947067728)
+
+**提示词：**
+
+```text
+A handcrafted crochet doll of a [subject], made with soft yarn textures and intricate knitted details. Dressed in a vivid [color1] accent and a delicate [color2] garment, holding a small [prop]. Set in a cozy [setting], warm muted atmosphere, charming handmade aesthetic, nostalgic amigurumi style.
+```
+
+***

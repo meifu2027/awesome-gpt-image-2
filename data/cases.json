@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/freestylefly/awesome-gpt-image-2",
-  "totalCases": 503,
+  "totalCases": 504,
   "categories": [
     "Architecture & Spaces",
     "Brand & Logos",
@@ -50,6 +50,26 @@
     "Travel"
   ],
   "cases": [
+    {
+      "id": 507,
+      "title": "暖调钩织角色玩偶",
+      "image": "/images/case507.jpg",
+      "imageAlt": "暖调钩织角色玩偶",
+      "sourceLabel": "@azed_ai",
+      "sourceUrl": "https://x.com/azed_ai/status/2067925399947067728",
+      "prompt": "A handcrafted crochet doll of a [subject], made with soft yarn textures and intricate knitted details. Dressed in a vivid [color1] accent and a delicate [color2] garment, holding a small [prop]. Set in a cozy [setting], warm muted atmosphere, charming handmade aesthetic, nostalgic amigurumi style.",
+      "promptPreview": "A handcrafted crochet doll of a [subject], made with soft yarn textures and intricate knitted details. Dressed in a vivid [color1] accent and a delicate [color2] garment, holding a small [prop]. Set in a cozy [setting], ",
+      "category": "Characters & People",
+      "styles": [
+        "Character"
+      ],
+      "scenes": [
+        "Tech",
+        "Commerce"
+      ],
+      "featured": false,
+      "githubUrl": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/docs/gallery-part-2.md#case-507"
+    },
     {
       "id": 506,
       "title": "可爱发卡图文人像海报",

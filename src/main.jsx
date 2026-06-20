@@ -39,6 +39,7 @@ import skillExampleImage from '../agents/skills/gpt-image-2-style-library/assets
 
 const fallbackRepoUrl = 'https://github.com/freestylefly/awesome-gpt-image-2';
 const sponsorUrl = 'https://apimart.ai/register?aff=oQgzUQ';
+const membershipUrl = 'https://canghe.ai/membership/';
 const gaMeasurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
 const watchaLogoUrl =
   'https://watcha.tos-cn-beijing.volces.com/products/logo/1752064513_guan-cha-insights.png?x-tos-process=image/resize,w_720/format,webp';
@@ -52,6 +53,7 @@ const copy = {
     navTemplates: 'Templates',
     navCommunity: 'Community',
     navSponsor: 'API',
+    navMembership: 'Membership',
     communityQrAlt: 'WeChat community invite card for GPT-Image2',
     eyebrow: 'Live GPT-Image2 prompt gallery',
     title: 'From viral images to reusable prompts.',
@@ -264,6 +266,7 @@ const copy = {
     navTemplates: '模板',
     navCommunity: '交流群',
     navSponsor: 'API',
+    navMembership: '会员',
     communityQrAlt: 'GPT-Image2 微信交流群邀请卡',
     eyebrow: '实时更新的 GPT-Image2 提示词画廊',
     title: '从爆款图片，到可复用 Prompt。',
@@ -3363,6 +3366,9 @@ function App() {
             >
               <Heart size={16} />
               {t.navSponsor}
+            </a>
+            <a href={membershipUrl} target="_blank" rel="noreferrer">
+              {t.navMembership}
             </a>
             <a href={repoUrl} target="_blank" rel="noreferrer">
               GitHub
