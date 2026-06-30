@@ -1,10 +1,10 @@
 ## 🖼️ 魔法画廊总览
 
-完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 508。
+完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 514。
 
 - [返回 README 首页](../README.md)
 - [Part 1：例 1-165](./gallery-part-1.md)
-- [Part 2：例 166-508](./gallery-part-2.md)
+- [Part 2：例 166-514](./gallery-part-2.md)
 - [工业级提示词模板与防坑指南](./templates.md)
 - [声明、Star 趋势图与公众号](./disclaimer.md)
 
@@ -168,23 +168,29 @@
 - [例 506：可爱发卡图文人像海报](./gallery-part-2.md#case-506)
 - [例 507：暖调钩织角色玩偶](./gallery-part-2.md#case-507)
 - [例 508：木漏日庭院俯拍猫咪人像](./gallery-part-2.md#case-508)
+- [例 509：涂鸦拉衣奔跑棚拍](./gallery-part-2.md#case-509)
+- [例 510：Bichon Shop 拟物 App 图标](./gallery-part-2.md#case-510)
+- [例 511：城市名地标排版旅行海报](./gallery-part-2.md#case-511)
+- [例 512：Brutalist Freestyle 角色设定表](./gallery-part-2.md#case-512)
+- [例 513：单色点缀旅行手账插画](./gallery-part-2.md#case-513)
+- [例 514：硬边现代艺术人像](./gallery-part-2.md#case-514)
 
 ## 分册说明
 
 - `gallery-part-1.md`：例 1-165，覆盖信息图、界面、海报、摄影、插画等基础主流类型。
-- `gallery-part-2.md`：例 166-508，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
+- `gallery-part-2.md`：例 166-514，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
 
 ## 分类概览
 
 - UI与界面：73
 - 图表与信息可视化：52
-- 海报与排版：80
+- 海报与排版：81
 - 商品与电商：38
-- 品牌与标志：25
+- 品牌与标志：26
 - 建筑与空间：12
-- 摄影与写实：73
-- 插画与艺术：53
-- 人物与角色：25
+- 摄影与写实：74
+- 插画与艺术：55
+- 人物与角色：26
 - 场景与叙事：20
 - 历史与古风题材：16
 - 文档与出版物：10
@@ -321,7 +327,7 @@
 
 <a name="cat-poster"></a>
 
-### 📰 海报与排版 · 80 cases
+### 📰 海报与排版 · 81 cases
 
 - [例 3：足球主题电影海报](./gallery-part-1.md#case-3)
 - [例 5：主题海报版式设计](./gallery-part-1.md#case-5)
@@ -404,6 +410,7 @@
 - [例 497：单色水彩城市旅行海报](./gallery-part-2.md#case-497)
 - [例 503：霓虹设计师 3D 海报](./gallery-part-2.md#case-503)
 - [例 506：可爱发卡图文人像海报](./gallery-part-2.md#case-506)
+- [例 511：城市名地标排版旅行海报](./gallery-part-2.md#case-511)
 
 <a name="cat-product"></a>
 
@@ -450,7 +457,7 @@
 
 <a name="cat-brand"></a>
 
-### 🏷️ 品牌与标志 · 25 cases
+### 🏷️ 品牌与标志 · 26 cases
 
 - [例 130：界面交互设计图](./gallery-part-1.md#case-130)
 - [例 132：界面交互设计图](./gallery-part-1.md#case-132)
@@ -477,6 +484,7 @@
 
 - [例 478：夹层式品牌编辑海报](./gallery-part-2.md#case-478)
 - [例 496：水雕品牌 Logo 六宫格](./gallery-part-2.md#case-496)
+- [例 510：Bichon Shop 拟物 App 图标](./gallery-part-2.md#case-510)
 
 <a name="cat-architecture"></a>
 
@@ -496,7 +504,7 @@
 
 <a name="cat-photo"></a>
 
-### 📷 摄影与写实 · 73 cases
+### 📷 摄影与写实 · 74 cases
 
 - [例 24：漫画分镜叙事设计](./gallery-part-1.md#case-24)
 - [例 26：建筑空间场景图](./gallery-part-1.md#case-26)
@@ -573,10 +581,11 @@
 - [例 501：夏日牵手回眸电影肖像](./gallery-part-2.md#case-501)
 - [例 505：夜间手机光沙发肖像](./gallery-part-2.md#case-505)
 - [例 508：木漏日庭院俯拍猫咪人像](./gallery-part-2.md#case-508)
+- [例 509：涂鸦拉衣奔跑棚拍](./gallery-part-2.md#case-509)
 
 <a name="cat-illustration"></a>
 
-### 🎨 插画与艺术 · 53 cases
+### 🎨 插画与艺术 · 55 cases
 
 - [例 6：插画艺术创作图](./gallery-part-1.md#case-6)
 - [例 22：插画艺术风格创作](./gallery-part-1.md#case-22)
@@ -633,10 +642,12 @@
 - [例 495：巴黎街头故事书插画](./gallery-part-2.md#case-495)
 - [例 498：铅笔画背景 3D 分身](./gallery-part-2.md#case-498)
 - [例 504：粗糙涂鸦人像改图](./gallery-part-2.md#case-504)
+- [例 513：单色点缀旅行手账插画](./gallery-part-2.md#case-513)
+- [例 514：硬边现代艺术人像](./gallery-part-2.md#case-514)
 
 <a name="cat-character"></a>
 
-### 🧍 人物与角色 · 25 cases
+### 🧍 人物与角色 · 26 cases
 
 - [例 25：综合应用场景图](./gallery-part-1.md#case-25)
 - [例 27：人物角色设定图](./gallery-part-1.md#case-27)
@@ -665,6 +676,7 @@
 - [例 480：粉丝速写本角色页](./gallery-part-2.md#case-480)
 - [例 502：黑桃国王递归扑克牌](./gallery-part-2.md#case-502)
 - [例 507：暖调钩织角色玩偶](./gallery-part-2.md#case-507)
+- [例 512：Brutalist Freestyle 角色设定表](./gallery-part-2.md#case-512)
 
 <a name="cat-scene"></a>
 

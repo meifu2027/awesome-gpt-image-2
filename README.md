@@ -1,11 +1,11 @@
 <p align="center"><img src="./data/images/banner.svg" alt="GPT-Image2 Prompt System" width="800" /></p>
 
-<h3 align="center">Prompt as Code | GPT-Image2 Industrial Prompt Engine & Template Library, 400+ Reverse-Engineered Cases, 20+ Industrial Templates</h3>
+<h3 align="center">Prompt as Code | GPT-Image2 Industrial Prompt Engine & Template Library, 500+ Reverse-Engineered Cases, 20+ Industrial Templates</h3>
 
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-508-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-514-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
   <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=flat-square" alt="Sponsor"></a>
 </p>
@@ -64,7 +64,7 @@ The core goal is simple: compress prose-style prompts into structured protocols.
 
 - [Full case gallery](docs/gallery.md)
 - [Gallery Part 1: cases 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2: cases 166-508](docs/gallery-part-2.md)
+- [Gallery Part 2: cases 166-514](docs/gallery-part-2.md)
 - [Industrial prompt templates and pitfalls guide](docs/templates.md)
 - [Agent skill: GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -91,7 +91,7 @@ Start with the case album to find a visual direction, then open the prompt templ
       <a href="docs/gallery.md#cat-infographic"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 Posters & Typography</strong><br><sub>80 cases</sub></p>
+      <p><strong>📰 Posters & Typography</strong><br><sub>81 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="Posters and typography" width="220"></a><br>
       <sub>Event posters, covers, type-driven visuals, and strong layout compositions.</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>View Cases</strong></a>
@@ -105,7 +105,7 @@ Start with the case album to find a visual direction, then open the prompt templ
       <a href="docs/gallery.md#cat-product"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🏷️ Brand & Logos</strong><br><sub>25 cases</sub></p>
+      <p><strong>🏷️ Brand & Logos</strong><br><sub>26 cases</sub></p>
       <a href="docs/gallery.md#cat-brand"><img src="data/images/category-covers/brand.jpg" alt="Brand and logos" width="220"></a><br>
       <sub>Logos, identity systems, brand touchpoints, and campaign visuals.</sub><br>
       <a href="docs/gallery.md#cat-brand"><strong>View Cases</strong></a>
@@ -119,19 +119,19 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 Photography & Realism</strong><br><sub>73 cases</sub></p>
+      <p><strong>📷 Photography & Realism</strong><br><sub>74 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="Photography and realism" width="220"></a><br>
       <sub>Portraits, phone photography, film texture, and commercial photography.</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎨 Illustration & Art</strong><br><sub>53 cases</sub></p>
+      <p><strong>🎨 Illustration & Art</strong><br><sub>55 cases</sub></p>
       <a href="docs/gallery.md#cat-illustration"><img src="data/images/category-covers/illustration.jpg" alt="Illustration and art" width="220"></a><br>
       <sub>Illustration, art styles, material experiments, and decorative images.</sub><br>
       <a href="docs/gallery.md#cat-illustration"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 Characters & People</strong><br><sub>25 cases</sub></p>
+      <p><strong>🧍 Characters & People</strong><br><sub>26 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="Characters and people" width="220"></a><br>
       <sub>Character design, pose references, cards, and 3D toys.</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>View Cases</strong></a>
@@ -167,14 +167,14 @@ Start with the case album to find a visual direction, then open the prompt templ
     <td width="33%" valign="top" align="center">
       <h4>🖼️ Full Gallery</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="Full gallery" width="220"></a><br>
-      <sub>Browse all 508 cases by gallery part and category.</sub><br>
+      <sub>Browse all 514 cases by gallery part and category.</sub><br>
       <a href="docs/gallery.md"><strong>Open Gallery</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ Latest Additions</h4>
-      <a href="docs/gallery-part-2.md#case-508"><img src="data/images/case508.jpg" alt="Latest additions" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-514"><img src="data/images/case514.jpg" alt="Latest additions" width="220"></a><br>
       <sub>The newest community cases and workflows collected in the repo.</sub><br>
-      <a href="docs/gallery-part-2.md#case-508"><strong>View Latest</strong></a>
+      <a href="docs/gallery-part-2.md#case-514"><strong>View Latest</strong></a>
     </td>
   </tr>
 </table>
@@ -441,11 +441,43 @@ Only the latest collection and import run is shown here. Older imports stay in t
 
 <table>
   <tr>
-    <td width="100%" valign="top" align="center">
-      <p><strong>Case 508: Komorebi Garden Overhead Portrait</strong></p>
-      <a href="docs/gallery-part-2.md#case-508"><img src="data/images/case508.jpg" alt="Komorebi Garden Overhead Portrait" width="150"></a><br>
-      <sub>A high-angle garden portrait prompt using leaf-filtered light, visible mist, Tyndall beams, soft facial detail, and a gentle pet interaction.</sub><br>
-      <a href="docs/gallery-part-2.md#case-508"><strong>View Case</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 509: Doodle Pull Studio Run</strong></p>
+      <a href="docs/gallery-part-2.md#case-509"><img src="data/images/case509.jpg" alt="Doodle Pull Studio Run" width="150"></a><br>
+      <sub>A clean studio action portrait with a doodle character pulling the subject's shirt, useful for mixing photoreal motion and sketch humor.</sub><br>
+      <a href="docs/gallery-part-2.md#case-509"><strong>View Case</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 510: Bichon Shop Skeuomorphic App Icon</strong></p>
+      <a href="docs/gallery-part-2.md#case-510"><img src="data/images/case510.jpg" alt="Bichon Shop Skeuomorphic App Icon" width="150"></a><br>
+      <sub>A skeuomorphic macOS app icon prompt with precise squircle padding, soft materials, and single-icon constraints.</sub><br>
+      <a href="docs/gallery-part-2.md#case-510"><strong>View Case</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 511: City Name Landmark Typography Poster</strong></p>
+      <a href="docs/gallery-part-2.md#case-511"><img src="data/images/case511.jpg" alt="City Name Landmark Typography Poster" width="150"></a><br>
+      <sub>A city-name travel poster prompt that embeds landmarks inside bold typography while keeping a flat vector editorial style.</sub><br>
+      <a href="docs/gallery-part-2.md#case-511"><strong>View Case</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 512: Brutalist Freestyle Character Sheet</strong></p>
+      <a href="docs/gallery-part-2.md#case-512"><img src="data/images/case512.jpg" alt="Brutalist Freestyle Character Sheet" width="150"></a><br>
+      <sub>A production character-sheet prompt for a brutalist freestyle football protagonist, with angles, callouts, materials, and action poses.</sub><br>
+      <a href="docs/gallery-part-2.md#case-512"><strong>View Case</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 513: One-Accent Travel Notebook Illustration</strong></p>
+      <a href="docs/gallery-part-2.md#case-513"><img src="data/images/case513.jpg" alt="One-Accent Travel Notebook Illustration" width="150"></a><br>
+      <sub>A black felt-tip travel notebook style with one accent color, generous whitespace, and destination-specific doodle elements.</sub><br>
+      <a href="docs/gallery-part-2.md#case-513"><strong>View Case</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 514: Hard-Edge Modern Art Portrait</strong></p>
+      <a href="docs/gallery-part-2.md#case-514"><img src="data/images/case514.jpg" alt="Hard-Edge Modern Art Portrait" width="150"></a><br>
+      <sub>A hard-edge modern art portrait prompt combining crisp contours, screen-print texture, geometric light, and a limited palette.</sub><br>
+      <a href="docs/gallery-part-2.md#case-514"><strong>View Case</strong></a>
     </td>
   </tr>
 </table>

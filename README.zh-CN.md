@@ -1,11 +1,11 @@
 <p align="center"><img src="./data/images/banner.svg" alt="GPT-Image2 Prompt System" width="800" /></p>
 
-<h3 align="center">Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，400+ 个案例逆向工程，20+ 套工业级模板</h3>
+<h3 align="center">Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，500+ 个案例逆向工程，20+ 套工业级模板</h3>
 
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-508-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-514-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
   <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=flat-square" alt="Sponsor"></a>
 </p>
@@ -64,7 +64,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 
 - [完整案例总览](docs/gallery.md)
 - [案例画廊 Part 1：例 1-165](docs/gallery-part-1.md)
-- [案例画廊 Part 2：例 166-508](docs/gallery-part-2.md)
+- [案例画廊 Part 2：例 166-514](docs/gallery-part-2.md)
 - [工业级提示词模板与防坑指南](docs/templates.md#section-templates)
 - [Agent Skill：GPT-Image2 风格库](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -91,7 +91,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
       <a href="docs/gallery.md#cat-infographic"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 海报与排版</strong><br><sub>80 cases</sub></p>
+      <p><strong>📰 海报与排版</strong><br><sub>81 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="海报与排版" width="220"></a><br>
       <sub>活动海报、封面、字体视觉和强排版画面。</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>查看案例</strong></a>
@@ -105,7 +105,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
       <a href="docs/gallery.md#cat-product"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🏷️ 品牌与标志</strong><br><sub>25 cases</sub></p>
+      <p><strong>🏷️ 品牌与标志</strong><br><sub>26 cases</sub></p>
       <a href="docs/gallery.md#cat-brand"><img src="data/images/category-covers/brand.jpg" alt="品牌与标志" width="220"></a><br>
       <sub>Logo、VI、品牌触点和 Campaign 视觉系统。</sub><br>
       <a href="docs/gallery.md#cat-brand"><strong>查看案例</strong></a>
@@ -119,19 +119,19 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 摄影与写实</strong><br><sub>73 cases</sub></p>
+      <p><strong>📷 摄影与写实</strong><br><sub>74 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="摄影与写实" width="220"></a><br>
       <sub>人像、手机纪实、胶片质感和商业摄影。</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎨 插画与艺术</strong><br><sub>53 cases</sub></p>
+      <p><strong>🎨 插画与艺术</strong><br><sub>55 cases</sub></p>
       <a href="docs/gallery.md#cat-illustration"><img src="data/images/category-covers/illustration.jpg" alt="插画与艺术" width="220"></a><br>
       <sub>插画、艺术风格、材质实验和装饰画面。</sub><br>
       <a href="docs/gallery.md#cat-illustration"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 人物与角色</strong><br><sub>25 cases</sub></p>
+      <p><strong>🧍 人物与角色</strong><br><sub>26 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="人物与角色" width="220"></a><br>
       <sub>角色设定、动作参考、卡牌和 3D 玩具。</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>查看案例</strong></a>
@@ -167,14 +167,14 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
     <td width="33%" valign="top" align="center">
       <h4>🖼️ 完整画廊</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="完整画廊" width="220"></a><br>
-      <sub>按分册浏览全部 508 个案例和代表案例入口。</sub><br>
+      <sub>按分册浏览全部 514 个案例和代表案例入口。</sub><br>
       <a href="docs/gallery.md"><strong>进入画廊</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ 最新新增</h4>
-      <a href="docs/gallery-part-2.md#case-508"><img src="data/images/case508.jpg" alt="最新新增" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-514"><img src="data/images/case514.jpg" alt="最新新增" width="220"></a><br>
       <sub>最近收录的 X 社区案例和新玩法。</sub><br>
-      <a href="docs/gallery-part-2.md#case-508"><strong>查看最新</strong></a>
+      <a href="docs/gallery-part-2.md#case-514"><strong>查看最新</strong></a>
     </td>
   </tr>
 </table>
@@ -437,11 +437,43 @@ GOOGLE_ANALYTICS_REFRESH_TOKEN=
 
 <table>
   <tr>
-    <td width="100%" valign="top" align="center">
-      <p><strong>例 508：木漏日庭院俯拍猫咪人像</strong></p>
-      <a href="docs/gallery-part-2.md#case-508"><img src="data/images/case508.jpg" alt="木漏日庭院俯拍猫咪人像" width="180"></a><br>
-      <sub>高角度庭院人像提示词，把木漏日光斑、潮湿薄雾、丁达尔光束、柔和表情和猫咪互动组织成一张清透写实照片。</sub><br>
-      <a href="docs/gallery-part-2.md#case-508"><strong>查看案例</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>例 509：涂鸦拉衣奔跑棚拍</strong></p>
+      <a href="docs/gallery-part-2.md#case-509"><img src="data/images/case509.jpg" alt="涂鸦拉衣奔跑棚拍" width="180"></a><br>
+      <sub>棚拍奔跑人像与黑色手绘小人互动，适合参考写实运动瞬间和涂鸦幽默的融合。</sub><br>
+      <a href="docs/gallery-part-2.md#case-509"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>例 510：Bichon Shop 拟物 App 图标</strong></p>
+      <a href="docs/gallery-part-2.md#case-510"><img src="data/images/case510.jpg" alt="Bichon Shop 拟物 App 图标" width="180"></a><br>
+      <sub>拟物 macOS 图标 prompt，明确圆角、留白、材质和单图标约束。</sub><br>
+      <a href="docs/gallery-part-2.md#case-510"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>例 511：城市名地标排版旅行海报</strong></p>
+      <a href="docs/gallery-part-2.md#case-511"><img src="data/images/case511.jpg" alt="城市名地标排版旅行海报" width="180"></a><br>
+      <sub>把城市名作为主体排版，并把地标自然嵌进字形结构的旅行海报模板。</sub><br>
+      <a href="docs/gallery-part-2.md#case-511"><strong>查看案例</strong></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top" align="center">
+      <p><strong>例 512：Brutalist Freestyle 角色设定表</strong></p>
+      <a href="docs/gallery-part-2.md#case-512"><img src="data/images/case512.jpg" alt="Brutalist Freestyle 角色设定表" width="180"></a><br>
+      <sub>偏 AAA 游戏设定表的角色 prompt，包含多视角、动作姿态、材质标注和商业提案版式。</sub><br>
+      <a href="docs/gallery-part-2.md#case-512"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>例 513：单色点缀旅行手账插画</strong></p>
+      <a href="docs/gallery-part-2.md#case-513"><img src="data/images/case513.jpg" alt="单色点缀旅行手账插画" width="180"></a><br>
+      <sub>黑色毡头笔旅行手账插画，只保留一个点缀色和大量留白。</sub><br>
+      <a href="docs/gallery-part-2.md#case-513"><strong>查看案例</strong></a>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <p><strong>例 514：硬边现代艺术人像</strong></p>
+      <a href="docs/gallery-part-2.md#case-514"><img src="data/images/case514.jpg" alt="硬边现代艺术人像" width="180"></a><br>
+      <sub>硬边现代艺术人像，结合丝网印刷错位、几何光形和克制配色。</sub><br>
+      <a href="docs/gallery-part-2.md#case-514"><strong>查看案例</strong></a>
     </td>
   </tr>
 </table>
