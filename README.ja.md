@@ -1,11 +1,11 @@
 <p align="center"><img src="./data/images/banner.svg" alt="GPT-Image2 Prompt System" width="800" /></p>
 
-<h3 align="center">Prompt as Code | GPT-Image2 産業レベルのプロンプトエンジンとテンプレートライブラリ、400+ 件のリバースエンジニアリング事例、20+ 種の実務向けテンプレート</h3>
+<h3 align="center">Prompt as Code | GPT-Image2 産業レベルのプロンプトエンジンとテンプレートライブラリ、500+ 件のリバースエンジニアリング事例、20+ 種の実務向けテンプレート</h3>
 
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-484-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-526-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
 </p>
 
@@ -41,6 +41,7 @@ WeChat で **苍何(Canghe)** を検索するか、下の QR カードをスキ�
 | スポンサー | 説明 |
 | ---------- | ---- |
 | <a href="https://www.hiapi.ai/zh/register?aff=DzuH"><img src="data/images/sponsors/hiapi.jpg" alt="hiapi" width="240"></a> | hiapi による本プロジェクトへのサポートに感謝します。hiapi は AI 画像/動画生成 API プラットフォームで、GPT-Image-2（テキストから画像、画像編集、1K–4K）に加えて Seedance、Kling、Wan などの動画モデルも、ひとつの統一非同期 API で扱えます。タスクを送信して `task_id` を受け取り、ポーリングまたはコールバックで結果を取得でき、バッチ処理でもタイムアウトしにくく、モデル変更時もコードを書き換えずに対応できます。生成結果は hiapi 独自 CDN に保存され、**永続ストレージ**に対応しているため、画像/動画 URL を長期的に利用でき、急いで自分でダウンロードしてバックアップする必要がありません。Remote MCP と Agent Skills をネイティブに備え、Claude Code と Cursor にそのまま接続できます。中国語 UI とドキュメント、WeChat Pay、従量課金、月額料金なし。新規ユーザーには $1 の無料クレジット（約 50 枚分）が付与されます。[こちらから登録](https://www.hiapi.ai/zh/register?aff=DzuH&utm_source=github&utm_medium=sponsor&utm_campaign=awesome-gpt-image-2)して利用を始められます。 |
+| <a href="https://www.packyapi.ai/register?aff=CV0c"><img src="data/images/sponsors/packycode.png" alt="PackyCode" width="240"></a> | PackyCode による本プロジェクトへのサポートに感謝します。PackyCode は Claude Code、Codex、Gemini などに対応する、安定性と処理性能に優れた API リレープロバイダーです。自動フェイルオーバー、スマートルーティング、無制限の同時実行により、AI コーディングの生産性を高めます。[こちらから登録](https://www.packyapi.ai/register?aff=CV0c)して利用を始められます。 |
 | <a href="https://apimart.ai/register?aff=oQgzUQ"><img src="data/images/sponsors/apimart.jpg" alt="APIMart" width="240"></a> | APIMart による本プロジェクトへのサポートに感謝します。APIMart は AI 画像/動画生成に特化した低価格 API プラットフォームで、GPT-Image-2 を `$0.006/image` から利用でき、1 ドルで 160 枚以上の画像を生成できます。画像と動画をひとつの非同期 API で扱い、タスク送信後に ID を受け取り、ポーリングまたはコールバックで結果を取得できます。数万枚規模のバッチ生成でもタイムアウトを抑え、モデル変更時もコードを書き換えずに対応できます。従量課金で月額料金はありません。[こちらから登録](https://apimart.ai/register?aff=oQgzUQ)して利用を始められます。 |
 | <a href="https://doloffer.com/friend/HuHEKQOk"><img src="data/images/sponsors/doloffer.jpg" alt="DolOffer" width="240"></a> | DolOffer による本プロジェクトへのサポートに感謝します。DolOffer は、デジタル製品のおすすめとお得情報の共有に特化したプラットフォームで、注目すべきツール、サービス、期間限定特典を素早く見つける手助けをします。YouTube Premium、Claude、ChatGPT Plus、Spotify、Apple Music などの人気サブスクリプションを、公式価格の 3 割程度またはそれ以下で利用できる場合があり、正規で安定したサービスと安心できるサポートを提供します。[専用リンク](https://doloffer.com/friend/HuHEKQOk)から登録し、チャージ時にクーポンコード `AI8888` を入力すると、さらに 10% オフになります。 |
 | <a href="https://pptoken.cc/"><img src="data/images/sponsors/pptoken.png" alt="PPToken" width="240"></a> | プロジェクトスポンサー。PPToken は ChatGPT、Claude、Gemini など主要 AI モデル向けの API リレーとキー配布を提供し、低遅延、高可用性、従量課金、柔軟なサブスクリプションに対応しています。 |
@@ -63,7 +64,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
 
 - [ケースギャラリー全体](docs/gallery.md)
 - [Gallery Part 1：ケース 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2：ケース 166-484](docs/gallery-part-2.md)
+- [Gallery Part 2：ケース 166-526](docs/gallery-part-2.md)
 - [産業向けプロンプトテンプレートと落とし穴ガイド](docs/templates.md#section-templates)
 - [Agent Skill：GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -84,13 +85,13 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
       <a href="docs/gallery.md#cat-ui"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📊 チャートとインフォグラフィック</strong><br><sub>51 cases</sub></p>
+      <p><strong>📊 チャートとインフォグラフィック</strong><br><sub>52 cases</sub></p>
       <a href="docs/gallery.md#cat-infographic"><img src="data/images/category-covers/infographic.jpg" alt="チャートとインフォグラフィック" width="220"></a><br>
       <sub>インフォグラフィック、ナレッジマップ、技術解説、構造化図解。</sub><br>
       <a href="docs/gallery.md#cat-infographic"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 ポスターとタイポグラフィ</strong><br><sub>76 cases</sub></p>
+      <p><strong>📰 ポスターとタイポグラフィ</strong><br><sub>84 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="ポスターとタイポグラフィ" width="220"></a><br>
       <sub>イベントポスター、カバー、文字主体のビジュアル、強いレイアウト構成。</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>ケースを見る</strong></a>
@@ -98,19 +99,19 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🛍️ 商品と E コマース</strong><br><sub>37 cases</sub></p>
+      <p><strong>🛍️ 商品と E コマース</strong><br><sub>40 cases</sub></p>
       <a href="docs/gallery.md#cat-product"><img src="data/images/category-covers/product.jpg" alt="商品と E コマース" width="220"></a><br>
       <sub>商品カット、詳細ページ、パッケージ、訴求ポイント、広告表現。</sub><br>
       <a href="docs/gallery.md#cat-product"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🏷️ ブランドとロゴ</strong><br><sub>24 cases</sub></p>
+      <p><strong>🏷️ ブランドとロゴ</strong><br><sub>27 cases</sub></p>
       <a href="docs/gallery.md#cat-brand"><img src="data/images/category-covers/brand.jpg" alt="ブランドとロゴ" width="220"></a><br>
       <sub>ロゴ、アイデンティティシステム、ブランド接点、キャンペーンビジュアル。</sub><br>
       <a href="docs/gallery.md#cat-brand"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🏛️ 建築と空間</strong><br><sub>11 cases</sub></p>
+      <p><strong>🏛️ 建築と空間</strong><br><sub>12 cases</sub></p>
       <a href="docs/gallery.md#cat-architecture"><img src="data/images/category-covers/architecture.jpg" alt="建築と空間" width="220"></a><br>
       <sub>建築レンダリング、インテリア、都市地図、空間コンセプト。</sub><br>
       <a href="docs/gallery.md#cat-architecture"><strong>ケースを見る</strong></a>
@@ -118,19 +119,19 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 写真とリアリズム</strong><br><sub>64 cases</sub></p>
+      <p><strong>📷 写真とリアリズム</strong><br><sub>76 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="写真とリアリズム" width="220"></a><br>
       <sub>ポートレート、スマートフォン写真、フィルム質感、商業写真。</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎨 イラストとアート</strong><br><sub>50 cases</sub></p>
+      <p><strong>🎨 イラストとアート</strong><br><sub>58 cases</sub></p>
       <a href="docs/gallery.md#cat-illustration"><img src="data/images/category-covers/illustration.jpg" alt="イラストとアート" width="220"></a><br>
       <sub>イラスト、アートスタイル、素材実験、装飾的な画面表現。</sub><br>
       <a href="docs/gallery.md#cat-illustration"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 キャラクターと人物</strong><br><sub>23 cases</sub></p>
+      <p><strong>🧍 キャラクターと人物</strong><br><sub>27 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="キャラクターと人物" width="220"></a><br>
       <sub>キャラクターデザイン、ポーズ資料、カード、3D トイ表現。</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>ケースを見る</strong></a>
@@ -138,7 +139,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎬 シーンとストーリーテリング</strong><br><sub>18 cases</sub></p>
+      <p><strong>🎬 シーンとストーリーテリング</strong><br><sub>20 cases</sub></p>
       <a href="docs/gallery.md#cat-scene"><img src="data/images/category-covers/scene.jpg" alt="シーンとストーリーテリング" width="220"></a><br>
       <sub>絵コンテ、物語性のあるシーン、ライブ配信フレーム、世界観構築。</sub><br>
       <a href="docs/gallery.md#cat-scene"><strong>ケースを見る</strong></a>
@@ -166,14 +167,14 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
     <td width="33%" valign="top" align="center">
       <h4>🖼️ フルギャラリー</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="フルギャラリー" width="220"></a><br>
-      <sub>全 484 件のケースをパートとカテゴリ別に閲覧できます。</sub><br>
+      <sub>全 526 件のケースをパートとカテゴリ別に閲覧できます。</sub><br>
       <a href="docs/gallery.md"><strong>ギャラリーを開く</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ 最新の事例</h4>
-      <a href="docs/gallery-part-2.md#case-484"><img src="data/images/case484.jpg" alt="最新の事例" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-526"><img src="data/images/case526.jpg" alt="最新の事例" width="220"></a><br>
       <sub>リポジトリに新しく収録されたコミュニティ事例とワークフロー。</sub><br>
-      <a href="docs/gallery-part-2.md#case-484"><strong>最新を見る</strong></a>
+      <a href="docs/gallery-part-2.md#case-526"><strong>最新を見る</strong></a>
     </td>
   </tr>
 </table>
@@ -438,55 +439,43 @@ GOOGLE_ANALYTICS_REFRESH_TOKEN=
 
 <table>
   <tr>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 477：Instagram ダイニングテーブルコンセプト</strong></p>
-      <a href="docs/gallery-part-2.md#case-477"><img src="data/images/case477.jpg" alt="Instagram ダイニングテーブルコンセプト" width="150"></a><br>
-      <sub>SNS 投稿レイアウトを、UI バンドと小物制約が明確な俯瞰のダイニングテーブルシーンへ変換した例。</sub><br>
-      <a href="docs/gallery-part-2.md#case-477"><strong>ケースを見る</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 521：青花・敦煌・刺繍の4分割スタイルポスター</strong></p>
+      <a href="docs/gallery-part-2.md#case-521"><img src="data/images/case521.jpg" alt="青花・敦煌・刺繍の4分割スタイルポスター" width="150"></a><br>
+      <sub>同じ場面を4分割し、写真、青花磁器、敦煌壁画、刺繍錦へ順番に転写する設計。</sub><br>
+      <a href="docs/gallery-part-2.md#case-521"><strong>ケースを見る</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 478：レイヤードブランド編集ポスター</strong></p>
-      <a href="docs/gallery-part-2.md#case-478"><img src="data/images/case478.jpg" alt="レイヤードブランド編集ポスター" width="150"></a><br>
-      <sub>幾何学的な遮蔽、抑えたカラーパレット、埋め込まれた商品ロジックを備えた 2x2 ブランドポスターシステム。</sub><br>
-      <a href="docs/gallery-part-2.md#case-478"><strong>ケースを見る</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 522：手描き絵本風ポートレート</strong></p>
+      <a href="docs/gallery-part-2.md#case-522"><img src="data/images/case522.jpg" alt="手描き絵本風ポートレート" width="150"></a><br>
+      <sub>写真の人物らしさ、髪型、服装、小物を残しながら、温かい2D絵本キャラクターへ変換。</sub><br>
+      <a href="docs/gallery-part-2.md#case-522"><strong>ケースを見る</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 479：雑誌風ペーパーコラージュリライト</strong></p>
-      <a href="docs/gallery-part-2.md#case-479"><img src="data/images/case479.jpg" alt="雑誌風ペーパーコラージュリライト" width="150"></a><br>
-      <sub>質感、手描きアクセント、余白、避けるべき要素まで指定された温かみのあるペーパーカットコラージュ。</sub><br>
-      <a href="docs/gallery-part-2.md#case-479"><strong>ケースを見る</strong></a>
-    </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 480：ファンスケッチブックのキャラクターページ</strong></p>
-      <a href="docs/gallery-part-2.md#case-480"><img src="data/images/case480.jpg" alt="ファンスケッチブックのキャラクターページ" width="150"></a><br>
-      <sub>キャラクターポーズ、ちびキャラ、クローズアップ、表情研究に向いた密度の高いスケッチブックページ。</sub><br>
-      <a href="docs/gallery-part-2.md#case-480"><strong>ケースを見る</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 523：マンハッタン公園の水彩旅行イラスト</strong></p>
+      <a href="docs/gallery-part-2.md#case-523"><img src="data/images/case523.jpg" alt="マンハッタン公園の水彩旅行イラスト" width="150"></a><br>
+      <sub>都市のスカイライン、公園の生活感、ペン線、水彩のにじみを組み合わせた旅行手帳風イラスト。</sub><br>
+      <a href="docs/gallery-part-2.md#case-523"><strong>ケースを見る</strong></a>
     </td>
   </tr>
   <tr>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 481：韓国風春のスクラップブックポスター</strong></p>
-      <a href="docs/gallery-part-2.md#case-481"><img src="data/images/case481.jpg" alt="韓国風春のスクラップブックポスター" width="150"></a><br>
-      <sub>ステッカー、タイポグラフィ、パステルの庭園ムード、SNS カバー構図を組み合わせた春ファッションのスクラップブックポスター。</sub><br>
-      <a href="docs/gallery-part-2.md#case-481"><strong>ケースを見る</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 524：紙コラージュ田園ポートレート</strong></p>
+      <a href="docs/gallery-part-2.md#case-524"><img src="data/images/case524.jpg" alt="紙コラージュ田園ポートレート" width="150"></a><br>
+      <sub>写実的な人物を、山、湖、花、レトロ車、淡い紙素材で構成した手作り紙ジオラマへ統合。</sub><br>
+      <a href="docs/gallery-part-2.md#case-524"><strong>ケースを見る</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 482：シュルレアルな自己省察キャンペーン</strong></p>
-      <a href="docs/gallery-part-2.md#case-482"><img src="data/images/case482.jpg" alt="シュルレアルな自己省察キャンペーン" width="150"></a><br>
-      <sub>巨大な自己頭部プロップ、背景タイポグラフィ、アイデンティティ主導のムードを使ったミニマルなシュルレアルポートレート。</sub><br>
-      <a href="docs/gallery-part-2.md#case-482"><strong>ケースを見る</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 525：バーガンディスタジオの男性ファッションポートレート</strong></p>
+      <a href="docs/gallery-part-2.md#case-525"><img src="data/images/case525.jpg" alt="バーガンディスタジオの男性ファッションポートレート" width="150"></a><br>
+      <sub>バーガンディのスエード、琥珀色サングラス、赤いリムライト、煙を組み合わせた映画的な男性ポートレート。</sub><br>
+      <a href="docs/gallery-part-2.md#case-525"><strong>ケースを見る</strong></a>
     </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 483：都市の鳥とストリートポートレート</strong></p>
-      <a href="docs/gallery-part-2.md#case-483"><img src="data/images/case483.jpg" alt="都市の鳥とストリートポートレート" width="150"></a><br>
-      <sub>飛ぶ鳥、グラフィティのシルエット、自然光、エディトリアルな仕上げを含むシネマティックなストリートポートレート。</sub><br>
-      <a href="docs/gallery-part-2.md#case-483"><strong>ケースを見る</strong></a>
-    </td>
-    <td width="25%" valign="top" align="center">
-      <p><strong>Case 484：ネオングラフィティのモノクロポートレート</strong></p>
-      <a href="docs/gallery-part-2.md#case-484"><img src="data/images/case484.jpg" alt="ネオングラフィティのモノクロポートレート" width="150"></a><br>
-      <sub>ネオンの目、ペイントスプラッシュ、手描き要素、ストリートポスターのエネルギーを加えた高コントラストポートレート。</sub><br>
-      <a href="docs/gallery-part-2.md#case-484"><strong>ケースを見る</strong></a>
+    <td width="33%" valign="top" align="center">
+      <p><strong>Case 526：体積レーザーのブラックステージポスター</strong></p>
+      <a href="docs/gallery-part-2.md#case-526"><img src="data/images/case526.jpg" alt="体積レーザーのブラックステージポスター" width="150"></a><br>
+      <sub>黒い劇場空間を6枚の体積レーザーで分割し、霧の厚み、対角線構図、透視に沿う文字を指定。</sub><br>
+      <a href="docs/gallery-part-2.md#case-526"><strong>ケースを見る</strong></a>
     </td>
   </tr>
 </table>

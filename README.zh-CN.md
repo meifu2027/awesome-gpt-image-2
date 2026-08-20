@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-520-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-526-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
   <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=flat-square" alt="Sponsor"></a>
 </p>
@@ -44,6 +44,7 @@ GPT-Image2 交流群现已改为付费加入。请登录[付费群页面](https:
 | 赞助方 | 说明 |
 | ------ | ---- |
 | <a href="https://www.hiapi.ai/zh/register?aff=DzuH"><img src="data/images/sponsors/hiapi.jpg" alt="hiapi" width="240"></a> | 感谢 hiapi 赞助了本项目！hiapi 是聚焦 AI 图片/视频生成的 API 平台——GPT-Image-2 全系（文生图、图生图、1K–4K）加 Seedance、可灵、万相等视频模型，统一异步 API 通吃：提交任务拿 `task_id`，轮询或回调取结果，跑批不超时、换模型不改代码。生成结果转存自有 CDN 并**支持持久化存储**——图片/视频链接长期有效、随时回取，免去自行下载备份。原生 Remote MCP 与 Agent Skills，一行接入 Claude Code、Cursor。中文界面与文档、支持微信支付，按量付费无月费，新用户注册即送 $1（约 50 张图）。通过此[注册链接](https://www.hiapi.ai/zh/register?aff=DzuH&utm_source=github&utm_medium=sponsor&utm_campaign=awesome-gpt-image-2)即可开用。 |
+| <a href="https://www.packyapi.ai/register?aff=CV0c"><img src="data/images/sponsors/packycode.png" alt="PackyCode" width="240"></a> | 感谢 PackyCode 赞助本项目！PackyCode 是一家稳定、高效的 API 中转服务商，提供 Claude Code、Codex、Gemini 等多种中转服务，具备自动故障转移、智能路由和无限并发等功能，帮助 AI 编程提升生产效率。通过此[注册链接](https://www.packyapi.ai/register?aff=CV0c)即可开始使用。 |
 | <a href="https://apimart.ai/register?aff=oQgzUQ"><img src="data/images/sponsors/apimart.jpg" alt="APIMart" width="240"></a> | 感谢 APIMart 赞助了本项目！APIMart 是专注 AI 图片/视频生成的低价 API 平台，GPT-Image-2 低至 `$0.006/张`，1 美元可出图 160+ 张。图片、视频一套异步 API 通吃，提交任务拿 ID、回调取结果，跑批万张不超时、换模型不改代码。按量付费、无月费，通过此[注册链接](https://apimart.ai/register?aff=oQgzUQ)注册即可开用。 |
 | <a href="https://doloffer.com/friend/HuHEKQOk"><img src="data/images/sponsors/doloffer.jpg" alt="DolOffer" width="240"></a> | 感谢 DolOffer 对本项目的支持！DolOffer 是一个专注于数字产品推荐与优惠分享的平台，帮助用户快速发现值得关注的工具、服务和限时福利。平台提供 YouTube Premium、Claude、ChatGPT Plus、Spotify、Apple Music 等多种热门订阅服务，价格低至官方价的 3 折甚至更低，正版稳定，售后无忧。现在通过我们的[专属链接注册](https://doloffer.com/friend/HuHEKQOk)，并在充值时输入优惠码 `AI8888`，即可额外享受 9 折优惠。 |
 | <a href="https://pptoken.cc/"><img src="data/images/sponsors/pptoken.png" alt="PPToken" width="240"></a> | 项目赞助方。PPToken 提供 ChatGPT、Claude、Gemini 等主流 AI 模型的 API 中转和 Key 分发能力，支持低延迟、高可用、按量付费和灵活订阅。 |
@@ -66,7 +67,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
 
 - [完整案例总览](docs/gallery.md)
 - [案例画廊 Part 1：例 1-165](docs/gallery-part-1.md)
-- [案例画廊 Part 2：例 166-520](docs/gallery-part-2.md)
+- [案例画廊 Part 2：例 166-526](docs/gallery-part-2.md)
 - [工业级提示词模板与防坑指南](docs/templates.md#section-templates)
 - [Agent Skill：GPT-Image2 风格库](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -93,7 +94,7 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
       <a href="docs/gallery.md#cat-infographic"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 海报与排版</strong><br><sub>82 cases</sub></p>
+      <p><strong>📰 海报与排版</strong><br><sub>84 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="海报与排版" width="220"></a><br>
       <sub>活动海报、封面、字体视觉和强排版画面。</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>查看案例</strong></a>
@@ -121,19 +122,19 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 摄影与写实</strong><br><sub>75 cases</sub></p>
+      <p><strong>📷 摄影与写实</strong><br><sub>76 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="摄影与写实" width="220"></a><br>
       <sub>人像、手机纪实、胶片质感和商业摄影。</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎨 插画与艺术</strong><br><sub>56 cases</sub></p>
+      <p><strong>🎨 插画与艺术</strong><br><sub>58 cases</sub></p>
       <a href="docs/gallery.md#cat-illustration"><img src="data/images/category-covers/illustration.jpg" alt="插画与艺术" width="220"></a><br>
       <sub>插画、艺术风格、材质实验和装饰画面。</sub><br>
       <a href="docs/gallery.md#cat-illustration"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 人物与角色</strong><br><sub>26 cases</sub></p>
+      <p><strong>🧍 人物与角色</strong><br><sub>27 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="人物与角色" width="220"></a><br>
       <sub>角色设定、动作参考、卡牌和 3D 玩具。</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>查看案例</strong></a>
@@ -169,14 +170,14 @@ GPT-Image2 全量开放后，AI 画图从“能不能出图”变成了“能不
     <td width="33%" valign="top" align="center">
       <h4>🖼️ 完整画廊</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="完整画廊" width="220"></a><br>
-      <sub>按分册浏览全部 520 个案例和代表案例入口。</sub><br>
+      <sub>按分册浏览全部 526 个案例和代表案例入口。</sub><br>
       <a href="docs/gallery.md"><strong>进入画廊</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ 最新新增</h4>
-      <a href="docs/gallery-part-2.md#case-520"><img src="data/images/case520.jpg" alt="最新新增" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-526"><img src="data/images/case526.jpg" alt="最新新增" width="220"></a><br>
       <sub>最近收录的 X 社区案例和新玩法。</sub><br>
-      <a href="docs/gallery-part-2.md#case-520"><strong>查看最新</strong></a>
+      <a href="docs/gallery-part-2.md#case-526"><strong>查看最新</strong></a>
     </td>
   </tr>
 </table>
@@ -442,42 +443,42 @@ GOOGLE_ANALYTICS_REFRESH_TOKEN=
 <table>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 515：Guadalajara 复古电影旅行海报</strong></p>
-      <a href="docs/gallery-part-2.md#case-515"><img src="data/images/case515.jpg" alt="Guadalajara 复古电影旅行海报" width="180"></a><br>
-      <sub>复古城市电影海报 prompt，适合参考地标分层、剪影主体、节庆旗帜和旧印刷质感。</sub><br>
-      <a href="docs/gallery-part-2.md#case-515"><strong>查看案例</strong></a>
+      <p><strong>例 521：青花敦煌刺绣四拼风格海报</strong></p>
+      <a href="docs/gallery-part-2.md#case-521"><img src="data/images/case521.jpg" alt="青花敦煌刺绣四拼风格海报" width="180"></a><br>
+      <sub>把同一画面严格四等分，依次转译为原图、青花瓷绘、敦煌壁画和刺绣锦缎。</sub><br>
+      <a href="docs/gallery-part-2.md#case-521"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 516：工业橡胶管品牌造型渲染</strong></p>
-      <a href="docs/gallery-part-2.md#case-516"><img src="data/images/case516.jpg" alt="工业橡胶管品牌造型渲染" width="180"></a><br>
-      <sub>用弯折工业橡胶管重塑品牌物件，强调配色、接缝、压缩拉伸和棚拍产品光。</sub><br>
-      <a href="docs/gallery-part-2.md#case-516"><strong>查看案例</strong></a>
+      <p><strong>例 522：儿童故事书手绘头像</strong></p>
+      <a href="docs/gallery-part-2.md#case-522"><img src="data/images/case522.jpg" alt="儿童故事书手绘头像" width="180"></a><br>
+      <sub>把上传照片转成温暖的 2D 绘本头像，同时保留发型、服装、配饰和身份特征。</sub><br>
+      <a href="docs/gallery-part-2.md#case-522"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 517：杯内鱼眼夏日冰饮广告</strong></p>
-      <a href="docs/gallery-part-2.md#case-517"><img src="data/images/case517.jpg" alt="杯内鱼眼夏日冰饮广告" width="180"></a><br>
-      <sub>从透明杯内向外看的鱼眼广告构图，结合草莓冰、吸管纵深和夏日街景。</sub><br>
-      <a href="docs/gallery-part-2.md#case-517"><strong>查看案例</strong></a>
+      <p><strong>例 523：曼哈顿公园水彩旅行插画</strong></p>
+      <a href="docs/gallery-part-2.md#case-523"><img src="data/images/case523.jpg" alt="曼哈顿公园水彩旅行插画" width="180"></a><br>
+      <sub>复古旅行手账式水彩插画，结合城市天际线、公园生活、钢笔线稿和无文字约束。</sub><br>
+      <a href="docs/gallery-part-2.md#case-523"><strong>查看案例</strong></a>
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 518：花田风动夏日人像</strong></p>
-      <a href="docs/gallery-part-2.md#case-518"><img src="data/images/case518.jpg" alt="花田风动夏日人像" width="180"></a><br>
-      <sub>俯拍花田人像，把风吹花朵拖影、真实肌肤、夏日硬光和浅景深组织在一起。</sub><br>
-      <a href="docs/gallery-part-2.md#case-518"><strong>查看案例</strong></a>
+      <p><strong>例 524：纸雕拼贴乡野人像</strong></p>
+      <a href="docs/gallery-part-2.md#case-524"><img src="data/images/case524.jpg" alt="纸雕拼贴乡野人像" width="180"></a><br>
+      <sub>真人主体嵌入手工纸雕乡野场景，包含层叠山湖、花朵、复古车辆和柔和纸张质感。</sub><br>
+      <a href="docs/gallery-part-2.md#case-524"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 519：薄荷玫瑰香水电商图</strong></p>
-      <a href="docs/gallery-part-2.md#case-519"><img src="data/images/case519.jpg" alt="薄荷玫瑰香水电商图" width="180"></a><br>
-      <sub>竖版电商商品图，保留瓶身细节并加入薄荷玫瑰、织带、冷调逆光和柔焦质感。</sub><br>
-      <a href="docs/gallery-part-2.md#case-519"><strong>查看案例</strong></a>
+      <p><strong>例 525：酒红棚拍男士时尚肖像</strong></p>
+      <a href="docs/gallery-part-2.md#case-525"><img src="data/images/case525.jpg" alt="酒红棚拍男士时尚肖像" width="180"></a><br>
+      <sub>酒红绒面夹克、琥珀眼镜、红色轮廓光和烟雾背景组成的电影感男士时尚肖像。</sub><br>
+      <a href="docs/gallery-part-2.md#case-525"><strong>查看案例</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>例 520：月面宇航员 T 恤图形</strong></p>
-      <a href="docs/gallery-part-2.md#case-520"><img src="data/images/case520.jpg" alt="月面宇航员 T 恤图形" width="180"></a><br>
-      <sub>适合服饰印花的单色图形 prompt，包含宇航员、地球背景、T 恤载体和冷蓝白配色。</sub><br>
-      <a href="docs/gallery-part-2.md#case-520"><strong>查看案例</strong></a>
+      <p><strong>例 526：体积激光黑场海报</strong></p>
+      <a href="docs/gallery-part-2.md#case-526"><img src="data/images/case526.jpg" alt="体积激光黑场海报" width="180"></a><br>
+      <sub>黑场剧场里用六片真实体积激光切分空间，强调雾中厚度、对角线推进和透视文字。</sub><br>
+      <a href="docs/gallery-part-2.md#case-526"><strong>查看案例</strong></a>
     </td>
   </tr>
 </table>

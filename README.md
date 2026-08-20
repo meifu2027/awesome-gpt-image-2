@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-520-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-526-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
   <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=flat-square" alt="Sponsor"></a>
 </p>
@@ -44,6 +44,7 @@ For payment, access, refund, or product questions, follow the WeChat official ac
 | Sponsor | Description |
 | ------- | ----------- |
 | <a href="https://www.hiapi.ai/zh/register?aff=DzuH"><img src="data/images/sponsors/hiapi.jpg" alt="hiapi" width="240"></a> | Thanks to hiapi for sponsoring this project! hiapi is an AI image & video generation API platform — GPT-Image-2 (text-to-image, image edit, 1K–4K) alongside video models like Seedance, Kling and Wan, all through one unified async API: submit a task, get a `task_id`, fetch results by polling or callback, batch without timeouts, switch models without code changes. Every result is stored on hiapi's own CDN with **persistent storage**, so your image/video URLs stay available long-term and can be fetched anytime — no rushing to download and back them up yourself. Native Remote MCP and Agent Skills plug straight into Claude Code & Cursor. Chinese UI & docs, WeChat Pay, pay-as-you-go with no monthly fee — new users get $1 free credit (~50 images). [Sign up here](https://www.hiapi.ai/en/register?aff=DzuH&utm_source=github&utm_medium=sponsor&utm_campaign=awesome-gpt-image-2). |
+| <a href="https://www.packyapi.ai/register?aff=CV0c"><img src="data/images/sponsors/packycode.png" alt="PackyCode" width="240"></a> | Thanks to PackyCode for sponsoring this project! PackyCode is a stable, high-performance API relay provider for Claude Code, Codex, Gemini, and more. Automatic failover, smart routing, and unlimited concurrency help turn AI coding into a reliable productivity tool. [Register here](https://www.packyapi.ai/register?aff=CV0c) to get started. |
 | <a href="https://apimart.ai/register?aff=oQgzUQ"><img src="data/images/sponsors/apimart.jpg" alt="APIMart" width="240"></a> | Thanks to APIMart for sponsoring this project! APIMart is a low-cost API platform for AI image & video generation — GPT-Image-2 from `$0.006/image`, 160+ images per dollar. One async API covers both image and video: submit a task, get an ID, fetch results via polling or callback. Batch tens of thousands of images without timeouts, switch models without changing code. Pay-as-you-go with no monthly fee — [sign up here](https://apimart.ai/register?aff=oQgzUQ) to get started. |
 | <a href="https://doloffer.com/friend/HuHEKQOk"><img src="data/images/sponsors/doloffer.jpg" alt="DolOffer" width="240"></a> | Thank you to DolOffer for supporting this project. DolOffer is a platform focused on digital product recommendations and deal sharing, helping users quickly discover useful tools, services, and limited-time benefits. It offers popular subscriptions including YouTube Premium, Claude, ChatGPT Plus, Spotify, and Apple Music at prices as low as 30% of official pricing or even lower, with genuine stable service and worry-free support. Register through our [exclusive link](https://doloffer.com/friend/HuHEKQOk) and enter promo code `AI8888` when topping up to get an extra 10% off. |
 | <a href="https://pptoken.cc/"><img src="data/images/sponsors/pptoken.png" alt="PPToken" width="240"></a> | Project sponsor. PPToken provides API relay and key distribution for ChatGPT, Claude, Gemini, and other mainstream AI models, with low-latency access, high availability, pay-as-you-go billing, and flexible subscription plans. |
@@ -66,7 +67,7 @@ The core goal is simple: compress prose-style prompts into structured protocols.
 
 - [Full case gallery](docs/gallery.md)
 - [Gallery Part 1: cases 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2: cases 166-520](docs/gallery-part-2.md)
+- [Gallery Part 2: cases 166-526](docs/gallery-part-2.md)
 - [Industrial prompt templates and pitfalls guide](docs/templates.md)
 - [Agent skill: GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -93,7 +94,7 @@ Start with the case album to find a visual direction, then open the prompt templ
       <a href="docs/gallery.md#cat-infographic"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 Posters & Typography</strong><br><sub>82 cases</sub></p>
+      <p><strong>📰 Posters & Typography</strong><br><sub>84 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="Posters and typography" width="220"></a><br>
       <sub>Event posters, covers, type-driven visuals, and strong layout compositions.</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>View Cases</strong></a>
@@ -121,19 +122,19 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 Photography & Realism</strong><br><sub>75 cases</sub></p>
+      <p><strong>📷 Photography & Realism</strong><br><sub>76 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="Photography and realism" width="220"></a><br>
       <sub>Portraits, phone photography, film texture, and commercial photography.</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎨 Illustration & Art</strong><br><sub>56 cases</sub></p>
+      <p><strong>🎨 Illustration & Art</strong><br><sub>58 cases</sub></p>
       <a href="docs/gallery.md#cat-illustration"><img src="data/images/category-covers/illustration.jpg" alt="Illustration and art" width="220"></a><br>
       <sub>Illustration, art styles, material experiments, and decorative images.</sub><br>
       <a href="docs/gallery.md#cat-illustration"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 Characters & People</strong><br><sub>26 cases</sub></p>
+      <p><strong>🧍 Characters & People</strong><br><sub>27 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="Characters and people" width="220"></a><br>
       <sub>Character design, pose references, cards, and 3D toys.</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>View Cases</strong></a>
@@ -169,14 +170,14 @@ Start with the case album to find a visual direction, then open the prompt templ
     <td width="33%" valign="top" align="center">
       <h4>🖼️ Full Gallery</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="Full gallery" width="220"></a><br>
-      <sub>Browse all 520 cases by gallery part and category.</sub><br>
+      <sub>Browse all 526 cases by gallery part and category.</sub><br>
       <a href="docs/gallery.md"><strong>Open Gallery</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ Latest Additions</h4>
-      <a href="docs/gallery-part-2.md#case-520"><img src="data/images/case520.jpg" alt="Latest additions" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-526"><img src="data/images/case526.jpg" alt="Latest additions" width="220"></a><br>
       <sub>The newest community cases and workflows collected in the repo.</sub><br>
-      <a href="docs/gallery-part-2.md#case-520"><strong>View Latest</strong></a>
+      <a href="docs/gallery-part-2.md#case-526"><strong>View Latest</strong></a>
     </td>
   </tr>
 </table>
@@ -446,42 +447,42 @@ Only the latest collection and import run is shown here. Older imports stay in t
 <table>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 515: Guadalajara Vintage Movie Poster</strong></p>
-      <a href="docs/gallery-part-2.md#case-515"><img src="data/images/case515.jpg" alt="Guadalajara Vintage Movie Poster" width="150"></a><br>
-      <sub>A vintage city movie-poster prompt with landmark layering, mariachi silhouette, papel picado banners, and print texture controls.</sub><br>
-      <a href="docs/gallery-part-2.md#case-515"><strong>View Case</strong></a>
+      <p><strong>Case 521: Four-Panel Style Translation Poster</strong></p>
+      <a href="docs/gallery-part-2.md#case-521"><img src="data/images/case521.jpg" alt="Four-Panel Style Translation Poster" width="150"></a><br>
+      <sub>A strict 1:1:1:1 vertical four-panel poster translating the same scene into blue-and-white porcelain, Dunhuang mural, and embroidered brocade styles.</sub><br>
+      <a href="docs/gallery-part-2.md#case-521"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 516: Rubber Tubing Brand Object Render</strong></p>
-      <a href="docs/gallery-part-2.md#case-516"><img src="data/images/case516.jpg" alt="Rubber Tubing Brand Object Render" width="150"></a><br>
-      <sub>A brand-object render prompt using bent industrial rubber tubing, official color blocking, seams, compression, and studio product lighting.</sub><br>
-      <a href="docs/gallery-part-2.md#case-516"><strong>View Case</strong></a>
+      <p><strong>Case 522: Hand-Drawn Storybook Portrait</strong></p>
+      <a href="docs/gallery-part-2.md#case-522"><img src="data/images/case522.jpg" alt="Hand-Drawn Storybook Portrait" width="150"></a><br>
+      <sub>A warm 2D picture-book character prompt that preserves identity, hair, clothes, accessories, and handmade gouache/crayon texture.</sub><br>
+      <a href="docs/gallery-part-2.md#case-522"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 517: Cup-Interior Summer Drink Ad</strong></p>
-      <a href="docs/gallery-part-2.md#case-517"><img src="data/images/case517.jpg" alt="Cup-Interior Summer Drink Ad" width="150"></a><br>
-      <sub>A fisheye drink-ad prompt shot from inside a clear cup, with strawberry ice foreground, straw depth, and summer street detail.</sub><br>
-      <a href="docs/gallery-part-2.md#case-517"><strong>View Case</strong></a>
+      <p><strong>Case 523: Manhattan Park Watercolor Travel Illustration</strong></p>
+      <a href="docs/gallery-part-2.md#case-523"><img src="data/images/case523.jpg" alt="Manhattan Park Watercolor Travel Illustration" width="150"></a><br>
+      <sub>A vintage travel-journal illustration prompt with skyline depth, park life, ink outlines, watercolor wash, and no-text constraints.</sub><br>
+      <a href="docs/gallery-part-2.md#case-523"><strong>View Case</strong></a>
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 518: Wind-Swept Flower Field Portrait</strong></p>
-      <a href="docs/gallery-part-2.md#case-518"><img src="data/images/case518.jpg" alt="Wind-Swept Flower Field Portrait" width="150"></a><br>
-      <sub>A summer portrait prompt that combines overhead framing, moving foreground flowers, realistic skin texture, and warm sunlight.</sub><br>
-      <a href="docs/gallery-part-2.md#case-518"><strong>View Case</strong></a>
+      <p><strong>Case 524: Paper-Collage Countryside Diorama Portrait</strong></p>
+      <a href="docs/gallery-part-2.md#case-524"><img src="data/images/case524.jpg" alt="Paper-Collage Countryside Diorama Portrait" width="150"></a><br>
+      <sub>A mixed-media portrait prompt combining a photoreal subject with layered paper mountains, lakes, flowers, vehicles, and pastel storybook props.</sub><br>
+      <a href="docs/gallery-part-2.md#case-524"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 519: Mint Rose Perfume Product Ad</strong></p>
-      <a href="docs/gallery-part-2.md#case-519"><img src="data/images/case519.jpg" alt="Mint Rose Perfume Product Ad" width="150"></a><br>
-      <sub>A vertical e-commerce product prompt preserving bottle details while adding mint roses, ribbon, cool backlight, and soft luxury styling.</sub><br>
-      <a href="docs/gallery-part-2.md#case-519"><strong>View Case</strong></a>
+      <p><strong>Case 525: Burgundy Studio Fashion Portrait</strong></p>
+      <a href="docs/gallery-part-2.md#case-525"><img src="data/images/case525.jpg" alt="Burgundy Studio Fashion Portrait" width="150"></a><br>
+      <sub>A cinematic men’s fashion portrait prompt with burgundy suede, amber glasses, red rim light, smoke, realistic skin, and studio depth.</sub><br>
+      <a href="docs/gallery-part-2.md#case-525"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 520: Astronaut Moon T-Shirt Graphic</strong></p>
-      <a href="docs/gallery-part-2.md#case-520"><img src="data/images/case520.jpg" alt="Astronaut Moon T-Shirt Graphic" width="150"></a><br>
-      <sub>A screen-printed apparel graphic prompt with an astronaut, Earth backdrop, navy shirt mockup, and cool monochrome palette.</sub><br>
-      <a href="docs/gallery-part-2.md#case-520"><strong>View Case</strong></a>
+      <p><strong>Case 526: Volumetric Laser Black-Stage Poster</strong></p>
+      <a href="docs/gallery-part-2.md#case-526"><img src="data/images/case526.jpg" alt="Volumetric Laser Black-Stage Poster" width="150"></a><br>
+      <sub>A black-theater poster prompt built from six physical volumetric laser planes, mist thickness, diagonal movement, and perspective-matched title text.</sub><br>
+      <a href="docs/gallery-part-2.md#case-526"><strong>View Case</strong></a>
     </td>
   </tr>
 </table>
