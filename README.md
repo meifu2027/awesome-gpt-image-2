@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-526-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-532-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
   <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=flat-square" alt="Sponsor"></a>
 </p>
@@ -67,7 +67,7 @@ The core goal is simple: compress prose-style prompts into structured protocols.
 
 - [Full case gallery](docs/gallery.md)
 - [Gallery Part 1: cases 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2: cases 166-526](docs/gallery-part-2.md)
+- [Gallery Part 2: cases 166-532](docs/gallery-part-2.md)
 - [Industrial prompt templates and pitfalls guide](docs/templates.md)
 - [Agent skill: GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -94,7 +94,7 @@ Start with the case album to find a visual direction, then open the prompt templ
       <a href="docs/gallery.md#cat-infographic"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 Posters & Typography</strong><br><sub>84 cases</sub></p>
+      <p><strong>📰 Posters & Typography</strong><br><sub>86 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="Posters and typography" width="220"></a><br>
       <sub>Event posters, covers, type-driven visuals, and strong layout compositions.</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>View Cases</strong></a>
@@ -102,7 +102,7 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🛍️ Products & E-commerce</strong><br><sub>40 cases</sub></p>
+      <p><strong>🛍️ Products & E-commerce</strong><br><sub>41 cases</sub></p>
       <a href="docs/gallery.md#cat-product"><img src="data/images/category-covers/product.jpg" alt="Products and e-commerce" width="220"></a><br>
       <sub>Product shots, detail pages, packaging, selling points, and ads.</sub><br>
       <a href="docs/gallery.md#cat-product"><strong>View Cases</strong></a>
@@ -122,7 +122,7 @@ Start with the case album to find a visual direction, then open the prompt templ
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 Photography & Realism</strong><br><sub>76 cases</sub></p>
+      <p><strong>📷 Photography & Realism</strong><br><sub>77 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="Photography and realism" width="220"></a><br>
       <sub>Portraits, phone photography, film texture, and commercial photography.</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>View Cases</strong></a>
@@ -134,7 +134,7 @@ Start with the case album to find a visual direction, then open the prompt templ
       <a href="docs/gallery.md#cat-illustration"><strong>View Cases</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 Characters & People</strong><br><sub>27 cases</sub></p>
+      <p><strong>🧍 Characters & People</strong><br><sub>29 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="Characters and people" width="220"></a><br>
       <sub>Character design, pose references, cards, and 3D toys.</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>View Cases</strong></a>
@@ -170,14 +170,14 @@ Start with the case album to find a visual direction, then open the prompt templ
     <td width="33%" valign="top" align="center">
       <h4>🖼️ Full Gallery</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="Full gallery" width="220"></a><br>
-      <sub>Browse all 526 cases by gallery part and category.</sub><br>
+      <sub>Browse all 532 cases by gallery part and category.</sub><br>
       <a href="docs/gallery.md"><strong>Open Gallery</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ Latest Additions</h4>
-      <a href="docs/gallery-part-2.md#case-526"><img src="data/images/case526.jpg" alt="Latest additions" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-532"><img src="data/images/case532.jpg" alt="Latest additions" width="220"></a><br>
       <sub>The newest community cases and workflows collected in the repo.</sub><br>
-      <a href="docs/gallery-part-2.md#case-526"><strong>View Latest</strong></a>
+      <a href="docs/gallery-part-2.md#case-532"><strong>View Latest</strong></a>
     </td>
   </tr>
 </table>
@@ -447,42 +447,42 @@ Only the latest collection and import run is shown here. Older imports stay in t
 <table>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 521: Four-Panel Style Translation Poster</strong></p>
-      <a href="docs/gallery-part-2.md#case-521"><img src="data/images/case521.jpg" alt="Four-Panel Style Translation Poster" width="150"></a><br>
-      <sub>A strict 1:1:1:1 vertical four-panel poster translating the same scene into blue-and-white porcelain, Dunhuang mural, and embroidered brocade styles.</sub><br>
-      <a href="docs/gallery-part-2.md#case-521"><strong>View Case</strong></a>
+      <p><strong>Case 527: Rio Travel Ticket Pop-Up Diorama</strong></p>
+      <a href="docs/gallery-part-2.md#case-527"><img src="data/images/case527.jpg" alt="Rio Travel Ticket Pop-Up Diorama" width="150"></a><br>
+      <sub>A vintage travel-ticket prompt that turns Rio landmarks, map notes, and miniature streets into one pop-up postcard.</sub><br>
+      <a href="docs/gallery-part-2.md#case-527"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 522: Hand-Drawn Storybook Portrait</strong></p>
-      <a href="docs/gallery-part-2.md#case-522"><img src="data/images/case522.jpg" alt="Hand-Drawn Storybook Portrait" width="150"></a><br>
-      <sub>A warm 2D picture-book character prompt that preserves identity, hair, clothes, accessories, and handmade gouache/crayon texture.</sub><br>
-      <a href="docs/gallery-part-2.md#case-522"><strong>View Case</strong></a>
+      <p><strong>Case 528: Chibi Portrait on a Real Holiday Street</strong></p>
+      <a href="docs/gallery-part-2.md#case-528"><img src="data/images/case528.jpg" alt="Chibi Portrait on a Real Holiday Street" width="150"></a><br>
+      <sub>A photo-editing prompt that keeps the real city background while turning the subject into a warm hand-drawn chibi character.</sub><br>
+      <a href="docs/gallery-part-2.md#case-528"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 523: Manhattan Park Watercolor Travel Illustration</strong></p>
-      <a href="docs/gallery-part-2.md#case-523"><img src="data/images/case523.jpg" alt="Manhattan Park Watercolor Travel Illustration" width="150"></a><br>
-      <sub>A vintage travel-journal illustration prompt with skyline depth, park life, ink outlines, watercolor wash, and no-text constraints.</sub><br>
-      <a href="docs/gallery-part-2.md#case-523"><strong>View Case</strong></a>
+      <p><strong>Case 529: Cloud-Balloon Mountain Ridge Portrait</strong></p>
+      <a href="docs/gallery-part-2.md#case-529"><img src="data/images/case529.jpg" alt="Cloud-Balloon Mountain Ridge Portrait" width="150"></a><br>
+      <sub>A travel-fashion portrait prompt with a giant cloud balloon, believable strings, mountain depth, and modest wardrobe control.</sub><br>
+      <a href="docs/gallery-part-2.md#case-529"><strong>View Case</strong></a>
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 524: Paper-Collage Countryside Diorama Portrait</strong></p>
-      <a href="docs/gallery-part-2.md#case-524"><img src="data/images/case524.jpg" alt="Paper-Collage Countryside Diorama Portrait" width="150"></a><br>
-      <sub>A mixed-media portrait prompt combining a photoreal subject with layered paper mountains, lakes, flowers, vehicles, and pastel storybook props.</sub><br>
-      <a href="docs/gallery-part-2.md#case-524"><strong>View Case</strong></a>
+      <p><strong>Case 530: Doodle Characters on Photo Background</strong></p>
+      <a href="docs/gallery-part-2.md#case-530"><img src="data/images/case530.jpg" alt="Doodle Characters on Photo Background" width="150"></a><br>
+      <sub>A controlled edit prompt that preserves the original photographic background and replaces only people with naive doodle characters.</sub><br>
+      <a href="docs/gallery-part-2.md#case-530"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 525: Burgundy Studio Fashion Portrait</strong></p>
-      <a href="docs/gallery-part-2.md#case-525"><img src="data/images/case525.jpg" alt="Burgundy Studio Fashion Portrait" width="150"></a><br>
-      <sub>A cinematic men’s fashion portrait prompt with burgundy suede, amber glasses, red rim light, smoke, realistic skin, and studio depth.</sub><br>
-      <a href="docs/gallery-part-2.md#case-525"><strong>View Case</strong></a>
+      <p><strong>Case 531: Crystal-Frame Country Travel Campaign</strong></p>
+      <a href="docs/gallery-part-2.md#case-531"><img src="data/images/case531.jpg" alt="Crystal-Frame Country Travel Campaign" width="150"></a><br>
+      <sub>A luxury travel campaign prompt using a transparent crystal frame, mirrored reflection, national landmarks, and refined editorial type.</sub><br>
+      <a href="docs/gallery-part-2.md#case-531"><strong>View Case</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 526: Volumetric Laser Black-Stage Poster</strong></p>
-      <a href="docs/gallery-part-2.md#case-526"><img src="data/images/case526.jpg" alt="Volumetric Laser Black-Stage Poster" width="150"></a><br>
-      <sub>A black-theater poster prompt built from six physical volumetric laser planes, mist thickness, diagonal movement, and perspective-matched title text.</sub><br>
-      <a href="docs/gallery-part-2.md#case-526"><strong>View Case</strong></a>
+      <p><strong>Case 532: Six-Panel Lemon Drink Micro Campaign</strong></p>
+      <a href="docs/gallery-part-2.md#case-532"><img src="data/images/case532.jpg" alt="Six-Panel Lemon Drink Micro Campaign" width="150"></a><br>
+      <sub>A fictional lemon-drink campaign with a strict six-panel grid, consistent horizon, action rhythm, and a hero product climax.</sub><br>
+      <a href="docs/gallery-part-2.md#case-532"><strong>View Case</strong></a>
     </td>
   </tr>
 </table>

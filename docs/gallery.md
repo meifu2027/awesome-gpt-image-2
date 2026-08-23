@@ -1,10 +1,10 @@
 ## 🖼️ 魔法画廊总览
 
-完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 526。
+完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 532。
 
 - [返回 README 首页](../README.md)
 - [Part 1：例 1-165](./gallery-part-1.md)
-- [Part 2：例 166-526](./gallery-part-2.md)
+- [Part 2：例 166-532](./gallery-part-2.md)
 - [工业级提示词模板与防坑指南](./templates.md)
 - [声明、Star 趋势图与公众号](./disclaimer.md)
 
@@ -190,19 +190,19 @@
 ## 分册说明
 
 - `gallery-part-1.md`：例 1-165，覆盖信息图、界面、海报、摄影、插画等基础主流类型。
-- `gallery-part-2.md`：例 166-526，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
+- `gallery-part-2.md`：例 166-532，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
 
 ## 分类概览
 
 - UI与界面：73
 - 图表与信息可视化：52
-- 海报与排版：84
-- 商品与电商：40
+- 海报与排版：86
+- 商品与电商：41
 - 品牌与标志：27
 - 建筑与空间：12
-- 摄影与写实：76
+- 摄影与写实：77
 - 插画与艺术：58
-- 人物与角色：27
+- 人物与角色：29
 - 场景与叙事：20
 - 历史与古风题材：16
 - 文档与出版物：10
@@ -339,7 +339,7 @@
 
 <a name="cat-poster"></a>
 
-### 📰 海报与排版 · 84 cases
+### 📰 海报与排版 · 86 cases
 
 - [例 3：足球主题电影海报](./gallery-part-1.md#case-3)
 - [例 5：主题海报版式设计](./gallery-part-1.md#case-5)
@@ -426,10 +426,12 @@
 - [例 515：Guadalajara 复古电影旅行海报](./gallery-part-2.md#case-515)
 - [例 521：青花敦煌刺绣四拼风格海报](./gallery-part-2.md#case-521)
 - [例 526：体积激光黑场海报](./gallery-part-2.md#case-526)
+- [例 527：Rio 旅行票据纸雕立体海报](./gallery-part-2.md#case-527)
+- [例 531：水晶框国家旅行广告海报](./gallery-part-2.md#case-531)
 
 <a name="cat-product"></a>
 
-### 🛍️ 商品与电商 · 40 cases
+### 🛍️ 商品与电商 · 41 cases
 
 - [例 17：界面交互设计图](./gallery-part-1.md#case-17)
 - [例 33：电商商品展示设计](./gallery-part-1.md#case-33)
@@ -471,6 +473,8 @@
 - [例 485：时尚目录电商拼贴](./gallery-part-2.md#case-485)
 - [例 517：杯内鱼眼夏日冰饮广告](./gallery-part-2.md#case-517)
 - [例 519：薄荷玫瑰香水电商图](./gallery-part-2.md#case-519)
+
+- [例 532：六宫格柠檬饮料微缩广告](./gallery-part-2.md#case-532)
 
 <a name="cat-brand"></a>
 
@@ -522,7 +526,7 @@
 
 <a name="cat-photo"></a>
 
-### 📷 摄影与写实 · 76 cases
+### 📷 摄影与写实 · 77 cases
 
 - [例 24：漫画分镜叙事设计](./gallery-part-1.md#case-24)
 - [例 26：建筑空间场景图](./gallery-part-1.md#case-26)
@@ -603,6 +607,8 @@
 - [例 518：花田风动夏日人像](./gallery-part-2.md#case-518)
 - [例 525：酒红棚拍男士时尚肖像](./gallery-part-2.md#case-525)
 
+- [例 529：云朵气球山脊旅行人像](./gallery-part-2.md#case-529)
+
 <a name="cat-illustration"></a>
 
 ### 🎨 插画与艺术 · 58 cases
@@ -670,7 +676,7 @@
 
 <a name="cat-character"></a>
 
-### 🧍 人物与角色 · 27 cases
+### 🧍 人物与角色 · 29 cases
 
 - [例 25：综合应用场景图](./gallery-part-1.md#case-25)
 - [例 27：人物角色设定图](./gallery-part-1.md#case-27)
@@ -701,6 +707,9 @@
 - [例 507：暖调钩织角色玩偶](./gallery-part-2.md#case-507)
 - [例 512：Brutalist Freestyle 角色设定表](./gallery-part-2.md#case-512)
 - [例 522：儿童故事书手绘头像](./gallery-part-2.md#case-522)
+
+- [例 528：圣诞街景 Chibi 真实背景人像](./gallery-part-2.md#case-528)
+- [例 530：实拍背景涂鸦人物替换](./gallery-part-2.md#case-530)
 
 <a name="cat-scene"></a>
 

@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-526-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-532-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
 </p>
 
@@ -64,7 +64,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
 
 - [ケースギャラリー全体](docs/gallery.md)
 - [Gallery Part 1：ケース 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2：ケース 166-526](docs/gallery-part-2.md)
+- [Gallery Part 2：ケース 166-532](docs/gallery-part-2.md)
 - [産業向けプロンプトテンプレートと落とし穴ガイド](docs/templates.md#section-templates)
 - [Agent Skill：GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -91,7 +91,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
       <a href="docs/gallery.md#cat-infographic"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 ポスターとタイポグラフィ</strong><br><sub>84 cases</sub></p>
+      <p><strong>📰 ポスターとタイポグラフィ</strong><br><sub>86 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="ポスターとタイポグラフィ" width="220"></a><br>
       <sub>イベントポスター、カバー、文字主体のビジュアル、強いレイアウト構成。</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>ケースを見る</strong></a>
@@ -99,7 +99,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🛍️ 商品と E コマース</strong><br><sub>40 cases</sub></p>
+      <p><strong>🛍️ 商品と E コマース</strong><br><sub>41 cases</sub></p>
       <a href="docs/gallery.md#cat-product"><img src="data/images/category-covers/product.jpg" alt="商品と E コマース" width="220"></a><br>
       <sub>商品カット、詳細ページ、パッケージ、訴求ポイント、広告表現。</sub><br>
       <a href="docs/gallery.md#cat-product"><strong>ケースを見る</strong></a>
@@ -119,7 +119,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 写真とリアリズム</strong><br><sub>76 cases</sub></p>
+      <p><strong>📷 写真とリアリズム</strong><br><sub>77 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="写真とリアリズム" width="220"></a><br>
       <sub>ポートレート、スマートフォン写真、フィルム質感、商業写真。</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>ケースを見る</strong></a>
@@ -131,7 +131,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
       <a href="docs/gallery.md#cat-illustration"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 キャラクターと人物</strong><br><sub>27 cases</sub></p>
+      <p><strong>🧍 キャラクターと人物</strong><br><sub>29 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="キャラクターと人物" width="220"></a><br>
       <sub>キャラクターデザイン、ポーズ資料、カード、3D トイ表現。</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>ケースを見る</strong></a>
@@ -167,14 +167,14 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
     <td width="33%" valign="top" align="center">
       <h4>🖼️ フルギャラリー</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="フルギャラリー" width="220"></a><br>
-      <sub>全 526 件のケースをパートとカテゴリ別に閲覧できます。</sub><br>
+      <sub>全 532 件のケースをパートとカテゴリ別に閲覧できます。</sub><br>
       <a href="docs/gallery.md"><strong>ギャラリーを開く</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ 最新の事例</h4>
-      <a href="docs/gallery-part-2.md#case-526"><img src="data/images/case526.jpg" alt="最新の事例" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-532"><img src="data/images/case532.jpg" alt="最新の事例" width="220"></a><br>
       <sub>リポジトリに新しく収録されたコミュニティ事例とワークフロー。</sub><br>
-      <a href="docs/gallery-part-2.md#case-526"><strong>最新を見る</strong></a>
+      <a href="docs/gallery-part-2.md#case-532"><strong>最新を見る</strong></a>
     </td>
   </tr>
 </table>
@@ -440,66 +440,45 @@ GOOGLE_ANALYTICS_REFRESH_TOKEN=
 <table>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 521：青花・敦煌・刺繍の4分割スタイルポスター</strong></p>
-      <a href="docs/gallery-part-2.md#case-521"><img src="data/images/case521.jpg" alt="青花・敦煌・刺繍の4分割スタイルポスター" width="150"></a><br>
-      <sub>同じ場面を4分割し、写真、青花磁器、敦煌壁画、刺繍錦へ順番に転写する設計。</sub><br>
-      <a href="docs/gallery-part-2.md#case-521"><strong>ケースを見る</strong></a>
+      <p><strong>Case 527：リオ旅行チケットの紙細工ジオラマ</strong></p>
+      <a href="docs/gallery-part-2.md#case-527"><img src="data/images/case527.jpg" alt="リオ旅行チケットの紙細工ジオラマ" width="150"></a><br>
+      <sub>旅行チケット、手描きメモ、都市のミニチュア景観を一枚のポップアップポストカードにまとめた例。</sub><br>
+      <a href="docs/gallery-part-2.md#case-527"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 522：手描き絵本風ポートレート</strong></p>
-      <a href="docs/gallery-part-2.md#case-522"><img src="data/images/case522.jpg" alt="手描き絵本風ポートレート" width="150"></a><br>
-      <sub>写真の人物らしさ、髪型、服装、小物を残しながら、温かい2D絵本キャラクターへ変換。</sub><br>
-      <a href="docs/gallery-part-2.md#case-522"><strong>ケースを見る</strong></a>
+      <p><strong>Case 528：実写ホリデー街並みのちびポートレート</strong></p>
+      <a href="docs/gallery-part-2.md#case-528"><img src="data/images/case528.jpg" alt="実写ホリデー街並みのちびポートレート" width="150"></a><br>
+      <sub>実写の街並み背景を残し、人物だけを温かい手描きちびキャラクターへ変換する例。</sub><br>
+      <a href="docs/gallery-part-2.md#case-528"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 523：マンハッタン公園の水彩旅行イラスト</strong></p>
-      <a href="docs/gallery-part-2.md#case-523"><img src="data/images/case523.jpg" alt="マンハッタン公園の水彩旅行イラスト" width="150"></a><br>
-      <sub>都市のスカイライン、公園の生活感、ペン線、水彩のにじみを組み合わせた旅行手帳風イラスト。</sub><br>
-      <a href="docs/gallery-part-2.md#case-523"><strong>ケースを見る</strong></a>
+      <p><strong>Case 529：雲のバルーン山稜ポートレート</strong></p>
+      <a href="docs/gallery-part-2.md#case-529"><img src="data/images/case529.jpg" alt="雲のバルーン山稜ポートレート" width="150"></a><br>
+      <sub>巨大な雲のバルーン、物理的な紐、山岳の奥行き、服装制約を組み合わせた旅行ファッション写真。</sub><br>
+      <a href="docs/gallery-part-2.md#case-529"><strong>ケースを見る</strong></a>
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 524：紙コラージュ田園ポートレート</strong></p>
-      <a href="docs/gallery-part-2.md#case-524"><img src="data/images/case524.jpg" alt="紙コラージュ田園ポートレート" width="150"></a><br>
-      <sub>写実的な人物を、山、湖、花、レトロ車、淡い紙素材で構成した手作り紙ジオラマへ統合。</sub><br>
-      <a href="docs/gallery-part-2.md#case-524"><strong>ケースを見る</strong></a>
+      <p><strong>Case 530：実写背景の手描き人物置換</strong></p>
+      <a href="docs/gallery-part-2.md#case-530"><img src="data/images/case530.jpg" alt="実写背景の手描き人物置換" width="150"></a><br>
+      <sub>元写真の背景を保ったまま、人物だけを素朴な手描きキャラクターに置換する制御例。</sub><br>
+      <a href="docs/gallery-part-2.md#case-530"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 525：バーガンディスタジオの男性ファッションポートレート</strong></p>
-      <a href="docs/gallery-part-2.md#case-525"><img src="data/images/case525.jpg" alt="バーガンディスタジオの男性ファッションポートレート" width="150"></a><br>
-      <sub>バーガンディのスエード、琥珀色サングラス、赤いリムライト、煙を組み合わせた映画的な男性ポートレート。</sub><br>
-      <a href="docs/gallery-part-2.md#case-525"><strong>ケースを見る</strong></a>
+      <p><strong>Case 531：クリスタルフレームの国別旅行キャンペーン</strong></p>
+      <a href="docs/gallery-part-2.md#case-531"><img src="data/images/case531.jpg" alt="クリスタルフレームの国別旅行キャンペーン" width="150"></a><br>
+      <sub>透明なクリスタルフレーム、鏡面反射、国別ランドマーク、上品な編集タイポを組み合わせた旅行広告。</sub><br>
+      <a href="docs/gallery-part-2.md#case-531"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 526：体積レーザーのブラックステージポスター</strong></p>
-      <a href="docs/gallery-part-2.md#case-526"><img src="data/images/case526.jpg" alt="体積レーザーのブラックステージポスター" width="150"></a><br>
-      <sub>黒い劇場空間を6枚の体積レーザーで分割し、霧の厚み、対角線構図、透視に沿う文字を指定。</sub><br>
-      <a href="docs/gallery-part-2.md#case-526"><strong>ケースを見る</strong></a>
+      <p><strong>Case 532：6分割レモンドリンク広告</strong></p>
+      <a href="docs/gallery-part-2.md#case-532"><img src="data/images/case532.jpg" alt="6分割レモンドリンク広告" width="150"></a><br>
+      <sub>架空レモンドリンクの6分割広告。水平線、動作リズム、主役商品への盛り上げを統一した例。</sub><br>
+      <a href="docs/gallery-part-2.md#case-532"><strong>ケースを見る</strong></a>
     </td>
   </tr>
 </table>
-
-#### 代表ケース 1：月明かりのライブ配信シーン
-
-[![月明かりのライブ配信シーン](data/images/case330.png)](docs/gallery-part-2.md#case-330)
-
-ライブ配信スクリーンショットのリアルな表現です。UI の雰囲気、中国語の弾幕、写実的な人物表現の組み合わせに注目できます。
-[ケース全体を見る](docs/gallery-part-2.md#case-330)
-
-#### 代表ケース 2：RAG 技術解説図
-
-[![RAG 技術解説図](data/images/case334.png)](docs/gallery-part-2.md#case-334)
-
-「技術概念 + インフォグラフィックレイアウト + 中国語キャプションモジュール」の構成方法を参照するのに適しています。
-[ケース全体を見る](docs/gallery-part-2.md#case-334)
-
-#### 代表ケース 3：『赤壁懐古』長巻図
-
-[![赤壁懐古長巻図](data/images/case338.png)](docs/gallery-part-2.md#case-338)
-
-長巻サイズ、古典的なナラティブ、全文の組版がよく統合された事例で、長文のビジュアル化の参考に適しています。
-[ケース全体を見る](docs/gallery-part-2.md#case-338)
 
 <a name="section-templates"></a>
 
