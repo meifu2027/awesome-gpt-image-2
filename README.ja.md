@@ -10,11 +10,14 @@
 </p>
 
 <p align="center">
-  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a> | <strong>日本語</strong>
+  <a href="https://trendshift.io/repositories/28623?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-28623">
+    <img src="https://trendshift.io/api/badge/repositories/28623" alt="freestylefly/awesome-gpt-image-2 | Trendshift" width="250" height="55">
+  </a>
 </p>
 
-> 新しいワークフローや活用例を不定期に更新しています。Star をいただけると励みになります。
-> 本プロジェクトは、GPT Image 2 を高いコストパフォーマンスで利用できる AI 集約プラットフォーム [Ciyuan API](https://ciyuan.today/) の支援を受けています。
+<p align="center">
+  <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a> | <strong>日本語</strong>
+</p>
 
 ## 🌐 ビジュアル Web サイト
 
@@ -43,10 +46,7 @@ WeChat で **苍何(Canghe)** を検索するか、下の QR カードをスキ�
 | <a href="https://apimart.ai/register?aff=oQgzUQ"><img src="data/images/sponsors/apimart.jpg" alt="APIMart" width="240"></a> | APIMart による本プロジェクトへのサポートに感謝します。APIMart は AI 画像/動画生成に特化した低価格 API プラットフォームで、GPT-Image-2 を `$0.006/image` から利用でき、1 ドルで 160 枚以上の画像を生成できます。画像と動画をひとつの非同期 API で扱い、タスク送信後に ID を受け取り、ポーリングまたはコールバックで結果を取得できます。数万枚規模のバッチ生成でもタイムアウトを抑え、モデル変更時もコードを書き換えずに対応できます。従量課金で月額料金はありません。[こちらから登録](https://apimart.ai/register?aff=oQgzUQ)して利用を始められます。 |
 | <a href="https://www.hiapi.ai/zh/register?aff=DzuH"><img src="data/images/sponsors/hiapi.jpg" alt="hiapi" width="240"></a> | hiapi による本プロジェクトへのサポートに感謝します。hiapi は AI 画像/動画生成 API プラットフォームで、GPT-Image-2（テキストから画像、画像編集、1K–4K）に加えて Seedance、Kling、Wan などの動画モデルも、ひとつの統一非同期 API で扱えます。タスクを送信して `task_id` を受け取り、ポーリングまたはコールバックで結果を取得でき、バッチ処理でもタイムアウトしにくく、モデル変更時もコードを書き換えずに対応できます。生成結果は hiapi 独自 CDN に保存され、**永続ストレージ**に対応しているため、画像/動画 URL を長期的に利用でき、急いで自分でダウンロードしてバックアップする必要がありません。Remote MCP と Agent Skills をネイティブに備え、Claude Code と Cursor にそのまま接続できます。中国語 UI とドキュメント、WeChat Pay、従量課金、月額料金なし。新規ユーザーには $1 の無料クレジット（約 50 枚分）が付与されます。[こちらから登録](https://www.hiapi.ai/zh/register?aff=DzuH&utm_source=github&utm_medium=sponsor&utm_campaign=awesome-gpt-image-2)して利用を始められます。 |
 | <a href="https://www.packyapi.ai/register?aff=CV0c"><img src="data/images/sponsors/packycode.png" alt="PackyCode" width="240"></a> | PackyCode による本プロジェクトへのサポートに感謝します。PackyCode は Claude Code、Codex、Gemini などに対応する、安定性と処理性能に優れた API リレープロバイダーです。自動フェイルオーバー、スマートルーティング、無制限の同時実行により、AI コーディングの生産性を高めます。[こちらから登録](https://www.packyapi.ai/register?aff=CV0c)して利用を始められます。 |
-| <a href="https://doloffer.com/friend/HuHEKQOk"><img src="data/images/sponsors/doloffer.jpg" alt="DolOffer" width="240"></a> | DolOffer による本プロジェクトへのサポートに感謝します。DolOffer は、デジタル製品のおすすめとお得情報の共有に特化したプラットフォームで、注目すべきツール、サービス、期間限定特典を素早く見つける手助けをします。YouTube Premium、Claude、ChatGPT Plus、Spotify、Apple Music などの人気サブスクリプションを、公式価格の 3 割程度またはそれ以下で利用できる場合があり、正規で安定したサービスと安心できるサポートを提供します。[専用リンク](https://doloffer.com/friend/HuHEKQOk)から登録し、チャージ時にクーポンコード `AI8888` を入力すると、さらに 10% オフになります。 |
 | <a href="https://pptoken.cc/"><img src="data/images/sponsors/pptoken.png" alt="PPToken" width="240"></a> | プロジェクトスポンサー。PPToken は ChatGPT、Claude、Gemini など主要 AI モデル向けの API リレーとキー配布を提供し、低遅延、高可用性、従量課金、柔軟なサブスクリプションに対応しています。 |
-| <a href="https://ciyuan.today/"><img src="data/images/sponsors/ciyuan-api.jpg" alt="Ciyuan API" width="240"></a> | プロジェクトスポンサー。Ciyuan API は、安定した低遅延の大規模モデル API サービスを提供する AI 集約プラットフォームで、本プロジェクトの GPT Image 2 ワークフロー探索を支援しています。 |
-| <a href="https://github.com/sponsors/freestylefly"><img src="https://img.shields.io/badge/GitHub%20Sponsors-freestylefly-ff69b4?style=for-the-badge" alt="GitHub Sponsors" width="240"></a> | コミュニティスポンサー窓口。GitHub Sponsors は、事例収集、Web サイト保守、産業レベルテンプレートの整理、Agent Skill 更新の継続に使われます。 |
 
 <a name="section-vision"></a>
 

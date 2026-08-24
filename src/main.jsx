@@ -613,7 +613,8 @@ function useBodyScrollLock(active) {
         bodyPosition: document.body.style.position,
         bodyTop: document.body.style.top,
         bodyWidth: document.body.style.width,
-        htmlOverflow: document.documentElement.style.overflow
+        htmlOverflow: document.documentElement.style.overflow,
+        htmlScrollBehavior: document.documentElement.style.scrollBehavior
       };
       document.documentElement.style.overflow = 'hidden';
       document.body.style.overflow = 'hidden';
@@ -628,7 +629,16 @@ function useBodyScrollLock(active) {
       bodyScrollLockCount = Math.max(0, bodyScrollLockCount - 1);
       if (bodyScrollLockCount > 0 || !bodyScrollLockState) return;
 
-      const { scrollY, bodyOverflow, bodyPosition, bodyTop, bodyWidth, htmlOverflow } = bodyScrollLockState;
+      const {
+        scrollY,
+        bodyOverflow,
+        bodyPosition,
+        bodyTop,
+        bodyWidth,
+        htmlOverflow,
+        htmlScrollBehavior
+      } = bodyScrollLockState;
+      document.documentElement.style.scrollBehavior = 'auto';
       document.documentElement.style.overflow = htmlOverflow;
       document.body.style.overflow = bodyOverflow;
       document.body.style.position = bodyPosition;
@@ -636,6 +646,7 @@ function useBodyScrollLock(active) {
       document.body.style.width = bodyWidth;
       bodyScrollLockState = null;
       window.scrollTo(0, scrollY);
+      document.documentElement.style.scrollBehavior = htmlScrollBehavior;
     };
   }, [active]);
 }
