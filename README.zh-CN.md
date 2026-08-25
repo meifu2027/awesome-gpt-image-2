@@ -30,11 +30,11 @@
   </a>
 </p>
 
-## 付费交流群
+## 交流群
 
-GPT-Image2 交流群现已改为付费加入。请登录[付费群页面](https://gpt-image2.canghe.ai/community)，通过支付宝一次性支付 **¥9.90**；只有服务端确认付款后，当前账号才能查看受保护的群二维码。
+欢迎加入 GPT-Image2 交流群，与其他用户分享提示词、创作方法和使用经验。点击[交流群链接](https://gpt-image2.canghe.ai/community)查看加入方式。
 
-支付、入群、退款或产品使用遇到问题，可以关注微信公众号 **苍何**，扫描下方二维码后直接留言联系。
+关注微信公众号 **苍何** 或扫描下方二维码，及时获取项目更新、最新案例与实用教程。
 
 <p align="center">
   <img src="src/assets/canghe-official-account.png" alt="苍何微信公众号二维码与微信搜索提示" width="760">

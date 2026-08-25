@@ -29,12 +29,14 @@
   </a>
 </p>
 
-## WeChat 公式アカウント
+## コミュニティ
 
-WeChat で **苍何(Canghe)** を検索するか、下の QR カードをスキャンしてください。GPT-Image2 コミュニティグループに参加するには、公式アカウントをフォローしたうえで中国語で **gpt-image-2交流群**(GPT-Image-2 交流グループ)と返信してください。
+GPT-Image2 コミュニティに参加して、ほかのユーザーとプロンプト、制作方法、活用事例を共有できます。参加方法は[コミュニティページ](https://gpt-image2.canghe.ai/community)をご覧ください。
+
+WeChat 公式アカウント **苍何(Canghe)** をフォローするか、下の QR コードをスキャンすると、プロジェクトの更新、新しい事例、実用的なチュートリアルを受け取れます。
 
 <p align="center">
-  <img src="data/images/wechat-community.jpg" alt="苍何 WeChat コミュニティ QR カード" width="760">
+  <img src="src/assets/canghe-official-account.png" alt="苍何 WeChat 公式アカウントの QR コードと検索カード" width="760">
 </p>
 
 ## ❤️ スポンサー

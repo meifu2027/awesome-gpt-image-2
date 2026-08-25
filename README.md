@@ -30,11 +30,11 @@ Use the live site at [gpt-image2.canghe.ai](https://gpt-image2.canghe.ai/) to br
   </a>
 </p>
 
-## Paid Community
+## Community 交流群
 
-The GPT-Image2 discussion group is now a paid community. Sign in on the [community page](https://gpt-image2.canghe.ai/community), make a one-time **¥9.90** Alipay payment, and the protected group QR will appear only after the server confirms payment.
+Join the GPT-Image2 discussion group to exchange prompts, workflows, and creative ideas with other users. Visit the [community page](https://gpt-image2.canghe.ai/community) to join.
 
-For payment, access, refund, or product questions, follow the WeChat official account **苍何** or scan the card below and send a message.
+Follow the WeChat official account **苍何** or scan the QR code below to receive project updates, new cases, and practical tutorials.
 
 <p align="center">
   <img src="src/assets/canghe-official-account.png" alt="苍何 WeChat official account QR code and search card" width="760">
