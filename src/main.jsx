@@ -39,7 +39,6 @@ import skillExampleImage from '../agents/skills/gpt-image-2-style-library/assets
 
 const fallbackRepoUrl = 'https://github.com/freestylefly/awesome-gpt-image-2';
 const sponsorUrl = 'https://apimart.ai/register?aff=oQgzUQ';
-const membershipUrl = 'https://canghe.ai/membership/';
 const gaMeasurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
 const watchaLogoUrl =
   'https://watcha.tos-cn-beijing.volces.com/products/logo/1752064513_guan-cha-insights.png?x-tos-process=image/resize,w_720/format,webp';
@@ -3547,9 +3546,6 @@ function App() {
             >
               <Heart size={16} />
               {t.navSponsor}
-            </a>
-            <a href={membershipUrl} target="_blank" rel="noreferrer">
-              {t.navMembership}
             </a>
             <a href={repoUrl} target="_blank" rel="noreferrer">
               GitHub

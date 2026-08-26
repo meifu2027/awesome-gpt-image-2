@@ -1,10 +1,10 @@
 ## 🖼️ 魔法画廊总览
 
-完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 532。
+完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 538。
 
 - [返回 README 首页](../README.md)
 - [Part 1：例 1-165](./gallery-part-1.md)
-- [Part 2：例 166-532](./gallery-part-2.md)
+- [Part 2：例 166-538](./gallery-part-2.md)
 - [工业级提示词模板与防坑指南](./templates.md)
 - [声明、Star 趋势图与公众号](./disclaimer.md)
 
@@ -187,23 +187,30 @@
 - [例 525：酒红棚拍男士时尚肖像](./gallery-part-2.md#case-525)
 - [例 526：体积激光黑场海报](./gallery-part-2.md#case-526)
 
+- [例 533：手绘涂鸦时尚人物插画](./gallery-part-2.md#case-533)
+- [例 534：红光干扰实验编辑人像海报](./gallery-part-2.md#case-534)
+- [例 535：同一人脸十二款发型 Lookbook](./gallery-part-2.md#case-535)
+- [例 536：春日樱花回眸电影人像](./gallery-part-2.md#case-536)
+- [例 537：地下档案馆暗黑概念海报](./gallery-part-2.md#case-537)
+- [例 538：橡皮章旅行田野笔记海报](./gallery-part-2.md#case-538)
+
 ## 分册说明
 
 - `gallery-part-1.md`：例 1-165，覆盖信息图、界面、海报、摄影、插画等基础主流类型。
-- `gallery-part-2.md`：例 166-532，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
+- `gallery-part-2.md`：例 166-538，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
 
 ## 分类概览
 
 - UI与界面：73
 - 图表与信息可视化：52
-- 海报与排版：86
+- 海报与排版：88
 - 商品与电商：41
 - 品牌与标志：27
 - 建筑与空间：12
-- 摄影与写实：77
+- 摄影与写实：78
 - 插画与艺术：58
-- 人物与角色：29
-- 场景与叙事：20
+- 人物与角色：31
+- 场景与叙事：21
 - 历史与古风题材：16
 - 文档与出版物：10
 - 其他应用场景：28
@@ -339,7 +346,7 @@
 
 <a name="cat-poster"></a>
 
-### 📰 海报与排版 · 86 cases
+### 📰 海报与排版 · 88 cases
 
 - [例 3：足球主题电影海报](./gallery-part-1.md#case-3)
 - [例 5：主题海报版式设计](./gallery-part-1.md#case-5)
@@ -428,6 +435,8 @@
 - [例 526：体积激光黑场海报](./gallery-part-2.md#case-526)
 - [例 527：Rio 旅行票据纸雕立体海报](./gallery-part-2.md#case-527)
 - [例 531：水晶框国家旅行广告海报](./gallery-part-2.md#case-531)
+- [例 534：红光干扰实验编辑人像海报](./gallery-part-2.md#case-534)
+- [例 538：橡皮章旅行田野笔记海报](./gallery-part-2.md#case-538)
 
 <a name="cat-product"></a>
 
@@ -526,7 +535,7 @@
 
 <a name="cat-photo"></a>
 
-### 📷 摄影与写实 · 77 cases
+### 📷 摄影与写实 · 78 cases
 
 - [例 24：漫画分镜叙事设计](./gallery-part-1.md#case-24)
 - [例 26：建筑空间场景图](./gallery-part-1.md#case-26)
@@ -608,6 +617,7 @@
 - [例 525：酒红棚拍男士时尚肖像](./gallery-part-2.md#case-525)
 
 - [例 529：云朵气球山脊旅行人像](./gallery-part-2.md#case-529)
+- [例 536：春日樱花回眸电影人像](./gallery-part-2.md#case-536)
 
 <a name="cat-illustration"></a>
 
@@ -676,7 +686,7 @@
 
 <a name="cat-character"></a>
 
-### 🧍 人物与角色 · 29 cases
+### 🧍 人物与角色 · 31 cases
 
 - [例 25：综合应用场景图](./gallery-part-1.md#case-25)
 - [例 27：人物角色设定图](./gallery-part-1.md#case-27)
@@ -710,10 +720,12 @@
 
 - [例 528：圣诞街景 Chibi 真实背景人像](./gallery-part-2.md#case-528)
 - [例 530：实拍背景涂鸦人物替换](./gallery-part-2.md#case-530)
+- [例 533：手绘涂鸦时尚人物插画](./gallery-part-2.md#case-533)
+- [例 535：同一人脸十二款发型 Lookbook](./gallery-part-2.md#case-535)
 
 <a name="cat-scene"></a>
 
-### 🎬 场景与叙事 · 20 cases
+### 🎬 场景与叙事 · 21 cases
 
 - [例 182：千禧年日系校园喜剧场景](./gallery-part-2.md#case-182)
 - [例 208：樱花树下害羞双马尾少女](./gallery-part-2.md#case-208)
@@ -736,6 +748,7 @@
 - [例 477：Instagram 餐桌俯拍创意](./gallery-part-2.md#case-477)
 - [例 487：法式药妆商业分镜封面](./gallery-part-2.md#case-487)
 - [例 493：东京旅行 13 格视频封面](./gallery-part-2.md#case-493)
+- [例 537：地下档案馆暗黑概念海报](./gallery-part-2.md#case-537)
 
 <a name="cat-history"></a>
 

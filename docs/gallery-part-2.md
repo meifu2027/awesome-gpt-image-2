@@ -12065,3 +12065,345 @@ copied text, Chinese text, existing brand names, cartoon style, toy-like figure,
 ```
 
 ***
+
+<a name="case-533"></a>
+
+### 例 533：手绘涂鸦时尚人物插画
+
+![手绘涂鸦时尚人物插画](../data/images/case533.jpg)
+
+**来源：** [@Sairah_0](https://x.com/Sairah_0/status/2092473965927334071)
+
+**提示词：**
+
+```text
+Transform the subject from the reference image into a cute, quirky hand-drawn doodle illustration.
+
+Use a minimalist children’s storybook / fashion sketch aesthetic with loose, imperfect black ink lines, visible scribbly pencil strokes, subtle cross-hatching, and a charming handmade feel. Keep the character’s recognizable facial features, hairstyle, face shape, clothing, accessories, and overall identity from the reference while simplifying them into a cute illustrated character.
+
+Character design:
+- Oversized head and small simplified body
+- Simple dot-like eyes and tiny minimal mouth
+- Soft rounded facial features
+- Slight rosy pink blush on the cheeks
+- Messy, expressive hand-drawn hair with many loose sketch lines
+- Slightly exaggerated, playful proportions
+- Natural, relaxed pose with a whimsical fashion-illustration feel
+
+Art style:
+- Black-and-white pencil/ink doodle drawing
+- Rough, imperfect sketch lines rather than clean digital outlines
+- Dense scribbled hair and clothing details
+- Light hand-colored accents
+- Subtle watercolor/crayon-like coloring
+- Minimal shading
+- White or off-white clean background
+- Lots of negative space
+- Cute, innocent, playful, cozy aesthetic
+- Looks like an original handmade notebook/fashion doodle illustration
+
+Preserve the important details of the reference image while converting everything into this consistent doodle-art style. The final image should feel hand-sketched, slightly imperfect, adorable, expressive, and effortlessly stylish, not like polished vector art or 3D cartoon art.
+```
+
+***
+
+<a name="case-534"></a>
+
+### 例 534：红光干扰实验编辑人像海报
+
+![红光干扰实验编辑人像海报](../data/images/case534.jpg)
+
+**来源：** [@Goodmanprotocol](https://x.com/Goodmanprotocol/status/2092471662126211143)
+
+**提示词：**
+
+```text
+Create a medium-sized 9:16 experimental editorial portrait poster using the following customizable inputs:
+
+Subject: [Adult Male or Female Portrait]
+Interference: [Color Split / Narrow Light Beam / Horizontal Cut / Motion Veil]
+Title: [Title]
+Palette: [Main Neutral Tones + One Accent Color]
+Mood: [Sharp / Cinematic / Restrained / Experimental]
+
+Create a striking close-up or waist-up portrait with the subject occupying a strong portion of the frame. Preserve realistic facial features, natural skin texture, authentic hair, realistic proportions, clear emotion, and a strong silhouette. The portrait must work visually as a fashion photograph before the graphic intervention is applied.
+
+Use only one primary interference method:
+
+Color Split: Uneven translucent bands selectively shift, reveal, separate, or distort portions of the portrait.
+
+Narrow Light Beam: A single controlled beam cuts across the face or body and continues naturally into the surrounding space.
+
+Horizontal Cut: Bold horizontal bands interrupt selected areas of the portrait and interact with oversized typography.
+
+Motion Veil: Keep the main portrait sharp while selected areas create subtle horizontal photographic motion trails.
+
+Make typography an integral part of the composition. Use one dominant headline, allowing letters to crop beyond the frame, overlap the subject, disappear behind the body, or interact with the interference.
+
+Keep supporting text minimal: one small series label and one short phrase.
+
+Use mostly black, white, grey, charcoal, or deep neutral tones, plus one accent color. Keep skin tones natural and avoid excessive warmth or yellow grading.
+
+Add only a few subtle graphic details such as fine lines, circles, or open corner marks when necessary.
+
+The final composition should feel like a premium fashion editorial, contemporary photography poster, or experimental art-direction piece—clean, intentional, sophisticated, and visually balanced.
+
+Avoid multiple competing effects, dense text, UI elements, heavy glitches, random collage, excessive decoration, numbering, “Vol.” or “Issue” labels, sparkle symbols, logos, watermarks, distorted anatomy, plastic skin, oversaturation, and generic template aesthetics.
+
+Keep the overall treatment medium in scale, refined, adaptable, and universally applicable to different people, titles, themes, palettes, and editorial concepts.
+```
+
+***
+
+<a name="case-535"></a>
+
+### 例 535：同一人脸十二款发型 Lookbook
+
+![同一人脸十二款发型 Lookbook](../data/images/case535.jpg)
+
+**来源：** [@Ciri_ai](https://x.com/Ciri_ai/status/2092452220768002400)
+
+**提示词：**
+
+```text
+Create a 12-panel grid (3 columns × 4 rows, numbered 1 to 12) showing the SAME person from the reference photo with 12 different hairstyles. This is a hairstyle lookbook. Final image aspect ratio: 4:5 (vertical/portrait).
+THE ONLY THING THAT CHANGES BETWEEN PANELS IS THE HAIR ON THE HEAD (shape, style and length only). Everything else stays exactly as in the reference photo.
+Identity Anchor (Critical)
+The face must be IDENTICAL to the reference photo in every single panel. Preserve exactly: facial bone structure, jawline, cheekbones, nose shape, lips, eye shape and spacing, eyebrows, skin tone, skin texture (pores, natural imperfections), and overall facial proportions. This is the same real person in all 12 frames. Do NOT beautify, slim, or alter the face. Same age, same expression as in the reference.
+Mandatory Rules (Do Not Violate)
+- NO SUNGLASSES. Eyes must be fully visible in all 12 panels.
+- NO ENVIRONMENTAL BACKGROUNDS. Every panel must have a plain, uniform, solid light grey studio backdrop with zero objects, zero textures, zero gradients. Just flat neutral grey.
+- Hair COLOR stays exactly as it appears in the reference photo in all 12 panels. Only the shape, length and style changes, never the color.
+Keep Identical in Every Panel (Do Not Change)
+- MAKEUP AND SKIN: If the person in the reference photo wears makeup, replicate it identically in every panel. Same lip color, same eye makeup, same brow grooming. If they wear no makeup, keep all panels makeup-free. Do NOT add, remove, or alter makeup between panels.
+- Clothing: the same clothing visible in the reference photo, replicated exactly.
+- Accessories: preserve ALL visible accessories from the reference photo (earrings, necklaces, rings, bracelets, piercings, watch, glasses, etc.). Do not omit, resize, recolor, or restyle any accessory. If the person wears prescription glasses (not sunglasses), keep them in every panel.
+- Background: plain solid light grey studio backdrop in every panel. No room, no furniture, no environment.
+The 12 Hairstyles
+1. Pixie cut: very short, textured, slightly tousled on top with tapered sides and nape
+2. Classic bob: chin-length, straight, blunt ends, clean middle part
+3. Long layered waves: past the shoulders, soft voluminous waves with face-framing layers
+4. Sleek low bun: hair pulled back smoothly into a tight low bun at the nape, no flyaways
+5. Curtain bangs with medium-length hair: soft parted fringe framing the face, hair falling just past the shoulders
+6. High ponytail: hair pulled up into a sleek high ponytail, smooth crown, length falling behind
+7. French bob: short bob ending at the jawline with a soft blunt micro-fringe across the forehead
+8. Long straight hair with middle part: very long, sleek, pin-straight, falling well past the shoulders
+9. Shaggy wolf cut: medium length, heavy layers, choppy fringe, textured and voluminous with a slightly wild look
+10. Elegant updo: hair swept up into a polished chignon with soft face-framing tendrils
+11. Short curly crop: short voluminous curls all over, natural texture, tapered at the sides
+12. Side-swept Hollywood waves: long glamorous deep side part, sculpted vintage waves cascading over one shoulder
+Photographic Specs
+Shot on a Canon EOS R5 with an 85mm f/1.4 lens, studio portrait lighting (soft key light, subtle fill), shallow depth of field with sharp focus on the face. PLAIN SOLID LIGHT GREY STUDIO BACKGROUND in every panel. Natural skin rendering with visible pores and realistic hair strands (no plastic or CGI look). Consistent lighting, color grading and exposure across all 12 panels. Photorealistic, high detail, hyperrealistic, 8K. No illustration, no painterly effect, no over-smoothing. NO SUNGLASSES.
+Each panel clearly numbered 1 to 12 in the top-left corner. Overall output aspect ratio 4:5.
+```
+
+***
+
+<a name="case-536"></a>
+
+### 例 536：春日樱花回眸电影人像
+
+![春日樱花回眸电影人像](../data/images/case536.jpg)
+
+**来源：** [@SheBuildsAI_](https://x.com/SheBuildsAI_/status/2092431090095149533)
+
+**提示词：**
+
+```text
+{
+  "title": "WHISPERS OF SPRING",
+
+  "scene": "A peaceful pathway beneath blooming cherry blossom trees during a warm spring afternoon. Pink blossoms fill the canopy overhead while delicate petals drift gracefully through the air. Soft sunlight filters through the branches, creating a dreamy and enchanting atmosphere.",
+
+  "subject": "A young woman walks away from the camera before gently turning her head over her shoulder with a soft, mysterious smile. She wears a flowing natural linen dress that moves gracefully with the breeze, highlighting her delicate facial features and effortless elegance.",
+
+  "detail": "Wind carries countless pink cherry blossom petals across the frame while warm sunlight creates glowing highlights throughout the scene. Every strand of hair moves naturally in the breeze, with ultra realistic skin texture, lifelike fabric folds, soft floral surroundings, and subtle atmospheric haze enhancing the cinematic realism.",
+
+  "atmosphere": "Elegant, peaceful, romantic, dreamy, timeless, cinematic, graceful, and enchanting.",
+
+  "lighting": "Warm spring sunlight filtering through cherry blossom branches, soft natural illumination, glowing highlights, volumetric light rays, gentle ambient shadows, and subtle atmospheric haze.",
+
+  "composition": "Cinematic editorial portrait captured with an 85mm lens, featuring the subject in a three-quarter over-the-shoulder pose. Shallow depth of field, creamy bokeh, balanced framing with flowering trees, soft leading lines, and immersive visual storytelling.",
+
+  "style": "Photorealistic, masterpiece, editorial fashion photography, analog film aesthetic, dreamy pastel color palette, ultra realistic skin texture, highly detailed, shallow depth of field, creamy bokeh, atmospheric haze, HDR, cinematic realism, 8K."
+}
+```
+
+***
+
+<a name="case-537"></a>
+
+### 例 537：地下档案馆暗黑概念海报
+
+![地下档案馆暗黑概念海报](../data/images/case537.jpg)
+
+**来源：** [@PromptSin](https://x.com/PromptSin/status/2092390329890849163)
+
+**提示词：**
+
+```text
+Use case: stylized-concept
+Asset type: vertical social-media artwork for the “Your Dark Side” theme
+
+Create an original psychological dark-surrealist scene in a colossal underground archive. Endless shelves of sealed black books rise like skyscrapers and vanish into fog. In the central aisle, a solitary human figure in bone-white clothing kneels before one open book on the floor. No words are visible. From the blank pages rises a delicate life-size figure made entirely of dense black smoke, standing face-to-face with the kneeling person. The smoke figure has no eyes or mouth; instead, its chest contains a small locked crimson door. Thin threads connect that door to the kneeling person’s hands, suggesting a secret self finally acknowledged.
+
+Vertical 9:16 framing, towering shelves create a narrow symmetrical canyon, high-angle shaft of cold silver light, the two figures positioned small in the lower center, immense oppressive scale above them. Black paper, aged stone, floating ash, volumetric fog, subtle polished-floor reflections, premium photorealistic dark concept art, refined editorial composition, quiet dread and introspection rather than horror spectacle.
+
+Color palette: obsidian black, graphite, bone white, cold silver, a single muted crimson accent at the tiny door.
+
+Constraints: entirely original metaphor; blank book pages with absolutely no writing; no recognizable person; no text, symbols, logos, signatures, borders, or watermark.
+
+Avoid: visible letters or runes, portrait close-up, split face, black substance on skin, glowing eyes, gore, skulls, conventional ghosts, fantasy wizard styling, imitation of any named artist.
+```
+
+***
+
+<a name="case-538"></a>
+
+### 例 538：橡皮章旅行田野笔记海报
+
+![橡皮章旅行田野笔记海报](../data/images/case538.jpg)
+
+**来源：** [@MahnoorAi12](https://x.com/MahnoorAi12/status/2092221482139349307)
+
+**提示词：**
+
+```text
+Rubber Stamp Travel Field Notes Poster — Natural Realism Version
+
+Create a separate “Rubber Stamp Travel Field Notes Poster” for each photo I upload. Output each photo individually. Never create a collage or combine multiple photos.
+
+Use a 4:3 landscape composition with a natural visual transition between the original photograph on the left and the aged-paper field-note area on the right. Do not add an obvious dividing line.
+
+LEFT — ORIGINAL PHOTOGRAPH
+
+The left side should occupy roughly 58% of the frame.
+
+Keep the uploaded photograph visually authentic and recognizable. Preserve the original subject, perspective, terrain, architecture, plants, people, spatial relationships, natural light, shadows, textures, and overall atmosphere.
+
+Do not redesign or reinterpret the photograph.
+
+Only apply a very subtle editorial photo treatment: gentle tonal balancing, restrained color grading, slightly softened highlights, and extremely fine natural film grain. It should still look like a real photograph taken on location rather than an AI-generated image.
+
+Natural cropping is allowed if needed to fit the 4:3 layout, but do not stretch, distort, move, replace, or redraw the main subject.
+
+Avoid excessive sharpness, HDR effects, artificial clarity, cinematic color grading, or overly perfect details.
+
+RIGHT — AGED PAPER FIELD NOTES
+
+The right side should occupy roughly 42% of the frame.
+
+Use warm off-white, slightly aged paper with a believable physical texture. Include very subtle paper fibers, fine grain, faint handling marks, and a matte surface.
+
+Keep large areas completely unprinted.
+
+The paper should feel like a real sheet from an architect's travel notebook or field journal, not a designed poster background.
+
+Avoid overly strong stains, decorative textures, vintage filters, or artificial grunge.
+
+SMALL RUBBER STAMP
+
+Study the uploaded photograph and identify only the few visual features that make the location immediately recognizable.
+
+Reduce them into a compact, imperfect multi-color rubber stamp impression.
+
+Do not reproduce the photograph element by element.
+
+Simplify aggressively and retain only the most meaningful visual relationships:
+
+- distinctive architecture and silhouette
+- important roof, tower, dome, arch, or structural shape
+- mountain or terrain contours
+- shoreline or road direction
+- a few recognizable trees or vegetation forms
+- simplified settlement layers
+- one or two important foreground shapes when visually relevant
+
+Remove crowds, cars, dense windows, repetitive buildings, tiny vegetation, decorative objects, and insignificant background details.
+
+The result should look like something a traveler could have actually carved into a small rubber stamp, not a miniature illustration of the entire photograph.
+
+Place the stamp in the lower-middle portion of the right paper area, occupying approximately 30–38% of the right section's height.
+
+Keep generous blank paper around it.
+
+Do not enlarge it into a large illustration.
+
+STAMP COLOR & PRINT CHARACTER
+
+Extract approximately 2–4 muted spot colors naturally from the original photograph.
+
+Possible colors include:
+
+- carbon black
+- deep green
+- brick or muted red
+- ochre
+- slate blue
+- taupe or earthy brown
+
+Do not force these colors if the photograph suggests a different restrained palette.
+
+Each color should appear as a separate physical ink layer.
+
+Make the print feel genuinely handmade:
+
+- slightly uneven pressure
+- tiny gaps in the ink
+- dry areas
+- paper showing through
+- rough carved edges
+- irregular line thickness
+- small contour breaks
+- granular ink texture
+- faint ghosting
+- slight natural color-layer misregistration
+- subtle edge variation
+
+The imperfections should be small and believable, as if the stamp was pressed onto paper by hand.
+
+Avoid perfectly aligned digital layers, smooth vector edges, clean gradients, or artificially exaggerated distress.
+
+The stamp should look physically printed, not digitally illustrated.
+
+FIELD-NOTE TYPOGRAPHY
+
+Generate a small amount of text based only on the actual location and imagery in the photograph:
+
+Location — English name
+No. — Number
+Three short English keywords
+Gregorian calendar year
+
+Place the text below or beside the stamp within the available whitespace.
+
+Use a small, understated typewriter or archival field-note style.
+
+The typography should have very slight mechanical irregularity, as though typed or printed on an old field notebook.
+
+Keep it quiet and secondary to the photograph.
+
+Spell the location and all words correctly.
+
+Do not add slogans, brands, tourist phrases, decorative quotes, or unnecessary text.
+
+OVERALL REALISM
+
+The finished image should feel like a real travel photograph mounted beside a small handmade field stamp on an architect's personal notebook page.
+
+Prioritize subtle physical realism over visual perfection.
+
+The photograph should remain the strongest visual element.
+
+The stamp should feel like a small fragment of memory extracted from the photograph rather than a second illustration.
+
+Use restrained contrast, natural imperfections, believable paper texture, and slightly imperfect printing.
+
+The final result should feel quiet, tactile, documentary, collectible, and genuinely handmade.
+
+Avoid
+
+Obvious dividing lines, circular seals, postage-stamp borders, perforations, wax seals, sticker layouts, souvenir-card designs, generic travel templates, smooth vector logos, polished digital illustrations, cartoon styling, 3D rendering, plastic textures, glossy gradients, excessive saturation, HDR effects, excessive text, decorative clutter, overly clean geometry, perfectly aligned ink layers, dense miniature architecture, or any alteration/redrawing of the original photograph.
+```
+
+***

@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/stars/freestylefly/awesome-gpt-image-2?style=flat-square&color=rgb(25%2C%20121%2C%20255)" alt="Stars"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/github/forks/freestylefly/awesome-gpt-image-2?style=flat-square&color=green" alt="Forks"></a>
-  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-532-blueviolet?style=flat-square" alt="Cases"></a>
+  <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/Cases-538-blueviolet?style=flat-square" alt="Cases"></a>
   <a href="https://github.com/freestylefly/awesome-gpt-image-2"><img src="https://img.shields.io/badge/100%25-Original_AI_Rewritten-green?style=flat-square" alt="Original"></a>
 </p>
 
@@ -66,7 +66,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
 
 - [ケースギャラリー全体](docs/gallery.md)
 - [Gallery Part 1：ケース 1-165](docs/gallery-part-1.md)
-- [Gallery Part 2：ケース 166-532](docs/gallery-part-2.md)
+- [Gallery Part 2：ケース 166-538](docs/gallery-part-2.md)
 - [産業向けプロンプトテンプレートと落とし穴ガイド](docs/templates.md#section-templates)
 - [Agent Skill：GPT-Image2 Style Library](agents/skills/gpt-image-2-style-library/SKILL.md)
 - [MIT License](LICENSE)
@@ -93,7 +93,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
       <a href="docs/gallery.md#cat-infographic"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>📰 ポスターとタイポグラフィ</strong><br><sub>86 cases</sub></p>
+      <p><strong>📰 ポスターとタイポグラフィ</strong><br><sub>88 cases</sub></p>
       <a href="docs/gallery.md#cat-poster"><img src="data/images/category-covers/poster.jpg" alt="ポスターとタイポグラフィ" width="220"></a><br>
       <sub>イベントポスター、カバー、文字主体のビジュアル、強いレイアウト構成。</sub><br>
       <a href="docs/gallery.md#cat-poster"><strong>ケースを見る</strong></a>
@@ -121,7 +121,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>📷 写真とリアリズム</strong><br><sub>77 cases</sub></p>
+      <p><strong>📷 写真とリアリズム</strong><br><sub>78 cases</sub></p>
       <a href="docs/gallery.md#cat-photo"><img src="data/images/category-covers/photo.jpg" alt="写真とリアリズム" width="220"></a><br>
       <sub>ポートレート、スマートフォン写真、フィルム質感、商業写真。</sub><br>
       <a href="docs/gallery.md#cat-photo"><strong>ケースを見る</strong></a>
@@ -133,7 +133,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
       <a href="docs/gallery.md#cat-illustration"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>🧍 キャラクターと人物</strong><br><sub>29 cases</sub></p>
+      <p><strong>🧍 キャラクターと人物</strong><br><sub>31 cases</sub></p>
       <a href="docs/gallery.md#cat-character"><img src="data/images/category-covers/character.jpg" alt="キャラクターと人物" width="220"></a><br>
       <sub>キャラクターデザイン、ポーズ資料、カード、3D トイ表現。</sub><br>
       <a href="docs/gallery.md#cat-character"><strong>ケースを見る</strong></a>
@@ -141,7 +141,7 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>🎬 シーンとストーリーテリング</strong><br><sub>20 cases</sub></p>
+      <p><strong>🎬 シーンとストーリーテリング</strong><br><sub>21 cases</sub></p>
       <a href="docs/gallery.md#cat-scene"><img src="data/images/category-covers/scene.jpg" alt="シーンとストーリーテリング" width="220"></a><br>
       <sub>絵コンテ、物語性のあるシーン、ライブ配信フレーム、世界観構築。</sub><br>
       <a href="docs/gallery.md#cat-scene"><strong>ケースを見る</strong></a>
@@ -169,14 +169,14 @@ GPT-Image2 が広く利用できるようになったことで、AI 画像生成
     <td width="33%" valign="top" align="center">
       <h4>🖼️ フルギャラリー</h4>
       <a href="docs/gallery.md"><img src="data/images/category-covers/gallery.jpg" alt="フルギャラリー" width="220"></a><br>
-      <sub>全 532 件のケースをパートとカテゴリ別に閲覧できます。</sub><br>
+      <sub>全 538 件のケースをパートとカテゴリ別に閲覧できます。</sub><br>
       <a href="docs/gallery.md"><strong>ギャラリーを開く</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
       <h4>⭐ 最新の事例</h4>
-      <a href="docs/gallery-part-2.md#case-532"><img src="data/images/case532.jpg" alt="最新の事例" width="220"></a><br>
+      <a href="docs/gallery-part-2.md#case-538"><img src="data/images/case538.jpg" alt="最新の事例" width="220"></a><br>
       <sub>リポジトリに新しく収録されたコミュニティ事例とワークフロー。</sub><br>
-      <a href="docs/gallery-part-2.md#case-532"><strong>最新を見る</strong></a>
+      <a href="docs/gallery-part-2.md#case-538"><strong>最新を見る</strong></a>
     </td>
   </tr>
 </table>
@@ -442,42 +442,42 @@ GOOGLE_ANALYTICS_REFRESH_TOKEN=
 <table>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 527：リオ旅行チケットの紙細工ジオラマ</strong></p>
-      <a href="docs/gallery-part-2.md#case-527"><img src="data/images/case527.jpg" alt="リオ旅行チケットの紙細工ジオラマ" width="150"></a><br>
-      <sub>旅行チケット、手描きメモ、都市のミニチュア景観を一枚のポップアップポストカードにまとめた例。</sub><br>
-      <a href="docs/gallery-part-2.md#case-527"><strong>ケースを見る</strong></a>
+      <p><strong>Case 533：手描きドゥードゥル人物イラスト</strong></p>
+      <a href="docs/gallery-part-2.md#case-533"><img src="data/images/case533.jpg" alt="Hand-Drawn Doodle Fashion Character" width="150"></a><br>
+      <sub>参照人物をラフな鉛筆とインクのドゥードゥル風キャラクターへ変換する編集例。</sub><br>
+      <a href="docs/gallery-part-2.md#case-533"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 528：実写ホリデー街並みのちびポートレート</strong></p>
-      <a href="docs/gallery-part-2.md#case-528"><img src="data/images/case528.jpg" alt="実写ホリデー街並みのちびポートレート" width="150"></a><br>
-      <sub>実写の街並み背景を残し、人物だけを温かい手描きちびキャラクターへ変換する例。</sub><br>
-      <a href="docs/gallery-part-2.md#case-528"><strong>ケースを見る</strong></a>
+      <p><strong>Case 534：赤い光の実験的エディトリアルポートレート</strong></p>
+      <a href="docs/gallery-part-2.md#case-534"><img src="data/images/case534.jpg" alt="Red-Beam Experimental Editorial Portrait Poster" width="150"></a><br>
+      <sub>干渉レイヤー、アクセント色、タイトル階層、余白を制御する9:16編集ポスター。</sub><br>
+      <a href="docs/gallery-part-2.md#case-534"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 529：雲のバルーン山稜ポートレート</strong></p>
-      <a href="docs/gallery-part-2.md#case-529"><img src="data/images/case529.jpg" alt="雲のバルーン山稜ポートレート" width="150"></a><br>
-      <sub>巨大な雲のバルーン、物理的な紐、山岳の奥行き、服装制約を組み合わせた旅行ファッション写真。</sub><br>
-      <a href="docs/gallery-part-2.md#case-529"><strong>ケースを見る</strong></a>
+      <p><strong>Case 535：同一人物の12ヘアスタイルルックブック</strong></p>
+      <a href="docs/gallery-part-2.md#case-535"><img src="data/images/case535.jpg" alt="Same-Face Twelve Hairstyle Lookbook" width="150"></a><br>
+      <sub>同じ顔を固定し、髪型の形、長さ、前髪、量感、質感だけを変える12分割ルックブック。</sub><br>
+      <a href="docs/gallery-part-2.md#case-535"><strong>ケースを見る</strong></a>
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 530：実写背景の手描き人物置換</strong></p>
-      <a href="docs/gallery-part-2.md#case-530"><img src="data/images/case530.jpg" alt="実写背景の手描き人物置換" width="150"></a><br>
-      <sub>元写真の背景を保ったまま、人物だけを素朴な手描きキャラクターに置換する制御例。</sub><br>
-      <a href="docs/gallery-part-2.md#case-530"><strong>ケースを見る</strong></a>
+      <p><strong>Case 536：桜並木の振り向きシネマポートレート</strong></p>
+      <a href="docs/gallery-part-2.md#case-536"><img src="data/images/case536.jpg" alt="Cherry Blossom Over-Shoulder Cinematic Portrait" width="150"></a><br>
+      <sub>桜の光、振り向き姿勢、リネンドレス、ボケ、フィルム感をJSON形式で制御する人像例。</sub><br>
+      <a href="docs/gallery-part-2.md#case-536"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 531：クリスタルフレームの国別旅行キャンペーン</strong></p>
-      <a href="docs/gallery-part-2.md#case-531"><img src="data/images/case531.jpg" alt="クリスタルフレームの国別旅行キャンペーン" width="150"></a><br>
-      <sub>透明なクリスタルフレーム、鏡面反射、国別ランドマーク、上品な編集タイポを組み合わせた旅行広告。</sub><br>
-      <a href="docs/gallery-part-2.md#case-531"><strong>ケースを見る</strong></a>
+      <p><strong>Case 537：地下書庫のダークコンセプトポスター</strong></p>
+      <a href="docs/gallery-part-2.md#case-537"><img src="data/images/case537.jpg" alt="Dark Underground Archive Concept Poster" width="150"></a><br>
+      <sub>高い書架、煙の人物、深紅の扉、文字禁止条件を組み合わせた縦型ダークシーン。</sub><br>
+      <a href="docs/gallery-part-2.md#case-537"><strong>ケースを見る</strong></a>
     </td>
     <td width="33%" valign="top" align="center">
-      <p><strong>Case 532：6分割レモンドリンク広告</strong></p>
-      <a href="docs/gallery-part-2.md#case-532"><img src="data/images/case532.jpg" alt="6分割レモンドリンク広告" width="150"></a><br>
-      <sub>架空レモンドリンクの6分割広告。水平線、動作リズム、主役商品への盛り上げを統一した例。</sub><br>
-      <a href="docs/gallery-part-2.md#case-532"><strong>ケースを見る</strong></a>
+      <p><strong>Case 538：ラバースタンプ旅のフィールドノートポスター</strong></p>
+      <a href="docs/gallery-part-2.md#case-538"><img src="data/images/case538.jpg" alt="Rubber Stamp Travel Field Notes Poster" width="150"></a><br>
+      <sub>旅行写真を自然な写実とラバースタンプ風フィールドノートで構成する横長ポスター。</sub><br>
+      <a href="docs/gallery-part-2.md#case-538"><strong>ケースを見る</strong></a>
     </td>
   </tr>
 </table>
