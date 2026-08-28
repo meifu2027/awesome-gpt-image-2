@@ -12407,3 +12407,121 @@ Obvious dividing lines, circular seals, postage-stamp borders, perforations, wax
 ```
 
 ***
+
+<a name="case-539"></a>
+
+### 例 539：粗粝手绘搭档肖像海报
+
+![粗粝手绘搭档肖像海报](../data/images/case539.jpg)
+
+**来源：** [@kingofdairyque](https://x.com/kingofdairyque/status/2093279729717780736)
+
+**提示词：**
+
+```text
+Raw sketchy graphic portrait poster of [HUMAN] wearing [CLOTHING], half-body and large in frame, accompanied closely by [ANIMAL], with a minimal [SCENERY] background. Render in a rough expressive illustrated style with broken black ink contours, loose sketch lines, scratchy hatching, irregular stroke weight, imperfect line edges, fast gestural mark-making, simplified anatomy, flat cel-like shadow blocks, and reduced detail. Use a restrained [COLORS] palette with one dominant warm field, one cool counter-field, dark inked shadows, and a few pale highlight accents. Keep the face oversized and central, crop around mid-torso, and place the animal in the lower foreground or tucked beside the subject, drawn with the same simplified raw linework. Reduce the scenery into only 2 or 3 bold silhouette shapes behind the subject, with no detailed environment rendering. Add a narrow warm off-white poster border and very light print texture. Strong attitude, graphic poster energy, intentionally imperfect strokes, raw and sketchy finish, ar 4:5
+```
+
+***
+
+<a name="case-540"></a>
+
+### 例 540：梦幻未来城市编辑艺术海报
+
+![梦幻未来城市编辑艺术海报](../data/images/case540.jpg)
+
+**来源：** [@Naiknelofar788](https://x.com/Naiknelofar788/status/2093230701986672924)
+
+**提示词：**
+
+```text
+Create a visually unforgettable editorial art poster of a dreamlike futuristic world where familiar everyday life meets surreal architecture. Grand sculptural buildings, winding roads, oversized plants, tiny people, unexpected floating elements, dramatic perspective, cinematic atmosphere, and one iconic focal point. Blend vintage travel-poster design with modern luxury editorial aesthetics, sophisticated muted colors, soft natural light, subtle film grain, tactile paper texture, clean geometric shapes, minimal composition, nostalgic yet futuristic, whimsical but premium, highly detailed, instantly recognizable silhouette, Pinterest-worthy, Instagram-viral aesthetic, collectible art print, no clutter, no photorealism, vertical 4:5.
+```
+
+***
+
+<a name="case-541"></a>
+
+### 例 541：50/50 混合媒介回忆卡
+
+![50/50 混合媒介回忆卡](../data/images/case541.jpg)
+
+**来源：** [@Sairah_0](https://x.com/Sairah_0/status/2093212900160868430)
+
+**提示词：**
+
+```text
+Transform the uploaded photo into a vertical mixed-media memory card with a strict 50/50 split.
+
+Keep the original photo unchanged in the top half. In the bottom half, use textured off-white handmade paper and add a muted, irregular color patch matching the photo’s tones.
+
+Redraw the main subjects as a simple dark wax-crayon sketch with loose, imperfect lines and minimal details. Add a short handwritten English phrase and subtle Risograph grain.
+
+Create a quiet, nostalgic Morandi-style aesthetic with generous negative space. Do not add extra elements or copy the reference composition exactly.
+```
+
+***
+
+<a name="case-542"></a>
+
+### 例 542：黑白排版侧脸肖像海报
+
+![黑白排版侧脸肖像海报](../data/images/case542.jpg)
+
+**来源：** [@HustleXR](https://x.com/HustleXR/status/2093206386012230000)
+
+**提示词：**
+
+```text
+High-contrast black and white typographic portrait poster of [HUMAN], shown in side profile with [FEATURE]. Build the portrait with bold black silhouette blocks, sharp negative space, rough ink edges, fragmented stencil shapes, tiny editorial microtext, vertical typographic accents and expressive hand-drawn calligraphic marks. Integrate one large readable text block saying “[TEXT]” in 2 to 4 stacked lines, placed only inside the neck and body area, using oversized scribbled lettering that feels fused into the silhouette. Include a graphic design logo reading “[LOGO]” near the footer. Minimal off-white paper background, asymmetrical layout, cropped vertical composition, experimental editorial poster design, raw ink print texture, aspect ratio 4:5.
+```
+
+***
+
+<a name="case-543"></a>
+
+### 例 543：旅行纪念珐琅徽章
+
+![旅行纪念珐琅徽章](../data/images/case543.jpg)
+
+**来源：** [@Emmma__0](https://x.com/Emmma__0/status/2093194689222705645)
+
+**提示词：**
+
+```text
+Turn the reference photo into a travel souvenir enamel pin badge. Compose it as a SCENE, not a single isolated object.
+
+Subject hierarchy: the defining landscape, terrain or landmark of the photo forms the main body of the badge and occupies most of its area. If a person appears prominently in the photo, keep them in the badge as a small, simplified figure at true relative scale within that landscape — the person is an accent, the landscape is the subject. Preserve the original spatial relationship and scale between the figure and the surroundings.
+
+How to render the person: flat enamel color blocks matching their real clothing and hair color from the photo. The face is a smooth plain area of light skin-tone enamel with no drawn facial features — do NOT render the person as a dark or black silhouette, and do NOT black out the face or head. Skin reads as a warm light enamel color, clearly lighter than the clothing.
+
+Styling: thin polished gold outline around the silhouette and along every internal divider, glossy enamel color fill, gentle even lighting with only a soft sheen on the gold lines, very subtle drop shadow. Outer contour follows the scene's own shape, not a plain rectangle.
+
+Background: flat dark navy coarse linen texture. Badge centered, filling about 60% of the frame.
+
+Avoid: black silhouette figure, blacked-out face, dark featureless head, portrait close-up, detailed facial features, person dominating the badge, cropping out the landscape, three-quarter angle, macro product photography, heavy specular glare, cartoon, realistic scene, text, watermark.
+```
+
+***
+
+<a name="case-544"></a>
+
+### 例 544：幼儿词汇拆解学习卡
+
+![幼儿词汇拆解学习卡](../data/images/case544.jpg)
+
+**来源：** [@Naiknelofar788](https://x.com/Naiknelofar788/status/2092993830220120231)
+
+**提示词：**
+
+```text
+Create a clean, child-friendly educational vocabulary poster for preschool/kindergarten children, inspired by a simple visual learning card.
+
+Feature [FRUIT] as the main large realistic object on the left, and show a [PART / SLICE / SEGMENT] of the same fruit on the right. Connect the two with a playful dotted curved arrow and a tiny simple stick-figure child pointing toward the smaller part.
+
+Add the word “[FRUIT NAME]” in large bold uppercase letters at the top and “[PART NAME]” in large bold uppercase letters underneath the smaller image. Use a soft white and very light pastel-blue background, rounded image panels, clean spacing, realistic fruit photography, simple blue typography, and minimal playful illustrations.
+
+The overall design should feel bright, educational, modern, uncluttered, and easy for young children to understand, like a premium preschool vocabulary learning card. Vertical 4:5 composition, high resolution, soft lighting, clear labels, no unnecessary decorations.
+```
+
+***

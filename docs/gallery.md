@@ -1,10 +1,10 @@
 ## 🖼️ 魔法画廊总览
 
-完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 538。
+完整画廊已按 GitHub 渲染体积拆成两册，避免页面被截断；当前总案例数为 544。
 
 - [返回 README 首页](../README.md)
 - [Part 1：例 1-165](./gallery-part-1.md)
-- [Part 2：例 166-538](./gallery-part-2.md)
+- [Part 2：例 166-544](./gallery-part-2.md)
 - [工业级提示词模板与防坑指南](./templates.md)
 - [声明、Star 趋势图与公众号](./disclaimer.md)
 
@@ -193,26 +193,32 @@
 - [例 536：春日樱花回眸电影人像](./gallery-part-2.md#case-536)
 - [例 537：地下档案馆暗黑概念海报](./gallery-part-2.md#case-537)
 - [例 538：橡皮章旅行田野笔记海报](./gallery-part-2.md#case-538)
+- [例 539：粗粝手绘搭档肖像海报](./gallery-part-2.md#case-539)
+- [例 540：梦幻未来城市编辑艺术海报](./gallery-part-2.md#case-540)
+- [例 541：50/50 混合媒介回忆卡](./gallery-part-2.md#case-541)
+- [例 542：黑白排版侧脸肖像海报](./gallery-part-2.md#case-542)
+- [例 543：旅行纪念珐琅徽章](./gallery-part-2.md#case-543)
+- [例 544：幼儿词汇拆解学习卡](./gallery-part-2.md#case-544)
 
 ## 分册说明
 
 - `gallery-part-1.md`：例 1-165，覆盖信息图、界面、海报、摄影、插画等基础主流类型。
-- `gallery-part-2.md`：例 166-538，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
+- `gallery-part-2.md`：例 166-544，包含更多品牌、卡牌、直播截图、国风、商业视觉、作者新增实测与社区案例。
 
 ## 分类概览
 
 - UI与界面：73
-- 图表与信息可视化：52
-- 海报与排版：88
-- 商品与电商：41
+- 图表与信息可视化：53
+- 海报与排版：90
+- 商品与电商：42
 - 品牌与标志：27
 - 建筑与空间：12
 - 摄影与写实：78
-- 插画与艺术：58
+- 插画与艺术：59
 - 人物与角色：31
 - 场景与叙事：21
 - 历史与古风题材：16
-- 文档与出版物：10
+- 文档与出版物：11
 - 其他应用场景：28
 
 ## 分类案例入口
@@ -289,7 +295,7 @@
 
 <a name="cat-infographic"></a>
 
-### 📊 图表与信息可视化 · 52 cases
+### 📊 图表与信息可视化 · 53 cases
 
 - [例 8：科普百科图](./gallery-part-1.md#case-8)
 - [例 14：信息图可视化设计](./gallery-part-1.md#case-14)
@@ -344,9 +350,11 @@
 - [例 463：黑色吊带袜单款图鉴展示](./gallery-part-2.md#case-463)
 - [例 494：电动巴士工程信息图](./gallery-part-2.md#case-494)
 
+- [例 544：幼儿词汇拆解学习卡](./gallery-part-2.md#case-544)
+
 <a name="cat-poster"></a>
 
-### 📰 海报与排版 · 88 cases
+### 📰 海报与排版 · 90 cases
 
 - [例 3：足球主题电影海报](./gallery-part-1.md#case-3)
 - [例 5：主题海报版式设计](./gallery-part-1.md#case-5)
@@ -438,9 +446,12 @@
 - [例 534：红光干扰实验编辑人像海报](./gallery-part-2.md#case-534)
 - [例 538：橡皮章旅行田野笔记海报](./gallery-part-2.md#case-538)
 
+- [例 539：粗粝手绘搭档肖像海报](./gallery-part-2.md#case-539)
+- [例 542：黑白排版侧脸肖像海报](./gallery-part-2.md#case-542)
+
 <a name="cat-product"></a>
 
-### 🛍️ 商品与电商 · 41 cases
+### 🛍️ 商品与电商 · 42 cases
 
 - [例 17：界面交互设计图](./gallery-part-1.md#case-17)
 - [例 33：电商商品展示设计](./gallery-part-1.md#case-33)
@@ -484,6 +495,8 @@
 - [例 519：薄荷玫瑰香水电商图](./gallery-part-2.md#case-519)
 
 - [例 532：六宫格柠檬饮料微缩广告](./gallery-part-2.md#case-532)
+
+- [例 543：旅行纪念珐琅徽章](./gallery-part-2.md#case-543)
 
 <a name="cat-brand"></a>
 
@@ -621,7 +634,7 @@
 
 <a name="cat-illustration"></a>
 
-### 🎨 插画与艺术 · 58 cases
+### 🎨 插画与艺术 · 59 cases
 
 - [例 6：插画艺术创作图](./gallery-part-1.md#case-6)
 - [例 22：插画艺术风格创作](./gallery-part-1.md#case-22)
@@ -683,6 +696,8 @@
 - [例 520：月面宇航员 T 恤图形](./gallery-part-2.md#case-520)
 - [例 523：曼哈顿公园水彩旅行插画](./gallery-part-2.md#case-523)
 - [例 524：纸雕拼贴乡野人像](./gallery-part-2.md#case-524)
+
+- [例 540：梦幻未来城市编辑艺术海报](./gallery-part-2.md#case-540)
 
 <a name="cat-character"></a>
 
@@ -773,7 +788,7 @@
 
 <a name="cat-document"></a>
 
-### 📚 文档与出版物 · 10 cases
+### 📚 文档与出版物 · 11 cases
 
 - [例 13：信息图可视化设计](./gallery-part-1.md#case-13)
 - [例 119：主题海报版式设计](./gallery-part-1.md#case-119)
@@ -785,6 +800,8 @@
 - [例 293：聚焦人工智能的校园日报](./gallery-part-2.md#case-293)
 - [例 303：人教版三年级语文课本内页](./gallery-part-2.md#case-303)
 - [例 453：企业级商用画册视觉系统](./gallery-part-2.md#case-453)
+
+- [例 541：50/50 混合媒介回忆卡](./gallery-part-2.md#case-541)
 
 <a name="cat-other"></a>
 
