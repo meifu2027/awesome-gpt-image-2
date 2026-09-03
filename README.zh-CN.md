@@ -22,7 +22,7 @@
 
 ## 🌐 可视化网站
 
-访问 [gpt-image2.canghe.ai](https://gpt-image2.canghe.ai/) 可以用产品化方式浏览案例：查看大图、复制完整 Prompt、按风格或场景筛选、登录后测试生成，并快速跳回 GitHub 源案例。
+访问 [gpt-image2.canghe.ai](https://gpt-image2.canghe.ai/) 可以用产品化方式浏览案例：查看大图、复制完整 Prompt、按风格或场景筛选、配置个人 APIMart Key 或登录后测试生成，并快速跳回 GitHub 源案例。
 
 <p align="center">
   <a href="https://gpt-image2.canghe.ai/">
@@ -306,7 +306,7 @@ skill 源码位于 [`agents/skills/gpt-image-2-style-library`](agents/skills/gpt
 
 ## 🔐 网站登录与生成测试
 
-可视化网站已经接入登录后生成测试图能力，底层使用 Supabase Auth、Supabase Postgres，以及 Vercel Function 代理 GPT Image 2 API。
+可视化网站支持使用仅保存在当前浏览器的个人 APIMart Key 直接生成。没有配置个人 Key 时，登录用户继续使用 Supabase Auth、平台积分和服务端 APIMart Key。
 
 Vercel 需要配置这些环境变量：
 
@@ -315,8 +315,7 @@ VITE_SUPABASE_URL=
 VITE_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
 SUPER_ADMIN_EMAILS=2689458656@qq.com,canghe0818@gmail.com
-CIYUAN_API_KEY=
-CIYUAN_BASE_URL=https://ciyuan.today
+APIMART_API_KEY=
 APP_URL=https://gpt-image2.canghe.ai
 STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
@@ -336,6 +335,7 @@ GOOGLE_ANALYTICS_REFRESH_TOKEN=
 - 将 [`supabase/migrations/20260512090000_google_account_center.sql`](supabase/migrations/20260512090000_google_account_center.sql) 应用到 Supabase 项目，添加账户用量统计和超级管理员强制扣积分逻辑。
 - 将 [`supabase/migrations/20260512143000_pricing_admin_metrics.sql`](supabase/migrations/20260512143000_pricing_admin_metrics.sql) 应用到 Supabase 项目，更新 `$5 / 300 credits` 价格体系，并添加管理员数据看板指标。
 - 将 [`supabase/migrations/20260515090000_case_favorites.sql`](supabase/migrations/20260515090000_case_favorites.sql) 应用到 Supabase 项目，添加用户案例收藏表。
+- 将 [`supabase/migrations/20260828090000_apimart_generation_tasks.sql`](supabase/migrations/20260828090000_apimart_generation_tasks.sql) 应用到 Supabase 项目，保存 APIMart 任务 ID、实际美元成本、限时结果地址和服务商索引。
 - 在 Supabase Auth Redirect URLs 里加入 `https://gpt-image2.canghe.ai`，以及 `http://127.0.0.1:5173` 等本地开发地址。
 - 在 Supabase Dashboard 填入 Google OAuth 凭据并启用 Google Provider。
 - 如需强制只允许 Google 登录，可以在 Supabase Auth settings 里关闭 Email Provider。

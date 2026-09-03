@@ -305,7 +305,7 @@ Skill のソースは [`agents/skills/gpt-image-2-style-library`](agents/skills/
 
 ## 🔐 Web サイト認証と生成
 
-ビジュアルサイトには、ログイン後にケース生成を試せる機能が含まれています。基盤には Supabase Auth、Supabase Postgres、GPT Image 2 API 向けの Vercel Function プロキシを使用しています。
+ビジュアルサイトでは、ブラウザ内だけに保存する個人 APIMart API Key を使って直接生成できます。個人 Key がない場合は、ログイン、Supabase、プラットフォームクレジット、サーバー側 APIMart Key を利用します。
 
 Vercel で必要な環境変数：
 
@@ -314,8 +314,7 @@ VITE_SUPABASE_URL=
 VITE_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
 SUPER_ADMIN_EMAILS=2689458656@qq.com,canghe0818@gmail.com
-CIYUAN_API_KEY=
-CIYUAN_BASE_URL=https://ciyuan.today
+APIMART_API_KEY=
 APP_URL=https://gpt-image2.canghe.ai
 STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
@@ -333,6 +332,7 @@ GOOGLE_ANALYTICS_REFRESH_TOKEN=
 - [`supabase/migrations/20260512090000_google_account_center.sql`](supabase/migrations/20260512090000_google_account_center.sql) を適用し、アカウント利用サマリーとスーパー管理者向けの強制クレジット課金を追加します。
 - [`supabase/migrations/20260512143000_pricing_admin_metrics.sql`](supabase/migrations/20260512143000_pricing_admin_metrics.sql) を適用し、`$5 / 300 credits` のカタログを更新して管理ダッシュボード指標を追加します。
 - [`supabase/migrations/20260515090000_case_favorites.sql`](supabase/migrations/20260515090000_case_favorites.sql) を適用し、ユーザーごとのケースお気に入り機能を追加します。
+- [`supabase/migrations/20260828090000_apimart_generation_tasks.sql`](supabase/migrations/20260828090000_apimart_generation_tasks.sql) を適用し、APIMart タスク ID、実際の USD コスト、有効期限付き結果 URL、プロバイダー索引を追加します。
 - Supabase Auth の Redirect URLs に `https://gpt-image2.canghe.ai` と、`http://127.0.0.1:5173` などのローカル開発 URL を追加します。
 - Supabase Dashboard に Google OAuth 認証情報を追加したうえで Google Provider を有効化します。
 - Google ログインのみに制限したい場合は、Supabase Auth settings で Email Provider を無効化します。

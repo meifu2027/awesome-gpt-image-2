@@ -11,9 +11,11 @@ import {
   CreditCard,
   Crown,
   Eye,
+  EyeOff,
   Github,
   Heart,
   ImageIcon,
+  KeyRound,
   LoaderCircle,
   LogIn,
   LogOut,
@@ -34,11 +36,36 @@ import {
 } from 'lucide-react';
 import './styles.css';
 import { isSupabaseConfigured, supabase } from './supabaseClient';
+import {
+  clearPendingGeneration,
+  clearStoredApimartKey,
+  cleanupExpiredGeneratedTests,
+  fetchPersonalTask,
+  fetchPlatformTask,
+  getPendingGeneration,
+  getSavedGeneration,
+  getStoredApimartKey,
+  maskApimartKey,
+  pollApimartTask,
+  saveGeneratedTest,
+  savePendingGeneration,
+  saveStoredApimartKey,
+  submitPersonalGeneration,
+  submitPlatformGeneration,
+  verifyPersonalApimartKey
+} from './apimartClient';
+import {
+  APIMART_DEFAULT_PRICE_USD,
+  APIMART_MAX_PROMPT_LENGTH,
+  APIMART_PRICE_SNAPSHOT_DATE,
+  apimartTaskErrorCode
+} from '../shared/apimart';
 import { CommunityAdminSection, CommunityPage } from './community';
 import skillExampleImage from '../agents/skills/gpt-image-2-style-library/assets/city-life-system-map.png';
 
 const fallbackRepoUrl = 'https://github.com/freestylefly/awesome-gpt-image-2';
 const sponsorUrl = 'https://apimart.ai/register?aff=oQgzUQ';
+const apimartKeysUrl = 'https://apimart.ai/keys';
 const gaMeasurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
 const watchaLogoUrl =
   'https://watcha.tos-cn-beijing.volces.com/products/logo/1752064513_guan-cha-insights.png?x-tos-process=image/resize,w_720/format,webp';
@@ -123,7 +150,45 @@ const copy = {
     creditsRequired: 'Credits required. Buy credits or start a membership to keep generating.',
     generationBusy: 'The image service is busy. Please try again in a moment.',
     generationFailed: 'Generation failed. Please try again later.',
-    promptRequired: 'Prompt is required and must stay under 6000 characters.',
+    apimartApiSettings: 'APIMart API settings',
+    apimartApiTitle: 'Use your own APIMart API key',
+    apimartApiSubtitle: 'The key is stored only in this browser and calls APIMart directly. Clearing site data removes it.',
+    apimartApiKey: 'APIMart API key',
+    apimartApiPlaceholder: 'Paste your APIMart API key',
+    apimartVerifySave: 'Verify and save',
+    apimartVerifying: 'Verifying...',
+    apimartKeySaved: 'API key verified and saved in this browser.',
+    apimartKeyCleared: 'The saved API key has been removed.',
+    apimartKeyInvalid: 'The APIMart API key is invalid. Check it and try again.',
+    apimartBalanceRequired: 'Your APIMart balance is insufficient. Top up before generating.',
+    apimartRequestRejected: 'APIMart rejected this request. Review the Prompt and try again.',
+    apimartUnavailable: 'APIMart is temporarily unavailable. Try again later.',
+    apimartTaskFailed: 'APIMart could not complete this generation.',
+    apimartTaskTimeout: 'The task is still running. Its task ID is saved, and checking will continue when you reopen this case.',
+    apimartRateLimited: 'APIMart is rate limiting requests. Checking will continue after the requested wait.',
+    apimartContinueChecking: 'Continue checking',
+    apimartTaskId: 'Task ID',
+    apimartExpiresAt: (value) => `Result link expires: ${value}`,
+    apimartPriceFallback: (date) => `Price service is unavailable. Showing the ${date} snapshot.`,
+    apimartAnonymousChoice: 'Add a personal Key for direct generation, or sign in to use platform credits.',
+    apimartPendingNeedsKey: 'This pending personal task needs your APIMart Key before checking can continue.',
+    apimartPendingNeedsLogin: 'Sign in with the same account to continue checking this platform task.',
+    apimartStorageFailed: 'This browser could not save the API Key. Check site storage permissions and try again.',
+    apimartClearKey: 'Remove key',
+    apimartManageKey: 'Manage personal API key',
+    apimartConfigureKey: 'Configure personal API key',
+    apimartGetKey: 'Open API key management',
+    apimartRegister: 'Create APIMart account',
+    apimartLocalOnly: 'Your full key stays in local browser storage and is sent only to APIMart.',
+    apimartPersonalMode: (masked, price) => `Personal APIMart key ${masked} · 1K · about $${price}/image`,
+    apimartPlatformMode: 'Platform credits · 1K · 1 image',
+    apimartPriceNote: (price) => `Current 1K price: $${price}/image. Final billing is determined by APIMart.`,
+    apimartProgress: (progress) => `APIMart is generating · ${progress}%`,
+    apimartActualCost: (cost) => `Actual APIMart cost: $${cost}`,
+    apimartShowKey: 'Show API key',
+    apimartHideKey: 'Hide API key',
+    usePlatformCredits: 'Sign in to use platform credits',
+    promptRequired: 'Prompt is required and must stay under 10,000 characters.',
     serverUnavailable: 'Generation service is not configured yet.',
     checkoutUnavailable: 'Checkout is not configured yet.',
     checkoutFailed: 'Checkout failed. Please try again later.',
@@ -343,7 +408,45 @@ const copy = {
     creditsRequired: '积分不足，可购买积分包或开通会员继续生成。',
     generationBusy: '生图服务繁忙，请稍后再试。',
     generationFailed: '生成失败，请稍后再试。',
-    promptRequired: 'Prompt 不能为空，并且不能超过 6000 字符。',
+    apimartApiSettings: 'APIMart API 配置',
+    apimartApiTitle: '使用你自己的 APIMart API Key',
+    apimartApiSubtitle: 'Key 仅保存在当前浏览器，并由浏览器直接调用 APIMart；清除站点数据后会一并删除。',
+    apimartApiKey: 'APIMart API Key',
+    apimartApiPlaceholder: '粘贴你的 APIMart API Key',
+    apimartVerifySave: '验证并保存',
+    apimartVerifying: '验证中...',
+    apimartKeySaved: 'API Key 已验证，并保存到当前浏览器。',
+    apimartKeyCleared: '已删除当前浏览器保存的 API Key。',
+    apimartKeyInvalid: 'APIMart API Key 无效，请检查后重试。',
+    apimartBalanceRequired: '你的 APIMart 余额不足，请充值后再生成。',
+    apimartRequestRejected: 'APIMart 拒绝了本次请求，请检查 Prompt 后重试。',
+    apimartUnavailable: 'APIMart 暂时不可用，请稍后再试。',
+    apimartTaskFailed: 'APIMart 未能完成本次生成。',
+    apimartTaskTimeout: '任务仍在运行，任务 ID 已保存；重新打开此案例后会继续查询。',
+    apimartRateLimited: 'APIMart 当前触发限流，页面会按照服务端要求的等待时间继续查询。',
+    apimartContinueChecking: '继续查询任务',
+    apimartTaskId: '任务 ID',
+    apimartExpiresAt: (value) => `结果链接有效期至：${value}`,
+    apimartPriceFallback: (date) => `实时价格暂时无法获取，当前展示 ${date} 的价格快照。`,
+    apimartAnonymousChoice: '可配置个人 Key 直接生成，也可以登录后使用平台额度。',
+    apimartPendingNeedsKey: '该个人任务需要 APIMart Key 才能继续查询。',
+    apimartPendingNeedsLogin: '请使用提交任务时的同一账号登录，然后继续查询平台任务。',
+    apimartStorageFailed: '当前浏览器无法保存 API Key，请检查站点存储权限后重试。',
+    apimartClearKey: '删除 Key',
+    apimartManageKey: '管理个人 API Key',
+    apimartConfigureKey: '配置个人 API Key',
+    apimartGetKey: '打开 API Key 管理页',
+    apimartRegister: '注册 APIMart',
+    apimartLocalOnly: '完整 Key 只会保存在本地浏览器，并且只发送给 APIMart。',
+    apimartPersonalMode: (masked, price) => `个人 APIMart Key ${masked} · 1K · 当前约 $${price}/张`,
+    apimartPlatformMode: '平台积分 · 1K · 1 张',
+    apimartPriceNote: (price) => `当前 1K 价格为 $${price}/张，最终费用以 APIMart 实际结算为准。`,
+    apimartProgress: (progress) => `APIMart 正在生成 · ${progress}%`,
+    apimartActualCost: (cost) => `APIMart 实际费用：$${cost}`,
+    apimartShowKey: '显示 API Key',
+    apimartHideKey: '隐藏 API Key',
+    usePlatformCredits: '登录使用平台额度',
+    promptRequired: 'Prompt 不能为空，并且不能超过 10,000 字符。',
     serverUnavailable: '生成服务还没有完成配置。',
     checkoutUnavailable: '支付功能还没有完成配置。',
     checkoutFailed: '创建支付失败，请稍后再试。',
@@ -550,8 +653,6 @@ function compactText(value, maxLength = 180) {
   return `${value.slice(0, maxLength)}...`;
 }
 
-const GENERATED_TESTS_STORAGE_KEY = 'gpt-image-2-generated-tests:v1';
-const MAX_SAVED_GENERATIONS = 12;
 const HERO_CASE_COUNT = 5;
 const HOT_STRIP_CASE_COUNT = 8;
 let bodyScrollLockCount = 0;
@@ -665,6 +766,21 @@ function formatShortDate(value, language) {
   });
 }
 
+function formatApimartPrice(value) {
+  const numeric = Number(value);
+  return Number.isFinite(numeric) && numeric > 0 ? numeric.toFixed(6).replace(/0+$/, '') : '0.010625';
+}
+
+function formatApimartExpiry(value, language) {
+  if (!value) return '';
+  const numeric = Number(value);
+  const date = Number.isFinite(numeric)
+    ? new Date(numeric > 10_000_000_000 ? numeric : numeric * 1000)
+    : new Date(value);
+  if (Number.isNaN(date.getTime())) return '';
+  return date.toLocaleString(language === 'zh' ? 'zh-CN' : 'en-US');
+}
+
 function formatRangeDate(value, language) {
   if (!value) return '-';
   return new Date(`${value}T00:00:00`).toLocaleDateString(language === 'zh' ? 'zh-CN' : 'en-US', {
@@ -691,42 +807,6 @@ function firstNumber(...values) {
 function percentOf(value, max) {
   if (!max) return 0;
   return Math.max(4, Math.round((Number(value || 0) / max) * 100));
-}
-
-function readSavedGenerations() {
-  try {
-    return JSON.parse(localStorage.getItem(GENERATED_TESTS_STORAGE_KEY) || '{}');
-  } catch {
-    return {};
-  }
-}
-
-function getSavedGeneration(caseId) {
-  const saved = readSavedGenerations()[String(caseId)];
-  return saved?.image ? saved : null;
-}
-
-function saveGeneratedTest(caseId, entry) {
-  const key = String(caseId);
-  const saved = readSavedGenerations();
-  saved[key] = entry;
-
-  const latestEntries = Object.entries(saved)
-    .filter(([, value]) => value?.image)
-    .sort(([, a], [, b]) => new Date(b.savedAt || 0) - new Date(a.savedAt || 0))
-    .slice(0, MAX_SAVED_GENERATIONS);
-
-  try {
-    localStorage.setItem(GENERATED_TESTS_STORAGE_KEY, JSON.stringify(Object.fromEntries(latestEntries)));
-  } catch {
-    const compactEntries = latestEntries.slice(0, Math.max(1, Math.floor(MAX_SAVED_GENERATIONS / 2)));
-    try {
-      localStorage.setItem(GENERATED_TESTS_STORAGE_KEY, JSON.stringify(Object.fromEntries(compactEntries)));
-    } catch {
-      // Browser storage can be full or blocked. The generated image still stays
-      // visible for the current dialog state when persistence is unavailable.
-    }
-  }
 }
 
 function normalizeFavoriteRows(favorites = []) {
@@ -825,6 +905,13 @@ function generationErrorMessage(error, language) {
   if (error === 'AUTH_REQUIRED') return t.authRequired;
   if (error === 'FORBIDDEN') return t.adminOnly;
   if (error === 'UPSTREAM_BUSY') return t.generationBusy;
+  if (error === 'APIMART_API_KEY_INVALID') return t.apimartKeyInvalid;
+  if (error === 'APIMART_BALANCE_REQUIRED') return t.apimartBalanceRequired;
+  if (error === 'APIMART_REQUEST_REJECTED') return t.apimartRequestRejected;
+  if (error === 'APIMART_RATE_LIMITED') return t.apimartRateLimited;
+  if (error === 'APIMART_UNAVAILABLE') return t.apimartUnavailable;
+  if (error === 'APIMART_TASK_FAILED') return t.apimartTaskFailed;
+  if (error === 'APIMART_TASK_TIMEOUT') return t.apimartTaskTimeout;
   if (error === 'SERVER_NOT_CONFIGURED') return t.serverUnavailable;
   if (
     error === 'BILLING_NOT_CONFIGURED'
@@ -1317,6 +1404,147 @@ function AuthModal({ open, language, initialErrorCode, onClose }) {
   );
 }
 
+function ApiKeyModal({ open, language, apiKey, price, priceMeta, onClose, onSaved, onCleared }) {
+  const t = copy[language];
+  const [input, setInput] = useState('');
+  const [showKey, setShowKey] = useState(false);
+  const [status, setStatus] = useState('idle');
+  const [message, setMessage] = useState('');
+  useBodyScrollLock(open);
+
+  useEffect(() => {
+    if (!open) return;
+    setInput(apiKey || '');
+    setShowKey(false);
+    setStatus('idle');
+    setMessage('');
+  }, [open, apiKey]);
+
+  useEffect(() => {
+    if (!open) return undefined;
+    function handleKeyDown(event) {
+      if (event.key === 'Escape' && status !== 'loading') onClose();
+    }
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [open, onClose, status]);
+
+  if (!open) return null;
+
+  async function handleSave(event) {
+    event.preventDefault();
+    const nextKey = input.trim();
+    if (!nextKey || nextKey.length > 512 || /[\r\n]/.test(nextKey)) {
+      setStatus('error');
+      setMessage(t.apimartKeyInvalid);
+      return;
+    }
+
+    setStatus('loading');
+    setMessage('');
+    try {
+      await verifyPersonalApimartKey(nextKey);
+      if (!saveStoredApimartKey(nextKey)) {
+        setStatus('error');
+        setMessage(t.apimartStorageFailed);
+        return;
+      }
+      onSaved(nextKey);
+      setStatus('success');
+      setMessage(t.apimartKeySaved);
+    } catch (error) {
+      setStatus('error');
+      setMessage(generationErrorMessage(error?.code || error?.message, language));
+    }
+  }
+
+  function handleClear() {
+    clearStoredApimartKey();
+    setInput('');
+    setShowKey(false);
+    setStatus('success');
+    setMessage(t.apimartKeyCleared);
+    onCleared();
+  }
+
+  return (
+    <div
+      className="previewOverlay apiKeyOverlay"
+      role="presentation"
+      onMouseDown={(event) => {
+        if (event.target === event.currentTarget && status !== 'loading') onClose();
+      }}
+    >
+      <section className="apiKeyDialog" role="dialog" aria-modal="true" aria-labelledby="apimart-key-title">
+        <button className="previewClose" type="button" onClick={onClose} aria-label={t.closePreview} disabled={status === 'loading'}>
+          <X size={20} />
+        </button>
+        <div className="apiKeyHeading">
+          <span className="authIcon"><KeyRound size={28} /></span>
+          <div>
+            <span className="eyebrow">{t.apimartApiSettings}</span>
+            <h2 id="apimart-key-title">{t.apimartApiTitle}</h2>
+            <p>{t.apimartApiSubtitle}</p>
+          </div>
+        </div>
+
+        <form className="apiKeyForm" onSubmit={handleSave}>
+          <label htmlFor="apimart-api-key">{t.apimartApiKey}</label>
+          <div className="apiKeyInputRow">
+            <input
+              id="apimart-api-key"
+              type={showKey ? 'text' : 'password'}
+              value={input}
+              maxLength={512}
+              autoComplete="off"
+              spellCheck="false"
+              placeholder={t.apimartApiPlaceholder}
+              onChange={(event) => setInput(event.target.value)}
+            />
+            <button
+              type="button"
+              className="apiKeyVisibility"
+              onClick={() => setShowKey((current) => !current)}
+              aria-label={showKey ? t.apimartHideKey : t.apimartShowKey}
+              title={showKey ? t.apimartHideKey : t.apimartShowKey}
+            >
+              {showKey ? <EyeOff size={18} /> : <Eye size={18} />}
+            </button>
+          </div>
+          {apiKey ? <div className="apiKeyMask"><Check size={15} /> {maskApimartKey(apiKey)}</div> : null}
+          <p className="apiKeyLocalNote"><ShieldCheck size={16} /> {t.apimartLocalOnly}</p>
+          <p className="apiKeyPriceNote">{t.apimartPriceNote(formatApimartPrice(price))}</p>
+          {priceMeta?.stale ? (
+            <p className="apiKeyFallback">{t.apimartPriceFallback(priceMeta.snapshotDate || APIMART_PRICE_SNAPSHOT_DATE)}</p>
+          ) : null}
+          <div className="apiKeyActions">
+            <button className="apiKeySave" type="submit" disabled={status === 'loading'}>
+              {status === 'loading' ? <LoaderCircle className="spinIcon" size={17} /> : <Check size={17} />}
+              {status === 'loading' ? t.apimartVerifying : t.apimartVerifySave}
+            </button>
+            {apiKey ? (
+              <button className="apiKeyClear" type="button" onClick={handleClear} disabled={status === 'loading'}>
+                <X size={17} />
+                {t.apimartClearKey}
+              </button>
+            ) : null}
+          </div>
+        </form>
+
+        <div className="apiKeyLinks">
+          <a href={sponsorUrl} target="_blank" rel="noreferrer">
+            {t.apimartRegister}<ArrowUpRight size={16} />
+          </a>
+          <a href={apimartKeysUrl} target="_blank" rel="noreferrer">
+            {t.apimartGetKey}<ArrowUpRight size={16} />
+          </a>
+        </div>
+        {message ? <p className={cx('authMessage', status === 'error' && 'error', status === 'success' && 'sent')}>{message}</p> : null}
+      </section>
+    </div>
+  );
+}
+
 function UserMenu({ language, session, profile, onSignIn, onSignOut, onAdmin, onBilling, onAccount, onFavorites }) {
   const t = copy[language];
   const [open, setOpen] = useState(false);
@@ -1457,8 +1685,11 @@ function AccountPanel({
   casesById,
   favoriteRows,
   initialSection,
+  apimartKey,
+  apimartPrice,
   onClose,
   onBilling,
+  onApiKeySettings,
   onProfileChange,
   onOpenCase
 }) {
@@ -1609,6 +1840,18 @@ function AccountPanel({
             </button>
           </section>
         </div>
+
+        <section className="apiKeySettingsCard">
+          <div className="apiKeySettingsIcon"><KeyRound size={22} /></div>
+          <div>
+            <h3>{t.apimartApiSettings}</h3>
+            <p>{apiKey ? t.apimartPersonalMode(maskApimartKey(apiKey), formatApimartPrice(apimartPrice)) : t.apimartApiSubtitle}</p>
+          </div>
+          <button type="button" onClick={onApiKeySettings}>
+            <Settings size={16} />
+            {apiKey ? t.apimartManageKey : t.apimartConfigureKey}
+          </button>
+        </section>
 
         <section className="transactionSection favoritesSection" ref={favoritesRef}>
           <h3>
@@ -2775,6 +3018,9 @@ function PreviewDialog({
   copiedId,
   session,
   profile,
+  apimartKey,
+  apimartPrice,
+  apimartPriceMeta,
   favorite,
   favoriteBusy,
   onClose,
@@ -2782,6 +3028,7 @@ function PreviewDialog({
   onToggleFavorite,
   onAuthRequired,
   onBillingRequired,
+  onApiKeySettings,
   onProfileChange
 }) {
   const t = copy[language];
@@ -2790,8 +3037,16 @@ function PreviewDialog({
   const [generationState, setGenerationState] = useState({
     status: 'idle',
     image: '',
-    message: ''
+    message: '',
+    progress: 0,
+    taskId: '',
+    mode: '',
+    cost: null,
+    expiresAt: null
   });
+  const pollControllerRef = useRef(null);
+  const activeCaseRef = useRef(null);
+  activeCaseRef.current = preview?.type === 'case' ? preview.item.id : null;
   useBodyScrollLock(Boolean(preview));
 
   useEffect(() => {
@@ -2808,21 +3063,170 @@ function PreviewDialog({
   }, [preview, onClose]);
 
   useEffect(() => {
-    if (preview?.type !== 'case') return;
+    pollControllerRef.current?.abort();
+    pollControllerRef.current = null;
+    if (preview?.type !== 'case') return undefined;
+
+    const caseId = preview.item.id;
+    let controller = null;
     const savedGeneration = getSavedGeneration(preview.item.id);
-    setEditablePrompt(preview.item.prompt || '');
-    setGenerationState(
-      savedGeneration
-        ? {
-            status: 'saved',
-            image: savedGeneration.image,
-            message: '',
-            prompt: savedGeneration.prompt || preview.item.prompt || '',
-            savedAt: savedGeneration.savedAt || ''
-          }
-        : { status: 'idle', image: '', message: '', prompt: '', savedAt: '' }
-    );
-  }, [preview]);
+    const pendingGeneration = getPendingGeneration(caseId);
+    setEditablePrompt(pendingGeneration?.prompt || savedGeneration?.prompt || preview.item.prompt || '');
+
+    if (pendingGeneration) {
+      setGenerationState({
+        status: 'generating',
+        image: '',
+        message: '',
+        progress: Number(pendingGeneration.progress || 0),
+        prompt: pendingGeneration.prompt || preview.item.prompt || '',
+        taskId: pendingGeneration.taskId,
+        mode: pendingGeneration.mode,
+        cost: null,
+        expiresAt: null
+      });
+      controller = new AbortController();
+      pollControllerRef.current = controller;
+      void pollPendingGeneration(caseId, pendingGeneration, controller);
+    } else if (savedGeneration) {
+      setGenerationState({
+        status: 'saved',
+        image: savedGeneration.image,
+        message: '',
+        progress: 100,
+        prompt: savedGeneration.prompt || preview.item.prompt || '',
+        savedAt: savedGeneration.savedAt || '',
+        taskId: savedGeneration.taskId || '',
+        mode: savedGeneration.mode || '',
+        cost: savedGeneration.cost ?? null,
+        expiresAt: savedGeneration.expiresAt || null
+      });
+    } else {
+      setGenerationState({
+        status: 'idle',
+        image: '',
+        message: '',
+        progress: 0,
+        prompt: '',
+        savedAt: '',
+        taskId: '',
+        mode: '',
+        cost: null,
+        expiresAt: null
+      });
+    }
+
+    return () => {
+      controller?.abort();
+      pollControllerRef.current?.abort();
+    };
+  }, [preview?.type, preview?.item?.id, apimartKey, session?.access_token, session?.user?.id, language]);
+
+  function updateActiveGeneration(caseId, controller, nextState) {
+    if (activeCaseRef.current !== caseId || controller?.signal?.aborted) return;
+    setGenerationState((current) => (
+      typeof nextState === 'function' ? nextState(current) : nextState
+    ));
+  }
+
+  async function pollPendingGeneration(caseId, pending, controller) {
+    if (pending.mode === 'personal' && !apimartKey) {
+      updateActiveGeneration(caseId, controller, (current) => ({
+        ...current,
+        status: 'paused',
+        message: t.apimartPendingNeedsKey
+      }));
+      return;
+    }
+    if (pending.mode === 'platform' && (!session?.access_token || (pending.userId && pending.userId !== session?.user?.id))) {
+      updateActiveGeneration(caseId, controller, (current) => ({
+        ...current,
+        status: 'paused',
+        message: t.apimartPendingNeedsLogin
+      }));
+      return;
+    }
+
+    updateActiveGeneration(caseId, controller, (current) => ({
+      ...current,
+      status: 'generating',
+      message: '',
+      taskId: pending.taskId,
+      mode: pending.mode,
+      prompt: pending.prompt || current.prompt
+    }));
+
+    const fetchWithSignal = (url, options = {}) => fetch(url, { ...options, signal: controller.signal });
+    try {
+      const task = await pollApimartTask(async () => {
+        const nextTask = pending.mode === 'personal'
+          ? await fetchPersonalTask(pending.taskId, apimartKey, language, fetchWithSignal)
+          : await fetchPlatformTask(pending.taskId, session.access_token, language, fetchWithSignal);
+        if (nextTask?.user) onProfileChange(nextTask.user);
+        return nextTask;
+      }, {
+        signal: controller.signal,
+        onProgress: (nextTask) => {
+          const progress = Math.max(0, Math.min(100, Math.round(Number(nextTask.progress || 0))));
+          savePendingGeneration(caseId, { ...pending, progress, updatedAt: new Date().toISOString() });
+          updateActiveGeneration(caseId, controller, (current) => ({
+            ...current,
+            status: 'generating',
+            progress,
+            taskId: pending.taskId,
+            mode: pending.mode,
+            message: ''
+          }));
+        }
+      });
+
+      if (controller.signal.aborted) return;
+      if (task.status === 'completed' && task.image) {
+        const savedAt = new Date().toISOString();
+        const result = {
+          image: task.image,
+          prompt: pending.prompt,
+          savedAt,
+          taskId: pending.taskId,
+          mode: pending.mode,
+          expiresAt: task.expiresAt || null,
+          cost: task.cost ?? null
+        };
+        saveGeneratedTest(caseId, result);
+        clearPendingGeneration(caseId);
+        updateActiveGeneration(caseId, controller, {
+          status: 'success',
+          message: '',
+          progress: 100,
+          ...result
+        });
+        return;
+      }
+
+      clearPendingGeneration(caseId);
+      const code = task.status === 'failed' ? apimartTaskErrorCode(task) : 'APIMART_INVALID_RESPONSE';
+      updateActiveGeneration(caseId, controller, {
+        status: 'error',
+        image: '',
+        message: generationErrorMessage(code, language),
+        progress: Number(task.progress || 0),
+        prompt: pending.prompt,
+        taskId: pending.taskId,
+        mode: pending.mode,
+        cost: task.cost ?? null,
+        expiresAt: null
+      });
+    } catch (error) {
+      if (error?.code === 'APIMART_POLL_ABORTED' || error?.name === 'AbortError' || controller.signal.aborted) return;
+      updateActiveGeneration(caseId, controller, (current) => ({
+        ...current,
+        status: error?.code === 'APIMART_TASK_TIMEOUT' ? 'timeout' : 'error',
+        message: generationErrorMessage(error?.code || error?.message, language),
+        taskId: pending.taskId,
+        mode: pending.mode
+      }));
+    }
+  }
 
   if (!preview) return null;
 
@@ -2848,74 +3252,120 @@ function PreviewDialog({
     : [...new Set([...(item.styles || []), ...(item.scenes || [])])].slice(0, 8);
   const guidance = listFor(item.guidance, language);
   const pitfalls = listFor(item.pitfalls, language);
-  const isGenerating = generationState.status === 'generating';
+  const isGenerating = generationState.status === 'submitting' || generationState.status === 'generating';
   const generatedImage = !isTemplate ? generationState.image : '';
+  const hasPersonalKey = Boolean(apimartKey);
   const isSignedIn = Boolean(session?.access_token);
   const creditBalance = Number(profile?.creditBalance || 0);
   const isOutOfCredits = isSignedIn
     && creditBalance <= 0
     && (profile?.isSuperAdmin || Boolean(profile?.freeUsed));
   const generationLocked = isGenerating;
-  const quotaText = isSignedIn ? getGenerationQuotaText(profile, language) : t.authRequired;
+  const pendingGeneration = !isTemplate ? getPendingGeneration(item.id) : null;
+  const activeTaskMode = pendingGeneration?.mode
+    || (['submitting', 'generating', 'timeout', 'paused'].includes(generationState.status) ? generationState.mode : '');
+  const generationMode = activeTaskMode || (hasPersonalKey ? 'personal' : 'platform');
+  const quotaText = generationMode === 'personal'
+    ? hasPersonalKey
+      ? t.apimartPersonalMode(maskApimartKey(apimartKey), formatApimartPrice(apimartPrice))
+      : t.apimartPendingNeedsKey
+    : isSignedIn
+      ? `${t.apimartPlatformMode} · ${getGenerationQuotaText(profile, language)}`
+      : t.apimartAnonymousChoice;
+  const generationButtonLabel = isGenerating
+    ? t.generating
+    : pendingGeneration
+      ? t.apimartContinueChecking
+      : !hasPersonalKey && !isSignedIn
+        ? t.apimartConfigureKey
+        : !hasPersonalKey && isOutOfCredits
+          ? t.buyCredits
+          : t.generateImage;
 
   async function handleGenerate() {
     if (isTemplate || isGenerating) return;
-    if (!isSignedIn) {
-      onAuthRequired();
-      setGenerationState({ status: 'idle', image: generatedImage, message: '' });
+    const pending = getPendingGeneration(item.id);
+    if (pending) {
+      pollControllerRef.current?.abort();
+      const controller = new AbortController();
+      pollControllerRef.current = controller;
+      await pollPendingGeneration(item.id, pending, controller);
+      return;
+    }
+    if (!hasPersonalKey && !isSignedIn) {
+      onApiKeySettings();
       return;
     }
     const prompt = editablePrompt.trim();
-    if (!prompt || prompt.length > 6000) {
+    if (!prompt || prompt.length > APIMART_MAX_PROMPT_LENGTH) {
       setGenerationState({ status: 'error', image: '', message: t.promptRequired });
       return;
     }
-    if (isOutOfCredits) {
+    if (!hasPersonalKey && isOutOfCredits) {
       onBillingRequired();
-      setGenerationState({ status: 'idle', image: generatedImage, message: t.creditsRequired });
+      setGenerationState((current) => ({ ...current, status: 'idle', message: t.creditsRequired }));
       return;
     }
 
-    setGenerationState({ status: 'generating', image: '', message: '' });
+    const mode = hasPersonalKey ? 'personal' : 'platform';
+    setGenerationState({
+      status: 'submitting',
+      image: '',
+      message: '',
+      progress: 0,
+      prompt,
+      taskId: '',
+      mode,
+      cost: null,
+      expiresAt: null
+    });
 
     try {
-      const response = await fetch('/api/generate-image', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          ...getAuthHeaders(session)
-        },
-        body: JSON.stringify({
-          caseId: item.id,
-          prompt
-        })
-      });
-      const payload = await response.json().catch(() => ({}));
-
-      if (!response.ok || !payload.ok || !payload.image) {
-        if (payload.user) onProfileChange(payload.user);
-        if (payload.error === 'AUTH_REQUIRED' || payload.loginRequired) {
-          onAuthRequired();
-          setGenerationState({ status: 'idle', image: generatedImage, message: '' });
-          return;
-        }
-        throw new Error(payload.error || 'GENERATION_FAILED');
-      }
-
-      const savedAt = new Date().toISOString();
-      saveGeneratedTest(item.id, {
-        image: payload.image,
+      const submitted = mode === 'personal'
+        ? await submitPersonalGeneration(prompt, apimartKey, language)
+        : await submitPlatformGeneration({
+            caseId: item.id,
+            prompt,
+            language,
+            accessToken: session.access_token
+          });
+      if (submitted.user) onProfileChange(submitted.user);
+      const pendingEntry = {
+        taskId: submitted.taskId,
+        mode,
         prompt,
-        savedAt
-      });
-      if (payload.user) onProfileChange(payload.user);
-      setGenerationState({ status: 'success', image: payload.image, message: '', prompt, savedAt });
+        userId: mode === 'platform' ? session.user?.id || '' : '',
+        createdAt: new Date().toISOString(),
+        progress: 0
+      };
+      savePendingGeneration(item.id, pendingEntry);
+
+      if (activeCaseRef.current === item.id) {
+        setGenerationState((current) => ({
+          ...current,
+          status: 'generating',
+          taskId: submitted.taskId,
+          mode
+        }));
+        const controller = new AbortController();
+        pollControllerRef.current = controller;
+        await pollPendingGeneration(item.id, pendingEntry, controller);
+      }
     } catch (error) {
-      setGenerationState({
-        status: 'error',
-        image: '',
-        message: generationErrorMessage(error.message, language)
-      });
+      if (error?.user) onProfileChange(error.user);
+      if (error?.code === 'AUTH_REQUIRED') {
+        if (activeCaseRef.current === item.id) {
+          onAuthRequired();
+        }
+        return;
+      }
+      if (activeCaseRef.current === item.id) {
+        setGenerationState((current) => ({
+          ...current,
+          status: 'error',
+          message: generationErrorMessage(error?.code || error?.message, language)
+        }));
+      }
     }
   }
 
@@ -2993,7 +3443,7 @@ function PreviewDialog({
             {!isTemplate ? (
               <button type="button" onClick={handleGenerate} disabled={generationLocked}>
                 {isGenerating ? <LoaderCircle className="spinIcon" size={17} /> : <ImageIcon size={17} />}
-                {isGenerating ? t.generating : isOutOfCredits ? t.buyCredits : isSignedIn ? t.generateTest : t.signInToGenerate}
+                {generationButtonLabel}
               </button>
             ) : null}
             <a href={primaryLink} target="_blank" rel="noreferrer">
@@ -3023,20 +3473,60 @@ function PreviewDialog({
                 className="promptEditor"
                 value={editablePrompt}
                 onChange={(event) => setEditablePrompt(event.target.value)}
-                maxLength={6000}
+                maxLength={APIMART_MAX_PROMPT_LENGTH}
               />
             )}
           </div>
           {!isTemplate ? (
             <div className="generationPanel">
-              <div className={cx('generationQuota', (!isSignedIn || isOutOfCredits) && 'used')}>
-                {quotaText}
+              <div className="generationModeRow">
+                <div className={cx('generationQuota', generationMode === 'platform' && (!isSignedIn || isOutOfCredits) && 'used')}>
+                  {generationMode === 'personal' ? <KeyRound size={14} /> : <Coins size={14} />}
+                  {quotaText}
+                </div>
+                <button className="generationSettingsButton" type="button" onClick={onApiKeySettings} disabled={generationLocked}>
+                  <Settings size={15} />
+                  {hasPersonalKey ? t.apimartManageKey : t.apimartConfigureKey}
+                </button>
               </div>
-              <button type="button" onClick={handleGenerate} disabled={generationLocked}>
-                {isGenerating ? <LoaderCircle className="spinIcon" size={17} /> : <ImageIcon size={17} />}
-                {isGenerating ? t.generating : isOutOfCredits ? t.buyCredits : isSignedIn ? t.generateImage : t.signInToGenerate}
-              </button>
-              {generationState.status === 'error' ? (
+              <p className="generationPriceNote">{t.apimartPriceNote(formatApimartPrice(apimartPrice))}</p>
+              {apimartPriceMeta?.stale ? (
+                <p className="generationFallbackNote">{t.apimartPriceFallback(apimartPriceMeta.snapshotDate || APIMART_PRICE_SNAPSHOT_DATE)}</p>
+              ) : null}
+              {isGenerating && generationState.taskId ? (
+                <div className="generationProgress" aria-live="polite">
+                  <div>
+                    <span>{t.apimartProgress(generationState.progress || 0)}</span>
+                    <strong>{generationState.progress || 0}%</strong>
+                  </div>
+                  <progress value={generationState.progress || 0} max="100" />
+                </div>
+              ) : null}
+              <div className="generationButtons">
+                <button className="generationPrimaryButton" type="button" onClick={handleGenerate} disabled={generationLocked}>
+                  {isGenerating ? <LoaderCircle className="spinIcon" size={17} /> : <ImageIcon size={17} />}
+                  {generationButtonLabel}
+                </button>
+                {!hasPersonalKey && !isSignedIn ? (
+                  <button className="generationSecondaryButton" type="button" onClick={onAuthRequired} disabled={generationLocked}>
+                    <LogIn size={17} />
+                    {t.usePlatformCredits}
+                  </button>
+                ) : null}
+              </div>
+              {generationState.taskId ? (
+                <div className="generationTaskId">
+                  <span>{t.apimartTaskId}</span>
+                  <code>{generationState.taskId}</code>
+                </div>
+              ) : null}
+              {generationState.cost != null ? (
+                <p className="generationResultMeta">{t.apimartActualCost(formatApimartPrice(generationState.cost))}</p>
+              ) : null}
+              {generationState.expiresAt ? (
+                <p className="generationResultMeta">{t.apimartExpiresAt(formatApimartExpiry(generationState.expiresAt, language))}</p>
+              ) : null}
+              {['error', 'timeout', 'paused'].includes(generationState.status) ? (
                 <p className="generationMessage">{generationState.message}</p>
               ) : null}
             </div>
@@ -3113,12 +3603,21 @@ function App() {
   const [billingNotice, setBillingNotice] = useState('');
   const [billingReturnOrderId, setBillingReturnOrderId] = useState('');
   const alipayReturnHandledRef = useRef('');
+  const [apimartKey, setApimartKey] = useState(() => getStoredApimartKey());
+  const [apiKeyOpen, setApiKeyOpen] = useState(false);
+  const [apimartPriceMeta, setApimartPriceMeta] = useState({
+    prices: { '1k': APIMART_DEFAULT_PRICE_USD },
+    stale: true,
+    snapshotDate: APIMART_PRICE_SNAPSHOT_DATE
+  });
   const { copiedId, copyPrompt, copyText } = useCopy();
   const repoUrl = siteData?.repository || fallbackRepoUrl;
   const t = copy[language];
+  const apimartPrice = Number(apimartPriceMeta?.prices?.['1k']) || APIMART_DEFAULT_PRICE_USD;
 
   useEffect(() => {
     let cancelled = false;
+    cleanupExpiredGeneratedTests();
     Promise.all([
       fetch('/cases.json').then((response) => response.json()),
       fetch('/style-library.json').then((response) => response.json())
@@ -3127,6 +3626,31 @@ function App() {
         if (!cancelled) {
           setSiteData(payload);
           setStyleLibrary(library);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/api/apimart/pricing', { headers: { Accept: 'application/json' } })
+      .then(async (response) => {
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok || !payload?.ok) throw new Error('APIMART_PRICING_FAILED');
+        return payload;
+      })
+      .then((payload) => {
+        if (!cancelled) setApimartPriceMeta(payload);
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setApimartPriceMeta({
+            prices: { '1k': APIMART_DEFAULT_PRICE_USD },
+            stale: true,
+            snapshotDate: APIMART_PRICE_SNAPSHOT_DATE
+          });
         }
       });
     return () => {
@@ -3663,10 +4187,7 @@ function App() {
               language={language}
               onCopy={copyPrompt}
               onOpen={(item) => setPreview({ type: 'case', item })}
-              onGenerate={(item) => {
-                setPreview({ type: 'case', item });
-                if (!session?.access_token) openAuth();
-              }}
+              onGenerate={(item) => setPreview({ type: 'case', item })}
               onToggleFavorite={handleToggleFavorite}
               styleLibrary={styleLibrary}
               key={caseItem.id}
@@ -3695,6 +4216,9 @@ function App() {
         copiedId={copiedId}
         session={session}
         profile={profile}
+        apimartKey={apimartKey}
+        apimartPrice={apimartPrice}
+        apimartPriceMeta={apimartPriceMeta}
         favorite={preview?.type === 'case' ? favoriteCaseIds.has(preview.item.id) : false}
         favoriteBusy={preview?.type === 'case' && favoriteBusyId === preview.item.id}
         onClose={() => setPreview(null)}
@@ -3705,6 +4229,7 @@ function App() {
           setBillingNotice(t.creditsRequired);
           setBillingOpen(true);
         }}
+        onApiKeySettings={() => setApiKeyOpen(true)}
         onProfileChange={handleProfileChange}
       />
       <AuthModal
@@ -3724,9 +4249,12 @@ function App() {
         casesById={casesById}
         favoriteRows={favoriteRows}
         initialSection={accountInitialSection}
+        apimartKey={apimartKey}
+        apimartPrice={apimartPrice}
         onClose={handleCloseAccount}
         onProfileChange={handleProfileChange}
         onOpenCase={handleOpenCaseFromAccount}
+        onApiKeySettings={() => setApiKeyOpen(true)}
         onBilling={() => {
           setAccountOpen(false);
           setBillingNotice('');
@@ -3752,6 +4280,16 @@ function App() {
         onAuthRequired={openAuth}
         onProfileChange={handleProfileChange}
         onOpenCase={handleOpenCaseFromAccount}
+      />
+      <ApiKeyModal
+        open={apiKeyOpen}
+        language={language}
+        apiKey={apimartKey}
+        price={apimartPrice}
+        priceMeta={apimartPriceMeta}
+        onClose={() => setApiKeyOpen(false)}
+        onSaved={setApimartKey}
+        onCleared={() => setApimartKey('')}
       />
     </main>
   );

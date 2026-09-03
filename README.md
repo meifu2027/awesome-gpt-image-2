@@ -308,7 +308,7 @@ The skill source lives at [`agents/skills/gpt-image-2-style-library`](agents/ski
 
 ## 🔐 Website Auth & Generation
 
-The visual site includes login-gated case generation powered by Supabase Auth, Supabase Postgres, and a Vercel Function proxy for the GPT Image 2 API.
+The visual site supports direct APIMart generation with a personal browser-only API key. Without a personal key, signed-in users continue through Supabase Auth, platform credits, and the server-side APIMart key.
 
 Required Vercel environment variables:
 
@@ -317,8 +317,7 @@ VITE_SUPABASE_URL=
 VITE_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
 SUPER_ADMIN_EMAILS=2689458656@qq.com,canghe0818@gmail.com
-CIYUAN_API_KEY=
-CIYUAN_BASE_URL=https://ciyuan.today
+APIMART_API_KEY=
 APP_URL=https://gpt-image2.canghe.ai
 STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
@@ -338,6 +337,7 @@ Setup checklist:
 - Apply [`supabase/migrations/20260512090000_google_account_center.sql`](supabase/migrations/20260512090000_google_account_center.sql) to add account usage summaries and forced credit charging for super admins.
 - Apply [`supabase/migrations/20260512143000_pricing_admin_metrics.sql`](supabase/migrations/20260512143000_pricing_admin_metrics.sql) to update the `$5 / 300 credits` catalog and add admin dashboard metrics.
 - Apply [`supabase/migrations/20260515090000_case_favorites.sql`](supabase/migrations/20260515090000_case_favorites.sql) to add per-user case favorites.
+- Apply [`supabase/migrations/20260828090000_apimart_generation_tasks.sql`](supabase/migrations/20260828090000_apimart_generation_tasks.sql) to add APIMart task IDs, actual USD costs, expiring result URLs, and provider indexes.
 - Add `https://gpt-image2.canghe.ai` and local dev URLs such as `http://127.0.0.1:5173` to Supabase Auth redirect URLs.
 - Enable the Google Provider after adding Google OAuth credentials in the Supabase Dashboard.
 - To force Google-only sign-in, disable the Email Provider in Supabase Auth settings.

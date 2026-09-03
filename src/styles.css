@@ -1444,6 +1444,7 @@ button {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
   width: min(1240px, 100%);
+  height: min(880px, 92vh);
   max-height: min(880px, 92vh);
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -1557,6 +1558,8 @@ button {
 }
 
 .previewContent {
+  min-width: 0;
+  min-height: 0;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
   overflow: auto;
@@ -1749,6 +1752,7 @@ button {
 .generationQuota {
   display: inline-flex;
   align-items: center;
+  gap: 7px;
   width: fit-content;
   min-height: 30px;
   border: 1px solid rgba(120, 255, 185, 0.24);
@@ -1776,6 +1780,119 @@ button {
   background: linear-gradient(135deg, rgba(66, 230, 255, 0.22), rgba(120, 255, 185, 0.18));
   color: #ffffff;
   font-weight: 900;
+}
+
+.generationModeRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.generationModeRow .generationQuota {
+  width: auto;
+  max-width: 100%;
+  min-height: 34px;
+  border-radius: 8px;
+  line-height: 1.45;
+}
+
+.generationPanel .generationSettingsButton {
+  flex: 0 0 auto;
+  min-height: 34px;
+  border-color: rgba(103, 232, 249, 0.2);
+  padding: 0 10px;
+  background: rgba(103, 232, 249, 0.08);
+  color: #c9f8ff;
+  font-size: 12px;
+}
+
+.generationPriceNote,
+.generationFallbackNote,
+.generationResultMeta {
+  margin: 0;
+  color: #aebcd0;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.generationFallbackNote {
+  color: #ffe1a8;
+}
+
+.generationProgress {
+  display: grid;
+  gap: 8px;
+}
+
+.generationProgress div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #d8ffe4;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.generationProgress progress {
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 999px;
+  appearance: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.generationProgress progress::-webkit-progress-bar {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.generationProgress progress::-webkit-progress-value,
+.generationProgress progress::-moz-progress-bar {
+  border-radius: 999px;
+  background: linear-gradient(90deg, #42e6ff, #78ffb9);
+}
+
+.generationButtons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 9px;
+}
+
+.generationPanel .generationSecondaryButton {
+  border-color: rgba(103, 232, 249, 0.24);
+  background: rgba(103, 232, 249, 0.08);
+  color: #d8fbff;
+}
+
+.generationTaskId {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  padding-top: 10px;
+}
+
+.generationTaskId span {
+  color: #8eeeff;
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.generationTaskId code {
+  overflow: hidden;
+  color: #dfeaff;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.generationResultMeta {
+  color: #c8ffb8;
 }
 
 .generationMessage {
@@ -1850,6 +1967,7 @@ button {
 }
 
 .authDialog,
+.apiKeyDialog,
 .adminDialog,
 .billingDialog {
   position: relative;
@@ -1871,6 +1989,15 @@ button {
   padding: 30px;
 }
 
+.apiKeyOverlay {
+  z-index: 95;
+}
+
+.apiKeyDialog {
+  width: min(100%, 620px);
+  padding: 26px;
+}
+
 .authIcon {
   display: grid;
   width: 54px;
@@ -1883,6 +2010,7 @@ button {
 }
 
 .authDialog h2,
+.apiKeyDialog h2,
 .adminDialog h2,
 .accountDialog h2 {
   margin: 18px 48px 10px 0;
@@ -1893,6 +2021,7 @@ button {
 }
 
 .authDialog p,
+.apiKeyDialog p,
 .adminDialog p,
 .accountDialog p {
   margin: 0;
@@ -1999,6 +2128,144 @@ button {
   border-color: rgba(255, 112, 112, 0.26);
   background: rgba(255, 112, 112, 0.08);
   color: #ffc7c7;
+}
+
+.apiKeyHeading {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+}
+
+.apiKeyHeading h2 {
+  margin-top: 10px;
+}
+
+.apiKeyForm {
+  display: grid;
+  gap: 11px;
+  margin-top: 22px;
+}
+
+.apiKeyForm > label {
+  color: #8eeeff;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.apiKeyInputRow {
+  position: relative;
+}
+
+.apiKeyInputRow input {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  outline: 0;
+  padding: 0 48px 0 12px;
+  background: rgba(3, 7, 15, 0.72);
+  color: #ffffff;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+.apiKeyInputRow input:focus {
+  border-color: rgba(103, 232, 249, 0.72);
+  box-shadow: 0 0 0 3px rgba(103, 232, 249, 0.1);
+}
+
+.apiKeyVisibility {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #c9f8ff;
+  place-items: center;
+}
+
+.apiKeyMask {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 6px 9px;
+  background: rgba(120, 255, 185, 0.09);
+  color: #c8ffb8;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.apiKeyDialog .apiKeyLocalNote {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #c9f8ff;
+  font-size: 12px;
+}
+
+.apiKeyLocalNote svg {
+  flex: 0 0 auto;
+  margin-top: 3px;
+}
+
+.apiKeyDialog .apiKeyPriceNote,
+.apiKeyDialog .apiKeyFallback {
+  color: #aebcd0;
+  font-size: 12px;
+}
+
+.apiKeyDialog .apiKeyFallback {
+  color: #ffe1a8;
+}
+
+.apiKeyActions,
+.apiKeyLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.apiKeyActions button,
+.apiKeyLinks a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  padding: 0 13px;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.apiKeyActions .apiKeySave {
+  border-color: rgba(120, 255, 185, 0.34);
+  background: linear-gradient(135deg, rgba(66, 230, 255, 0.2), rgba(120, 255, 185, 0.16));
+}
+
+.apiKeyActions .apiKeyClear {
+  background: rgba(255, 112, 112, 0.08);
+  color: #ffc7c7;
+}
+
+.apiKeyLinks {
+  margin-top: 16px;
+}
+
+.apiKeyLinks a {
+  min-height: 36px;
+  background: rgba(255, 255, 255, 0.055);
+  color: #c9f8ff;
+  font-size: 12px;
 }
 
 .adminDialog {
@@ -2672,6 +2939,56 @@ button {
   gap: 16px;
 }
 
+.apiKeySettingsCard {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 13px;
+  margin-top: 16px;
+  border: 1px solid rgba(103, 232, 249, 0.16);
+  border-radius: 8px;
+  padding: 14px;
+  background: rgba(103, 232, 249, 0.055);
+}
+
+.apiKeySettingsIcon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: rgba(103, 232, 249, 0.1);
+  color: #9eeeff;
+  place-items: center;
+}
+
+.apiKeySettingsCard h3 {
+  margin: 0 0 4px;
+  color: #eaf3ff;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+.accountDialog .apiKeySettingsCard p {
+  color: #9eb0c8;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.apiKeySettingsCard button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 38px;
+  border: 1px solid rgba(103, 232, 249, 0.24);
+  border-radius: 8px;
+  padding: 0 11px;
+  background: rgba(103, 232, 249, 0.08);
+  color: #d8fbff;
+  font-size: 12px;
+  font-weight: 900;
+}
+
 .accountForm,
 .accountOverview {
   padding: 14px;
@@ -3080,6 +3397,7 @@ button {
 
   .previewDialog {
     grid-template-columns: 1fr;
+    height: auto;
     overflow: auto;
   }
 
@@ -3097,6 +3415,14 @@ button {
 
   .accountGrid {
     grid-template-columns: 1fr;
+  }
+
+  .apiKeySettingsCard {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .apiKeySettingsCard button {
+    grid-column: 1 / -1;
   }
 
   .adminMetricGrid {
@@ -3336,6 +3662,7 @@ button {
   }
 
   .authDialog,
+  .apiKeyDialog,
   .adminDialog,
   .accountDialog,
   .billingDialog {
@@ -3343,10 +3670,33 @@ button {
   }
 
   .authDialog,
+  .apiKeyDialog,
   .adminDialog,
   .accountDialog,
   .billingDialog {
     padding: 20px 16px;
+  }
+
+  .apiKeyHeading {
+    grid-template-columns: 1fr;
+  }
+
+  .apiKeyHeading h2 {
+    margin-top: 14px;
+  }
+
+  .apiKeyActions button,
+  .apiKeyLinks a,
+  .generationButtons button {
+    width: 100%;
+  }
+
+  .generationModeRow {
+    display: grid;
+  }
+
+  .generationPanel .generationSettingsButton {
+    width: 100%;
   }
 
   .adminHeader {
