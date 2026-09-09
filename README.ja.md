@@ -19,6 +19,22 @@
   <a href="./README.md">English</a> | <a href="./README.zh-CN.md">简体中文</a> | <strong>日本語</strong>
 </p>
 
+## GPT Image 2.5 特集
+
+[2.5 特集を見る](https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en)：Sunburst と Flare を紹介し、共通プロンプト、スライダー比較、並列表示、画像拡大、生成条件の確認を通して、新旧モデルを比較する操作を体験できます。特集ページは中国語・英語に対応しています。
+
+- [Sunburst](https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst)：画像生成と精密な編集向け。
+- [Flare](https://developers.openai.com/api/docs/models/gpt-image-2.5-flare)：高速で高品質な日常の画像生成向け。
+- **4 件の実生成例**：[532 レモン広告](https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en&case=gallery-532-test)、[527 リオのジオラマ](https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en&case=gallery-527-test)、[523 マンハッタンの水彩画](https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en&case=gallery-523-test)、[510 Bichon Shop アイコン](https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en&case=gallery-510-test)。元画像を保持し、各事例の全文プロンプトを変更せず、参照画像なしで内蔵ツールから 1 枚ずつ生成しました。ケース選択で直接切り替えられます。[画像・プロンプト・生成記録](docs/design/gpt-image-2-5/real-cases.md)。元の生成条件とツールの正確なモデル ID は未確認で、デモ例は個別に明示しています。
+
+特集は独立したページです。既存の GPT-Image2 事例、テンプレート、Skill、画像生成機能を引き続き利用できます。今回の更新には 2.5 のオンライン画像生成は含まれていません。
+
+<p align="center">
+  <a href="https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en">
+    <img src="docs/design/gpt-image-2-5/case532-preview.jpg" alt="GPT Image 2.5 特集のプレビュー：事例 532 の実生成" width="900">
+  </a>
+</p>
+
 ## 🌐 ビジュアル Web サイト
 
 [gpt-image2.canghe.ai](https://gpt-image2.canghe.ai/) では、プロダクトとして整備された体験でギャラリーを閲覧できます。大きなプレビューの確認、プロンプト全文のコピー、スタイルやシナリオによる絞り込み、Google ログイン後の生成テスト、GitHub 上の元ケースへの移動ができます。

@@ -3784,6 +3784,22 @@ function App() {
     });
   }, [siteData, styleLibrary]);
 
+  useEffect(() => {
+    if (!siteData) return;
+    const requestedCase = new URLSearchParams(window.location.search).get('case');
+    if (!/^[1-9]\d*$/.test(requestedCase || '')) return;
+    const item = siteData.cases.find((caseItem) => Number(caseItem.id) === Number(requestedCase));
+    if (item) setPreview({ type: 'case', item });
+  }, [siteData]);
+
+  function closePreview() {
+    setPreview(null);
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has('case')) return;
+    url.searchParams.delete('case');
+    window.history.replaceState({}, '', `${url.pathname}${url.search}${url.hash}`);
+  }
+
   function openAuth() {
     setAuthErrorCode('');
     setAuthOpen(true);
@@ -4058,6 +4074,7 @@ function App() {
         <div className="topbarControls">
           <nav>
             <a href="#gallery">{t.navCases}</a>
+            <a href="/gpt-image-2-5/">{language === 'zh' ? '2.5 专区' : 'Image 2.5'}</a>
             <a href="#templates">{t.navTemplates}</a>
             <a href="#agent-skill">{t.navSkill}</a>
             <CommunityNavItem language={language} />
@@ -4221,7 +4238,7 @@ function App() {
         apimartPriceMeta={apimartPriceMeta}
         favorite={preview?.type === 'case' ? favoriteCaseIds.has(preview.item.id) : false}
         favoriteBusy={preview?.type === 'case' && favoriteBusyId === preview.item.id}
-        onClose={() => setPreview(null)}
+        onClose={closePreview}
         onCopyText={copyText}
         onToggleFavorite={handleToggleFavorite}
         onAuthRequired={openAuth}

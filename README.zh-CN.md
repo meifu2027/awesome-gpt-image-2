@@ -20,6 +20,22 @@
   <a href="./README.md">English</a> | <strong>简体中文</strong> | <a href="./README.ja.md">日本語</a>
 </p>
 
+## GPT Image 2.5 专区
+
+[进入 2.5 专区](https://gpt-image2.canghe.ai/gpt-image-2-5/)：先了解 Sunburst 与 Flare，再通过共享 Prompt、滑动 / 并排对照、原图放大和参数说明体验新旧模型的对比方式。
+
+- [Sunburst](https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst)：面向精细图片生成与编辑。
+- [Flare](https://developers.openai.com/api/docs/models/gpt-image-2.5-flare)：面向快速、高质量的日常图片生成。
+- **已加入 4 组真实案例复现**：[532 柠檬广告](https://gpt-image2.canghe.ai/gpt-image-2-5/?case=gallery-532-test)、[527 里约纸雕](https://gpt-image2.canghe.ai/gpt-image-2-5/?case=gallery-527-test)、[523 曼哈顿水彩](https://gpt-image2.canghe.ai/gpt-image-2-5/?case=gallery-523-test)、[510 Bichon Shop 图标](https://gpt-image2.canghe.ai/gpt-image-2-5/?case=gallery-510-test)。每组保留图库原图，复用站内完整提示词，通过内置生图生成一次新结果，不输入参考图；可用案例下拉框直接切换。[查看图片、提示词与生成记录](docs/design/gpt-image-2-5/real-cases.md)。原图生成条件与工具具体模型 ID 未核验，其他示意案例继续单独标注。
+
+专区独立运行；原有 GPT-Image2 案例、模板、Skill 和在线生成入口继续保留。本次更新未接入 2.5 在线生图。
+
+<p align="center">
+  <a href="https://gpt-image2.canghe.ai/gpt-image-2-5/">
+    <img src="docs/design/gpt-image-2-5/case532-preview.jpg" alt="GPT Image 2.5 专区预览：案例 532 真实复现" width="900">
+  </a>
+</p>
+
 ## 🌐 可视化网站
 
 访问 [gpt-image2.canghe.ai](https://gpt-image2.canghe.ai/) 可以用产品化方式浏览案例：查看大图、复制完整 Prompt、按风格或场景筛选、配置个人 APIMart Key 或登录后测试生成，并快速跳回 GitHub 源案例。

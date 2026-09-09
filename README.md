@@ -20,6 +20,22 @@
   <strong>English</strong> | <a href="./README.zh-CN.md">简体中文</a> | <a href="./README.ja.md">日本語</a>
 </p>
 
+## GPT Image 2.5 Spotlight
+
+[Explore the 2.5 spotlight](https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en): learn about Sunburst and Flare, then explore a shared-prompt comparison with a draggable divider, side-by-side view, image enlargement, and generation settings.
+
+- [Sunburst](https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst): image generation and precise editing.
+- [Flare](https://developers.openai.com/api/docs/models/gpt-image-2.5-flare): fast, high-quality everyday image generation.
+- **4 real recreations**: [#532 lemon campaign](https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en&case=gallery-532-test), [#527 Rio diorama](https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en&case=gallery-527-test), [#523 Manhattan watercolor](https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en&case=gallery-523-test), and [#510 Bichon Shop icon](https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en&case=gallery-510-test). Each preserves its original gallery image and uses the full gallery prompt for one new built-in image generation, without a reference image. A case selector opens any example directly. [Images, prompts and generation records](docs/design/gpt-image-2-5/real-cases.md). Original generation conditions and exact tool model IDs remain unverified; demonstration examples are labeled separately.
+
+The spotlight runs independently. Existing GPT-Image2 cases, templates, Skill, and generation tools remain available. This update does not add live 2.5 image generation.
+
+<p align="center">
+  <a href="https://gpt-image2.canghe.ai/gpt-image-2-5/?lang=en">
+    <img src="docs/design/gpt-image-2-5/case532-preview.jpg" alt="GPT Image 2.5 spotlight preview — case 532 recreation" width="900">
+  </a>
+</p>
+
 ## 🌐 Visual Website
 
 Use the live site at [gpt-image2.canghe.ai](https://gpt-image2.canghe.ai/) to browse the gallery as a product experience: open large previews, copy full prompts, filter by style or scenario, test generation after Google sign-in, and jump back to the source case on GitHub.
