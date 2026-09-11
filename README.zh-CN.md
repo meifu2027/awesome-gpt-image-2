@@ -66,6 +66,7 @@
 | <a href="https://www.hiapi.ai/zh/register?aff=DzuH"><img src="data/images/sponsors/hiapi.jpg" alt="hiapi" width="240"></a> | 感谢 hiapi 赞助了本项目！hiapi 是聚焦 AI 图片/视频生成的 API 平台——GPT-Image-2 全系（文生图、图生图、1K–4K）加 Seedance、可灵、万相等视频模型，统一异步 API 通吃：提交任务拿 `task_id`，轮询或回调取结果，跑批不超时、换模型不改代码。生成结果转存自有 CDN 并**支持持久化存储**——图片/视频链接长期有效、随时回取，免去自行下载备份。原生 Remote MCP 与 Agent Skills，一行接入 Claude Code、Cursor。中文界面与文档、支持微信支付，按量付费无月费，新用户注册即送 $1（约 50 张图）。通过此[注册链接](https://www.hiapi.ai/zh/register?aff=DzuH&utm_source=github&utm_medium=sponsor&utm_campaign=awesome-gpt-image-2)即可开用。 |
 | <a href="https://www.packyapi.ai/register?aff=CV0c"><img src="data/images/sponsors/packycode.png" alt="PackyCode" width="240"></a> | 感谢 PackyCode 赞助本项目！PackyCode 是一家稳定、高效的 API 中转服务商，提供 Claude Code、Codex、Gemini 等多种中转服务，具备自动故障转移、智能路由和无限并发等功能，帮助 AI 编程提升生产效率。通过此[注册链接](https://www.packyapi.ai/register?aff=CV0c)即可开始使用。 |
 | <a href="https://pptoken.cc/"><img src="data/images/sponsors/pptoken.png" alt="PPToken" width="240"></a> | 项目赞助方。PPToken 提供 ChatGPT、Claude、Gemini 等主流 AI 模型的 API 中转和 Key 分发能力，支持低延迟、高可用、按量付费和灵活订阅。 |
+| <a href="https://onliqiu.com/r/agi2"><img src="data/images/sponsors/liqiu-api.png" alt="立秋 API" width="240"></a> | 感谢立秋 API 赞助本项目！自古逢秋悲寂寥，我言秋日胜春朝。立秋 API 是一家稳定、透明、纯血的 AI 中转站，提供 ChatGPT、Claude、Grok、Gemini 等 AI 中转服务，按量付费，倍率低至 0.1x 起。大家都炸我不炸，凌晨依然在线维护，欢迎各位开发者[注册使用](https://onliqiu.com/r/agi2)。 |
 
 <a name="section-vision"></a>
 
