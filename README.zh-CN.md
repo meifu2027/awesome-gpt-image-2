@@ -67,6 +67,7 @@
 | <a href="https://www.packyapi.ai/register?aff=CV0c"><img src="data/images/sponsors/packycode.png" alt="PackyCode" width="240"></a> | 感谢 PackyCode 赞助本项目！PackyCode 是一家稳定、高效的 API 中转服务商，提供 Claude Code、Codex、Gemini 等多种中转服务，具备自动故障转移、智能路由和无限并发等功能，帮助 AI 编程提升生产效率。通过此[注册链接](https://www.packyapi.ai/register?aff=CV0c)即可开始使用。 |
 | <a href="https://pptoken.cc/"><img src="data/images/sponsors/pptoken.png" alt="PPToken" width="240"></a> | 项目赞助方。PPToken 提供 ChatGPT、Claude、Gemini 等主流 AI 模型的 API 中转和 Key 分发能力，支持低延迟、高可用、按量付费和灵活订阅。 |
 | <a href="https://onliqiu.com/r/agi2"><img src="data/images/sponsors/liqiu-api.png" alt="立秋 API" width="240"></a> | 感谢立秋 API 赞助本项目！自古逢秋悲寂寥，我言秋日胜春朝。立秋 API 是一家稳定、透明、纯血的 AI 中转站，提供 ChatGPT、Claude、Grok、Gemini 等 AI 中转服务，按量付费，倍率低至 0.1x 起。大家都炸我不炸，凌晨依然在线维护，欢迎各位开发者[注册使用](https://onliqiu.com/r/agi2)。 |
+| <a href="https://fluxionai.space/register?source=github&campaign=gptimage&promo=GPTIMAGE2"><img src="data/images/sponsors/fluxion.png" alt="Fluxion AI" width="240"></a> | 感谢 Fluxion AI 对本项目的支持！Fluxion AI 面向个人开发者、技术团队与企业，通过统一 API 接入并管理全球主流 AI 模型；通过多线路动态调度提升可用性，模型表现、响应时间与费用透明可查。根据不同模型与线路，API 调用成本较官方或基准价格可降低 40%—98%。[点击此处注册](https://fluxionai.space/register?source=github&campaign=gptimage&promo=GPTIMAGE2)（专属链接），专享 $3.88 试用额度。 |
 
 <a name="section-vision"></a>
 

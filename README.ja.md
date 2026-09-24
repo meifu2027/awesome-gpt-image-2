@@ -66,6 +66,7 @@ WeChat 公式アカウント **苍何(Canghe)** をフォローするか、下�
 | <a href="https://www.packyapi.ai/register?aff=CV0c"><img src="data/images/sponsors/packycode.png" alt="PackyCode" width="240"></a> | PackyCode による本プロジェクトへのサポートに感謝します。PackyCode は Claude Code、Codex、Gemini などに対応する、安定性と処理性能に優れた API リレープロバイダーです。自動フェイルオーバー、スマートルーティング、無制限の同時実行により、AI コーディングの生産性を高めます。[こちらから登録](https://www.packyapi.ai/register?aff=CV0c)して利用を始められます。 |
 | <a href="https://pptoken.cc/"><img src="data/images/sponsors/pptoken.png" alt="PPToken" width="240"></a> | プロジェクトスポンサー。PPToken は ChatGPT、Claude、Gemini など主要 AI モデル向けの API リレーとキー配布を提供し、低遅延、高可用性、従量課金、柔軟なサブスクリプションに対応しています。 |
 | <a href="https://onliqiu.com/r/agi2"><img src="data/images/sponsors/liqiu-api.png" alt="立秋 API" width="240"></a> | 立秋 API による本プロジェクトへのサポートに感謝します。立秋 API は、ChatGPT、Claude、Grok、Gemini などに対応する、安定性と透明性を重視した AI API リレープロバイダーです。従量課金で、料金倍率は 0.1x から。開発者向けに、深夜もメンテナンスを続ける信頼性の高いサービスを掲げています。[こちらから登録](https://onliqiu.com/r/agi2)して利用を始められます。 |
+| <a href="https://fluxionai.space/register?source=github&campaign=gptimage&promo=GPTIMAGE2"><img src="data/images/sponsors/fluxion.png" alt="Fluxion AI" width="240"></a> | Fluxion AI による本プロジェクトへのサポートに感謝します。Fluxion AI は個人開発者、技術チーム、企業に向けて、世界の主要 AI モデルへ接続・管理するための統一 API を提供します。マルチルートの動的スケジューリングで可用性を高め、モデルの性能、応答時間、費用は透明に確認できます。モデルとルートによって、API 呼び出しコストは公式価格や基準価格より 40%—98% 低く抑えられます。[こちらから登録](https://fluxionai.space/register?source=github&campaign=gptimage&promo=GPTIMAGE2)すると、$3.88 のトライアルクレジットが付与されます。 |
 
 <a name="section-vision"></a>
 
